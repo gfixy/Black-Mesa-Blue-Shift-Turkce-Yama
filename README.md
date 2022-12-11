@@ -13,6 +13,7 @@
 
 ### Mod Sayfası
 [Black Mesa Blue Shift Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=2424633574)
+
 [Black Mesa Blue Shift Moddb](https://www.moddb.com/mods/black-mesa-blue-shift-remake)
 
 ### Kurulum
