@@ -1,0 +1,100 @@
+//Black Mesa: Blue Shift Tramride VO
+
+// Tramride Bridge
+"Trambridge.Open"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_tramride/bs_trambridge_open.wav"
+}
+
+"Trambridge.Close"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_tramride/bs_trambridge_close.wav"
+}
+
+// Tramride Voiceover
+"Intro.Tramride.Tram01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_01_goodmorning.wav"
+
+}
+
+"Intro.Tramride.Tram02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_02_timeis.wav"
+
+}
+
+"Intro.Tramride.Tram03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_03_inbound.wav"
+
+}
+
+"Intro.Tramride.Tram04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_04_keeplimbs.wav"
+
+}
+
+"Intro.Tramride.Tram05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_05_securityarea.wav"
+
+}
+
+
+"Intro.Tramride.Tram05b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_05b_wishtotransfer.wav"
+
+}
+
+"Intro.Tramride.Tram06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_06_transfering.wav"
+
+}
+
+"Intro.Tramride.Tram07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_07_exit.wav"
+
+}

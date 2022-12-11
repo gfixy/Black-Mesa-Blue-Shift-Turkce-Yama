@@ -1,0 +1,80 @@
+// Choreo version 1
+actor "ins_hp_grd03"
+{
+  channel "Audio"
+  {
+    event speak "INS.grd_door_broken_pre01"
+    {
+      time 0.791667 2.590987
+      param "INS.grd_door_broken_pre01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.grd_door_broken_pre02"
+    {
+      time 4.541667 5.929173
+      param "INS.grd_door_broken_pre02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.583333 6.500000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_droop" combo 
+        {
+          2.6907 0.1800
+          2.8630 0.7000
+          3.1759 0.2100
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.1167 0.8300
+          0.8722 0.3600
+          2.5815 0.1500
+          2.9426 0.7300
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Trigger"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 0.833333 -1.000000
+      param "1"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 3.733334 -1.000000
+      param "2"
+    }
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "60"
+  "RampTool" "100"
+  "ExpressionTool" "108"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,187 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.tele_xen_gonow02"
+    {
+      time 0.380000 5.080000
+      param "ros.cpf.tele_xen_gonow02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.126667 3.293334
+      param "!player"
+      event_ramp
+      {
+        0.3770 0.5294
+        0.8700 0.7176
+        2.2600 0.7294
+        2.7350 0.5824
+      }
+    }
+  }
+  channel "MoveTo"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_down"
+    {
+      time 3.860000 6.299999
+      param "bg_down"
+      event_ramp
+      {
+        0.6850 0.5706
+        1.7050 0.5529
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.195167
+        "extreme" 0.320238
+        "loop" 0.514792
+        "end" 0.616438
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.086207
+        "extreme" 0.241379
+        "loop" 0.482759
+        "end" 0.672414
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "bg_accentup"
+    {
+      time 0.526666 4.006666
+      param "bg_accentup"
+      absolutetags playback_time
+      {
+        "apex" 0.169780
+        "extreme" 0.296030
+        "loop" 0.470839
+        "end" 0.699234
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event gesture "bg_up_l"
+    {
+      time 3.093334 6.226668
+      param "bg_up_l"
+      absolutetags playback_time
+      {
+        "apex" 0.117021
+        "extreme" 0.239113
+        "loop" 0.397872
+        "end" 0.655319
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+      sequenceduration 1.600000
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.460000 4.886667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          3.4100 0.5300
+          3.9380 0.8400
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          3.6540 0.5700
+          3.7580 0.8300
+          4.1240 0.9100
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.2120 0.8800
+          3.5140 0.8300
+          3.7500 0.3400
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Triggers"
+  {
+  }
+  channel "Expression"
+  {
+    event expression "sci_afraid01"
+    {
+      time 0.313333 1.913333
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_afraid01"
+      event_ramp
+      {
+        0.3400 0.9588
+        1.2350 0.8824
+      }
+    }
+    event expression "sci_angry01"
+    {
+      time 1.480000 5.906666
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_angry01"
+      event_ramp
+      {
+        0.5550 0.9235
+        3.5867 0.7235
+      }
+    }
+    event expression "b_incombat01"
+    {
+      time 3.086667 5.713333
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat01"
+      event_ramp
+      {
+        0.5950 0.9294
+        2.2500 0.8824
+      }
+    }
+  }
+  faceposermodel "models\humans\scientist_rosenberg.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "40"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

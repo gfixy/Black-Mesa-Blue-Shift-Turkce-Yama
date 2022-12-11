@@ -1,0 +1,132 @@
+// Choreo version 1
+actor "incident_elev_femsci"
+{
+  channel "Audio"
+  {
+    event speak "INS.scifemale_pat_deathscream01"
+    {
+      time 3.823529 9.634618
+      param "INS.scifemale_pat_deathscream01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_whathappening01"
+    {
+      time 0.213333 1.080952
+      param "INS.scifemale_pat_whathappening01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_whathappening02"
+    {
+      time 1.246667 3.748662
+      param "INS.scifemale_pat_whathappening02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 1.060000 3.506667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          1.2860 0.2100
+          1.4100 0.4800
+          1.6300 0.8900
+          2.2660 0.7000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1560 0.8800
+          0.5700 0.8500
+          0.6840 0.4800
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          1.1100 0.1000
+          1.6400 0.7100
+          2.0800 0.9300
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          1.4120 0.4600
+          1.5760 0.8700
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 3.393333 11.486275
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1920 0.8500
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.5700 0.7400
+          0.9460 0.2600
+          1.8080 0.1500
+          2.1640 0.5900
+        }
+        {
+          0.8720 0.3100
+          1.5280 0.0600
+          1.7580 0.6900
+        }
+        "cheek_raiser" combo 
+        {
+          0.1500 0.7300
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          0.1260 0.7500
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Lookat"
+  {
+  }
+  channel "Posture"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "68"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

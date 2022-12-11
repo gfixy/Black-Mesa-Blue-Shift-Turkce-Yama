@@ -1,0 +1,191 @@
+// Choreo version 1
+event stoppoint "c"
+{
+  time 8.727272 -1.000000
+  param "noaction"
+}
+actor "ins_sec_grd06"
+{
+  channel "Audio"
+  {
+    event speak "INS.grd_camerafeed_fall01"
+    {
+      time 1.226667 2.283946
+      param "INS.grd_camerafeed_fall01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.grd_camerafeed_fall02"
+    {
+      time 2.766666 3.366915
+      param "INS.grd_camerafeed_fall02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Security.pain02"
+    {
+      time 0.320000 0.584104
+      param "NPC_Security.pain02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.grd_camerafeed_fall03"
+    {
+      time 3.884242 4.898369
+      param "INS.grd_camerafeed_fall03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.grd_camerafeed_fall04"
+    {
+      time 5.500000 7.679161
+      param "INS.grd_camerafeed_fall04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.grd_camerafeed_fall05"
+    {
+      time 7.984849 9.348726
+      param "INS.grd_camerafeed_fall05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.grd_camerafeed_fall06"
+    {
+      time 10.201212 10.983797
+      param "INS.grd_camerafeed_fall06"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.180000 1.560000
+      param ""
+      event_ramp
+      {
+        0.0000 1.0000
+        1.0051 0.9980
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.0900 0.7500
+          0.3180 0.7500
+          0.6900 0.7100
+        }
+        "lowerer" combo 
+        {
+          0.1420 0.8600
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.1140 0.9100
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          0.1200 0.8100
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 1.180000 2.560000
+      param ""
+      event_ramp
+      {
+        0.1897 0.9980
+        1.3800 0.9980
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "blink" 
+        {
+          0.3760 0.2500
+          0.4760 0.1000
+          0.6380 0.2000
+          0.8500 0.0300
+        }
+        "cheek_raiser" combo 
+        {
+          0.4080 0.7300
+          0.5720 0.1900
+          0.8880 0.7400
+          1.1160 0.1200
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          0.5420 0.4800
+        }
+        "lid_tightener" combo 
+        {
+          0.4280 0.7300
+          0.6440 0.2900
+          0.9600 0.5500
+        }
+        {
+        }
+        "inner_raiser" combo 
+        {
+          0.4240 0.2100
+          0.7220 0.6800
+          0.9380 0.7000
+          1.1940 0.1100
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.4740 0.2300
+          0.6140 0.4600
+          0.8200 0.5200
+          1.1600 0.0600
+        }
+        {
+        }
+        "dilator" 
+        {
+          0.5200 0.0400
+          0.7040 0.8500
+          0.8480 0.8000
+          1.0200 0.0700
+        }
+        "eyes_height" 
+        {
+          0.4400 0.1500
+          0.6940 0.7600
+          0.7520 0.5300
+          0.7980 0.1000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "78"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

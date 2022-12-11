@@ -1,0 +1,61 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.076569 0.609358
+      param "NPC_Security_Otis.pain03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+   event flexanimation "Flinch"
+    {
+      time 0.007843 1.158823
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.0574 0.0100
+          0.1957 0.5800
+          0.5149 0.5600
+        }
+      }
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.017547 1.158229
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.2125 0.9231
+        0.6382 0.9650
+      }
+    }
+  }
+  channel "lookface"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "340"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

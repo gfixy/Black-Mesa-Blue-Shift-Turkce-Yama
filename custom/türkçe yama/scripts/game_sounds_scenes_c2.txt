@@ -1,0 +1,1858 @@
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//														CHAPTER 3 - DUTY CALLS
+//
+//															STARTS HERE!
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//=============================================================================================================================
+//	GENERIC SCENE EVENT SNDFX
+//=============================================================================================================================
+
+"BS_Disaster_Elevator_Handle_Down"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"95,104"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"bshift\scripted_disaster\disaster_elevator_handle_down.wav"
+}
+
+"BS_Disaster_Elevator_Handle_Up"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"95,104"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"bshift\scripted_disaster\disaster_elevator_handle_up.wav"
+}
+
+"BS_Disaster_Elevator_Handle_Pull"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"95,104"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"bshift\scripted_disaster\disaster_elevator_handle_pull.wav"
+}
+
+//=============================================================================================================================
+//	CANALS WALKWAY CREAKING
+//=============================================================================================================================
+
+"BS_Disaster_Canal_Walkway_Creak"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"85,112"
+
+	"soundlevel"		"SNDLVL_65dB"
+
+	"rndwave"		
+	{
+		"wave"	"bshift\scripted_disaster\disaster_canal_walkway_creak1.wav"
+		"wave"	"bshift\scripted_disaster\disaster_canal_walkway_creak2.wav"
+		"wave"	"bshift\scripted_disaster\disaster_canal_walkway_creak3.wav"
+		"wave"	"bshift\scripted_disaster\disaster_canal_walkway_creak4.wav"
+		"wave"	"bshift\scripted_disaster\disaster_canal_walkway_creak5.wav"
+		"wave"	"bshift\scripted_disaster\disaster_canal_walkway_creak6.wav"
+		"wave"	"bshift\scripted_disaster\disaster_canal_walkway_creak7.wav"
+	}				
+}
+
+//=============================================================================================================================
+//	POST DISASTER WARNING ANNOUNCEMENTS
+//=============================================================================================================================
+
+"BS_Announcer.Disaster01"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce01.wav"
+}
+
+"BS_Announcer.Disaster02"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce02.wav"
+}
+
+"BS_Announcer.Disaster03"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce03.wav"
+}
+
+"BS_Announcer.Disaster04"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce04.wav"
+}
+
+"BS_Announcer.Disaster05"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce05.wav"
+}
+
+"BS_Announcer.Disaster06"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce06.wav"
+}
+
+"BS_Announcer.Disaster07"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce07.wav"
+}
+
+"BS_Announcer.Disaster08"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce08.wav"
+}
+
+"BS_Announcer.Disaster09"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce09.wav"
+}
+
+"BS_Announcer.Disaster10"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_announce10.wav"
+}
+
+//=============================================================================================================================
+//	POST DISASTER CANAL ANNOUNCEMENTS
+//=============================================================================================================================
+
+"BS_Announcer.Canal01"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_canal_announce01.wav"
+}
+
+"BS_Announcer.Canal02"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_canal_announce02.wav"
+}
+
+"BS_Announcer.Canal03"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_canal_announce03.wav"
+}
+
+"BS_Announcer.Canal04"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_canal_announce04.wav"
+}
+
+"BS_Announcer.Canal05"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_canal_announce05.wav"
+}
+
+"BS_Announcer.Canal06"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_canal_announce06.wav"
+}
+
+"BS_Announcer.Canal07"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\bs_announcer\bs_c2_canal_announce07.wav"
+}
+
+//=============================================================================================================================
+//	VOICE OVER FOR DUTY CALLS
+//=============================================================================================================================
+//	ALLY GUARD VO STARTS HERE!
+//=============================================================================================================================
+
+// Scene: Calhoun finds an Ally Guard.
+
+"dc_grd_meetup01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup01_01.wav"
+}
+
+"dc_grd_meetup01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup01_02.wav"
+}
+
+"dc_grd_meetup02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup02_01.wav"
+}
+
+"dc_grd_meetup02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup02_02.wav"
+}
+
+"dc_grd_meetup03_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup03_01.wav"
+}
+
+"dc_grd_meetup03_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup03_02.wav"
+}
+
+"dc_grd_meetup04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup04.wav"
+}
+
+// The barricade at the nearby door begins to give way to a retched zombie horde.	
+
+"dc_grd_meetup_zombiedoor01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup_zombiedoor01.wav"
+}
+
+"dc_grd_meetup_zombiedoor02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup_zombiedoor02.wav"
+}
+
+"dc_grd_meetup_zombiedoor03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup_zombiedoor03.wav"
+}
+
+"dc_grd_meetup_zombiedoor04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.975"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_meetup_zombiedoor04.wav"
+}
+
+// After the zombies are dispatched, the ally guard breathes a temporary sigh of relief.
+
+"dc_grd_zombiedoor_post01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.825"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_zombiedoor_post01.wav"
+}
+
+"dc_grd_zombiedoor_post02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_zombiedoor_post02.wav"
+}
+
+"dc_grd_zombiedoor_post03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_zombiedoor_post03.wav"
+}
+
+"dc_grd_zombiedoor_post04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.825"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_zombiedoor_post04_01.wav"
+}
+
+"dc_grd_zombiedoor_post04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.825"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_zombiedoor_post04_02.wav"
+}
+
+"dc_grd_zombiedoor_post05_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_zombiedoor_post05_01.wav"
+}
+
+"dc_grd_zombiedoor_post05_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.825"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_zombiedoor_post05_02.wav"
+}
+
+"dc_grd_zombiedoor_post06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_zombiedoor_post06.wav"
+}
+
+// Scene: Ally Guard - Lights Out
+// The power in the area drops out, leaving only emergency lighting in place. IS DARK...
+
+"dc_grd_lightsout01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_lightsout01_01.wav"
+}
+
+"dc_grd_lightsout_flashlighton"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_lightsout_flashlighton.wav"
+}
+
+"dc_grd_lightsout_flashlightoff"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_lightsout_flashlightoff.wav"
+}
+
+// Scene: Ally Guard - Door Kick
+// The ally guard kics a door open for Calhoun, and looks really kickass while doing it.
+
+"dc_grd_doorkick_pre01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_doorkick_pre01.wav"
+}
+
+"dc_grd_doorkick_pre02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_doorkick_pre02.wav"
+}
+
+"dc_grd_doorkick_pre03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_doorkick_pre03.wav"
+}
+
+"dc_grd_doorkick_pre03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_doorkick_pre03.wav"
+}
+
+"dc_grd_doorkick01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_doorkick01.wav"
+}
+
+"dc_grd_doorkick_grunt01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_doorkick_grunt01.wav"
+}
+
+"dc_grd_doorkick_ow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_doorkick_ow01.wav"
+}
+
+
+//	SCENE: ALLY GUARD - SEES HYDROPLANT AT EXIT ROUTE
+
+"dc_grd_heyasci01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_heyasci01.wav"
+}
+
+"dc_grd_heyasci02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_heyasci02.wav"
+}
+
+"dc_grd_heyasci03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_heyasci03.wav"
+}
+
+"dc_grd_scidoorlocked01_getyaout01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.957"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_scidoorlocked01_getyaout01.wav"
+}
+
+"dc_grd_scidoorlocked_notit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.957"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_scidoorlocked_notit01.wav"
+}
+
+"dc_grd_scidoorlocked_notit02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.957"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_scidoorlocked_notit02.wav"
+}
+
+"dc_grd_scidoorlocked_notit03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.957"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_scidoorlocked_notit03.wav"
+}
+
+"dc_grd_scidoorlocked02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_scidoorlocked02.wav"
+}
+
+"dc_grd_scidoorlocked03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_scidoorlocked03.wav"
+}
+
+"dc_grd_scibonkers01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_scibonkers01.wav"
+}
+
+"dc_grd_scibonkers02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_scibonkers02.wav"
+}
+
+"dc_grd_okrelaxdoc01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_okrelaxdoc01_01.wav"
+}
+
+"dc_grd_okrelaxdoc01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_okrelaxdoc01_02.wav"
+}
+
+"dc_grd_vortbehinddoor01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_vortbehinddoor01.wav"
+}
+
+"dc_grd_exitdoorblocked01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_exitdoorblocked01.wav"
+}
+
+"dc_grd_exitdoorblocked02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_exitdoorblocked02.wav"
+}
+
+"dc_grd_exitdoorblocked03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_exitdoorblocked03.wav"
+}
+
+"dc_grd_exitdoorblocked04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_exitdoorblocked04_01.wav"
+}
+
+"dc_grd_exitdoorblocked04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_exitdoorblocked04_02.wav"
+}
+
+//	SCENE: ALLY GUARD / CHECK THE ELEVATOR
+
+"dc_grd_ele_check01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_check01_01.wav"
+}
+
+"dc_grd_ele_check01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.730"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_check01_02.wav"
+}
+
+"dc_grd_ele_check01_03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.680"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_check01_03.wav"
+}
+
+"dc_grd_ele_careful01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_careful01.wav"
+}
+
+"dc_grd_ele_staythere01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_staythere01_01.wav"
+}
+
+"dc_grd_ele_staythere01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_staythere01_02.wav"
+}
+
+// Scene: Ally Guard - Fizzler Tutorial
+// The guard shows Calhoun how to use portable generators to their advantage in combat.
+// We also account for if the player beats the guard to the fizzler.
+
+"dc_grd_fizzlertutorial01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_fizzlertutorial01.wav"
+}
+
+"dc_grd_niceshotcalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_niceshotcalhoun01.wav"
+}
+
+"dc_grd_fizzlertutorial01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_fizzlertutorial01.wav"
+}
+
+"dc_grd_niceshotcalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_niceshotcalhoun01.wav"
+}
+
+
+//	SCENE: ALLY GUARD / ELEVATOR GOODBYE
+
+"dc_grd_ele_goodbye01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_goodbye01_01.wav"
+}
+
+"dc_grd_ele_goodbye02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_goodbye02_01.wav"
+}
+
+"dc_grd_ele_goodbye02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_goodbye02_02.wav"
+}
+
+"dc_grd_ele_goodbye03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_goodbye03.wav"
+}
+
+"dc_grd_ele_goodbye04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_goodbye04.wav"
+}
+
+"dc_grd_ele_goodbye05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/dutycalls/guards/dc_grd_ele_goodbye05.wav"
+}
+
+//=============================================================================================================================
+// HYDROPLANT VO STARTS HERE!
+//=============================================================================================================================
+// SCENE - Hydroplant Exit FemSci
+
+"dc_hp_femsci_exitroute01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exitroute01.wav"
+}
+
+"dc_hp_femsci_exitroute02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exitroute02.wav"
+}
+
+"dc_hp_femsci_exitroute03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exitroute03.wav"
+}
+
+"dc_hp_femsci_exitroute04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exitroute04.wav"
+}
+
+"dc_hp_femsci_exitroute05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exitroute05.wav"
+}
+
+"dc_hp_femsci_exitroute06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exitroute06.wav"
+}
+
+"dc_hp_femsci_exit_idle01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exit_idle01.wav"
+}
+
+"dc_hp_femsci_exit_idle02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exit_idle02.wav"
+}
+
+"dc_hp_femsci_exit_idle03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exit_idle03.wav"
+}
+
+"dc_hp_femsci_exit_idle04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exit_idle04.wav"
+}
+
+"dc_hp_femsci_exit_outro01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exit_outro01.wav"
+}
+
+"dc_hp_femsci_exit_outro02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exit_outro02.wav"
+}
+
+"dc_hp_femsci_exit_outro03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exit_outro03.wav"
+}
+
+"dc_hp_femsci_exit_outro04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exit_outro04.wav"
+}
+
+"dc_hp_femsci_exit_outro05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_TALKING"
+
+	"wave"				"vo\dutycalls\female_scientists\muffled\dc_hp_femsci_exit_outro05.wav"
+}
+
+// SCENE - Hydroplant Lab Survivor
+
+"dc_labs_sci_wayout01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_wayout01.wav"
+}
+
+"dc_labs_sci_wayout02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_wayout02.wav"
+}
+
+"dc_labs_sci_wayout02_muffled"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_wayout02_muffled.wav"
+}
+
+"dc_labs_sci_wayout03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_wayout03.wav"
+}
+
+"dc_labs_sci_wayout04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_wayout04.wav"
+}
+
+"dc_labs_sci_wayout05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_wayout05.wav"
+}
+
+"dc_labs_sci_wayout06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_wayout06.wav"
+}
+"dc_labs_sci_wayout07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_wayout07.wav"
+}
+
+"dc_labs_sci_crowbar01a"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_crowbar01a.wav"
+}
+
+"dc_labs_sci_crowbar01b"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_crowbar01b.wav"
+}
+
+"dc_labs_sci_crowbar02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_crowbar02.wav"
+}
+
+"dc_labs_sci_crowbar03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_crowbar03.wav"
+}
+
+"dc_labs_sci_crowbar04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_crowbar04.wav"
+}
+
+"dc_labs_sci_crowbar05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_crowbar05.wav"
+}
+
+"dc_labs_sci_w_idle01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_w_idle01.wav"
+}
+
+"dc_labs_sci_w_idle02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_w_idle02.wav"
+}
+
+"dc_labs_sci_w_idle03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_w_idle03.wav"
+}
+
+"dc_labs_sci_w_idle04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_w_idle04.wav"
+}
+
+"dc_labs_sci_w_idle05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_w_idle05.wav"
+}
+
+"dc_labs_sci_vest01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_vest01.wav"
+}
+
+"dc_labs_sci_vest02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/scientists/dc_labs_sci_vest02.wav"
+}
+
+//=============================================================================================================================
+//	CANAL VO STARTS HERE!
+//=============================================================================================================================
+// SCENE - Maintenance Guy Grinder Puzzle
+
+"dc_canals_maint_meetup01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_95dB"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_meetup01.wav"
+}
+
+"dc_canals_maint_meetup02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_95dB"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_meetup02.wav"
+}
+
+"dc_canals_maint_meetup02b"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_95dB"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_meetup02b.wav"
+}
+
+"dc_canals_maint_meetup03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_meetup03.wav"
+}
+
+"dc_canals_maint_meetup04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_meetup04.wav"
+}
+
+"dc_canals_maint_meetup05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_meetup05.wav"
+}
+
+//=============================================================================================================================
+
+"dc_canals_maint_tour01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_tour01.wav"
+}
+
+"dc_canals_maint_tour02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_tour02.wav"
+}
+
+"dc_canals_maint_tour03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_tour03.wav"
+}
+
+"dc_canals_maint_tour04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_tour04.wav"
+}
+
+"dc_canals_maint_tour05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_tour05.wav"
+}
+
+"dc_canals_maint_tour06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_tour06.wav"
+}
+
+"dc_canals_maint_tour07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_tour07.wav"
+}
+
+"dc_canals_maint_tour08"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_tour08.wav"
+}
+
+"dc_canals_maint_tour09"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_tour09.wav"
+}
+
+//=============================================================================================================================
+
+"dc_canals_maint_gate"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_gate.wav"
+}
+
+"dc_canals_maint_grinder_iter01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_iter01.wav"
+}
+
+"dc_canals_maint_grinder_iter02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_iter02.wav"
+}
+
+"dc_canals_maint_grinder_iter03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_iter03.wav"
+}
+
+//=============================================================================================================================
+
+"dc_canals_maint_grinder_nag01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_nag01.wav"
+}
+
+"dc_canals_maint_grinder_nag02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_nag02.wav"
+}
+
+"dc_canals_maint_grinder_nag03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_nag03.wav"
+}
+
+"dc_canals_maint_grinder_nag04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_nag04.wav"
+}
+
+"dc_canals_maint_grinder_nag05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_nag05.wav"
+}
+
+//  Had to shorten the naming convention due to character limit concerns
+
+"maint_grinder_nag04_nopower01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/maint_grinder_nag04_nopower01.wav"
+}
+
+"maint_grinder_nag04_nopower02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/maint_grinder_nag04_nopower02.wav"
+}
+
+//=============================================================================================================================
+
+"dc_canals_maint_grinder_post01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_post01.wav"
+}
+
+"dc_canals_maint_grinder_post02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_post02.wav"
+}
+
+"dc_canals_maint_grinder_post03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_post03.wav"
+}
+
+"dc_canals_maint_grinder_post04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_grinder_post04.wav"
+}
+
+//=============================================================================================================================
+
+"dc_canals_maint_exit_idle01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_exit_idle01.wav"
+}
+
+"dc_canals_maint_exit_idle02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_exit_idle02.wav"
+}
+
+"dc_canals_maint_exit_idle03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_exit_idle03.wav"
+}
+
+"dc_canals_maint_exit_idle04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_exit_idle04.wav"
+}
+
+"dc_canals_maint_exit_idle05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/dutycalls/maintenance/dc_canals_maint_exit_idle05.wav"
+}
+
+//SCENE - Sterelization area falling guard
+
+"canals_grd_bg_help_beg"
+{
+
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"bshift/scripted_disaster/disaster_canal_grd_bg_help_beg_loop.wav"
+}
+
+
+
+//=============================================================================================================================
+
+// SCENE - Marine Corpse Disposal
+
+"BS_marine_disposal01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"100"
+
+	"soundlevel"		"SNDLVL_90dB"
+
+	"wave"				"vo\dutycalls\marines\BS_marine_disposal01.wav"
+}
+
+"BS_marine_disposal02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"100"
+
+	"soundlevel"		"SNDLVL_90dB"
+
+	"wave"				"vo\dutycalls\marines\BS_marine_disposal02.wav"
+}
+
+"BS_marine_disposal03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"100"
+
+	"soundlevel"		"SNDLVL_90dB"
+
+	"wave"				"vo\dutycalls\marines\BS_marine_disposal03.wav"
+}

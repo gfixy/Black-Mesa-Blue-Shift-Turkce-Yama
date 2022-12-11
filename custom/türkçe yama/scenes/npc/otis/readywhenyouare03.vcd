@@ -1,0 +1,114 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.259020 2.147410
+      param "NPC_Security_Otis.readywhenyouare03"
+      fixedlength
+      tags
+      {
+        "do" 0.632124
+      }
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_accentFwd"
+    {
+      time 0.509804 3.031372
+      param "bg_accentFwd"
+      event_ramp
+      {
+        0.1794 0.4126
+        2.2941 0.3497
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.213733
+        "extreme" 0.428179
+        "loop" 0.615820
+        "end" 0.706796
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_smile01a"
+    {
+      time 0.039216 2.916667
+      param "humans\guard\expressions_guard"
+      param2 "b_smile01a"
+      event_ramp
+      {
+        0.1735 0.5524
+        2.4351 0.8741
+      }
+    }
+    event expression "b_huh01mild"
+    {
+      time 0.068627 1.068627
+      param "humans\guard\expressions_guard"
+      param2 "b_huh01mild"
+      event_ramp
+      {
+        0.1500 0.9161
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.058823 2.794117
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.4523 0.4300
+          0.8215 0.7400
+          1.2471 0.7600
+          1.4189 0.4500
+          2.0164 0.5300
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 2.985491
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        2.2737 1.0000
+        2.6096 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "78"
+  "GestureTool" "100"
+  "RampTool" "52"
+}
+fps 60
+snap off
+ignorePhonemes off

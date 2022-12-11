@@ -1,0 +1,78 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 2.458335 -1.000000
+  param "1.000000"
+  loopcount "-1"
+}
+actor "bs_ally_harold"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.375001 3.791666
+      param ""
+      event_ramp
+      {
+        0.3938 1.0000
+        3.4167 1.0000
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "jaw_drop" 
+        {
+          0.6042 0.4800
+          1.7811 0.5100
+        }
+        "mouth_drop" combo 
+        {
+          0.6042 0.9800
+        }
+        {
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.6042 1.0000
+        }
+      }
+    }
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "32"
+  "SceneRampTool" "100"
+  "ExpressionTool" "32"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

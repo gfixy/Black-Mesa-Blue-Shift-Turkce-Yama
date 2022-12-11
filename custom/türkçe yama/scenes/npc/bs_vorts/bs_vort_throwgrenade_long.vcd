@@ -1,0 +1,51 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "Focus"
+  {
+    event face "Face !player"
+    {
+      time 0.021667 3.701667
+      param "!player"
+      event_ramp
+      {
+        0.3760 0.9679
+        3.4400 0.9626
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 0.075000 3.678889
+      param "!player"
+      yaw "100"
+    }
+    event sequence "vort_throwgrenade"
+    {
+      time 0.041667 3.533731
+      param "vort_throwgrenade"
+      fixedlength
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 0.672075 -1.000000
+      param "1"
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 2.720124 -1.000000
+      param "2"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "240"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

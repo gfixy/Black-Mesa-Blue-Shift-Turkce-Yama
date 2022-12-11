@@ -1,0 +1,55 @@
+// Choreo version 1
+actor "ins_sec_sci05"
+{
+  channel "Audio"
+  {
+    event speak "NPC_BS_Scimale_annoyance16"
+    {
+      time 0.360000 3.359251
+      param "NPC_BS_Scimale_annoyance16"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.206666 2.460000
+      param "!player"
+    }
+  }
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.160000 2.640000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.1840 0.7700
+          0.5240 0.9200
+          0.6700 0.4700
+          0.9040 0.8700
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

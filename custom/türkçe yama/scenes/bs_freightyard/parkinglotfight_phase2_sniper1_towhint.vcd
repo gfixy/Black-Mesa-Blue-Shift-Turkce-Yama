@@ -1,0 +1,90 @@
+// Choreo version 1
+event stoppoint "!"
+{
+  time 3.154956 -1.000000
+  param "noaction"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.p2_1stsniper03_01"
+    {
+      time 0.272672 0.745348
+      param "grd.cpf.p2_1stsniper03_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.p2_1stsniper03_02"
+    {
+      time 1.451594 2.920755
+      param "grd.cpf.p2_1stsniper03_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "64"
+  "SceneRampTool" "100"
+  "ExpressionTool" "44"
+  "GestureTool" "100"
+  "RampTool" "6"
+}
+fps 60
+snap off
+ignorePhonemes off

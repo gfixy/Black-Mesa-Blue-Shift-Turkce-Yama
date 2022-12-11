@@ -1,0 +1,114 @@
+// Choreo version 1
+event stoppoint "Fire"
+{
+  time 12.520834 -1.000000
+  param "noaction"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.p1_firstclue01"
+    {
+      time 3.767857 5.014048
+      param "grd.cpf.p1_firstclue01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.p1_everbethatlucky01"
+    {
+      time 8.133930 10.107422
+      param "grd.cpf.p1_everbethatlucky01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.p1_everbethatlucky02"
+    {
+      time 10.797622 12.198597
+      param "grd.cpf.p1_everbethatlucky02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.p1_notadrill01"
+    {
+      time 0.178572 3.216440
+      param "otis.cpf.p1_notadrill01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.p1_notadrill02"
+    {
+      time 5.366073 7.558499
+      param "otis.cpf.p1_notadrill02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "32"
+  "SceneRampTool" "100"
+  "ExpressionTool" "44"
+  "GestureTool" "100"
+  "RampTool" "6"
+}
+fps 60
+snap off
+ignorePhonemes off

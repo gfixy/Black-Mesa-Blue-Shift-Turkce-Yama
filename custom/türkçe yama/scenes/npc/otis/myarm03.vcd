@@ -1,0 +1,107 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.159903 1.556094
+      param "NPC_Security_Otis.myarm03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_accentUp"
+    {
+      time 0.024390 2.217886
+      param "bg_accentUp"
+      event_ramp
+      {
+        0.1542 0.6294
+        0.4458 0.8881
+        1.5814 0.8811
+        1.9230 0.5455
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.079628
+        "extreme" 0.187032
+        "loop" 0.294436
+        "end" 0.607452
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event flexanimation "flex"
+    {
+      time 0.048781 2.048781
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2080 0.1500
+          0.7540 0.2900
+          0.8280 0.4500
+          1.2000 0.4700
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.1140 0.1100
+          0.2920 0.1700
+          0.4300 0.6000
+          0.9980 0.4500
+        }
+      }
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.068061 2.568061
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.2125 0.9231
+        1.9164 0.9650
+      }
+    }
+    event expression "b_afraid02"
+    {
+      time 0.686992 1.987805
+      param "humans\guard\expressions_guard"
+      param2 "b_afraid02"
+      event_ramp
+      {
+        0.2833 0.7483
+        1.0125 0.5245
+      }
+    }
+  }
+  channel "lookface"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "164"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

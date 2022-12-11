@@ -1,0 +1,197 @@
+$effect 2
+$color 150 150 150
+$color2 0 100 180
+$fxtime 0.25
+$fadein 0.01
+$fadeout 1.5
+$holdtime 3.5
+$position  -1 0.73
+
+CHAPTER1_TITLE
+{
+#BSHIFT_Chapter1_Title_Ingame
+}
+
+CHAPTER2_TITLE
+{
+#BSHIFT_Chapter2_Title_Ingame
+}
+
+CHAPTER3_TITLE
+{
+#BSHIFT_Chapter3_Title_Ingame
+}
+
+CHAPTER4_TITLE 
+{
+#BSHIFT_Chapter4_Title_Ingame
+}
+
+CHAPTER5_TITLE
+{
+#BSHIFT_Chapter5_Title_Ingame
+}
+
+CHAPTER6_TITLE
+{
+#BSHIFT_Chapter6_Title_Ingame
+}
+
+CHAPTER7_TITLE
+{
+#BSHIFT_Chapter7_Title_Ingame
+}
+
+//Supersecret Chumtoad Chapter
+CHAPTERC_TITLE
+{
+#BSHIFT_ChapterC_Title_Ingame
+}
+
+//GAMEOVER MESSAGES
+$position -1 -1
+$effect 2
+$color 150 150 150
+$color2 0 100 180
+$fadein 0.01
+$fxtime 0.25
+$holdtime 3.5
+$fadeout 1.5
+
+GAMEOVER_OBJECT
+{
+#BSHIFT_GameOver_Object
+}
+
+GAMEOVER_ALLY
+{
+#BSHIFT_GameOver_Ally
+}
+
+GAMEOVER_TIMER
+{
+#BSHIFT_GameOver_Timer
+}
+
+GAMEOVER_STUCK
+{
+#BSHIFT_GameOver_Stuck
+}
+
+GAMEOVER_SUICIDE
+{
+#BSHIFT_GameOver_Suicide
+}
+
+GAMEOVER_DERP
+{
+#BSHIFT_GameOver_Derp
+}
+
+GAMEOVER_CREDITS
+{
+#BSHIFT_GameOver_Credits
+}
+
+GAMEOVER_XENFAILURE
+{
+#BSHIFT_GameOver_XenFailure
+}
+
+//INBOUND TEXT
+$position -1 -1
+$effect 2
+$color 100 100 100
+$color2 0 100 180
+$fadein 0.01
+$fxtime 0.25
+$holdtime 3.5
+$fadeout 1.5
+
+INTRO_LOCATION
+{
+#BSHIFT_Intro_Location
+}
+
+INTRO_SUBJECT
+{
+#BSHIFT_Intro_Subject
+}
+
+INTRO_EDUCATION
+{
+#BSHIFT_Intro_Education
+}
+
+INTRO_EXPERIENCE
+{
+#BSHIFT_Intro_Experience
+}
+
+INTRO_POSITION
+{
+#BSHIFT_Intro_Position
+}
+
+INTRO_EMPLOYER
+{
+#BSHIFT_Intro_Employer
+}
+
+INTRO_ASSIGNMENT
+{
+#BSHIFT_Intro_Assignment
+}
+
+INTRO_CLEARANCE
+{
+#BSHIFT_Intro_Clearance
+}
+
+INTRO_SPONSOR
+{
+#BSHIFT_Intro_Sponsor
+}
+
+INTRO_PRIORITY
+{
+#BSHIFT_Intro_Priority
+}
+
+INTRO_PRIORITY2
+{
+#BSHIFT_Intro_Priority2
+}
+
+INTRO_PRIORITY3
+{
+#BSHIFT_Intro_Priority3
+}
+
+
+// Saving Message
+$position 0.1 0.1
+
+GAMESAVING
+{
+#BMS_Saved
+}
+
+// Saved Message
+$clearmessage GAMESAVING
+$position 0.1 0.1
+
+GAMESAVED
+{
+#BMS_Saved
+}
+
+
+""
+""
+""
+""
+""
+""
+""
+""

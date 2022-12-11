@@ -1,0 +1,140 @@
+// Choreo version 1
+actor "bs_ally_walter"
+{
+  channel "Voice"
+  {
+    event speak "walter.cpf.proto.idle_ros03"
+    {
+      time 0.500000 5.018792
+      param "walter.cpf.proto.idle_ros03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.916667 4.666667
+      param "!player"
+      event_ramp
+      {
+        0.0000 1.0000
+        2.2875 0.8824
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "hg_nod_yes"
+    {
+      time 3.458334 5.758334
+      param "hg_nod_yes"
+      event_ramp
+      {
+        0.8062 0.7326
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "bg_right"
+    {
+      time 1.083333 3.283333
+      param "bg_right"
+      event_ramp
+      {
+        0.4938 0.4225
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.541667 5.666667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          2.1000 0.2100
+          2.4714 0.7200
+          3.5143 0.8500
+        }
+        {
+        }
+        "inner_raiser" combo 
+        {
+          1.5500 0.3200
+          2.0917 0.7800
+          3.9250 0.7800
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          2.6000 0.7300
+          4.5500 0.6000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.4167 0.2200
+          0.9833 0.1500
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "16"
+  "SceneRampTool" "100"
+  "ExpressionTool" "24"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

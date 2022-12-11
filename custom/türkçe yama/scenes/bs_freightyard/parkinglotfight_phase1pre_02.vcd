@@ -1,0 +1,82 @@
+// Choreo version 1
+event stoppoint "!"
+{
+  time 2.714138 -1.000000
+  param "noaction"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.p1pre_yourcallcal01"
+    {
+      time 0.469698 2.394981
+      param "grd.cpf.p1pre_yourcallcal01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "SceneRampTool" "100"
+  "ExpressionTool" "44"
+  "GestureTool" "100"
+  "RampTool" "6"
+}
+fps 60
+snap off
+ignorePhonemes off

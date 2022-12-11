@@ -1,0 +1,118 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.229008 3.001298
+      param "NPC_Security_Otis.statement05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_accentFwd"
+    {
+      time 0.056910 4.335772
+      param "bg_accentFwd"
+      event_ramp leftedge curve_default_to_curve_default 0.700 rightedge curve_default_to_curve_default 0.700
+      {
+        1.6905 0.6000
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.134799
+        "extreme" 0.350476
+        "loop" 0.539194
+        "end" 0.774920
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.085366 4.341463
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.6095 0.5471
+        2.5114 0.8235
+        3.6971 0.4824
+      }
+    }
+    event expression "b_smile_sly_righty"
+    {
+      time 1.670732 3.617886
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_sly_righty"
+      event_ramp
+      {
+        0.2810 0.4824
+        1.4048 0.7882
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.117886 4.052845
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2400 0.2700
+          0.5885 0.2700
+          0.9462 0.6800
+          2.1927 0.7500
+          2.4888 0.4800
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.3636 0.6700
+          1.1409 0.6200
+          1.7318 0.5500
+          2.6091 0.3900
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.063996 4.466436
+      param "!player"
+      event_ramp
+      {
+        0.6911 0.8235
+        1.1518 1.0000
+        3.3364 1.0000
+        3.8612 0.7903
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "164"
+  "SceneRampTool" "100"
+  "ExpressionTool" "44"
+  "GestureTool" "100"
+  "RampTool" "42"
+}
+fps 60
+snap off
+ignorePhonemes off

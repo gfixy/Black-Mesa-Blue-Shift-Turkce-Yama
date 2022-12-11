@@ -1,0 +1,248 @@
+// Choreo version 1
+event stoppoint "!"
+{
+  time 4.000000 -1.000000
+  param "noaction"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.turrets_dead01"
+    {
+      time 0.595238 1.846599
+      param "grd.cpf.turrets_dead01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.turrets_dead02"
+    {
+      time 2.619047 3.350317
+      param "grd.cpf.turrets_dead02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event face "Face !player"
+    {
+      time 0.363636 3.606061
+      param "!player"
+    }
+    event lookat "Look at !player"
+    {
+      time 0.590909 2.181818
+      param "!player"
+    }
+    event lookat "Look at bs_ally_otis"
+    {
+      time 2.318182 3.454546
+      param "bs_ally_otis"
+      event_ramp
+      {
+        0.5333 0.8770
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto !player"
+    {
+      time 0.545455 3.500000
+      param "!player"
+      param2 "Walk"
+      distancetotarget 48.00
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_left"
+    {
+      time 1.196969 3.396969
+      param "bg_left"
+      absolutetags playback_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+    event gesture "b_head_back"
+    {
+      time 2.242425 4.042425
+      param "b_head_back"
+      event_ramp
+      {
+        0.4711 0.9866
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      sequenceduration 1.800000
+    }
+    event gesture "g_Rifle_Raise"
+    {
+      time 0.560606 3.193939
+      param "g_Rifle_Raise"
+      absolutetags playback_time
+      {
+        "apex" 0.102564
+        "accent" 0.384615
+        "loop" 0.641026
+        "end" 0.769231
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.102564
+        "accent" 0.384615
+        "loop" 0.641026
+        "end" 0.769231
+      }
+      sequenceduration 2.633333
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 2.272728 3.515152
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.2864 0.7600
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.0545 0.6600
+          0.2682 0.2200
+        }
+        {
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2022 1.0000
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 0.500000 2.166667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1747 0.5500
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1312 0.7700
+        }
+        {
+          0.3537 0.3300
+          0.5989 0.0700
+        }
+        "smile" 
+        {
+          0.1827 0.4800
+        }
+      }
+    }
+  }
+  channel "Trigger Cues"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+    event lookat "Look at bs_ally_los"
+    {
+      time 0.484849 3.151515
+      param "bs_ally_los"
+      event_ramp
+      {
+        0.3526 0.8583
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto !player"
+    {
+      time 0.409091 1.515152
+      param "!player"
+      param2 "Walk"
+      distancetotarget 55.00
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "SceneRampTool" "100"
+  "ExpressionTool" "124"
+  "GestureTool" "100"
+  "RampTool" "76"
+}
+fps 60
+snap off
+ignorePhonemes off

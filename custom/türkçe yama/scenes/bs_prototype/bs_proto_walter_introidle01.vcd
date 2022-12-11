@@ -1,0 +1,85 @@
+// Choreo version 1
+actor "bs_ally_walter"
+{
+  channel "Voice"
+  {
+    event speak "walter.cpf.proto.idle_ros01"
+    {
+      time 0.500000 6.966708
+      param "walter.cpf.proto.idle_ros01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.791667 6.916667
+      param "!player"
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.500000 8.041666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          1.0222 0.4600
+          3.6111 0.3600
+          4.2667 0.1600
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          3.7556 0.4900
+          5.2889 0.7700
+        }
+        {
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.9429 0.5200
+          2.2714 0.5800
+          3.7143 0.6000
+          4.1286 0.8200
+          4.7714 0.6800
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          3.4000 0.5500
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "16"
+  "SceneRampTool" "100"
+  "ExpressionTool" "14"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

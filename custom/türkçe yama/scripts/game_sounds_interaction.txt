@@ -1,0 +1,78 @@
+//Black Mesa: Blue Shift IVCS Sounds
+//We're using this file for defining sound parameters for all Interaction / Viewmodel Controlled Scenes in the game.
+
+//THESE PARAMS ARE USED BY ANIMATION EVENTS, SO WE DON'T HAVE TO WORK WITH AMBIENT_GENERIC ENTS WHEN IT COMES TO IVCS)
+
+// Shooting Range Gear Equip
+"Interaction.RangeOn"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_interaction/bs_ia_range_on.wav"
+}
+
+"Interaction.RangeOff"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_interaction/bs_ia_range_off.wav"
+}
+
+"Interaction.GlockEquip"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_interaction/bs_ia_glock_equip.wav"
+}
+
+"Interaction.ElevatorWakeup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_interaction/bs_ia_elevator_wakeup.wav"
+}
+
+"Interaction.RosencrateBoost"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_interaction/bs_ia_rosencrate_boostthru.wav"
+}
+
+"Interaction.IDcardTake"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_interaction/bs_ia_harold_scene.wav"
+}
+
+"Interaction.RosencrateMvsfx_Getup"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_95dB"
+	"wave"	"bshift/scripted_interaction/bs_ia_rosencrate_intro_getup.wav"
+}
+
+"Interaction.RosencrateTakeStuffBack"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_interaction/bs_ia_rosencrate_takestuffback.wav"
+}
+
+"Interaction.Teleroom_KeycardInsert"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_interaction/bs_ia_teleroom_keycard_insert.wav"
+}
+

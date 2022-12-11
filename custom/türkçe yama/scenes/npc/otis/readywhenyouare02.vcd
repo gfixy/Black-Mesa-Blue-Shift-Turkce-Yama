@@ -1,0 +1,109 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.259020 1.372127
+      param "NPC_Security_Otis.readywhenyouare02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_left"
+    {
+      time 0.014706 2.366667
+      param "bg_left"
+      event_ramp
+      {
+        0.4538 0.4615
+        2.0571 0.5105
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.121086
+        "extreme" 0.273422
+        "loop" 0.446109
+        "end" 0.676359
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_smile00"
+    {
+      time 0.029412 2.279412
+      param "humans\guard\expressions_guard"
+      param2 "b_smile00"
+      event_ramp
+      {
+        0.4154 0.9510
+        1.7462 0.7063
+      }
+    }
+    event gesture "hg_puncuate_down"
+    {
+      time 0.196079 1.829412
+      param "hg_puncuate_down"
+      event_ramp
+      {
+        0.1179 0.4755
+        1.4308 0.6923
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.285285
+        "extreme" 0.541667
+        "loop" 0.552500
+        "end" 0.562500
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 2.456079
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        1.7443 1.0000
+        2.0802 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "78"
+}
+fps 60
+snap off
+ignorePhonemes off

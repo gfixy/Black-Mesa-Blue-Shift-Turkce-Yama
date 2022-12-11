@@ -1,0 +1,143 @@
+// Choreo version 1
+event section "p1"
+{
+  time 2.326666 -1.000000
+  param "noaction"
+}
+actor "intro_fight_actor1"
+{
+  channel "Audio"
+  {
+    event speak "NPC_hgrunt.check07"
+    {
+      time 0.440000 1.192653
+      param "NPC_hgrunt.check07"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_hgrunt.alert09_var01"
+    {
+      time 3.040000 4.476984
+      param "NPC_hgrunt.alert09_var01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_hgrunt.alert04"
+    {
+      time 5.486666 7.039909
+      param "NPC_hgrunt.alert04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "MoveTo"
+  {
+    event moveto "Moveto mark_cargo_inspect01"
+    {
+      time 0.280000 1.660000
+      param "mark_cargo_inspect01"
+      param2 "Walk"
+    }
+    event lookat "Look at mark_cargo_windows"
+    {
+      time 2.533333 3.386667
+      param "mark_cargo_windows"
+    }
+    event moveto "Moveto mark_cargo_inspect02"
+    {
+      time 3.020000 4.546667
+      param "mark_cargo_inspect02"
+      param2 "Run"
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 3.120001 -1.000000
+      param "1"
+    }
+    event face "Face mark_cargo_windows"
+    {
+      time 0.633333 2.940000
+      param "mark_cargo_windows"
+      event_ramp
+      {
+        1.0680 0.6765
+        1.4880 0.4385
+      }
+      lockbodyfacing
+    }
+    event firetrigger "Firetrigger 3"
+    {
+      time 2.273333 -1.000000
+      param "3"
+    }
+    event face "Face mark_cargo_windows"
+    {
+      time 2.393334 3.553334
+      param "mark_cargo_windows"
+      event_ramp
+      {
+        0.8860 0.9412
+      }
+    }
+    event face "Face mark_cargo_windows"
+    {
+      time 1.440000 2.300000
+      param "mark_cargo_windows"
+      event_ramp
+      {
+        0.4440 0.7727
+      }
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at mark_cargo_inspect_cb"
+    {
+      time 0.146666 3.546666
+      param "mark_cargo_inspect_cb"
+      event_ramp
+      {
+        0.5120 0.8797
+        2.4660 0.9332
+      }
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 7.673332 -1.000000
+      param "2"
+    }
+  }
+}
+
+actor "cargo_inspection_actor2"
+{
+  channel "Audio"
+  {
+    event speak "NPC_hgrunt.charge09_var03"
+    {
+      time 7.226667 8.331066
+      param "NPC_hgrunt.charge09_var03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

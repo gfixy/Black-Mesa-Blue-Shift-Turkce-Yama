@@ -1,0 +1,116 @@
+// Choreo version 1
+actor "transitiontrain_hg1"
+{
+  channel "Voice"
+  {
+    event speak "marine.cpf.trainride_storyros01"
+    {
+      time 0.966667 3.252064
+      param "marine.cpf.trainride_storyros01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "marine.cpf.trainride_storyros02"
+    {
+      time 13.941666 15.643683
+      param "marine.cpf.trainride_storyros02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "marine.cpf.trainride_storyros03"
+    {
+      time 15.783333 19.599478
+      param "marine.cpf.trainride_storyros03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+actor "transitiontrain_hg2"
+{
+  channel "Voice"
+  {
+    event speak "marine.cpf.trainride_notrelevant01"
+    {
+      time 3.733334 8.945669
+      param "marine.cpf.trainride_notrelevant01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "marine.cpf.trainride_notrelevant02"
+    {
+      time 10.302776 13.413638
+      param "marine.cpf.trainride_notrelevant02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "marine.cpf.trainride_awhile01"
+    {
+      time 20.878172 22.831846
+      param "marine.cpf.trainride_awhile01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "16"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

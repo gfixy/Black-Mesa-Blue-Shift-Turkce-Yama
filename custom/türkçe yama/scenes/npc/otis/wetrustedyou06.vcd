@@ -1,0 +1,98 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.195294 1.836564
+      param "NPC_Security_Otis.wetrustedyou06"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event expression "b_angry01"
+    {
+      time 0.142157 3.450980
+      param "humans\guard\expressions_guard"
+      param2 "b_angry01"
+      event_ramp
+      {
+        0.3250 0.9371
+        2.7285 0.9161
+      }
+    }
+    event expression "b_freaked_mouthopen"
+    {
+      time 0.049020 1.049020
+      param "humans\guard\expressions_guard"
+      param2 "b_freaked_mouthopen"
+      event_ramp
+      {
+        0.2292 0.8941
+        0.5875 0.9471
+        0.7750 0.6765
+        0.9167 0.1059
+      }
+    }
+  }
+  channel "facial"
+  {
+    event gesture "bg_accentfwd"
+    {
+      time 0.088235 3.315686
+      param "bg_accentfwd"
+      event_ramp
+      {
+        0.5292 0.6000
+        1.2750 0.8176
+        2.3417 0.7353
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.115347
+        "extreme" 0.282891
+        "loop" 0.429492
+        "end" 0.654025
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 3.284511
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        2.5727 1.0000
+        2.9086 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

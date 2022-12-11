@@ -1,0 +1,98 @@
+// Choreo version 1
+event stoppoint "c"
+{
+  time 4.458333 -1.000000
+  param "noaction"
+}
+actor "incident_elev_malesci"
+{
+  channel "Audio"
+  {
+  }
+  channel "LookAt"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Trigger"
+  {
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+actor "incident_elev_femsci"
+{
+  channel "Audio"
+  {
+    event speak "INS.scifemale_pat_nostand_dosomething01"
+    {
+      time 1.791666 3.791666
+      param "INS.scifemale_pat_nostand_dosomething01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+    event lookat "Look at mark_incident_elev_window"
+    {
+      time 5.893333 5.893333
+      param "mark_incident_elev_window"
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 1.041667 5.916667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1230 0.9100
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1361 0.8400
+          0.4770 0.2900
+          0.9557 0.3300
+          1.5541 0.9000
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.625000 4.958333
+      param "!player"
+    }
+  }
+  channel "Posture"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "16"
+  "RampTool" "100"
+  "ExpressionTool" "122"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

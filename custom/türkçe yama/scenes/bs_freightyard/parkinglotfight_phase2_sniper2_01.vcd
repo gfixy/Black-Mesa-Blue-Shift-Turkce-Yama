@@ -1,0 +1,120 @@
+// Choreo version 1
+event stoppoint "1."
+{
+  time 9.521978 -1.000000
+  param "noaction"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.p2_2ndsniper01"
+    {
+      time 1.011905 2.288504
+      param "grd.cpf.p2_2ndsniper01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.p2_2ndsniper02"
+    {
+      time 4.554233 6.654346
+      param "grd.cpf.p2_2ndsniper02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.p2_2ndsniper_hint01"
+    {
+      time 7.832194 9.455210
+      param "grd.cpf.p2_2ndsniper_hint01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+    event interrupt "Interrupt here if player is already firing the tow launch"
+    {
+      time 6.859424 9.833782
+      param ""
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.p2_2ndsniper01"
+    {
+      time 0.246032 0.616009
+      param "otis.cpf.p2_2ndsniper01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.p2_2ndsniper02"
+    {
+      time 2.535715 3.564695
+      param "otis.cpf.p2_2ndsniper02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "52"
+  "SceneRampTool" "100"
+  "ExpressionTool" "12"
+  "GestureTool" "94"
+  "RampTool" "14"
+}
+fps 60
+snap off
+ignorePhonemes off

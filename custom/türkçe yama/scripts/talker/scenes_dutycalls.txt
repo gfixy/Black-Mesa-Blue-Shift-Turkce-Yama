@@ -1,0 +1,106 @@
+criterion IsDC1 "map" "bs_c2m0a" required weight 2
+criterion IsDC3 "map" "bs_c2m0c" required weight 2
+
+
+//========================================================
+//01 - HYDRO PLANT ENGINEERING LABORATORY
+//========================================================
+criterion ISCrowbar_Sci name "dc_hp_crowbar_sci" required 
+criterion CrowbarSceneCompleted "CS_Completed" "1" required 
+
+response dc_hp_crowbar_sci_idle
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_canals/hp_labs_idle01.vcd"
+   	scene "scenes/bs_canals/hp_labs_idle02.vcd"
+   	scene "scenes/bs_canals/hp_labs_idle03.vcd"
+   	scene "scenes/bs_canals/hp_labs_idle04.vcd"
+   	scene "scenes/bs_canals/hp_labs_idle05.vcd"
+
+}
+
+rule DC_CrowbarSci_Idle
+{
+   	criteria TLK_USE ISCrowbar_Sci IsDC1 SeenByPlayer CrowbarSceneCompleted
+   	response dc_hp_crowbar_sci_idle
+}
+
+//========================================================
+//02 - CANALS DISPOSAL SYSTEM
+//========================================================
+criterion ISMaintGuy name "ins_canal_maintguy" required 
+criterion ISPreGrinder "PreGrinder" "1" required weight 2
+criterion ISPostGrinder "PostGrinder" "1" required weight 2
+criterion PowerOff "powered" "0" required weight 5
+
+response dc_canals_grinder_preidle
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_canals/dc_canals_maint_grinder_nag01.vcd"
+   	scene "scenes/bs_canals/dc_canals_maint_grinder_nag02.vcd"
+	scene "scenes/bs_canals/dc_canals_maint_grinder_nag03.vcd"
+   	scene "scenes/bs_canals/dc_canals_maint_grinder_nag05.vcd"
+}
+
+response dc_canals_grinder_nopower_preidle
+{
+	sequential
+	norepeat
+	scene "scenes/bs_canals/dc_canals_maint_grinder_nag_nopower01.vcd"
+	scene "scenes/bs_canals/dc_canals_maint_grinder_nag_nopower02.vcd"
+	scene "scenes/bs_canals/dc_canals_maint_grinder_nag04.vcd"
+}
+
+rule DC_MaintGuy_PreGrinderIdle
+{
+   	criteria TLK_USE ISMaintGuy IsDC3 SeenByPlayer ISPreGrinder
+   	response dc_canals_grinder_preidle
+}
+
+rule DC_MaintGuy_PreGrinderNoPowerIdle
+{
+   	criteria TLK_USE ISMaintGuy IsDC3 SeenByPlayer ISPreGrinder PowerOff
+   	response dc_canals_grinder_nopower_preidle
+}
+
+response dc_canals_grinder_postidle
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_canals/dc_canals_maint_exit_idle01.vcd"
+   	scene "scenes/bs_canals/dc_canals_maint_exit_idle02.vcd"
+   	scene "scenes/bs_canals/dc_canals_maint_exit_idle03.vcd"
+   	scene "scenes/bs_canals/dc_canals_maint_exit_idle04.vcd"
+   	scene "scenes/bs_canals/dc_canals_maint_exit_idle05.vcd"
+
+}
+
+rule DC_MaintGuy_PreGrinderIdle
+{
+   	criteria TLK_USE ISMaintGuy IsDC3 SeenByPlayer ISPostGrinder
+   	response dc_canals_grinder_postidle
+}
+
+//========================================================
+//03 - HYDRO PLANT EXIT DOOR IDLE
+//========================================================
+criterion ISExit_Sci name "dc_hp_exitdoor_femsci" required 
+
+response dc_hp_exitdoor_femsci_idle
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_canals/hp_exit_nag01.vcd"
+   	scene "scenes/bs_canals/hp_exit_nag02.vcd"
+   	scene "scenes/bs_canals/hp_exit_nag03.vcd"
+   	scene "scenes/bs_canals/hp_exit_nag04.vcd"
+}
+
+rule DC_ExitdoorSci_Idle
+{
+   	criteria TLK_VITALIDLE ISExit_Sci IsDC1 IsPlayerClose SeenByPlayer
+   	response dc_hp_exitdoor_femsci_idle
+}
+

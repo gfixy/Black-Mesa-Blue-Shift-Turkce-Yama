@@ -1,0 +1,85 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.200196 2.224232
+      param "NPC_Security_Otis.watchwhat03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event expression "b_angry01"
+    {
+      time 0.039216 3.014706
+      param "humans\guard\expressions_guard"
+      param2 "b_angry01"
+      event_ramp
+      {
+        0.2333 0.8881
+        2.5493 0.8337
+      }
+    }
+    event gesture "bg_right"
+    {
+      time 0.142157 3.347059
+      param "bg_right"
+      event_ramp
+      {
+        1.1208 0.7765
+        1.8990 0.9765
+        2.4699 0.7059
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.195849
+        "extreme" 0.352239
+        "loop" 0.554394
+        "end" 0.773354
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+  }
+  channel "facial"
+  {
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 3.392354
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        2.6806 1.0000
+        3.0165 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

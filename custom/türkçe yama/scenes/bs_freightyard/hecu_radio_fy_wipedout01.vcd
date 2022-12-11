@@ -1,0 +1,35 @@
+// Choreo version 1
+actor "hecu_radio"
+{
+  channel "Audio"
+  {
+    event speak "radio.cpf.yankee3charlie_01"
+    {
+      time 0.300000 6.520930
+      param "radio.cpf.yankee3charlie_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio.cpf.yankee3charlie_02"
+    {
+      time 9.402539 14.883786
+      param "radio.cpf.yankee3charlie_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "72"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

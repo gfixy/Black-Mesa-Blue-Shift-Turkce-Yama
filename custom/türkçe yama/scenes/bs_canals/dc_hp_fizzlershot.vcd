@@ -1,0 +1,67 @@
+// Choreo version 1
+actor "dc_hp_grd01"
+{
+  channel "Audio"
+  {
+    event speak "dc_grd_niceshotcalhoun01"
+    {
+      time 0.480000 2.880000
+      param "dc_grd_niceshotcalhoun01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Facial"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.360000 2.460000
+      param "!player"
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 0.246666 2.906667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.1736 0.5900
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.1198 0.7500
+        }
+        {
+        }
+        "corner_puller" combo 
+        {
+          0.2740 0.4400
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Lookat"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

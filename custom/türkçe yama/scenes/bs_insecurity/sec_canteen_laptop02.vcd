@@ -1,0 +1,99 @@
+// Choreo version 1
+actor "ins_sec_sci01"
+{
+  channel "Audio"
+  {
+    event speak "INS.sc_sec2_laptop2"
+    {
+      time 0.486667 3.266032
+      param "INS.sc_sec2_laptop2"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.306667 3.506667
+      param ""
+      event_ramp
+      {
+        0.6260 0.7168
+        1.8820 0.8367
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          1.2740 0.9300
+          2.0720 0.8700
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.6640 0.8200
+          0.9780 0.1500
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.1820 0.9200
+          1.0360 0.4000
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "hg_headshake"
+    {
+      time 1.080000 2.713333
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "LookAT"
+  {
+    event lookat "Look at !player"
+    {
+      time 1.780000 3.213333
+      param "!player"
+      event_ramp
+      {
+        0.0000 1.0000
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

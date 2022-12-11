@@ -1,0 +1,164 @@
+// Choreo version 1
+actor "incident_elev_malesci"
+{
+  channel "Audio"
+  {
+  }
+  channel "LookAt"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Trigger"
+  {
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+actor "incident_elev_femsci"
+{
+  channel "Audio"
+  {
+    event speak "INS.scifemale_pat_doorfixed_goodjob01"
+    {
+      time 1.000000 4.264286
+      param "INS.scifemale_pat_doorfixed_goodjob01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.875000 4.708333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1827 0.9400
+          0.4404 0.2600
+        }
+        {
+        }
+        "inner_raiser" combo 
+        {
+          1.7904 0.4000
+          2.2346 0.9800
+          3.2423 0.9100
+        }
+        {
+          1.9115 0.5600
+          2.3077 0.1200
+        }
+        "outer_raiser" combo 
+        {
+          1.4904 0.2500
+          1.7788 0.8500
+          2.9596 0.9100
+        }
+        {
+          1.1904 0.6100
+          1.7500 0.5000
+          1.9192 0.1600
+        }
+        "lowerer" combo 
+        {
+          2.0154 0.8200
+        }
+        {
+          1.8519 0.2600
+          2.7192 0.0700
+        }
+        "cheek_raiser" combo 
+        {
+          1.7942 0.2900
+          1.9462 0.6100
+          2.2154 0.2600
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "hg_nod_left"
+    {
+      time 1.104167 2.404166
+      param "hg_nod_left"
+      event_ramp
+      {
+        0.3120 0.5383
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+    }
+    event gesture "b_OverHere_Right"
+    {
+      time 2.625000 4.425000
+      param "b_OverHere_Right"
+      event_ramp
+      {
+        0.6000 0.5510
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      sequenceduration 1.800000
+    }
+  }
+  channel "Lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.333333 5.125000
+      param "!player"
+    }
+  }
+  channel "Posture"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "32"
+  "RampTool" "100"
+  "ExpressionTool" "104"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,61 @@
+// -------------------------------------------------------------------
+//                          HECU COLLECTIVE
+//                      don't COPYRIGHT US LOL 2022
+// Purpose: 357. brass ejection effect data.
+// -------------------------------------------------------------------
+"weapon_357"
+{
+    "357_shells_brass1"
+    {
+        // Generic variables.
+        "casing_count"          "6"
+        "forward_speed_min"     "100"
+        "forward_speed_max"     "150"
+        "right_speed_min"       "-80"
+        "right_speed_max"       "-100"
+        "up_speed_min"          "80"
+        "up_speed_max"          "100"
+        "lifetime"              "25"
+        "skin"                  "0"
+        "gravity"               "0.1"
+        
+        // FPS specific variables.
+        "fps_eject_model"       "models\weapons\shells\357_brass_shell.mdl"
+    }
+    
+    "357_shells_brass2"
+    {
+        // Generic variables.
+        "casing_count"          "6"
+        "forward_speed_min"     "100"
+        "forward_speed_max"     "150"
+        "right_speed_min"       "-80"
+        "right_speed_max"       "-100"
+        "up_speed_min"          "80"
+        "up_speed_max"          "100"
+        "lifetime"              "25"
+        "skin"                  "0"
+        "gravity"               "0.1"
+        
+        // FPS specific variables.
+        "fps_eject_model"       "models\weapons\shells\357_brass_shell2.mdl"
+    }
+
+    "357_speedloader_brass"
+    {
+        // Generic variables.
+        "casing_count"          "1"
+        "forward_speed_min"     "65"
+        "forward_speed_max"     "120"
+        "right_speed_min"       "-65"
+        "right_speed_max"       "-80"
+        "up_speed_min"          "75"
+        "up_speed_max"          "75"
+        "lifetime"              "25"
+        "skin"                  "0"
+        "gravity"               "0.1"
+        
+        // FPS specific variables.
+        "fps_eject_model"       "models\weapons\weapon_gibs\357_speedloader.mdl"
+    }
+}

@@ -1,0 +1,79 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.293334 1.563334
+      param "NPC_Security_Otis.illstayhere03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "facial"
+  {
+    event flexanimation "flex"
+    {
+      time 0.093137 1.921568
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2820 0.5800
+          0.5680 0.1700
+          1.2100 0.4000
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.3460 0.2400
+          0.7820 0.2000
+          1.2540 0.5300
+        }
+      }
+    }
+    event expression "b_smile_subtle01"
+    {
+      time 0.058824 2.333333
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_subtle01"
+      event_ramp
+      {
+        0.3103 0.5524
+        1.7641 0.8601
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 2.436471
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        1.7247 1.0000
+        2.0606 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "78"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,74 @@
+// Choreo version 1
+actor "Sci32_Generator"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Scimale.answer_pre64"
+    {
+      time 3.420000 4.584830
+      param "NPC_Scimale.answer_pre64"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scimale.answer_pre35"
+    {
+      time 6.946666 9.097096
+      param "NPC_Scimale.answer_pre35"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "Sci03_Lobby"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Scimale.question_pre13"
+    {
+      time 0.280000 2.937098
+      param "NPC_Scimale.question_pre13"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "Sci10_NetworkRoom"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Scifemale.question_pre13"
+    {
+      time 4.713333 6.988435
+      param "NPC_Scifemale.question_pre13"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "MoveTo"
+  {
+    event moveto "Moveto Mark_Sci10_NetworkRoom_table"
+    {
+      time 0.186667 9.346666
+      param "Mark_Sci10_NetworkRoom_table"
+      param2 "Walk"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

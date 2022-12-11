@@ -1,0 +1,325 @@
+criterion OTIS name "bs_ally_otis" required
+
+// ============================================================================================
+// ============================================================================================
+// ============================================================================================
+//
+// 			OTIS RESPONSES
+//
+// ============================================================================================
+// ============================================================================================
+// ============================================================================================
+
+
+response SECURITY_OTIS_WATCHOUT_BEHIND
+{
+	scene "scenes/npc/otis/behindyou01.vcd"
+	scene "scenes/npc/otis/behindyou02.vcd"
+	scene "scenes/npc/otis/behindyou03.vcd"
+	scene "scenes/npc/otis/behindyou04.vcd"
+}
+
+rule SECURITY_OTIS_WATCHOUT_BEHIND
+{
+	criteria SECURITY OTIS TLK_WATCHOUT NotProvoked DangerIsBehindPlayer
+	response SECURITY_OTIS_WATCHOUT_BEHIND
+}
+
+response SECURITY_OTIS_PLPUSH
+{
+	scene "scenes/npc/otis/excuseme01.vcd"
+	scene "scenes/npc/otis/excuseme02.vcd"
+	scene "scenes/npc/otis/excuseme03.vcd"
+	scene "scenes/npc/otis/outofyourway01.vcd"
+	scene "scenes/npc/otis/outofyourway02.vcd"
+	scene "scenes/npc/otis/outofyourway03.vcd"
+	scene "scenes/npc/otis/pardonme01.vcd"
+	scene "scenes/npc/otis/pardonme02.vcd"
+	scene "scenes/npc/otis/pardonme03.vcd"
+}
+
+rule SECURITY_OTIS_PLPUSH
+{
+	criteria SECURITY OTIS TLK_PLPUSH SeenByPlayer
+	response SECURITY_OTIS_PLPUSH
+}
+
+response SECURITY_OTIS_STATEMENT
+{
+	scene "scenes/npc/otis/statement01.vcd"
+	scene "scenes/npc/otis/statement02.vcd"
+	scene "scenes/npc/otis/statement03.vcd"
+	scene "scenes/npc/otis/statement04.vcd"
+	scene "scenes/npc/otis/statement05.vcd"
+	scene "scenes/npc/otis/statement06.vcd"
+	scene "scenes/npc/otis/statement07.vcd"
+	scene "scenes/npc/otis/statement08.vcd"
+	scene "scenes/npc/otis/statement09.vcd"
+	scene "scenes/npc/otis/statement10.vcd"
+	scene "scenes/npc/otis/statement11.vcd"
+	scene "scenes/npc/otis/statement12.vcd"
+	scene "scenes/npc/otis/statement13.vcd"
+	scene "scenes/npc/otis/statement14.vcd"
+}
+
+response SECURITY_OTIS_POST_IDLE_FOLLOW
+{
+	scene "scenes/npc/otis/getgoingsoon01.vcd"
+	scene "scenes/npc/otis/getgoingsoon02.vcd"
+	scene "scenes/npc/otis/getgoingsoon03.vcd"
+	scene "scenes/npc/otis/getgoingsoon04.vcd"
+	scene "scenes/npc/otis/getgoingsoon05.vcd"
+	scene "scenes/npc/otis/getgoingsoon06.vcd"
+	scene "scenes/npc/otis/getgoingsoon07.vcd"
+	scene "scenes/npc/otis/getgoingsoon08.vcd"
+	scene "scenes/npc/otis/readywhenyouare01.vcd"
+}
+
+rule SECURITY_OTIS_POST_IDLE_FOLLOW
+{
+	criteria SECURITY OTIS TLK_IDLE IsPostDisaster NotProvoked NoRecentCombat IsFollowingPlayer IsStopped NearPlayer RandomChance50
+	response SECURITY_OTIS_POST_IDLE_FOLLOW SECURITY_OTIS_STATEMENT
+}
+
+response SECURITY_OTIS_SHOT_IN_ARM
+{
+	scene "scenes/npc/otis/myarm01.vcd" odds 25
+	scene "scenes/npc/otis/myarm02.vcd" odds 25
+	scene "scenes/npc/otis/myarm03.vcd" odds 25
+}
+
+rule SECURITY_OTIS_SHOT_IN_ARM
+{
+	criteria SECURITY OTIS TLK_SHOT ShotInArm RandomChance50
+	response SECURITY_OTIS_SHOT_IN_ARM
+}
+
+response SECURITY_OTIS_SHOT_IN_GUT
+{
+	scene "scenes/npc/otis/mygut01.vcd"
+	scene "scenes/npc/otis/mygut02.vcd"
+	scene "scenes/npc/otis/mygut03.vcd"
+}
+
+rule SECURITY_OTIS_SHOT_IN_GUT
+{
+	criteria SECURITY OTIS TLK_SHOT ShotInGut RandomChance50
+	response SECURITY_OTIS_SHOT_IN_GUT
+}
+
+response SECURITY_OTIS_SHOT_IN_LEG
+{
+	scene "scenes/npc/otis/myleg01.vcd" odds 25
+	scene "scenes/npc/otis/myleg02.vcd" odds 25
+	scene "scenes/npc/otis/myleg03.vcd" odds 25
+}
+
+rule SECURITY_OTIS_SHOT_IN_LEG
+{
+	criteria SECURITY OTIS TLK_SHOT ShotInLeg RandomChance50
+	response SECURITY_OTIS_SHOT_IN_LEG
+}
+
+response SECURITY_OTIS_STOPFOLLOW
+{
+	scene "scenes/npc/otis/holddownspot01.vcd"
+	scene "scenes/npc/otis/holddownspot02.vcd"
+	scene "scenes/npc/otis/holddownspot03.vcd"
+	scene "scenes/npc/otis/holddownspot04.vcd"
+	scene "scenes/npc/otis/holddownspot05.vcd"
+	scene "scenes/npc/otis/illstayhere01.vcd"
+	scene "scenes/npc/otis/illstayhere02.vcd"
+	scene "scenes/npc/otis/illstayhere03.vcd"
+	scene "scenes/npc/otis/imstickinghere01.vcd"
+	scene "scenes/npc/otis/imstickinghere02.vcd"
+	scene "scenes/npc/otis/imstickinghere03.vcd"
+	scene "scenes/npc/otis/imstickinghere04.vcd"
+}
+
+rule SECURITY_OTIS_STOPFOLLOW
+{
+	criteria SECURITY OTIS TLK_STOPFOLLOW NotInCombat IsPostDisaster
+	response SECURITY_OTIS_STOPFOLLOW
+}
+
+response SECURITY_OTIS_MORTAL
+{
+	scene "scenes/npc/otis/imhurt01.vcd"
+	scene "scenes/npc/otis/imhurt02.vcd"
+	scene "scenes/npc/otis/imhurt03.vcd"
+	scene "scenes/npc/otis/imhurt04.vcd"
+	scene "scenes/npc/otis/imhurt05.vcd"
+	scene "scenes/npc/otis/imhurt06.vcd"
+	scene "scenes/npc/otis/imhurt07.vcd"
+	scene "scenes/npc/otis/imhurt08.vcd"
+	scene "scenes/npc/otis/imhurt09.vcd"
+	scene "scenes/npc/otis/imhurt10.vcd"
+}
+
+rule SECURITY_OTIS_MORTAL
+{
+	criteria SECURITY OTIS TLK_MORTAL
+	response SECURITY_OTIS_MORTAL
+}
+
+response SECURITY_OTIS_STARTFOLLOW
+{
+	scene "scenes/npc/otis/leadon01.vcd"
+	scene "scenes/npc/otis/leadon02.vcd"
+	scene "scenes/npc/otis/leadon03.vcd"
+	scene "scenes/npc/otis/leadtheway01.vcd"
+	scene "scenes/npc/otis/leadtheway02.vcd"
+	scene "scenes/npc/otis/leadtheway03.vcd"
+	scene "scenes/npc/otis/leadtheway04.vcd"
+	scene "scenes/npc/otis/leadtheway05.vcd"
+	scene "scenes/npc/otis/leadtheway06.vcd"
+	scene "scenes/npc/otis/leadtheway07.vcd"
+	scene "scenes/npc/otis/leadtheway08.vcd"
+	scene "scenes/npc/otis/readywhenyouare01.vcd"
+	scene "scenes/npc/otis/readywhenyouare02.vcd"
+	scene "scenes/npc/otis/readywhenyouare03.vcd"
+	scene "scenes/npc/otis/readywhenyouare04.vcd"
+}
+
+rule SECURITY_OTIS_STARTFOLLOW
+{
+	criteria SECURITY OTIS TLK_STARTFOLLOW NotInCombat IsPostDisaster
+	response SECURITY_OTIS_STARTFOLLOW
+}
+
+response SECURITY_OTIS_NEW_ENEMY_GRUNT
+{
+	scene "scenes/npc/otis/marine_taunt01.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt02.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt03.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt04.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt05.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt06.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt07.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt08.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt09.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt10.vcd" respeakdelay 60
+	scene "scenes/npc/otis/marine_taunt11.vcd" respeakdelay 60
+}
+
+// TLK_NEW_ENEMY
+rule SECURITY_OTIS_NEW_ENEMY_GRUNT
+{
+	criteria SECURITY OTIS TLK_NEW_ENEMY EnemyIsHumanGrunt_Generic
+	response SECURITY_OTIS_NEW_ENEMY_GRUNT
+}
+
+// TLK_ATTACKING
+rule SECURITY_OTIS_TAUNT_GRUNT
+{
+	criteria SECURITY OTIS TLK_ATTACKING EnemyIsHumanGrunt_Generic
+	response SECURITY_OTIS_NEW_ENEMY_GRUNT
+}
+
+response SECURITY_OTIS_ENEMY_DEAD_GRUNT
+{
+	scene "scenes/npc/otis/marine_dead03.vcd" respeakdelay 10
+	scene "scenes/npc/otis/marine_dead04.vcd" respeakdelay 10
+	scene "scenes/npc/otis/marine_dead05.vcd" respeakdelay 10
+	scene "scenes/npc/otis/marine_dead06.vcd" respeakdelay 10
+	scene "scenes/npc/otis/marine_dead07.vcd" respeakdelay 10
+	scene "scenes/npc/otis/marine_dead08.vcd" respeakdelay 10
+	scene "scenes/npc/otis/marine_dead09.vcd" respeakdelay 10
+	scene "scenes/npc/otis/marine_dead10.vcd" respeakdelay 10
+}
+
+rule SECURITY_OTIS_ENEMY_DEAD_GRUNT
+{
+	criteria SECURITY OTIS TLK_ENEMY_DEAD EnemyIsHumanGrunt_Generic
+	response SECURITY_OTIS_ENEMY_DEAD_GRUNT
+}
+
+// Not implemented
+// rule SECURITY_OTIS_ENEMY_DEAD_GRUNT02
+// {
+	// criteria SECURITY OTIS TLK_ENEMY_DEAD EnemyIsHumanGrunt_Generic
+	// response SECURITY_OTIS_PLAYER_KILLED_NPC
+// }
+
+response SECURITY_OTIS_NOSHOOT
+{
+	scene "scenes/npc/otis/onyourside01.vcd"
+	scene "scenes/npc/otis/onyourside02.vcd"
+	scene "scenes/npc/otis/onyourside03.vcd"
+	scene "scenes/npc/otis/onyourside04.vcd"
+	scene "scenes/npc/otis/onyourside05.vcd"
+	scene "scenes/npc/otis/onyourside06.vcd"
+	scene "scenes/npc/otis/notthemanithought01.vcd"
+	scene "scenes/npc/otis/notthemanithought02.vcd"
+	scene "scenes/npc/otis/notthemanithought03.vcd"
+	scene "scenes/npc/otis/notthemanithought04.vcd"
+	scene "scenes/npc/otis/watchwhat01.vcd"
+	scene "scenes/npc/otis/watchwhat02.vcd"
+	scene "scenes/npc/otis/watchwhat03.vcd"
+	scene "scenes/npc/otis/watchwhat04.vcd"
+	scene "scenes/npc/otis/watchwhat05.vcd"
+	scene "scenes/npc/otis/watchwhat06.vcd"
+	scene "scenes/npc/otis/watchwhat07.vcd"
+	scene "scenes/npc/otis/watchwhat08.vcd"
+	scene "scenes/npc/otis/watchwhat09.vcd"
+	scene "scenes/npc/otis/watchwhat10.vcd"
+
+}
+
+rule SECURITY_OTIS_NOSHOOT
+{
+	criteria SECURITY OTIS TLK_NOSHOOT
+	response SECURITY_OTIS_NOSHOOT
+}
+
+response SECURITY_OTIS_WOUND
+{
+	scene "scenes/npc/otis/pain01.vcd"
+	scene "scenes/npc/otis/pain02.vcd"
+	scene "scenes/npc/otis/pain03.vcd"
+	scene "scenes/npc/otis/pain04.vcd"
+	scene "scenes/npc/otis/pain05.vcd"
+	scene "scenes/npc/otis/pain06.vcd"
+	scene "scenes/npc/otis/pain07.vcd"
+	scene "scenes/npc/otis/pain08.vcd"
+	scene "scenes/npc/otis/pain09.vcd"
+	scene "scenes/npc/otis/pain10.vcd"
+	scene "scenes/npc/otis/pain11.vcd"
+	scene "scenes/npc/otis/pain12.vcd"
+	scene "scenes/npc/otis/pain13.vcd"
+	scene "scenes/npc/otis/pain14.vcd"
+	scene "scenes/npc/otis/pain15.vcd"
+	scene "scenes/npc/otis/pain16.vcd"
+	scene "scenes/npc/otis/ow02.vcd"
+	scene "scenes/npc/otis/ow03.vcd"
+	scene "scenes/npc/otis/ow04.vcd"
+	scene "scenes/npc/otis/ow05.vcd"
+	scene "scenes/npc/otis/ow06.vcd"
+	scene "scenes/npc/otis/ow07.vcd"
+}
+
+rule SECURITY_OTIS_WOUND
+{
+	criteria SECURITY OTIS TLK_WOUND
+	response SECURITY_OTIS_WOUND
+}
+
+response SECURITY_OTIS_BETRAYED
+{
+	scene "scenes/npc/otis/wetrustedyou01.vcd"
+	scene "scenes/npc/otis/wetrustedyou02.vcd"
+	scene "scenes/npc/otis/wetrustedyou03.vcd"
+	scene "scenes/npc/otis/wetrustedyou04.vcd"
+	scene "scenes/npc/otis/wetrustedyou05.vcd"
+	scene "scenes/npc/otis/wetrustedyou06.vcd"
+	scene "scenes/npc/otis/wetrustedyou07.vcd"
+	scene "scenes/npc/otis/wetrustedyou08.vcd"
+	scene "scenes/npc/otis/wetrustedyou09.vcd"
+	scene "scenes/npc/otis/wetrustedyou10.vcd"
+}
+
+rule SECURITY_OTIS_BETRAYED
+{
+	criteria SECURITY OTIS TLK_BETRAYED
+	response SECURITY_OTIS_BETRAYED
+}

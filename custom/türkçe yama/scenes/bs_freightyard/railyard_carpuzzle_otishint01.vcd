@@ -1,0 +1,148 @@
+// Choreo version 1
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.traincar_idle01"
+    {
+      time 0.600000 4.616417
+      param "otis.cpf.traincar_idle01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.116666 3.049999
+      param "!player"
+      event_ramp
+      {
+        0.5313 0.8059
+        0.9438 0.9765
+        2.7333 0.8647
+      }
+    }
+    event lookat "Look at mark_carpuzzle_crate"
+    {
+      time 2.066667 5.550001
+      param "mark_carpuzzle_crate"
+      event_ramp
+      {
+        0.4812 0.8176
+        1.0313 0.9882
+        2.6125 0.9765
+        3.1250 0.7353
+      }
+    }
+  }
+  channel "Face to"
+  {
+    event face "Face mark_carpuzzle_crate"
+    {
+      time 1.283333 5.900000
+      param "mark_carpuzzle_crate"
+      event_ramp
+      {
+        0.4187 0.8412
+        0.8625 1.0000
+        3.8438 1.0000
+        4.2125 0.8412
+      }
+    }
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "g_frustrated_point_l"
+    {
+      time 0.733334 5.433333
+      param "g_frustrated_point_l"
+      absolutetags playback_time
+      {
+        "in" 0.106383
+        "loop" 0.298604
+        "end" 0.638298
+        "out" 0.801418
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.079365
+        "loop" 0.603175
+        "end" 0.698413
+        "out" 0.857143
+      }
+      sequenceduration 2.133333
+    }
+    event gesture "hg_nod_left"
+    {
+      time 0.083333 2.583333
+      param "hg_nod_left"
+      event_ramp
+      {
+        0.3750 0.4941
+        1.8271 0.4941
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.163158
+        "extreme" 0.406667
+        "loop" 0.553333
+        "end" 0.686667
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+  }
+  channel "Expression"
+  {
+    event expression "b_sudden01"
+    {
+      time 0.183333 3.583333
+      param "humans\guard\expressions_guard"
+      param2 "b_sudden01"
+      event_ramp
+      {
+        0.6750 0.8941
+        2.5875 0.7176
+      }
+    }
+    event expression "b_buckup"
+    {
+      time 2.516667 5.833333
+      param "humans\guard\expressions_guard"
+      param2 "b_buckup"
+      event_ramp
+      {
+        0.7000 0.8824
+        2.2750 0.9588
+      }
+    }
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard_thick.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "40"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

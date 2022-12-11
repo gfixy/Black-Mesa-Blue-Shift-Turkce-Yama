@@ -1,0 +1,113 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.200196 2.377996
+      param "NPC_Security_Otis.notthemanithought04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_left"
+    {
+      time 0.102941 4.013725
+      param "bg_left"
+      event_ramp
+      {
+        1.2200 0.6941
+        3.0525 0.8882
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.127235
+        "extreme" 0.241746
+        "loop" 0.394427
+        "end" 0.687578
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.034314 1.720588
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.2769 0.9059
+        1.2154 0.6235
+      }
+    }
+    event expression "b_angry01"
+    {
+      time 0.519608 3.823529
+      param "humans\guard\expressions_guard"
+      param2 "b_angry01"
+      event_ramp
+      {
+        0.7077 0.8588
+        2.8398 0.9118
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.112745 2.838235
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          1.5540 0.6450
+          1.8500 0.2604
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          1.0120 0.5700
+          1.4360 0.6600
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 4.039413
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        3.3277 1.0000
+        3.6636 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "50"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,209 @@
+criterion IsINSEC1 "map" "bs_c1m0a" required weight 2
+
+
+//========================================================
+//01 - ARMORY GUN OFFICE
+//========================================================
+criterion ISSec_Grd12 name "ins_sec_grd12" required
+
+response Ins_Sec_Grd12_GunOffice_idle
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_insecurity/sec_armory_novest_nag02.vcd"
+  	scene "scenes/bs_insecurity/sec_armory_novest_nag03.vcd"
+  	scene "scenes/bs_insecurity/sec_armory_novest_nag04.vcd"
+}
+
+rule GRD12_Idle
+{
+   	criteria TLK_VITALIDLE ISSec_Grd12 IsINSEC1 IsPlayerReallyNear SeenByPlayer IsPreDisaster Phase1
+   	response Ins_Sec_Grd12_GunOffice_idle
+}
+
+//========================================================
+//02 - BALCONY LAPTOP LADY
+//========================================================
+criterion ISSec_Femsci01 name "insec_sec_femsci01" required
+
+response Ins_Sec_Femsci01_Laptop_Interfer
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_insecurity/sec_femsci_laptop01.vcd"
+   	scene "scenes/bs_insecurity/sec_femsci_laptop02.vcd"
+   	scene "scenes/bs_insecurity/sec_femsci_laptop03.vcd"
+   	scene "scenes/bs_insecurity/sec_femsci_laptop04.vcd"
+}
+
+rule FEMSCI01_Use
+{
+   	criteria TLK_USE ISSec_Femsci01 IsINSEC1 SeenByPlayer IsPreDisaster
+   	response Ins_Sec_Femsci01_Laptop_Interfer
+}
+
+//========================================================
+//03 - SHOOTING RANGE OTIS
+//========================================================
+criterion ISSec_Grd13 name "ins_sec_grd13" required
+
+response Ins_Sec_Grd13_Otis_Idle
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_insecurity/sec_otis_range_idle01.vcd"
+   	scene "scenes/bs_insecurity/sec_otis_range_idle02.vcd"
+   	scene "scenes/bs_insecurity/sec_otis_range_idle03.vcd"
+   	scene "scenes/bs_insecurity/sec_otis_range_idle04.vcd"
+   	scene "scenes/bs_insecurity/sec_otis_range_idle05.vcd"
+   	scene "scenes/bs_insecurity/sec_otis_range_idle06.vcd"
+   	scene "scenes/bs_insecurity/sec_otis_range_idle07.vcd"
+   	scene "scenes/bs_insecurity/sec_otis_range_idle08.vcd"
+}
+
+rule GRD13_Use
+{
+   	criteria TLK_USE ISSec_Grd13 IsINSEC1 SeenByPlayer IsPreDisaster
+   	response Ins_Sec_Grd13_Otis_Idle
+}
+
+
+//========================================================
+//04 - LOBBYDESK GUARD
+//========================================================
+criterion ISSec_Grd04 name "ins_sec_grd04" required
+
+response Ins_Sec_Lobbydesk_Gearpre
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_insecurity/sec_lobbydesk_idle_gearpre01.vcd"
+   	scene "scenes/bs_insecurity/sec_lobbydesk_idle_gearpre02.vcd"
+   	scene "scenes/bs_insecurity/sec_lobbydesk_idle_gearpre03.vcd"
+   	scene "scenes/bs_insecurity/sec_lobbydesk_idle_gearpre04.vcd"
+   	scene "scenes/bs_insecurity/sec_lobbydesk_idle_gearpre05.vcd"
+}
+
+rule GRD04_Idle_Phase1
+{
+   	criteria TLK_VITALIDLE ISSec_Grd04 IsINSEC1 IsPlayerClose SeenByPlayer IsPreDisaster Phase1
+   	response Ins_Sec_Lobbydesk_Gearpre
+}
+
+//========================================================
+//LOBBY SIDEARM HINT
+response Ins_Sec_Lobbydesk_Hint_Sidearm
+{
+	sequential
+   	scene "scenes/bs_insecurity/sec_lobbydesk_hint_sidearm.vcd" delay 10
+}
+
+rule GRD04_Idle_Phase2
+{
+   	criteria TLK_VITALIDLE ISSec_Grd04 IsINSEC1 IsPlayerClose SeenByPlayer IsPreDisaster Phase2
+   	response Ins_Sec_Lobbydesk_Hint_Sidearm
+}
+
+//========================================================
+//05 - HE AIRLOCK DOOR GUARD
+//========================================================
+criterion ISSec_Grd14 name "ins_sec_grd14" required
+
+response Ins_Sec_He_Airlock_Noaccess_Nag
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_insecurity/sec_he_airlock_noaccess_nag01.vcd"
+   	scene "scenes/bs_insecurity/sec_he_airlock_noaccess_nag02.vcd"
+   	scene "scenes/bs_insecurity/sec_he_airlock_noaccess_nag03.vcd"
+   	scene "scenes/bs_insecurity/sec_he_airlock_noaccess_nag04.vcd"
+   	scene "scenes/bs_insecurity/sec_he_airlock_noaccess_nag05.vcd"
+   	scene "scenes/bs_insecurity/sec_he_airlock_noaccess_nag06.vcd"
+}
+
+rule GRD14_Idle_Phase2
+{
+   	criteria TLK_VITALIDLE ISSec_Grd14 IsINSEC1 IsPlayerClose SeenByPlayer IsPreDisaster Phase2
+   	response Ins_Sec_He_Airlock_Noaccess_Nag
+}
+
+//========================================================
+//06 - LOBBY SCIENTIST IDLE
+//========================================================
+criterion ISSec_Sci02 name "ins_sec_sci02" required
+
+response Ins_Sec_Lobby_Sci_Idle
+{
+	sequential
+  	norepeat
+   	scene "scenes\bs_insecurity\sec_lobby_reflectivefloor.vcd"
+}
+
+rule Sci02_Idle
+{
+   	criteria TLK_USE ISSec_Sci02 IsINSEC1 IsPlayerClose SeenByPlayer IsPreDisaster
+	response Ins_Sec_Lobby_Sci_Idle
+}
+
+//========================================================
+//07 - INCIDENT ELEVATOR NAGS
+//========================================================
+criterion ISInci_MaleSci name "incident_elev_malesci" required
+criterion ISInci_FemaleSci name "incident_elev_femsci" required
+
+//FEMALE SCIENTIST NAGS
+response Ins_Inci_FemSci_Nag
+{
+	sequential
+  	norepeat
+//   	scene "scenes/bs_insecurity\hp_incident_button_idle01b.vcd" delay 8
+   	scene "scenes/bs_insecurity\hp_incident_button_idle08.vcd" delay 8
+   	scene "scenes/bs_insecurity\hp_incident_button_idle11.vcd" delay 8
+   	scene "scenes/bs_insecurity\hp_incident_button_idle12.vcd" delay 8
+}
+
+rule INCIDENT_FEMSCI_Use
+{
+   	criteria TLK_USE ISInci_FemaleSci SeenByPlayer IsPreDisaster
+   	response Ins_Inci_FemSci_Nag
+}
+
+//MALE SCIENTIST NAGS
+response Ins_Inci_MalSci_Nag
+{
+	sequential
+  	norepeat
+//   	scene "scenes/bs_insecurity\hp_incident_button_idle01b.vcd" delay 7
+   	scene "scenes/bs_insecurity\hp_incident_button_idle02.vcd" delay 7
+   	scene "scenes/bs_insecurity\hp_incident_button_idle03.vcd" delay 7
+   	scene "scenes/bs_insecurity\hp_incident_button_idle04.vcd" delay 7
+   	scene "scenes/bs_insecurity\hp_incident_button_idle05.vcd" delay 7
+   	scene "scenes/bs_insecurity\hp_incident_button_idle06.vcd" delay 7
+}
+
+rule INCIDENT_MALSCI_Use
+{
+   	criteria TLK_USE ISInci_MaleSci SeenByPlayer IsPreDisaster
+   	response Ins_Inci_MalSci_Nag
+}
+
+//========================================================
+//08 - RANGE RANGER GEARJOCKEY
+//========================================================
+criterion ISSec_Grd07 name "ins_sec_grd07" required
+
+response Ins_Sec_Ranger_Gearjockey
+{
+	sequential
+  	norepeat
+   	scene "scenes/bs_insecurity/sec_range_ranger_gearjockey01.vcd"
+   	scene "scenes/bs_insecurity/sec_range_ranger_gearjockey02.vcd"
+   	scene "scenes/bs_insecurity/sec_range_ranger_gearjockey03.vcd"
+   	scene "scenes/bs_insecurity/sec_range_ranger_gearjockey04.vcd"
+}
+
+rule GRD07_Idle_Phase2_Triggered
+{
+   	criteria TLK_VITALIDLE ISSec_Grd07 IsINSEC1 IsPlayerClose SeenByPlayer IsPreDisaster Phase2 IsTriggered
+   	response Ins_Sec_Ranger_Gearjockey
+}

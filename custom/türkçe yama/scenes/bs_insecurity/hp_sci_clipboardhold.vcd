@@ -1,0 +1,44 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 1.900000 -1.000000
+  param "1.000000"
+  loopcount "-1"
+}
+actor "!target1"
+{
+  channel "ACT"
+  {
+    event gesture "g_Clipboard_hold"
+    {
+      time 0.333334 2.966667
+      param "g_Clipboard_hold"
+      absolutetags playback_time
+      {
+        "apex" 0.118205
+        "loop" 0.128205
+        "accent" 0.714789
+        "end" 0.897436
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.128205
+        "loop" 0.128205
+        "accent" 0.512821
+        "end" 0.897436
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "72"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

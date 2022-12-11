@@ -1,0 +1,151 @@
+// Choreo version 1
+actor "GRD07_Laser"
+{
+  channel "Audio"
+  {
+  }
+  channel "LookAt"
+  {
+    event face "Face mark_grd07_window"
+    {
+      time 0.231250 5.497918
+      param "mark_grd07_window"
+    }
+    event lookat "Look at !player"
+    {
+      time 0.327084 3.731251
+      param "!player"
+      event_ramp
+      {
+        0.4120 0.9388
+        2.3240 0.9592
+      }
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.552083 3.208333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2015 0.6000
+          0.5618 0.6000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.0824 0.9400
+        }
+        {
+          0.6912 0.5600
+          0.7853 0.5300
+          0.8500 0.0800
+        }
+        "cheek_raiser" combo 
+        {
+          0.7191 0.0800
+          1.0000 0.5700
+          1.2221 0.1500
+          1.6926 0.6600
+          1.7441 0.1800
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "MoveTo"
+  {
+    event moveto "Moveto mark_grd07_station3"
+    {
+      time 3.989583 5.635416
+      param "mark_grd07_station3"
+      param2 "Walk"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_accentUp"
+    {
+      time 0.427083 2.860416
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event gesture "Gesture_salute"
+    {
+      time 0.927083 3.893749
+      param "Gesture_salute"
+      event_ramp
+      {
+        0.4040 0.9566
+        2.6340 0.8980
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.113636
+        "accent" 0.965909
+        "loop" 0.977273
+        "end" 1.000000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.113636
+        "accent" 0.965909
+        "loop" 0.977273
+        "end" 1.000000
+      }
+    }
+    event gesture "Gesture13"
+    {
+      time 4.218750 9.460418
+      param "Gesture13"
+      absolutetags playback_time
+      {
+        "in" 0.077402
+        "loop" 0.270906
+        "end" 0.809145
+        "out" 0.886680
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.171429
+        "loop" 0.600000
+        "end" 0.685714
+        "out" 0.857143
+      }
+      sequenceduration 2.366667
+    }
+  }
+  faceposermodel "models\humans\guard_thick.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "64"
+  "RampTool" "100"
+  "ExpressionTool" "136"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

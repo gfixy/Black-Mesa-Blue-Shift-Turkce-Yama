@@ -1,0 +1,42 @@
+//Additional Footstep SoundFX for Custom Surfaces
+
+// Custom Model Material Physics Properties
+"bshift_canal_slippyexplosive"
+{
+	"base"		"metal_barrel"
+	"density"	"550"
+	"friction"	"0.15"
+}
+
+"bshift_xen_grenade"
+{
+	"base"		"flesh"
+	"density"	"20"
+	"elasticity"	"4"
+	"friction"	"0.45"
+	"jumpfactor" ".1"
+}
+
+//Custom Material Surface Properties
+
+//Blue Shift Custom Gravel
+"bs_gravel"
+{
+	"density"	"2300"
+	"elasticity"	"0.2"
+	"friction"	"0.7"
+
+	"stepleft"		"BS_Gravel.StepLeft"
+	"stepright"		"BS_Gravel.StepRight"
+	"jump"			"BS_Gravel.Jump"
+	"land"			"BS_Gravel.Land"
+	"scraperough"	"Concrete.ScrapeRough"
+	"scrapesmooth"	"Concrete.ScrapeSmooth"
+	"impacthard"	"Concrete.ImpactHard"
+	"impactsoft"	"Concrete.ImpactSoft"
+	"bulletimpact"	"BS_Gravel.BulletImpact"
+	
+	"audioreflectivity" "0.66"
+
+	"gamematerial"	"C"
+}

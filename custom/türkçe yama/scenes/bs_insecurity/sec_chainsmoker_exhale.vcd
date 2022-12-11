@@ -1,0 +1,77 @@
+// Choreo version 1
+actor "ins_sec_grd16"
+{
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.146667 2.860000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "cheek_raiser" combo 
+        {
+          0.1600 0.8500
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 0.133333 3.253333
+      param ""
+      event_ramp
+      {
+        0.3140 0.4643
+        0.5500 0.8163
+        1.3580 0.8546
+        2.0467 0.9388
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "upper_raiser" combo 
+        {
+          0.2200 0.6300
+        }
+        {
+        }
+        "puckerer" combo 
+        {
+          0.2877 0.6300
+        }
+        {
+        }
+        "bite" 
+        {
+          0.9640 0.1800
+          1.6365 0.2100
+        }
+        "jaw_drop" 
+        {
+          0.1920 0.7300
+          1.8619 0.8400
+          2.1976 0.5100
+        }
+        "mouth_drop" combo 
+        {
+          0.1260 0.8900
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "98"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

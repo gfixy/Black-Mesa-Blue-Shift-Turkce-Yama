@@ -1,0 +1,102 @@
+// Choreo version 1
+event stoppoint "!"
+{
+  time 6.356877 -1.000000
+  param "noaction"
+}
+actor "transitiontrain_hg1b"
+{
+  channel "Voice"
+  {
+    event speak "marine.cpf.container_hungry01"
+    {
+      time 0.415209 2.462057
+      param "marine.cpf.container_hungry01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "marine.cpf.container_hungry02"
+    {
+      time 3.318183 4.245076
+      param "marine.cpf.container_hungry02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+    event firetrigger "1 - OPEN SECDOOR"
+    {
+      time 4.078063 -1.000000
+      param "1"
+    }
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+actor "transitiontrain_hg3"
+{
+  channel "Voice"
+  {
+    event speak "marine.cpf.container_arewegood01"
+    {
+      time 4.728440 6.054880
+      param "marine.cpf.container_arewegood01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "52"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

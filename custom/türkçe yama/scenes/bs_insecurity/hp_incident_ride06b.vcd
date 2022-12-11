@@ -1,0 +1,72 @@
+// Choreo version 1
+actor "incident_elev_femsci"
+{
+  channel "Audio"
+  {
+    event speak "INS.scifemale_pat_cpr_trevor01"
+    {
+      time 0.902778 3.595794
+      param "INS.scifemale_pat_cpr_trevor01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_cpr_trevor02"
+    {
+      time 4.597223 5.969468
+      param "INS.scifemale_pat_cpr_trevor02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_cpr_trevor03"
+    {
+      time 7.194444 9.415759
+      param "INS.scifemale_pat_cpr_trevor03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_cpr_trevor04"
+    {
+      time 10.375000 12.225000
+      param "INS.scifemale_pat_cpr_trevor04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_whatshappeninghere01"
+    {
+      time 16.750000 18.450001
+      param "INS.scifemale_pat_whatshappeninghere01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Lookat"
+  {
+  }
+  channel "Posture"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "48"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

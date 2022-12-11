@@ -1,0 +1,2010 @@
+//Insecurity Soundscapes
+
+//This chapter is strict linear.
+//No random Soundscape needs to be added here!
+
+//RANDOM UTILITY SOUNDS
+
+"ins.util.industrial"	
+{	
+	"playrandom"
+	{
+		"volume"	"0.4,0.6"
+		"pitch"		"90,110"
+		"time"		"10,15"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_140dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\ind_amb1.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb2.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb3.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb4.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb5.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb6.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb7.wav"
+			"wave"	"bms_ambience\soundscape\ind_amb8.wav"
+			"wave"	"bms_objects\elevators\elevator4_ring.wav"
+		}
+	}
+}
+
+"ins.util.shaftFX"	
+{	
+	"playrandom"
+	{
+		"volume"	"0.3,0.5"
+		"pitch"		"90,110"
+		"time"		"15,30"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_120dB"
+		"rndwave"
+		{
+			"wave"	"bms_ambience\soundscape\misc_amb1.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb2.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb3.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb4.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb5.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb6.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb7.wav"
+			"wave"	"bms_ambience\soundscape\misc_amb8.wav"
+
+		}
+	}
+}
+
+"ins.util.office"	
+{	
+	"playrandom"
+	{
+		"volume"	"0.2,0.5"
+		"pitch"		"95,105"
+		"time"		"15,20"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_90dB"
+		"rndwave"
+		{
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot1.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot2.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot3.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot4.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot5.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot6.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot7.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot8.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot9.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot10.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_office_oneshot11.wav"
+
+		}
+	}
+}
+
+//MAP01 BEGINS HERE!
+//INSECURITY: AREA 3 SECURITY FACILITIES
+//==========================================================================
+"insec_area3_checkpoint"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"90"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lab2.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_100dB"
+		"pitch"			"110"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med12.wav"
+		"position"	"3"
+	}
+}
+
+"insec_area3_mainhall"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_small2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"90"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lab1.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.2"
+		"name"		"ins.util.office"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2a.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2b.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+		"position"	"3"
+	}
+}
+
+"insec_area3_lobby"
+{
+	"dsp"	"17"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"110"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med6.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_90dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lab1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_90dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_ppl2.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.5"
+		"name"		"ins.util.office"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\vmachine\vending_hum.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"90"
+		"wave"			"bms_objects\vmachine\vending_hum_a.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"120"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp1a.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1.wav"
+		"position"	"5"
+	}
+}
+
+"insec_area3_lockers"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lab2.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"ambient\water\water_flow_loop1.wav"
+		"position"	"3"
+	}
+}
+
+
+"insec_area3_sidehall"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"1"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_small1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lab1.wav"
+	}
+
+
+	"playsoundscape"
+	{
+		"volume"	"0.3"
+		"name"		"ins.util.office"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med14.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow1.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"120"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc5.wav"
+		"position"	"5"
+	}
+}
+
+"insec_area3_elevator"
+{
+	"dsp"	"2"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med12.wav"
+	}
+}
+
+"insec_area3_upperhall"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	".5"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_ppl1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lab1.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.4"
+		"name"		"ins.util.office"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipe1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipe1a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp3.wav"
+		"position"	"3"
+	}
+}
+
+"insec_area3_surveillance"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	".4"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med8.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_data1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"110"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc5.wav"
+		"position"	"3"
+	}
+}
+
+"insec_area3_stairwell"
+{
+	"dsp"	"18"
+	"playlooping"
+	{
+		"volume"	".5"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med12.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_110dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med9.wav"
+		"position"	"0"
+	}
+}
+
+"insec_area3_armory"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	".5"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med4.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_110dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med10.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp3.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan9.wav"
+		"position"	"2"
+	}
+}
+
+"insec_area3_range"
+{
+	"dsp"	"8"
+	"playlooping"
+	{
+		"volume"	".5"
+		"pitch"		"110"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med12.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"110"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum4.wav"
+		"position"	"0"
+	}
+}
+
+//MAP02 BEGINS HERE!
+//INSECURITY: AREA 3 PARTICLE LABS AND MAINTENANCE SECTIONS
+//==========================================================================
+"insec_area3_generatorroom"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lab1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"80"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_industrial12.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"ambient\levels\citadel\field_loop3.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc4.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"85"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_ind2.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp3.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp3a.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_data1.wav"
+		"position"	"5"
+	}
+
+
+	"playlooping"
+	{
+		"volume"		"0.65"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"ambient\levels\citadel\zapper_ambient_loop1.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc2.wav"
+		"position"	"7"
+	}
+}
+
+"insec_area3_generatorroom_exit"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lab2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"1.0"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan7.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med8.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"85"
+		"wave"			"bms_objects\vmachine\vending_hum.wav"
+		"position"	"2"
+	}
+}
+
+"insec_area3_platform"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large10.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med8.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"85"
+		"wave"			"bms_objects\vmachine\vending_hum.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow1.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow1a.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow1b.wav"
+		"position"	"5"
+	}
+}
+
+"insec_area3_maint1"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"ambient\atmosphere\corridor.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.35"
+		"name"		"ins.util.shaftFX"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan3.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"115"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipe3.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipe2.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow1.wav"
+		"position"	"4"
+	}
+}
+
+"insec_area3_maint2"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"ambient\atmosphere\corridor.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum2.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_energy3.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"115"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipe1.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipe2.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow1.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan3.wav"
+		"position"	"5"
+	}
+}
+
+"insec_area3_drawbridge"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large7.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"ambient\atmosphere\underground.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.8"
+		"name"		"ins.util.shaftFX"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water7.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water8.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_motor1.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"120"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc5.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrical6.wav"
+		"position"	"4"
+	}
+}
+
+"insec_area3_maint3"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"ambient\atmosphere\corridor2.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"ambient\atmosphere\underground.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.2"
+		"name"		"ins.util.shaftFX"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.8"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipe1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"80"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum4.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1a.wav"
+		"position"	"3"
+	}
+}
+
+"insec_area3_g_platform"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large4.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_wind1.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"80"
+		"wave"			"bms_objects\hum\hum1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"80"
+		"wave"			"bms_objects\hum\hum1a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"140"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_energy5.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1a.wav"
+		"position"	"5"
+	}
+}
+
+"insec_area3_g_entrance"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_large4.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"90"
+		"wave"			"bms_objects\vmachine\vending_hum.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp3.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan9.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"80"
+		"wave"			"bms_objects\hum\hum1.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"80"
+		"wave"			"bms_objects\hum\hum1a.wav"
+		"position"	"6"
+	}
+}
+
+
+//MAP03 BEGINS HERE!
+//INSECURITY: HYDRO ELECTRIC
+//==========================================================================
+"insec_hp_checkpoint"
+{
+	"dsp"	"7"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"110"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"80"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lab1.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum2.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp3.wav"
+		"position"	"2"
+	}
+}
+//==========================================================================
+"insec_hp_river"
+{
+	"dsp"	"7"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"110"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water21.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water10.wav"
+		"position"	"1"
+	}
+}
+//==========================================================================
+"insec_hp_entrance"
+{
+	"dsp"	"17"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med9.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.3"
+		"name"		"ins.util.industrial"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1a.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"120"
+		"wave"			"bms_objects\hum\hum1.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"120"
+		"wave"			"bms_objects\hum\hum1a.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum2.wav"
+		"position"	"4"
+	}
+}
+//==========================================================================
+"insec_hp_warehouseA"
+{
+	"dsp"	"10"
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_industrial32.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.4"
+		"name"		"ins.util.industrial"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_misc10.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.2"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_motor1.wav"
+		"position"	"2"
+	}
+}
+//==========================================================================
+"insec_hp_warehouseB"
+{
+	"dsp"	"10"
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_industrial21.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_industrial28.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.5"
+		"name"		"ins.util.industrial"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipe2.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan2a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum2.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"120"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med12.wav"
+		"position"	"5"
+	}
+}
+
+//==========================================================================
+"insec_hp_garage"
+{
+	"dsp"	"19"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_industrial1.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.4"
+		"name"		"ins.util.industrial"		
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan6.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan2.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan2a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"120"
+		"wave"			"bms_objects\fans\fan4.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"120"
+		"wave"			"bms_objects\fans\fan4a.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_90dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med14.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_motor2.wav"
+		"position"	"7"
+	}
+}
+
+//==========================================================================
+"insec_hp_generators"
+{
+	"dsp"	"9"
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med10.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.3"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_industrial1.wav"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.3"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_motor1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_industrial12.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_85dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_ind29.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan7.wav"
+		"position"	"3"
+	}
+}
+
+//==========================================================================
+"insec_hp_fanroom"
+{
+	"dsp"	"17"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"120"
+		"soundlevel"	"SNDLVL_100dB"
+		"wave"		"bms_ambience\machine_ambience\m_ambience_lc20.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"80"
+		"soundlevel"	"SNDLVL_80dB"
+		"wave"		"bms_objects\fans\fan4.wav"
+	}
+}
+
+//==========================================================================
+"insec_hp_waitingarea"
+{
+	"dsp"	"17"
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_small3.wav"
+	}
+
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\vmachine\vending_hum.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum1a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum1b.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan9.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"85"
+		"wave"			"bms_objects\fans\fan3.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med3.wav"
+		"position"	"7"
+	}
+}
+
+//==========================================================================
+"insec_hp_waitingarea_sidehall"
+{
+	"dsp"	"17"
+	"playsoundscape"
+	{
+		"volume"	"0.4"
+		"name"		"insec_hp_waitingarea"		
+	}
+
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum1a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\hum\hum1b.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\fans\fan9.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"85"
+		"wave"			"bms_objects\fans\fan3.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_95dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med3.wav"
+		"position"	"7"
+	}
+}
+
+//==========================================================================
+"insec_hp_elev_maintenance"
+{
+	"dsp"	"18"
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med9.wav"
+	}
+
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_energy3.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_misc7.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\room_ambience\r_ambience_med13.wav"
+		"position"	"2"
+	}
+}
+
+//==========================================================================
+//INSECURITY: THE SHAFT!
+"insec_hp_elev_shaft"
+{
+	"dsp"	"4"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_disaster_rumble1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"120"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large4.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.5"
+		"name"		"ins.util.shaftFX"		
+	}
+}
+
+//==========================================================================
+//INSECURITY: THE VERY, VERY, VERY, VERY LAAAAAARRRRRRRGE CHAMBERRR
+"insec_hp_elev_chamber"
+{
+	"dsp"	"10"
+	"playlooping"
+	{
+		"volume"	"0.8"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_disaster_rumble6.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_industrial35.wav"
+	}
+}

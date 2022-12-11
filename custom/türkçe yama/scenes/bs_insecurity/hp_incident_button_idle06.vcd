@@ -1,0 +1,86 @@
+// Choreo version 1
+actor "incident_elev_malesci"
+{
+  channel "Audio"
+  {
+    event speak "INS.male_sci_trev_annoyed_6"
+    {
+      time 1.238095 1.723673
+      param "INS.male_sci_trev_annoyed_6"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.547619 5.809524
+      param "!player"
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.714286 5.500000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.3180 0.6100
+          0.6720 0.1500
+          1.5480 0.8500
+          1.7140 0.3500
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_accentUp"
+    {
+      time 0.714285 5.504762
+      param "bg_accentUp"
+      event_ramp
+      {
+        0.5180 0.8240
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.063494
+        "extreme" 0.155208
+        "loop" 0.282196
+        "end" 0.352745
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "Trigger"
+  {
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

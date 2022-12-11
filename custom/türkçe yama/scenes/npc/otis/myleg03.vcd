@@ -1,0 +1,110 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.159903 1.713372
+      param "NPC_Security_Otis.myleg03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_left"
+    {
+      time 0.032520 2.309756
+      param "bg_left"
+      event_ramp
+      {
+        0.3250 0.6853
+        0.6667 0.8601
+        1.8083 0.8112
+        2.0667 0.6573
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.055224
+        "extreme" 0.126866
+        "loop" 0.202985
+        "end" 0.698553
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+    event flexanimation "flex"
+    {
+      time 0.030547 2.118982
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2020 0.5600
+          0.4500 0.1500
+          0.7500 0.3000
+          0.8720 0.4900
+          0.9540 0.7800
+          1.3040 0.7300
+          1.3620 0.4300
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.0660 0.1500
+          0.3800 0.8100
+          0.5520 0.7400
+          0.7900 0.4900
+        }
+      }
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.072126 2.661557
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.2125 0.9231
+        2.0058 0.9650
+      }
+    }
+    event expression "b_afraid01"
+    {
+      time 0.048780 1.337398
+      param "humans\guard\expressions_guard"
+      param2 "b_afraid01"
+      event_ramp
+      {
+        0.1542 0.7343
+        1.0333 0.7972
+      }
+    }
+  }
+  channel "lookface"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "196"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,120 @@
+// Choreo version 1
+actor "incident_elev_malesci"
+{
+  channel "Audio"
+  {
+    event speak "INS.male_sci_trev_annoyed_4"
+    {
+      time 0.952381 4.650998
+      param "INS.male_sci_trev_annoyed_4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.547619 5.809524
+      param "!player"
+      event_ramp
+      {
+        0.2600 0.7883
+        0.8020 0.2500
+      }
+    }
+    event lookat "Look at incident_elev_femsci"
+    {
+      time 1.805555 6.194445
+      param "incident_elev_femsci"
+      event_ramp
+      {
+        0.3740 0.9821
+        2.1920 0.9286
+      }
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.714286 5.500000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.3180 0.6100
+          0.6720 0.1500
+          1.5480 0.8500
+          1.7140 0.3500
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "hg_nod_no"
+    {
+      time 0.500000 2.833333
+      param "hg_nod_no"
+      absolutetags playback_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      sequenceduration 2.333333
+    }
+    event gesture "hg_nod_right"
+    {
+      time 2.361112 3.661112
+      param "hg_nod_right"
+      event_ramp
+      {
+        0.3300 0.7168
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+    }
+  }
+  channel "Trigger"
+  {
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "24"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

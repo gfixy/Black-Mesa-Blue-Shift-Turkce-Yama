@@ -1,0 +1,199 @@
+// Choreo version 1
+actor "acid_death_sci"
+{
+  channel "Audio"
+  {
+    event speak "app.sci.icthy.deathscream"
+    {
+      time 1.033332 4.428094
+      param "app.sci.icthy.deathscream"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scimale.startle10"
+    {
+      time 0.173333 0.858140
+      param "NPC_Scimale.startle10"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "mark_hp_acidscene_tp"
+    {
+      time 0.960001 6.593333
+      param "mark_hp_acidscene_tp"
+      event_ramp
+      {
+        0.2720 0.1062
+        1.6240 0.1140
+        3.3840 0.1425
+      }
+      pitch "9"
+    }
+    event face "Face mark_hp_acidscene_tp"
+    {
+      time 0.019421 1.290435
+      param "mark_hp_acidscene_tp"
+      event_ramp
+      {
+        0.3980 0.6979
+      }
+    }
+    event lookat "Look at mark_hp_acidscene_tp"
+    {
+      time 0.333333 0.833333
+      param "mark_hp_acidscene_tp"
+    }
+    event firetrigger "Pause"
+    {
+      time 0.507246 -1.000000
+      param "1"
+    }
+  }
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 1.013333 6.533334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.1126 0.9100
+        }
+        {
+        }
+        "blink" 
+        {
+          0.1805 0.6100
+        }
+        "lowerer" combo 
+        {
+          0.1692 0.6800
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.1800 0.5500
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          0.1300 0.7700
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 1.240000 2.073334
+      param ""
+      event_ramp
+      {
+        0.2000 0.2668
+        0.3500 0.0907
+        0.6340 0.9326
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "upper_raiser" combo 
+        {
+          0.1479 0.6800
+        }
+        {
+        }
+        "jaw_clencher" 
+        {
+          0.1300 0.8600
+        }
+        "jaw_drop" 
+        {
+          0.1440 0.6900
+        }
+        "mouth_drop" combo 
+        {
+          0.1460 0.8300
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 2.199999 5.059999
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "upper_raiser" combo 
+        {
+          0.1479 0.6800
+        }
+        {
+        }
+        "jaw_clencher" 
+        {
+          0.1300 0.8600
+        }
+        "jaw_drop" 
+        {
+          0.1440 0.6900
+        }
+        "mouth_drop" combo 
+        {
+          0.1460 0.8300
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 3.093334 4.293333
+      param ""
+      event_ramp
+      {
+        0.3200 0.6865
+        0.9740 0.6917
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "jaw_drop" 
+        {
+          0.0759 0.8500
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 0.123188 0.949275
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.0655 0.5800
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "92"
+  "RampTool" "100"
+  "ExpressionTool" "110"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

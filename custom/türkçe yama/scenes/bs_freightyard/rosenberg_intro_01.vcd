@@ -1,0 +1,94 @@
+// Choreo version 1
+event stoppoint "Fire Complete"
+{
+  time 14.809526 -1.000000
+  param "noaction"
+}
+actor "!player"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.intro_canyouhearme01"
+    {
+      time 0.500000 3.331338
+      param "ros.cpf.intro_canyouhearme01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.intro_canyouhearme02"
+    {
+      time 4.500000 7.655306
+      param "ros.cpf.intro_canyouhearme02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.intro_helpyouup01"
+    {
+      time 9.000000 10.140998
+      param "ros.cpf.intro_helpyouup01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.intro_helpyouup02"
+    {
+      time 11.000000 12.422698
+      param "ros.cpf.intro_helpyouup02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.intro_helpyouup03"
+    {
+      time 13.255952 14.213820
+      param "ros.cpf.intro_helpyouup03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+    event firetrigger "1 - Cue Sound Design of Player being helped up"
+    {
+      time 10.584524 -1.000000
+      param "1"
+    }
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "SceneRampTool" "100"
+  "ExpressionTool" "28"
+  "GestureTool" "100"
+  "RampTool" "24"
+}
+fps 60
+snap off
+ignorePhonemes off

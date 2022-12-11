@@ -1,0 +1,26 @@
+// -------------------------------------------------------------------
+//                          HECU COLLECTIVE
+//                      don't COPYRIGHT US LOL 2022
+// Purpose: Frag Grenade brass ejection effect data.
+// -------------------------------------------------------------------
+"weapon_frag"
+{
+    // Lovely spoon.
+    "frag-spoon-gib"
+    {
+        // Generic variables.
+        "casing_count"          "1"
+        "forward_speed_min"     "30"
+        "forward_speed_max"     "60"
+        "right_speed_min"       "-60"
+        "right_speed_max"       "-90"
+        "up_speed_min"          "20"
+        "up_speed_max"          "40"
+        "lifetime"              "30"
+        "skin"                  "0"
+        "gravity"               "0.2"
+        
+        // FPS specific variables.
+        "fps_eject_model"       "models/weapons/weapon_gibs/grenade_spoon.mdl"
+    }
+}

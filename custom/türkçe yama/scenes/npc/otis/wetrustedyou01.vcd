@@ -1,0 +1,115 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.195294 2.471983
+      param "NPC_Security_Otis.wetrustedyou01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event expression "b_angry01"
+    {
+      time 0.039216 4.000000
+      param "humans\guard\expressions_guard"
+      param2 "b_angry01"
+      event_ramp
+      {
+        0.5542 0.8881
+        3.3804 0.9161
+      }
+    }
+    event expression "b_incombat01"
+    {
+      time 1.058823 3.049019
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat01"
+      event_ramp
+      {
+        0.3917 0.8529
+        1.4000 0.6235
+      }
+    }
+  }
+  channel "facial"
+  {
+    event gesture "bg_accentFwd"
+    {
+      time 0.303922 3.992157
+      param "bg_accentFwd"
+      absolutetags playback_time
+      {
+        "apex" 0.240490
+        "extreme" 0.409593
+        "loop" 0.514651
+        "end" 0.659605
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event gesture "hg_puncuate_down"
+    {
+      time 0.857843 3.888235
+      param "hg_puncuate_down"
+      event_ramp
+      {
+        0.3667 0.5529
+        2.1206 0.7882
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.224954
+        "extreme" 0.337243
+        "loop" 0.343082
+        "end" 0.597675
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 3.931569
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        3.2198 1.0000
+        3.5557 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

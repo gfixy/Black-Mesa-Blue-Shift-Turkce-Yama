@@ -1,0 +1,175 @@
+// Choreo version 1
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.depot_gatenorush01"
+    {
+      time 0.500000 2.989410
+      param "grd.cpf.depot_gatenorush01"
+      param2 "0.8"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_gatenorush02"
+    {
+      time 5.742423 8.511743
+      param "grd.cpf.depot_gatenorush02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_gatenorush03"
+    {
+      time 10.730952 13.689751
+      param "grd.cpf.depot_gatenorush03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depotfight2_rongrabcover01"
+    {
+      time 18.645460 19.498884
+      param "grd.cpf.depotfight2_rongrabcover01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event speak "grd.cpf.depotfight2_backmeup01"
+    {
+      time 20.159990 21.946318
+      param "grd.cpf.depotfight2_backmeup01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_ronny"
+{
+  channel "Voice"
+  {
+    event speak "ronny.cpf.depot_gatedown03"
+    {
+      time 3.178787 5.135726
+      param "ronny.cpf.depot_gatedown03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_gatedown04"
+    {
+      time 8.666667 10.159978
+      param "ronny.cpf.depot_gatedown04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_gatedown05"
+    {
+      time 10.333337 14.303564
+      param "ronny.cpf.depot_gatedown05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_walkedintothatone01"
+    {
+      time 14.263295 17.994066
+      param "ronny.cpf.depot_walkedintothatone01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.depotfight2_igotcha01"
+    {
+      time 22.463690 23.141331
+      param "otis.cpf.depotfight2_igotcha01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "20"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

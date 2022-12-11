@@ -1,0 +1,245 @@
+// Choreo version 1
+event stoppoint "1"
+{
+  time 3.797620 -1.000000
+  param "noaction"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.stairway.lockeddoor01_02"
+    {
+      time 2.453895 3.395959
+      param "grd.cpf.stairway.lockeddoor01_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.stairway.lockeddoor01_01"
+    {
+      time 0.630951 2.061337
+      param "grd.cpf.stairway.lockeddoor01_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.023810 4.797620
+      param "!player"
+      event_ramp
+      {
+        0.2417 0.3040
+        0.4417 0.4620
+        0.9417 0.5899
+        1.8381 0.6369
+        3.7119 0.6104
+        4.1750 0.4753
+        4.3750 0.2979
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_accentUp"
+    {
+      time 0.364584 2.797917
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+    }
+    event gesture "hg_nod_left"
+    {
+      time 2.583333 3.883333
+      param "hg_nod_left"
+      event_ramp
+      {
+        0.3679 0.5027
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+  }
+  channel "Expression"
+  {
+    event expression "b_angry01"
+    {
+      time 0.553575 2.595241
+      param "humans\guard\expressions_guard"
+      param2 "b_angry01"
+      event_ramp
+      {
+        0.2286 0.5440
+        0.6393 0.5452
+        0.9500 0.3957
+        1.7455 0.5175
+      }
+    }
+    event expression "b_browup01"
+    {
+      time 2.386908 3.386908
+      param "humans\guard\expressions_guard"
+      param2 "b_browup01"
+      event_ramp
+      {
+        0.1179 0.6719
+        0.8940 0.6514
+      }
+    }
+    event expression "b_browup01"
+    {
+      time 1.084825 2.084825
+      param "humans\guard\expressions_guard"
+      param2 "b_browup01"
+      event_ramp
+      {
+        0.1179 0.6719
+        0.8940 0.6514
+      }
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "head bo"
+    {
+      time 0.119048 3.952381
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.3750 0.5100
+          2.0812 0.5000
+          2.2667 0.4900
+          2.4750 0.3800
+          2.7167 0.3700
+          3.0396 0.5100
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.4286 0.6300
+          0.8690 0.3700
+          1.1280 0.5400
+          1.3899 0.5600
+          2.0750 0.5600
+          2.4688 0.6300
+          2.7333 0.6100
+          2.8771 0.5200
+          3.2000 0.5200
+          3.3750 0.5200
+        }
+      }
+    }
+    event flexanimation "eyes"
+    {
+      time 1.846726 3.461309
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.5670 0.6900
+          0.7858 0.6824
+        }
+        "eyes_rightleft" range 30.0 -30.0 
+        {
+          0.5670 0.2600
+          0.7858 0.5400
+        }
+      }
+    }
+    event flexanimation "look down"
+    {
+      time 0.553574 1.834824
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.0984 0.3600
+          0.5671 0.2904
+          0.7338 0.5000
+        }
+      }
+    }
+  }
+  channel "Trigger Cues"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "64"
+  "SceneRampTool" "100"
+  "ExpressionTool" "24"
+  "GestureTool" "94"
+  "RampTool" "56"
+}
+fps 60
+snap off
+ignorePhonemes off

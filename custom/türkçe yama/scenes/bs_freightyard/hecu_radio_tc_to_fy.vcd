@@ -1,0 +1,59 @@
+// Choreo version 1
+actor "hecu_radio"
+{
+  channel "audio"
+  {
+    event speak "radio.cpf.marines_tc3_01"
+    {
+      time 0.657455 6.385120
+      param "radio.cpf.marines_tc3_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio.cpf.marines_tc3_02"
+    {
+      time 20.299885 28.599861
+      param "radio.cpf.marines_tc3_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio.cpf.marines_tc3_03"
+    {
+      time 38.884727 42.055748
+      param "radio.cpf.marines_tc3_03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio.cpf.marines_y6j_01"
+    {
+      time 7.893823 18.861782
+      param "radio.cpf.marines_y6j_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "radio.cpf.marines_y6j_02"
+    {
+      time 29.893944 37.722675
+      param "radio.cpf.marines_y6j_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "20"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

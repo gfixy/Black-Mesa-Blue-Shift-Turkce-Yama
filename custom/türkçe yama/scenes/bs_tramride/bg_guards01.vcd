@@ -1,0 +1,86 @@
+// Choreo version 1
+actor "GRD01_lookdown"
+{
+  channel "Gesture"
+  {
+    event gesture "g_armsout_high"
+    {
+      time 0.366666 3.333333
+      param "g_armsout_high"
+      absolutetags playback_time
+      {
+        "apex" 0.102273
+        "accent" 0.215909
+        "loop" 0.420455
+        "end" 0.761364
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.102273
+        "accent" 0.215909
+        "loop" 0.420455
+        "end" 0.761364
+      }
+    }
+    event gesture "bg_accentUp"
+    {
+      time 0.826667 3.260000
+      param "bg_accentUp"
+      event_ramp
+      {
+        1.0760 0.9566
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+    }
+    event gesture "g_hands_on_hips"
+    {
+      time 2.079999 7.046666
+      param "g_hands_on_hips"
+      event_ramp
+      {
+        0.9260 0.9719
+        2.9000 0.9515
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.192703
+        "loop" 0.202703
+        "accent" 0.405405
+        "end" 0.810811
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.202703
+        "loop" 0.202703
+        "accent" 0.405405
+        "end" 0.810811
+      }
+      sequenceduration 4.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,63 @@
+"BS_Vorts.GrenadeCharge"
+{
+	"channel" 	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel" 	"SNDLVL_90dB"
+	"pitch" 	"PITCH_NORM"
+	"wave" "npc/vorts/vort_grenade_charge.wav"
+}
+
+"BS_Vorts.GrenadeTick"
+{
+	"channel" 	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel" 	"SNDLVL_85dB"
+	"pitch" 	"PITCH_NORM"	
+	"wave" "npc/vorts/vort_grenade_tick.wav"
+}
+
+"BS_Vorts.GrenadeLive"
+{
+	"channel" 	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel" 	"SNDLVL_65dB"
+	"pitch" 	"PITCH_NORM"
+	"wave" "npc/vorts/vort_grenade_live.wav"
+}
+
+"BS_Vorts.GrenadeExplode"
+{
+	"channel" 	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel" 	"SNDLVL_130dB"
+	"pitch" 	"95, 110"
+	"wave" "^npc/vorts/vort_grenade_explode.wav"
+}
+
+"BS_Vorts.ShockwavePrepare"
+{
+	"channel" 	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel" 	"SNDLVL_90dB"
+	"pitch" 	"PITCH_NORM"
+	"wave" "^npc/vorts/vort_shockwave_prepare.wav"
+}
+
+"BS_Vorts.ShockwaveBlast"
+{
+	"channel" 	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel" 	"SNDLVL_90dB"
+	"pitch" 	"95, 110"
+	"wave" "^npc/vorts/vort_shockwave_blast.wav"
+}
+
+"BS_Vorts.ShockwaveRun"
+{
+	"channel" 	"CHAN_STATIC"
+	"volume"	"1.0"
+	"soundlevel" 	"SNDLVL_75dB"
+	"pitch" 	"PITCH_NORM"
+	"wave" "npc/vorts/vort_shockwave_run.wav"
+}
+

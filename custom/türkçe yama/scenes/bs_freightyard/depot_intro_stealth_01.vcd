@@ -1,0 +1,273 @@
+// Choreo version 1
+event stoppoint "1"
+{
+  time 5.682496 -1.000000
+  param "noaction"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.depot_stealth01"
+    {
+      time 0.500000 1.952698
+      param "grd.cpf.depot_stealth01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_stealth01"
+    {
+      time 2.518518 4.734686
+      param "grd.cpf.depot_stealth02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.333333 2.100000
+      param "!player"
+    }
+    event lookat "Look at bs_ally_otis"
+    {
+      time 2.400000 4.950001
+      param "bs_ally_otis"
+      event_ramp
+      {
+        1.0667 0.5080
+      }
+    }
+    event lookat "Look at mark_depot_stealth_goleft"
+    {
+      time 3.600000 5.100000
+      param "mark_depot_stealth_goleft"
+      event_ramp
+      {
+        0.6636 0.9439
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "g_point_swing_across"
+    {
+      time 2.961538 5.261539
+      param "g_point_swing_across"
+      event_ramp
+      {
+        0.3182 0.8824
+        1.2636 0.0107
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.176471
+        "accent" 0.352941
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.352941
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "G_lookatthis"
+    {
+      time 3.666667 5.261538
+      param "G_lookatthis"
+      event_ramp
+      {
+        0.7727 0.8529
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.176000
+        "accent" 0.528093
+        "loop" 0.560993
+        "end" 0.570993
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.184211
+        "accent" 0.421053
+        "loop" 0.473684
+        "end" 0.473684
+      }
+      sequenceduration 1.300000
+    }
+    event gesture "g_point_l"
+    {
+      time 0.551282 2.617949
+      param "g_point_l"
+      event_ramp
+      {
+        0.4727 0.6337
+      }
+      absolutetags playback_time
+      {
+        "in" 0.081967
+        "loop" 0.508197
+        "end" 0.639344
+        "out" 0.836066
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.081967
+        "loop" 0.508197
+        "end" 0.639344
+        "out" 0.836066
+      }
+      sequenceduration 2.066667
+    }
+    event gesture "hg_nod_yes"
+    {
+      time 0.230769 2.530770
+      param "hg_nod_yes"
+      event_ramp
+      {
+        0.8636 0.8316
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.516667 5.566667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          3.6545 0.4700
+          3.9318 0.2500
+        }
+        {
+        }
+        "lid_tightener" combo 
+        {
+          1.7091 0.4700
+          2.0727 0.3700
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.4045 0.5400
+          1.6545 0.1900
+          2.8136 0.3400
+          4.3727 0.8700
+        }
+        {
+          2.8864 0.5400
+          3.2364 0.9300
+        }
+        "lowerer" combo 
+        {
+          1.7364 0.6700
+          2.8909 0.2400
+          3.6455 0.5600
+        }
+        {
+          2.2455 0.4600
+          3.3318 0.0500
+          3.7773 0.4300
+        }
+        "wrinkler" 
+        {
+          0.4227 0.7500
+          1.6091 0.2300
+        }
+      }
+    }
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.depot_stealth01"
+    {
+      time 5.259259 5.674134
+      param "otis.cpf.depot_stealth01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at bs_ally_los"
+    {
+      time 1.016667 5.633333
+      param "bs_ally_los"
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard_thick.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "52"
+  "SceneRampTool" "100"
+  "ExpressionTool" "44"
+  "GestureTool" "100"
+  "RampTool" "44"
+}
+fps 60
+snap off
+ignorePhonemes off

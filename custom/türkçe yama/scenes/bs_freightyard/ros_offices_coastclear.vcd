@@ -1,0 +1,125 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.passage_crowbar_goodjob01"
+    {
+      time 0.693333 2.309410
+      param "ros.cpf.passage_crowbar_goodjob01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.253333 2.500000
+      param "!player"
+      event_ramp
+      {
+        0.3520 0.9679
+        1.6953 0.9118
+      }
+    }
+  }
+  channel "MoveTo"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_right"
+    {
+      time 0.433333 2.633333
+      param "bg_right"
+      absolutetags playback_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+    event gesture "kgesture03p"
+    {
+      time 0.120000 3.373333
+      param "kgesture03p"
+      event_ramp
+      {
+        2.1787 1.0000
+        2.8507 0.9412
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.198235
+        "accent" 0.373989
+        "loop" 0.494565
+        "end" 0.658058
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.123288
+        "accent" 0.315068
+        "loop" 0.424658
+        "end" 0.616438
+      }
+      sequenceduration 2.466667
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.653333 2.713333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1900 0.7400
+          0.7040 0.4600
+          1.3200 0.1400
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          1.0820 0.2000
+          1.3140 0.2300
+        }
+        {
+        }
+        "smile" 
+        {
+          0.4711 0.1400
+          1.5444 0.5300
+        }
+      }
+    }
+  }
+  channel "Triggers"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "90"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

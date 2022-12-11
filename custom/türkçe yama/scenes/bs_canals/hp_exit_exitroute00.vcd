@@ -1,0 +1,34 @@
+// Choreo version 1
+actor "dc_hp_exitdoor_femsci"
+{
+  channel "Audio"
+  {
+  }
+  channel "LookAt"
+  {
+  }
+  channel "Facial"
+  {
+  }
+  channel "MoveTo"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Posture"
+  {
+  }
+  channel "Trigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

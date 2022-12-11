@@ -1,0 +1,155 @@
+// Choreo version 1
+event stoppoint "!"
+{
+  time 13.531686 -1.000000
+  param "noaction"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.depotfight2_post01"
+    {
+      time 2.333333 3.058367
+      param "grd.cpf.depotfight2_post01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depotfight2_post02"
+    {
+      time 8.144251 9.892845
+      param "grd.cpf.depotfight2_post02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_ronny"
+{
+  channel "Voice"
+  {
+    event speak "ronny.cpf.depotfight2_post02"
+    {
+      time 0.500000 1.807574
+      param "ronny.cpf.depotfight2_post01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depotfight2_post02"
+    {
+      time 6.270834 7.701854
+      param "ronny.cpf.depotfight2_post02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depotfight2_post03"
+    {
+      time 10.712104 12.590086
+      param "ronny.cpf.depotfight2_post03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depotfight2_post04"
+    {
+      time 13.176518 13.704477
+      param "ronny.cpf.depotfight2_post04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.depotfight2_post01"
+    {
+      time 4.333333 5.300204
+      param "otis.cpf.depotfight2_post01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "20"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

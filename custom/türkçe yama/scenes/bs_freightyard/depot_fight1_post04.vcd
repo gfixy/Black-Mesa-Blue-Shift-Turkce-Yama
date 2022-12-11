@@ -1,0 +1,32 @@
+// Choreo version 1
+event stoppoint "comp"
+{
+  time 29.547619 -1.000000
+  param "noaction"
+}
+actor "bs_ally_fakeronny"
+{
+  channel "Voice"
+  {
+    event speak "ronny.cpf.depot_soupcan01"
+    {
+      time 1.285714 3.656576
+      param "ronny.cpf.depot_soupcan01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "20"
+  "SceneRampTool" "100"
+  "ExpressionTool" "20"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

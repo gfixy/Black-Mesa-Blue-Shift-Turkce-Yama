@@ -1,0 +1,163 @@
+// Choreo version 1
+actor "bs_ally_elly"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.952381 4.619048
+      param "!player"
+      event_ramp
+      {
+        0.7437 0.9294
+        2.7643 0.9353
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.railyard_doorwaiting_idle02"
+    {
+      time 0.500000 2.701519
+      param "otis.cpf.railyard_doorwaiting_idle02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.083333 4.488095
+      param "!player"
+      event_ramp
+      {
+        0.5562 0.8235
+        1.0187 1.0000
+        3.5134 0.9353
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "g_lhandease"
+    {
+      time 0.166666 3.550000
+      param "g_lhandease"
+      absolutetags playback_time
+      {
+        "apex" 0.217630
+        "accent" 0.375454
+        "loop" 0.585887
+        "end" 0.610437
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.191176
+        "accent" 0.338235
+        "loop" 0.602941
+        "end" 0.617647
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "Posture06"
+    {
+      time 0.130953 4.345239
+      param "Posture06"
+      event_ramp leftedge curve_default_to_curve_default 0.500 rightedge curve_default_to_curve_default 0.500
+      {
+        1.0500 0.5294
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.350282
+        "loop" 0.414313
+        "end" 0.689266
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.357143
+        "loop" 0.452381
+        "end" 0.619048
+      }
+      sequenceduration 2.833333
+    }
+  }
+  channel "Expression"
+  {
+    event expression "b_smile_subtle01"
+    {
+      time 0.119048 4.583333
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_subtle01"
+      event_ramp
+      {
+        0.8813 0.9353
+        3.4461 0.8412
+      }
+    }
+    event expression "b_smile_sly_lefty"
+    {
+      time 1.250000 3.273810
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_sly_lefty"
+      event_ramp
+      {
+        0.5562 0.8824
+        1.4625 0.7294
+      }
+    }
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard_thick.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

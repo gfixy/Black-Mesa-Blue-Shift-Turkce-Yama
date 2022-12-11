@@ -1,0 +1,27 @@
+// Choreo version 1
+actor "intro_fight_actor4"
+{
+  channel "audio"
+  {
+    event speak "cf_hg_ambush_proceed01"
+    {
+      time 0.433333 1.774580
+      param "cf_hg_ambush_proceed01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

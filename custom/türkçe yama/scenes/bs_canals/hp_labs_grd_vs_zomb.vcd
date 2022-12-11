@@ -1,0 +1,35 @@
+// Choreo version 1
+actor "dc_hp_grd01"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Security.likethat03"
+    {
+      time 2.693333 3.640930
+      param "NPC_Security.likethat03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "lc.grd04.teleport.cavalry01"
+    {
+      time 0.293333 2.061497
+      param "lc.grd04.teleport.cavalry01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

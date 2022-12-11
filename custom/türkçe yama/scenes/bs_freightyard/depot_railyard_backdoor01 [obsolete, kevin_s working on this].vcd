@@ -1,0 +1,219 @@
+// Choreo version 1
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.backdoor_whynot01"
+    {
+      time 5.972000 7.364721
+      param "grd.cpf.backdoor_whynot01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.backdoor_whynot02"
+    {
+      time 12.139281 19.010529
+      param "grd.cpf.backdoor_whynot02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.backdoor_yousure01"
+    {
+      time 21.875145 23.681971
+      param "grd.cpf.backdoor_yousure01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.backdoor_pissoffronny01"
+    {
+      time 33.541668 34.689514
+      param "grd.cpf.backdoor_pissoffronny01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.backdoor_okgofindher01"
+    {
+      time 36.495834 41.189350
+      param "grd.cpf.backdoor_okgofindher01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.backdoor_outofmymind01"
+    {
+      time 45.986111 47.337677
+      param "grd.cpf.backdoor_outofmymind01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.backdoor_outofmymind02"
+    {
+      time 50.083324 52.265343
+      param "grd.cpf.backdoor_outofmymind02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+    event interrupt "Interrupt scene and close door if player sullys forth into the yard"
+    {
+      time 45.305553 53.388893
+      param ""
+    }
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_ronny"
+{
+  channel "Voice"
+  {
+    event speak "ronny.cpf.backdoor_notgoing01"
+    {
+      time 2.745000 5.258243
+      param "ronny.cpf.backdoor_notgoing01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.backdoor_notgoing02"
+    {
+      time 8.062500 13.717058
+      param "ronny.cpf.backdoor_notgoing02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.backdoor_nicetoknow01"
+    {
+      time 28.729166 31.292364
+      param "ronny.cpf.backdoor_nicetoknow01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.backdoor_nicetoknow02"
+    {
+      time 31.979164 32.991501
+      param "ronny.cpf.backdoor_nicetoknow02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.backdoor_justnowfigured01"
+    {
+      time 47.708336 49.571804
+      param "ronny.cpf.backdoor_justnowfigured01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.backdoor_illgo01"
+    {
+      time 19.430702 21.418526
+      param "otis.cpf.backdoor_illgo01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.backdoor_illgo02"
+    {
+      time 24.041811 27.936890
+      param "otis.cpf.backdoor_illgo02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.backdoor_yougotit01"
+    {
+      time 41.791664 43.978851
+      param "otis.cpf.backdoor_yougotit01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "20"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

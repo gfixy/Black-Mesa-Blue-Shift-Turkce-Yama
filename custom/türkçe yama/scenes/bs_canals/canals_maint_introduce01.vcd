@@ -1,0 +1,133 @@
+// Choreo version 1
+actor "ins_canal_maintguy"
+{
+  channel "Audio"
+  {
+    event speak "dc_canals_maint_meetup01"
+    {
+      time 0.513333 2.213333
+      param "dc_canals_maint_meetup01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event face "Face !player"
+    {
+      time 0.186275 2.794118
+      param "!player"
+      event_ramp
+      {
+        0.7692 0.6778
+        1.8462 0.6287
+      }
+      lockbodyfacing
+    }
+  }
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.500000 2.519231
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.6726 0.2900
+          1.1036 0.8400
+        }
+        {
+          0.7157 0.4400
+          0.8812 0.8500
+        }
+        "lowerer" combo 
+        {
+          0.1415 0.4800
+          0.3502 0.1800
+          0.6088 0.4167
+          0.9915 0.0300
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "b_OverHere_Right"
+    {
+      time 1.326923 3.126924
+      param "b_OverHere_Right"
+      event_ramp
+      {
+        0.3340 0.3610
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      sequenceduration 1.800000
+    }
+    event gesture "g_cb_wave"
+    {
+      time 0.088235 2.792156
+      param "g_cb_wave"
+      event_ramp
+      {
+        0.6277 0.8527
+        1.7745 0.8527
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.150175
+        "accent" 0.300349
+        "loop" 0.471014
+        "end" 0.655797
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.181818
+        "accent" 0.363636
+        "loop" 0.393939
+        "end" 0.681818
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "worker_canals_soda_lookidle"
+    {
+      time 0.039216 3.098039
+      param "worker_canals_soda_lookidle"
+      event_ramp
+      {
+        0.4846 0.9961
+        2.5385 0.9961
+      }
+      sequenceduration 1.666667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "68"
+  "RampTool" "26"
+  "ExpressionTool" "116"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

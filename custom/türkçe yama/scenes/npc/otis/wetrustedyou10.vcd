@@ -1,0 +1,127 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.195294 3.094137
+      param "NPC_Security_Otis.wetrustedyou10"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event expression "b_angry01"
+    {
+      time 1.862745 4.475490
+      param "humans\guard\expressions_guard"
+      param2 "b_angry01"
+      event_ramp
+      {
+        0.3250 0.9371
+        2.0323 0.9161
+      }
+    }
+    event expression "b_afraid01"
+    {
+      time 0.073529 2.406862
+      param "humans\guard\expressions_guard"
+      param2 "b_afraid01"
+      event_ramp
+      {
+        0.3458 0.8824
+        1.1228 0.3118
+      }
+    }
+    event expression "b_sad00"
+    {
+      time 0.818627 2.333333
+      param "humans\guard\expressions_guard"
+      param2 "b_sad00"
+      event_ramp
+      {
+        0.2083 0.8529
+        1.1939 0.7176
+      }
+    }
+  }
+  channel "facial"
+  {
+    event gesture "bg_accentfwd"
+    {
+      time 1.960784 4.546078
+      param "bg_accentfwd"
+      absolutetags playback_time
+      {
+        "apex" 0.189504
+        "extreme" 0.398664
+        "loop" 0.560606
+        "end" 0.668561
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event gesture "hg_nod_no"
+    {
+      time 0.137255 2.465686
+      param "hg_nod_no"
+      event_ramp
+      {
+        0.4083 0.9176
+        1.3750 0.7059
+        1.8333 0.1176
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.127353
+        "extreme" 0.214493
+        "loop" 0.508439
+        "end" 0.656842
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      sequenceduration 2.333333
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 4.617843
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        3.9060 1.0000
+        4.2419 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,135 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.342354 2.942354
+      param "NPC_Security_Otis.imstickinghere04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_accentFwd"
+    {
+      time 1.382353 4.158823
+      param "bg_accentFwd"
+      event_ramp leftedge curve_default_to_curve_default 0.600 rightedge curve_default_to_curve_default 0.600
+      {
+        1.2484 0.5315
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.160781
+        "extreme" 0.397536
+        "loop" 0.556551
+        "end" 0.680212
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_smile_subtle01"
+    {
+      time 0.107843 2.642157
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_subtle01"
+      event_ramp
+      {
+        0.2359 0.2797
+        2.0795 0.5035
+      }
+    }
+    event expression "b_buckup"
+    {
+      time 1.264706 4.127451
+      param "humans\guard\expressions_guard"
+      param2 "b_buckup"
+      event_ramp
+      {
+        0.3208 0.6014
+        2.3827 0.8462
+      }
+    }
+    event expression "b_sad00"
+    {
+      time 1.960784 3.965686
+      param "humans\guard\expressions_guard"
+      param2 "b_sad00"
+      event_ramp
+      {
+        0.3774 0.8322
+        1.6742 0.4056
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.235294 3.509804
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2204 0.5700
+          0.3939 0.3100
+          0.6203 0.4800
+          0.8615 0.3000
+          1.2037 0.3900
+          1.5457 0.3300
+          2.1900 0.6200
+          2.4800 0.3600
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.5550 0.4000
+          1.9400 0.4000
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.5750 0.7400
+          1.8150 0.5700
+          2.4750 0.1300
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 4.176667
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        3.4649 1.0000
+        3.8008 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "40"
+  "GestureTool" "100"
+  "RampTool" "62"
+}
+fps 60
+snap off
+ignorePhonemes off

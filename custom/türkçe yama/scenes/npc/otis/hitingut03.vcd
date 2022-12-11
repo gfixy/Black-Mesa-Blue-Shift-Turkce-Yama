@@ -1,0 +1,117 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.188358 3.336521
+      param "NPC_Security_Otis.hitingut03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event flexanimation "flex"
+    {
+      time 0.024391 3.577236
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1762 0.8900
+          0.4509 0.3200
+          0.8524 0.1600
+          1.7333 0.2600
+          1.9186 0.4000
+          2.0447 0.5500
+          2.6609 0.6300
+          2.7955 0.4000
+          3.1905 0.4500
+        }
+      }
+    }
+    event gesture "bg_accentFwd"
+    {
+      time 0.020325 4.254472
+      param "bg_accentFwd"
+      event_ramp
+      {
+        0.2458 0.7622
+        0.8125 0.9441
+        3.2129 0.8951
+        3.7796 0.6503
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.037472
+        "extreme" 0.109405
+        "loop" 0.174664
+        "end" 0.759125
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.072126 4.458304
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.2125 0.9231
+        3.8025 0.9650
+      }
+    }
+    event expression "b_wincing02"
+    {
+      time 0.560976 2.085366
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing02"
+      event_ramp
+      {
+        0.2250 0.9441
+        1.1458 0.7552
+      }
+    }
+    event expression "b_afraid03"
+    {
+      time 0.028455 1.138211
+      param "humans\guard\expressions_guard"
+      param2 "b_afraid03"
+      event_ramp
+      {
+        0.1292 0.8671
+        0.3250 0.7692
+        0.4708 0.1818
+      }
+    }
+  }
+  channel "lookface"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "164"
+  "SceneRampTool" "100"
+  "ExpressionTool" "38"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

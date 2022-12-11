@@ -1,0 +1,79 @@
+// Choreo version 1
+actor "GRD01_lookdown"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Security.Inbound.latefortram01"
+    {
+      time 0.470000 1.523016
+      param "NPC_Security.Inbound.latefortram01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Security.Inbound.latefortram02"
+    {
+      time 2.810000 3.869479
+      param "NPC_Security.Inbound.latefortram02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Security.Inbound.latefortram03"
+    {
+      time 4.150001 5.008119
+      param "NPC_Security.Inbound.latefortram03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Security.Inbound.latefortram04"
+    {
+      time 6.496668 7.152428
+      param "NPC_Security.Inbound.latefortram04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "g_scan_ID"
+    {
+      time 2.403334 6.370003
+      param "g_scan_ID"
+      event_ramp
+      {
+        0.1740 0.9362
+        0.9040 0.9515
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.099160
+        "accent" 0.221849
+        "loop" 0.741176
+        "end" 0.836975
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.126984
+        "accent" 0.317460
+        "loop" 0.952381
+        "end" 1.031746
+      }
+      sequenceduration 2.133333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "40"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

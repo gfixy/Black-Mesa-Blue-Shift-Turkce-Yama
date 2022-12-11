@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.220879 2.728906
+      param "NPC_Security_Otis.marine_taunt09"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_accentFwd"
+    {
+      time 1.593496 3.847968
+      param "bg_accentFwd"
+      absolutetags playback_time
+      {
+        "apex" 0.155302
+        "extreme" 0.310424
+        "loop" 0.520295
+        "end" 0.670203
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_incombat01"
+    {
+      time 0.150406 3.630081
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat01"
+      event_ramp
+      {
+        0.2083 0.9441
+        1.7292 0.6713
+        2.8375 0.3357
+      }
+    }
+    event expression "b_huh01a"
+    {
+      time 1.723577 2.991870
+      param "humans\guard\expressions_guard"
+      param2 "b_huh01a"
+      event_ramp
+      {
+        0.5917 0.9510
+        0.7984 0.6783
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.056911 3.227643
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.3803 0.6300
+          0.7916 0.8400
+          2.0034 0.7000
+          2.1241 0.4500
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !enemy"
+    {
+      time 0.024903 3.837475
+      param "!enemy"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        3.1208 1.0000
+        3.4567 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "164"
+  "SceneRampTool" "100"
+  "ExpressionTool" "58"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,171 @@
+// Choreo version 1
+actor "ins_sec_grd11"
+{
+  channel "Audio"
+  {
+    event speak "lc.grd04.holyhellnotagain01"
+    {
+      time 1.193334 3.414558
+      param "lc.grd04.holyhellnotagain01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at ins_sec_grd10"
+    {
+      time 1.160000 3.406667
+      param "ins_sec_grd10"
+    }
+  }
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 1.146667 3.760000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          1.5040 0.4700
+          1.9140 0.9000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          1.6320 0.4700
+          1.7520 0.8900
+          2.1660 0.9000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.2600 0.9600
+          0.6800 0.4800
+          1.0100 0.8800
+          1.3220 0.3800
+        }
+        {
+        }
+        "upper_raiser" combo 
+        {
+          0.3160 0.4900
+          0.6300 0.2900
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 0.246667 1.373334
+      param ""
+      event_ramp
+      {
+        0.2280 0.9388
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_droop" combo 
+        {
+          0.1200 0.8800
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.0800 0.7900
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          0.1280 0.4800
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "hg_headshake"
+    {
+      time 1.206667 2.840000
+      param "hg_headshake"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "bg_accentUp"
+    {
+      time 0.326667 2.760000
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.339726
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+    }
+  }
+}
+
+actor "ins_sec_grd10"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Security.gordead_ans02"
+    {
+      time 0.153333 1.006485
+      param "NPC_Security.gordead_ans02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+  }
+  channel "Facial"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

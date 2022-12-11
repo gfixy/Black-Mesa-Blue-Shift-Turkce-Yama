@@ -1,0 +1,475 @@
+// Choreo version 1
+event section "p1"
+{
+  time 5.979999 -1.000000
+  param "noaction"
+}
+actor "ins_hp_sci02"
+{
+  channel "Audio"
+  {
+    event speak "wgh.sci03.beams.careful01"
+    {
+      time 2.926666 3.743129
+      param "wgh.sci03.beams.careful01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scimale.answer_pre28"
+    {
+      time 7.039999 7.571405
+      param "NPC_Scimale.answer_pre28"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scimale.answer_pre52"
+    {
+      time 6.066667 6.809343
+      param "NPC_Scimale.answer_pre52"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scimale.answer_pre29"
+    {
+      time 9.300000 10.489410
+      param "NPC_Scimale.answer_pre29"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scimale.annoyance_pre08"
+    {
+      time 12.246668 13.532609
+      param "NPC_Scimale.annoyance_pre08"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at mark_hp_crane_cb"
+    {
+      time 0.140000 2.126667
+      param "mark_hp_crane_cb"
+      event_ramp
+      {
+        0.2640 0.5077
+        0.8240 0.9413
+      }
+    }
+    event face "Face mark_hp_crane"
+    {
+      time 1.620000 2.446666
+      param "mark_hp_crane"
+      event_ramp
+      {
+        0.8267 1.0000
+      }
+    }
+    event lookat "Look at mark_hp_crane_pipe"
+    {
+      time 2.240000 3.813333
+      param "mark_hp_crane_pipe"
+      event_ramp
+      {
+        0.4720 0.7474
+        1.2340 0.8087
+      }
+    }
+    event lookat "Look at mark_hp_crane_ctrl"
+    {
+      time 3.133333 3.633333
+      param "mark_hp_crane_ctrl"
+      event_ramp
+      {
+        0.1960 0.6531
+      }
+    }
+    event lookat "Look at mark_hp_crane_pipe"
+    {
+      time 4.333333 6.086666
+      param "mark_hp_crane_pipe"
+      event_ramp
+      {
+        0.1840 0.9668
+        1.4140 0.8087
+      }
+    }
+    event lookat "Look at mark_hp_crane_cb"
+    {
+      time 3.740000 4.906667
+      param "mark_hp_crane_cb"
+      event_ramp
+      {
+        0.2640 0.5077
+        0.8240 0.9413
+      }
+    }
+    event face "Face mark_hp_crane"
+    {
+      time 3.806667 6.099999
+      param "mark_hp_crane"
+    }
+    event lookat "Look at mark_hp_crane_cb"
+    {
+      time 6.146667 7.026667
+      param "mark_hp_crane_cb"
+      event_ramp
+      {
+        0.3120 0.9898
+      }
+    }
+    event lookat "Look at mark_hp_crane_pipe"
+    {
+      time 6.913333 7.726666
+      param "mark_hp_crane_pipe"
+      event_ramp
+      {
+        0.2380 0.9821
+      }
+    }
+    event lookat "Look at mark_hp_crane_cb"
+    {
+      time 7.540000 9.333334
+      param "mark_hp_crane_cb"
+      event_ramp
+      {
+        0.3380 0.4388
+        1.0360 0.5536
+        1.1780 0.1173
+        1.2380 0.0230
+        1.4860 0.0612
+        1.7000 0.6964
+      }
+    }
+    event lookat "Look at mark_hp_crane_pipe"
+    {
+      time 8.713332 9.126664
+      param "mark_hp_crane_pipe"
+      event_ramp
+      {
+        0.2340 0.8750
+      }
+    }
+    event lookat "Look at mark_hp_crane_ctrl"
+    {
+      time 9.313334 10.713334
+      param "mark_hp_crane_ctrl"
+      event_ramp
+      {
+        0.2960 1.0000
+        1.1800 0.9847
+      }
+    }
+    event lookat "Look at !self"
+    {
+      time 12.000000 12.500000
+      param "!self"
+      event_ramp
+      {
+        0.2660 0.8878
+      }
+    }
+  }
+  channel "MoveTo"
+  {
+    event moveto "Moveto mark_hp_crane_repos"
+    {
+      time 4.080000 4.873333
+      param "mark_hp_crane_repos"
+      param2 "Walk"
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 6.073333 8.000000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.0940 0.9400
+          0.9640 0.1200
+        }
+        {
+        }
+        "inner_raiser" combo 
+        {
+          0.0980 0.7600
+          0.4600 0.8600
+          0.5800 0.1000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1180 0.7100
+          0.7400 0.1800
+          1.2720 0.2300
+          1.3600 0.8300
+        }
+        {
+          1.2100 0.4700
+          1.3180 0.8300
+        }
+      }
+    }
+    event moveto "Moveto mark_hp_crane_repos2"
+    {
+      time 11.946667 12.940000
+      param "mark_hp_crane_repos2"
+      param2 "Walk"
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 2.913334 3.946667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.0880 0.9000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.0720 0.8900
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 9.120000 11.126667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          1.1280 0.1100
+          1.3960 0.7400
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.1420 0.7300
+          0.4340 0.3800
+          1.0440 0.1000
+          1.3480 0.9200
+          1.5100 0.3000
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.0860 0.8500
+          0.3520 0.1600
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 12.066667 13.920000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_droop" combo 
+        {
+          0.7300 0.2200
+          1.0720 0.3900
+        }
+        {
+        }
+        "blink" 
+        {
+          0.1200 0.9100
+          0.4180 0.2300
+        }
+        "lowerer" combo 
+        {
+          0.0920 0.9300
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          0.1260 0.9400
+          0.4700 0.3900
+          1.0420 0.5500
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_accentUp"
+    {
+      time 2.293333 4.726666
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 5.853333 -1.000000
+      param "1"
+    }
+    event gesture "bg_accentUp"
+    {
+      time 6.053333 7.906666
+      param "bg_accentUp"
+      event_ramp
+      {
+        0.2620 0.7679
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.164119
+        "extreme" 0.401179
+        "loop" 0.729416
+        "end" 0.911771
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event gesture "kgesture08"
+    {
+      time 9.006666 11.639999
+      param "kgesture08"
+      absolutetags playback_time
+      {
+        "apex" 0.115385
+        "accent" 0.256410
+        "loop" 0.423077
+        "end" 0.641026
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.115385
+        "accent" 0.256410
+        "loop" 0.423077
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "g_armsout_high"
+    {
+      time 11.933333 14.106668
+      param "g_armsout_high"
+      event_ramp
+      {
+        0.9560 0.9439
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.139605
+        "accent" 0.294722
+        "loop" 0.573933
+        "end" 0.690184
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.102273
+        "accent" 0.215909
+        "loop" 0.420455
+        "end" 0.761364
+      }
+      sequenceduration 2.966667
+    }
+    event gesture "g_palm_out_high_r"
+    {
+      time 13.046667 14.880000
+      param "g_palm_out_high_r"
+      event_ramp
+      {
+        0.3040 0.9719
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.105455
+        "accent" 0.349667
+        "loop" 0.588914
+        "end" 0.774546
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "loop" 0.390244
+        "end" 0.780488
+      }
+      sequenceduration 2.766667
+    }
+    event gesture "bg_accentFwd"
+    {
+      time 12.966667 15.400001
+      param "bg_accentFwd"
+      absolutetags playback_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 10.760000 -1.000000
+      param "2"
+    }
+    event firetrigger "Firetrigger 3"
+    {
+      time 13.686666 -1.000000
+      param "3"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "40"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

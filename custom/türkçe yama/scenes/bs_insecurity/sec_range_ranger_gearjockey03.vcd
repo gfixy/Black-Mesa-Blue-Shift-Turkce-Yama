@@ -1,0 +1,122 @@
+// Choreo version 1
+actor "ins_sec_grd07"
+{
+  channel "Audio"
+  {
+    event speak "INS.grd_range_gearjockey03"
+    {
+      time 0.253333 2.753333
+      param "INS.grd_range_gearjockey03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.193333 2.713333
+      param "!player"
+    }
+  }
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.180000 2.826667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.0580 0.7000
+          0.4380 0.3100
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1100 0.7600
+          0.4680 0.2900
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          1.4860 0.1500
+          1.7440 0.5700
+          2.0900 0.4400
+          2.2880 0.2600
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          1.4460 0.1900
+          1.7840 0.6500
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_up_l"
+    {
+      time 0.446667 2.046667
+      param "bg_up_l"
+      absolutetags playback_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+    }
+    event gesture "b_OverHere_Left"
+    {
+      time 1.233334 3.033334
+      param "b_OverHere_Left"
+      event_ramp
+      {
+        0.3920 0.7679
+        1.2040 0.6250
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

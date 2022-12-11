@@ -1,0 +1,338 @@
+// Choreo version 1
+event section "p"
+{
+  time 15.787547 -1.000000
+  param "noaction"
+}
+actor "vs_cam5_hg2"
+{
+  channel "Gesture"
+  {
+    event gesture "p_ar2_relaxed"
+    {
+      time 0.200000 5.700000
+      param "p_ar2_relaxed"
+      absolutetags playback_time
+      {
+        "apex" 0.030612
+        "loop" 0.387879
+        "end" 0.883636
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.051020
+        "loop" 0.387755
+        "end" 0.714286
+      }
+      sequenceduration 3.300000
+    }
+    event gesture "bg_accentUp"
+    {
+      time 1.300000 3.733333
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event speak "NPC_hgrunt.answer09"
+    {
+      time 12.066668 12.860477
+      param "NPC_hgrunt.answer09"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "MoveTo"
+  {
+    event moveto "Moveto mark_prisonertransport_hg2"
+    {
+      time 14.328696 16.053333
+      param "mark_prisonertransport_hg2"
+      param2 "Walk"
+      resumecondition
+    }
+    event moveto "Moveto mark_prisonertransport_hg2_door"
+    {
+      time 10.006668 10.653336
+      param "mark_prisonertransport_hg2_door"
+      param2 "Walk"
+    }
+    event face "Face mark_prisonertransport_hg2_door"
+    {
+      time 10.260000 11.580000
+      param "mark_prisonertransport_hg2_door_look"
+    }
+    event gesture "p_L_forwthrow"
+    {
+      time 10.446668 12.413334
+      param "p_L_forwthrow"
+      absolutetags playback_time
+      {
+        "apex" 0.258621
+        "accent" 0.517241
+        "loop" 0.775862
+        "end" 0.827586
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.258621
+        "accent" 0.517241
+        "loop" 0.775862
+        "end" 0.827586
+      }
+      sequenceduration 1.966667
+    }
+    event firetrigger "Firetrigger 2"
+    {
+      time 11.600000 -1.000000
+      param "2"
+    }
+    event moveto "Moveto mark_prisonertransport_hg2b"
+    {
+      time 15.954210 18.113304
+      param "mark_prisonertransport_hg2b"
+      param2 "Walk"
+    }
+  }
+}
+
+actor "vs_cam5_hg3"
+{
+  channel "Gesture"
+  {
+    event gesture "p_stepleft"
+    {
+      time 1.313334 4.213334
+      param "p_stepleft"
+      absolutetags playback_time
+      {
+        "apex" 0.348837
+        "loop" 0.511628
+        "end" 0.790698
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.348837
+        "loop" 0.511628
+        "end" 0.790698
+      }
+      sequenceduration 2.900000
+    }
+    event gesture "p_ar2_step_l"
+    {
+      time 5.280001 8.113334
+      param "p_ar2_step_l"
+      absolutetags playback_time
+      {
+        "apex" 0.119048
+        "loop" 0.488095
+        "end" 0.726191
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.119048
+        "loop" 0.488095
+        "end" 0.726191
+      }
+      sequenceduration 2.833333
+    }
+    event speak "NPC_hgrunt.clear12"
+    {
+      time 9.573333 10.644784
+      param "NPC_hgrunt.clear12"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_hgrunt.answer08_var01"
+    {
+      time 10.913334 11.391157
+      param "NPC_hgrunt.answer08_var01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "MoveTo"
+  {
+    event moveto "Moveto mark_prisonertransport_hg3"
+    {
+      time 15.328986 15.828986
+      param "mark_prisonertransport_hg3"
+      param2 "Walk"
+    }
+    event moveto "Moveto mark_prisonertransport_hg3_door"
+    {
+      time 10.622839 11.746028
+      param "mark_prisonertransport_hg3_door"
+      param2 "Walk"
+    }
+    event face "Face mark_prisonertransport_hg3_door_look"
+    {
+      time 10.521390 12.680810
+      param "mark_prisonertransport_hg3_door_look"
+    }
+    event gesture "g_palm_out_r"
+    {
+      time 11.128788 13.895454
+      param "g_palm_out_r"
+      absolutetags playback_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "loop" 0.390244
+        "end" 0.780488
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "loop" 0.390244
+        "end" 0.780488
+      }
+      sequenceduration 2.766667
+    }
+  }
+}
+
+actor "vs_cam5_hg4"
+{
+  channel "Gesture"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 6.911817 -1.000000
+      param "1"
+    }
+    event gesture "bg_accentUp"
+    {
+      time 8.413335 10.846668
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event moveto "Moveto mark_prisonertransport_hg4"
+    {
+      time 16.126667 18.073334
+      param "mark_prisonertransport_hg4"
+      param2 "Walk"
+    }
+    event face "Face mark_prisonertransport_hg4_lookat"
+    {
+      time 15.673335 18.293335
+      param "mark_prisonertransport_hg4_lookat"
+    }
+    event gesture "p_L_forwthrow"
+    {
+      time 0.800000 2.766667
+      param "p_L_forwthrow"
+      absolutetags playback_time
+      {
+        "apex" 0.258621
+        "accent" 0.517241
+        "loop" 0.775862
+        "end" 0.827586
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.258621
+        "accent" 0.517241
+        "loop" 0.775862
+        "end" 0.827586
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "p_L_foot_forw"
+    {
+      time 3.540000 7.506666
+      param "p_L_foot_forw"
+      absolutetags playback_time
+      {
+        "apex" 0.211864
+        "loop" 0.381356
+        "end" 0.677966
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.211864
+        "loop" 0.381356
+        "end" 0.677966
+      }
+    }
+    event firetrigger "Firetrigger 3"
+    {
+      time 12.153336 -1.000000
+      param "3"
+    }
+  }
+  channel "MoveTO"
+  {
+    event speak "NPC_hgrunt.charge03_var01"
+    {
+      time 1.673333 2.088685
+      param "NPC_hgrunt.charge03_var01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_hgrunt.check08"
+    {
+      time 8.340000 9.270907
+      param "NPC_hgrunt.check08"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_hgrunt.answer16"
+    {
+      time 16.313335 16.909594
+      param "NPC_hgrunt.answer16"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event lookat "Look at vs_cam5_hg3"
+    {
+      time 8.393334 10.500000
+      param "vs_cam5_hg3"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "88"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

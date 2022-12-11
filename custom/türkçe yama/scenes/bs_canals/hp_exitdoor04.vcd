@@ -1,0 +1,145 @@
+// Choreo version 1
+event stoppoint "c"
+{
+  time 3.372550 -1.000000
+  param "noaction"
+}
+actor "dc_hp_grd01"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Security.gethellout02"
+    {
+      time 3.064314 4.487171
+      param "NPC_Security.gethellout02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "st.grd.hangar.outside.ahshit01"
+    {
+      time 0.317647 1.217647
+      param "st.grd.hangar.outside.ahshit01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at !player"
+    {
+      time 2.697646 4.417645
+      param "!player"
+      event_ramp
+      {
+        0.8380 0.7005
+        1.2840 0.6524
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_left"
+    {
+      time 2.617647 4.817647
+      param "bg_left"
+      absolutetags playback_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+    event sequence "Fear_Reaction_Idle"
+    {
+      time 0.117647 1.843137
+      param "Fear_Reaction_Idle"
+      event_ramp
+      {
+        0.1960 0.8717
+        1.1820 0.3984
+      }
+    }
+    event gesture "bg_accentFwd"
+    {
+      time 0.186275 2.619608
+      param "bg_accentFwd"
+      absolutetags playback_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "Posture"
+  {
+  }
+  channel "MoveTo"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 3.150981 4.350981
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.0583 0.8800
+          0.1687 0.5700
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.4104 0.8300
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Trigger"
+  {
+    event firetrigger "PAUSE"
+    {
+      time 2.607843 -1.000000
+      param "1"
+    }
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "68"
+  "RampTool" "100"
+  "ExpressionTool" "96"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

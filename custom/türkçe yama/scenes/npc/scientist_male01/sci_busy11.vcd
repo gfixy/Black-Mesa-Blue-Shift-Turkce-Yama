@@ -1,0 +1,127 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "Sound"
+  {
+    event speak "NPC_BS_Scimale_busy08"
+    {
+      time 0.362069 3.784835
+      param "NPC_BS_Scimale_busy08"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.080000 3.100427
+      param "!player"
+      event_ramp
+      {
+        0.1529 0.1806
+        0.3424 0.6288
+        0.5101 0.7747
+        2.2206 0.7792
+        2.3677 0.6525
+        2.8428 0.2222
+      }
+    }
+  }
+  channel "Expression"
+  {
+    event expression "Pissed Off"
+    {
+      time 0.066667 1.713333
+      param "common_expressions"
+      param2 "Pissed Off"
+      event_ramp
+      {
+        0.1200 0.3323
+        0.2667 0.4534
+        0.4556 0.5112
+        1.0222 0.4947
+        1.2911 0.3296
+      }
+    }
+    event expression "sci_freaked_mouthclosed"
+    {
+      time 0.251297 1.251297
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_freaked_mouthclosed"
+      event_ramp
+      {
+        0.3273 0.1417
+        0.4500 0.3365
+        0.6409 0.2054
+      }
+    }
+    event gesture "bg_accentUp"
+    {
+      time 1.229886 3.663219
+      param "bg_accentUp"
+      event_ramp
+      {
+        0.7278 0.6658
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 1.448276 3.252873
+      param ""
+      event_ramp
+      {
+        0.3056 0.8929
+        0.9500 0.9056
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          1.1440 0.2000
+          1.2400 0.8500
+          1.5540 0.8100
+        }
+        {
+          1.1380 0.4400
+          1.2000 0.2800
+          1.3800 0.8700
+        }
+        "lowerer" combo 
+        {
+          0.1440 0.8200
+        }
+        {
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "RampTool" "36"
+  "CChoreoView" "116"
+}
+fps 60
+snap off
+ignorePhonemes off

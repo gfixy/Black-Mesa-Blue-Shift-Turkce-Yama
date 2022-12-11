@@ -1,0 +1,112 @@
+// Choreo version 1
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.depot_4thofjuly01"
+    {
+      time 0.500000 2.117279
+      param "grd.cpf.depot_4thofjuly01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_depot_murdoch_arena"
+    {
+      time 0.848485 2.469697
+      param "mark_depot_murdoch_arena"
+      param2 "Run"
+      distancetotarget 120.00
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.363636 3.030303
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.2889 0.8700
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.3222 0.8900
+        }
+        {
+          0.6444 0.5600
+        }
+      }
+    }
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_depot_otis_arena"
+    {
+      time 0.469697 2.348485
+      param "mark_depot_otis_arena"
+      param2 "Run"
+      distancetotarget 120.00
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

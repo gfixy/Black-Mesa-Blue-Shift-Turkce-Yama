@@ -1,0 +1,113 @@
+// Choreo version 1
+actor "knockout_hg1"
+{
+  channel "MoveTo"
+  {
+    event moveto "Moveto knockout_hg1_move"
+    {
+      time 0.220000 4.340000
+      param "knockout_hg1_move"
+    }
+  }
+  channel "Audio"
+  {
+    event speak "marine.cpf.ambush_gothim01"
+    {
+      time 0.566667 4.038164
+      param "marine.cpf.ambush_gothim01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "p_ar2_relaxed"
+    {
+      time 0.273333 3.633333
+      param "p_ar2_relaxed"
+      event_ramp
+      {
+        0.7700 0.9786
+        2.8660 0.9652
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.067966
+        "loop" 0.398688
+        "end" 0.719388
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.051020
+        "loop" 0.387755
+        "end" 0.714286
+      }
+      sequenceduration 3.300000
+    }
+    event gesture "p_ar2_step_l"
+    {
+      time 2.473333 5.306666
+      param "p_ar2_step_l"
+      event_ramp
+      {
+        0.6760 0.5348
+        2.3860 0.5829
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.119048
+        "loop" 0.488095
+        "end" 0.726191
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.119048
+        "loop" 0.488095
+        "end" 0.726191
+      }
+      sequenceduration 2.833333
+    }
+  }
+  faceposermodel "models\humans\marine.mdl"
+}
+
+actor "knockout_hg2"
+{
+  channel "Audio"
+  {
+  }
+  channel "MoveTo"
+  {
+    event moveto "Moveto knockout_hg2_move"
+    {
+      time 0.293333 4.406666
+      param "knockout_hg2_move"
+      param2 "Walk"
+    }
+  }
+}
+
+actor "knockout_hg3"
+{
+  channel "MoveTo"
+  {
+    event moveto "Moveto knockout_hg3_move"
+    {
+      time 0.380000 1.753333
+      param "knockout_hg3_move"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

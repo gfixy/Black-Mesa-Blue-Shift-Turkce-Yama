@@ -1,0 +1,679 @@
+// Choreo version 1
+event stoppoint "c"
+{
+  time 7.983333 -1.000000
+  param "noaction"
+}
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look at"
+  {
+    event lookat "Look at bs_ally_los"
+    {
+      time 5.333333 7.500000
+      param "bs_ally_los"
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "g_Rifle_Raise"
+    {
+      time 1.300000 7.683333
+      param "g_Rifle_Raise"
+      event_ramp
+      {
+        1.4000 1.0000
+        3.8440 0.9599
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.042311
+        "accent" 0.158666
+        "loop" 0.264444
+        "end" 0.890339
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.102564
+        "accent" 0.384615
+        "loop" 0.641026
+        "end" 0.769231
+      }
+      sequenceduration 2.633333
+    }
+  }
+  channel "Face To"
+  {
+    event face "Face mark_enroute03_breakthrough"
+    {
+      time 0.733333 7.666667
+      param "mark_enroute03_breakthrough"
+    }
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  faceposermodel "models\humans\guard_thick.mdl"
+}
+
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.passage_yougotcrowbar01"
+    {
+      time 6.066667 8.012291
+      param "grd.cpf.passage_yougotcrowbar01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "Look at !player"
+    {
+      time 5.033333 9.172548
+      param "!player"
+      event_ramp
+      {
+        0.7520 0.9679
+        3.2959 0.9973
+      }
+    }
+  }
+  channel "Expression"
+  {
+    event expression "b_smile01a"
+    {
+      time 5.549019 9.205883
+      param "humans\guard\expressions_guard"
+      param2 "b_smile01a"
+      event_ramp
+      {
+        0.8429 0.9471
+        2.9429 0.6176
+      }
+    }
+    event expression "b_sudden01"
+    {
+      time 0.823529 6.784313
+      param "humans\guard\expressions_guard"
+      param2 "b_sudden01"
+      event_ramp
+      {
+        1.1214 0.9059
+        4.2929 0.7353
+      }
+    }
+    event expression "b_dubious left"
+    {
+      time 3.509804 6.431373
+      param "humans\guard\expressions_guard"
+      param2 "b_dubious left"
+      event_ramp
+      {
+        0.4643 0.9118
+        2.5214 0.7941
+      }
+    }
+  }
+  channel "Flex Animation"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 5.833333 8.499999
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          1.1490 0.5700
+          1.6510 0.8600
+        }
+        {
+          0.9980 0.1500
+          1.7633 0.1500
+        }
+        "lowerer" combo 
+        {
+          0.0980 0.8200
+          0.3796 0.3700
+          1.0878 0.1200
+          1.3490 0.6200
+          1.6469 0.4900
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "g_fist_L"
+    {
+      time 6.751960 9.120587
+      param "g_fist_L"
+      absolutetags playback_time
+      {
+        "apex" 0.200331
+        "accent" 0.271730
+        "loop" 0.457367
+        "end" 0.600165
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.176471
+        "accent" 0.250000
+        "loop" 0.441176
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "bg_accentUp"
+    {
+      time 5.552942 9.182355
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.159502
+        "extreme" 0.283859
+        "loop" 0.391996
+        "end" 0.670270
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event gesture "G_what_leftonly"
+    {
+      time 5.785295 8.171569
+      param "G_what_leftonly"
+      absolutetags playback_time
+      {
+        "apex" 0.208107
+        "accent" 0.300315
+        "loop" 0.406930
+        "end" 0.548945
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.133333
+        "accent" 0.200000
+        "loop" 0.366667
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+    event gesture "Gesture13"
+    {
+      time 2.009804 6.552941
+      param "Gesture13"
+      absolutetags playback_time
+      {
+        "in" 0.179266
+        "loop" 0.382289
+        "end" 0.684665
+        "out" 0.827251
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.171429
+        "loop" 0.600000
+        "end" 0.685714
+        "out" 0.857143
+      }
+      sequenceduration 2.366667
+    }
+  }
+  channel "Face To"
+  {
+    event face "Face mark_enroute03_breakthrough"
+    {
+      time 0.483334 7.350001
+      param "mark_enroute03_breakthrough"
+    }
+    event face "Face !player"
+    {
+      time 5.916667 8.233334
+      param "!player"
+      event_ramp
+      {
+        0.3200 0.5802
+        1.6340 0.5428
+      }
+    }
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+    event interrupt "Interrupt"
+    {
+      time 5.879167 8.250000
+      param "If Player Breaks wall before this line, interrupt the scene, and start next sequences"
+    }
+  }
+  channel "OnTrigger"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.passage_hereitis01"
+    {
+      time 1.483334 5.746146
+      param "ros.cpf.passage_hereitis01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "Look at mark_enroute03_breakthrough"
+    {
+      time 0.221568 4.048039
+      param "mark_enroute03_breakthrough"
+      event_ramp
+      {
+        0.7357 0.9294
+        3.1433 0.9118
+      }
+    }
+    event lookat "Look at bs_ally_los"
+    {
+      time 3.400980 6.655881
+      param "bs_ally_los"
+      event_ramp
+      {
+        0.4831 0.9599
+        2.9359 0.8941
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 6.107843 8.941177
+      param "!player"
+      event_ramp
+      {
+        0.7143 0.9176
+        2.3429 0.8765
+      }
+    }
+  }
+  channel "Expression"
+  {
+    event expression "sci_huh01"
+    {
+      time 0.509804 2.519608
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_huh01"
+      event_ramp
+      {
+        0.7286 0.9765
+      }
+    }
+    event expression "sci_smile01a"
+    {
+      time 1.392157 6.892157
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_smile01a"
+      event_ramp
+      {
+        0.9714 0.9235
+        3.8857 0.6294
+      }
+    }
+    event expression "sci_multi01"
+    {
+      time 3.186274 8.441176
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_multi01"
+      event_ramp
+      {
+        0.9429 0.7941
+        3.4071 0.2824
+      }
+    }
+  }
+  channel "Flex Animation"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 1.466667 6.166667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          1.1327 0.6800
+        }
+        {
+          1.3714 0.3500
+          1.5551 0.7000
+        }
+        "outer_raiser" combo 
+        {
+          0.2327 0.5000
+          0.5429 0.7200
+          0.9306 0.5500
+        }
+        {
+          0.1347 0.5900
+          1.1816 0.5300
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "kgesture09"
+    {
+      time 1.066667 3.850981
+      param "kgesture09"
+      absolutetags playback_time
+      {
+        "apex" 0.121144
+        "accent" 0.436116
+        "loop" 0.508803
+        "end" 0.678404
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.119048
+        "accent" 0.428571
+        "loop" 0.500000
+        "end" 0.666667
+      }
+      sequenceduration 2.833333
+    }
+    event gesture "kgesture03"
+    {
+      time 2.383333 4.850000
+      param "kgesture03"
+      absolutetags playback_time
+      {
+        "apex" 0.191235
+        "accent" 0.350598
+        "loop" 0.424658
+        "end" 0.616438
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.123288
+        "accent" 0.315068
+        "loop" 0.424658
+        "end" 0.616438
+      }
+      sequenceduration 2.466667
+    }
+    event gesture "g_point_l"
+    {
+      time 3.670588 7.354902
+      param "g_point_l"
+      event_ramp
+      {
+        0.5129 0.7273
+        0.9135 0.9588
+        2.9419 0.9706
+        3.3197 0.8059
+      }
+      absolutetags playback_time
+      {
+        "in" 0.120486
+        "loop" 0.359574
+        "end" 0.489362
+        "out" 0.710106
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.081967
+        "loop" 0.508197
+        "end" 0.639344
+        "out" 0.836066
+      }
+      sequenceduration 2.066667
+    }
+  }
+  channel "Face To"
+  {
+    event face "Face mark_enroute03_breakthrough"
+    {
+      time 1.216667 6.516667
+      param "mark_enroute03_breakthrough"
+    }
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_passage_moveto_rosen2"
+    {
+      time 6.133334 7.933334
+      param "mark_passage_moveto_rosen2"
+      param2 "Walk"
+    }
+    event moveto "Moveto mark_passage_moveto_rosen1"
+    {
+      time 0.450000 2.166666
+      param "mark_passage_moveto_rosen1"
+      param2 "Walk"
+      event_ramp
+      {
+        1.5320 0.5749
+      }
+    }
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  faceposermodel "models\humans\scientist_rosenberg.mdl"
+}
+
+actor "bs_ally_ronny"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look at"
+  {
+    event lookat "Look at bs_ally_rosenberg"
+    {
+      time 2.733334 5.333334
+      param "bs_ally_rosenberg"
+      event_ramp
+      {
+        0.3020 0.9198
+        1.6180 0.8877
+      }
+    }
+    event lookat "Look at mark_enroute03_breakthrough"
+    {
+      time 5.116667 6.883335
+      param "mark_enroute03_breakthrough"
+      event_ramp
+      {
+        0.6060 0.8850
+        1.4440 0.8476
+      }
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_accentUp"
+    {
+      time 0.916667 3.350000
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "Face To"
+  {
+    event face "Face mark_enroute03_breakthrough"
+    {
+      time 0.800000 7.300001
+      param "mark_enroute03_breakthrough"
+    }
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  faceposermodel "models\humans\maintenance.mdl"
+}
+
+actor "bs_ally_elly"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look at"
+  {
+    event lookat "Look at bs_ally_rosenberg"
+    {
+      time 0.866666 5.550000
+      param "bs_ally_rosenberg"
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.683333 7.149999
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          1.4360 0.1100
+          1.5480 0.3700
+          1.7060 0.2400
+          1.7560 0.2600
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.1460 0.8400
+          0.5340 0.9700
+          0.9640 0.2600
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.1041 0.5600
+          0.5878 0.2600
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "A_P_left_lean_rtfootout"
+    {
+      time 0.750000 5.050000
+      param "A_P_left_lean_rtfootout"
+      absolutetags playback_time
+      {
+        "apex" 0.234375
+        "loop" 0.406250
+        "end" 0.640625
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.234375
+        "loop" 0.406250
+        "end" 0.640625
+      }
+      sequenceduration 4.300000
+    }
+  }
+  channel "Face To"
+  {
+    event face "Face mark_enroute03_breakthrough"
+    {
+      time 0.316667 8.033333
+      param "mark_enroute03_breakthrough"
+    }
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  faceposermodel "models\humans\scientist_elly.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "68"
+  "SceneRampTool" "100"
+  "ExpressionTool" "30"
+  "GestureTool" "100"
+  "RampTool" "28"
+}
+fps 60
+snap off
+ignorePhonemes off

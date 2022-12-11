@@ -1,0 +1,106 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.293334 2.128504
+      param "NPC_Security_Otis.getgoingsoon02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_right"
+    {
+      time 0.215686 3.283334
+      param "bg_right"
+      absolutetags playback_time
+      {
+        "apex" 0.166261
+        "extreme" 0.300834
+        "loop" 0.488055
+        "end" 0.686414
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.656863 2.475490
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.3359 0.7832
+        1.2436 0.8462
+      }
+    }
+    event expression "b_frown00"
+    {
+      time 0.102941 3.014706
+      param "humans\guard\expressions_guard"
+      param2 "b_frown00"
+      event_ramp
+      {
+        0.1282 0.6503
+        2.1026 0.8741
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.186273 2.872548
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.3320 0.7500
+          0.8760 0.7100
+          1.0783 0.3900
+          1.6286 0.5100
+          1.8629 0.7400
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 3.054118
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        2.3423 1.0000
+        2.6782 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "70"
+  "GestureTool" "100"
+  "RampTool" "78"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,120 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.159903 1.922760
+      param "NPC_Security_Otis.myleg02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_left"
+    {
+      time 0.032520 2.403252
+      param "bg_left"
+      event_ramp
+      {
+        0.2375 0.7203
+        0.5333 0.8741
+        1.7292 0.7972
+        2.1000 0.6224
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.065068
+        "extreme" 0.140411
+        "loop" 0.234589
+        "end" 0.671004
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+    event flexanimation "flex"
+    {
+      time 0.032520 2.577236
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2500 0.1700
+          0.8380 0.2400
+          0.9320 0.3800
+          1.0200 0.5900
+          1.4680 0.6900
+          1.5640 0.5500
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.0680 0.1300
+          0.3040 0.7400
+          0.4820 0.5500
+          0.6300 0.4900
+        }
+      }
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.072126 2.783507
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.2125 0.9231
+        2.1277 0.9650
+      }
+    }
+    event expression "b_afraid01"
+    {
+      time 0.024390 0.971545
+      param "humans\guard\expressions_guard"
+      param2 "b_afraid01"
+      event_ramp
+      {
+        0.1667 0.9371
+        0.7458 0.8811
+      }
+    }
+    event expression "b_wincing02"
+    {
+      time 0.398374 1.081301
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing02"
+      event_ramp
+      {
+        0.1458 0.9021
+        0.3960 0.7902
+      }
+    }
+  }
+  channel "lookface"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "164"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

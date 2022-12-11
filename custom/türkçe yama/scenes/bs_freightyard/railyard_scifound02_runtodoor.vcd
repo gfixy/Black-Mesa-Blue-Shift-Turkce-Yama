@@ -1,0 +1,173 @@
+// Choreo version 1
+event section "poz"
+{
+  time 9.458334 -1.000000
+  param "noaction"
+}
+actor "bs_ally_elly"
+{
+  channel "Voice"
+  {
+    event speak "scifem.cpf.traincar_umok02"
+    {
+      time 5.719636 7.853150
+      param "scifem.cpf.traincar_umok02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at bs_ally_otis"
+    {
+      time 1.688751 9.375000
+      param "bs_ally_otis"
+      event_ramp
+      {
+        0.7437 0.8412
+        1.2813 1.0000
+        6.3925 0.9882
+        6.9612 0.8353
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_ellie_runtodoor"
+    {
+      time 1.340278 11.652781
+      param "mark_ellie_runtodoor"
+      param2 "Run"
+      resumecondition
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+    event expression "Sci_Fem_sudden01"
+    {
+      time 1.479167 8.916666
+      param "humans\scientist_female\expresssions_scientist_female"
+      param2 "Sci_Fem_sudden01"
+      event_ramp
+      {
+        0.9667 0.9471
+        5.6444 0.4412
+      }
+    }
+    event expression "SciFem_grin01"
+    {
+      time 5.541667 8.979166
+      param "humans\scientist_female\expresssions_scientist_female"
+      param2 "SciFem_grin01"
+      event_ramp
+      {
+        0.9889 0.7882
+        2.7000 0.6118
+      }
+    }
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.traincar_thiswaymiss02"
+    {
+      time 1.187500 4.841491
+      param "otis.cpf.traincar_thiswaymiss02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at bs_ally_elly"
+    {
+      time 0.125000 8.854167
+      param "bs_ally_elly"
+      event_ramp
+      {
+        0.6644 0.8000
+        1.1812 1.0000
+        7.3992 1.0000
+        7.9925 0.8059
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_otis_runtodoor"
+    {
+      time 0.087491 8.854167
+      param "mark_otis_runtodoor"
+      param2 "Run"
+      resumecondition
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+    event expression "b_smile00"
+    {
+      time 0.708333 9.708333
+      param "humans\guard\expressions_guard"
+      param2 "b_smile00"
+      event_ramp
+      {
+        1.4067 0.9059
+        7.3333 0.9059
+      }
+    }
+    event expression "b_smile_evil00"
+    {
+      time 2.395834 7.041666
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_evil00"
+      event_ramp
+      {
+        0.9778 0.9235
+        3.7639 0.6529
+      }
+    }
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard_thick.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "48"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "18"
+}
+fps 60
+snap off
+ignorePhonemes off

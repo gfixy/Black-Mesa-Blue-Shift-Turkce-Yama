@@ -1,0 +1,170 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.protolab_plugusin01"
+    {
+      time 1.159722 3.663826
+      param "ros.cpf.protolab_plugusin01"
+      param2 "0.5"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.515152 5.318182
+      param "!player"
+      event_ramp
+      {
+        0.5560 0.9824
+        4.2861 0.9059
+      }
+    }
+  }
+  channel "Expression"
+  {
+    event expression "sci_smile00"
+    {
+      time 0.409091 4.530303
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_smile00"
+      event_ramp
+      {
+        0.6400 1.0000
+        3.0233 0.7294
+      }
+    }
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "hg_nod_yes"
+    {
+      time 0.575758 3.193940
+      param "hg_nod_yes"
+      event_ramp
+      {
+        0.3020 0.8529
+        0.9180 0.9647
+        1.0860 0.9000
+        1.7462 0.1176
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.173203
+        "extreme" 0.263634
+        "loop" 0.483252
+        "end" 0.793301
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "kgesture13"
+    {
+      time 1.696970 5.315152
+      param "kgesture13"
+      absolutetags playback_time
+      {
+        "apex" 0.202052
+        "accent" 0.397718
+        "loop" 0.546797
+        "end" 0.667923
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.113636
+        "accent" 0.352273
+        "loop" 0.534091
+        "end" 0.681818
+      }
+      sequenceduration 2.966667
+    }
+    event gesture "bg_up_r"
+    {
+      time 1.590910 3.827274
+      param "bg_up_r"
+      event_ramp
+      {
+        0.7333 0.4765
+        1.3833 0.6706
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.257366
+        "extreme" 0.394367
+        "loop" 0.500923
+        "end" 0.653145
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+      sequenceduration 1.600000
+    }
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+actor "bs_ally_simmons"
+{
+  channel "Voice"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "60"
+}
+fps 60
+snap off
+ignorePhonemes off

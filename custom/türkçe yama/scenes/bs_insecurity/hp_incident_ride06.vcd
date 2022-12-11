@@ -1,0 +1,250 @@
+// Choreo version 1
+actor "incident_elev_malesci"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Scimale.no05"
+    {
+      time 1.033333 4.533333
+      param "NPC_Scimale.no05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.male_sci_trev_youknow"
+    {
+      time 0.086667 1.250930
+      param "INS.male_sci_trev_youknow"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at incident_elev_femsci"
+    {
+      time 1.026666 2.906666
+      param "incident_elev_femsci"
+      event_ramp
+      {
+        0.9120 0.4224
+      }
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 1.006667 4.573334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.1200 0.9100
+        }
+        {
+        }
+        "inner_raiser" combo 
+        {
+          0.8460 0.2400
+          1.0880 0.7600
+          2.2360 0.2700
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.1640 0.8600
+          0.8500 0.4400
+          2.1660 0.8300
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Trigger"
+  {
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+actor "incident_elev_femsci"
+{
+  channel "Audio"
+  {
+    event speak "INS.scifemale_pat_trevor01_01"
+    {
+      time 1.060000 1.806667
+      param "INS.scifemale_pat_trevor01_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_trevor01_02"
+    {
+      time 2.013333 3.021814
+      param "INS.scifemale_pat_trevor01_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_trevor02"
+    {
+      time 3.760001 5.815761
+      param "INS.scifemale_pat_trevor02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_trevor03"
+    {
+      time 6.266667 8.574558
+      param "INS.scifemale_pat_trevor03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 1.060000 3.506667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.3980 1.0000
+          0.5320 0.0800
+          0.6800 1.0000
+          0.9680 0.0800
+          1.1000 0.4900
+          1.2860 0.2300
+          1.4100 0.4800
+          1.6300 1.0000
+          2.2660 0.7000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1560 0.8200
+          0.5700 0.2900
+          0.6840 0.6000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          1.1100 0.1000
+          1.6400 0.7100
+          2.0800 0.9300
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          1.4120 0.4600
+          1.5760 0.7000
+        }
+        {
+        }
+        "lid_raiser" combo 
+        {
+          0.3120 1.0000
+          0.7940 0.8700
+          0.9900 0.3700
+          1.2620 0.3500
+          1.6780 0.6200
+          2.0140 0.1600
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 0.893333 2.960000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "jaw_drop" 
+        {
+          0.1300 0.3400
+        }
+        "mouth_drop" combo 
+        {
+          0.1920 0.9700
+          0.5760 0.4500
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 3.393333 6.466666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.1920 0.7014
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.5700 0.6600
+          0.9460 0.2600
+          1.8080 0.1500
+          2.1640 0.5900
+        }
+        {
+          0.8720 0.3100
+          1.5280 0.0600
+          1.7580 0.6900
+        }
+        "cheek_raiser" combo 
+        {
+          0.1500 0.7300
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          0.1260 0.6100
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Lookat"
+  {
+  }
+  channel "Posture"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

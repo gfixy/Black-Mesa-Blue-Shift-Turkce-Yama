@@ -1,0 +1,149 @@
+// Choreo version 1
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.depot_getthetrain01"
+    {
+      time 0.500000 2.581043
+      param "grd.cpf.depot_getthetrain01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event face "Face !player"
+    {
+      time 0.484848 3.196970
+      param "!player"
+      event_ramp
+      {
+        1.3062 0.7914
+      }
+    }
+  }
+  channel "Face to"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.742424 2.378788
+      param "!player"
+      event_ramp
+      {
+        0.7125 0.7086
+      }
+    }
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto !player"
+    {
+      time 0.424242 2.424242
+      param "!player"
+      param2 "Walk"
+      distancetotarget 117.00
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "Gesture11"
+    {
+      time 0.590909 2.724242
+      param "Gesture11"
+      absolutetags playback_time
+      {
+        "apex" 0.126984
+        "accent" 0.269841
+        "loop" 0.380952
+        "end" 0.555556
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.126984
+        "accent" 0.269841
+        "loop" 0.380952
+        "end" 0.555556
+      }
+      sequenceduration 2.133333
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.606061 2.742424
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.8333 0.3800
+          1.3111 0.7400
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.5889 0.5100
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_depot_otis_onttracks"
+    {
+      time 0.166667 2.984849
+      param "mark_depot_otis_onttracks"
+      param2 "Run"
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

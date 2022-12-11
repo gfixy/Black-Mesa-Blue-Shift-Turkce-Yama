@@ -1,0 +1,2712 @@
+//==========================================================================
+// Incident Scene - Intercom Warnings
+
+// caption: "BS_Announcer.Incident01"		"<clr:25,150,190><I>[Intercom] Warning. Facility service System failure on levels-- 3, 5 and 8."
+// caption: "BS_Announcer.Incident02"		"<clr:25,150,190><I>[Intercom] Warning. Extreme energy field hazard in-- Sector C."
+// caption: "BS_Announcer.Incident03"		"<clr:25,150,190><I>[Intercom] Warning. Unauthorized biological forms detected in-- Sector B, C, D and G."
+// caption: "BS_Announcer.Incident04"		"<clr:25,150,190><I>[Intercom] Warning. Sector G elevator failure. Do not use."
+// caption: "BS_Announcer.Incident04_Dph"	"<clr:25,150,190><I>[Intercom (Low)] Warning. Sector G elevator failure. Do not use."
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//														CHAPTER 2 - INSECURITY
+//
+//															STARTS HERE!
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//==========================================================================
+//	GENERIC SCENE EVENT SNDFX
+//==========================================================================
+
+"BS_Intro_Doorknock"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"95,104"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"bshift\scripted_predisaster\pd_intro_doorknock.wav"
+}
+
+"BS_Intro_DoorknockHard"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"VOL_NORM"
+	"pitch"				"95,105"
+
+	"soundlevel"		"SNDLVL_85dB"
+
+	"wave"				"bshift\scripted_predisaster\pd_intro_doorknock_hard.wav"
+}
+
+"BS_Armory_Cabinet"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_85dB"
+
+	"wave"				"bshift\scripted_predisaster\pd_armory_cabinet.wav"
+}
+
+"BS_Armory_Equipment1"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_65dB"
+
+	"wave"				"bshift\scripted_predisaster\pd_armory_Equipment1.wav"
+}
+
+"BS_Armory_Equipment1_2"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_65dB"
+
+	"wave"				"bshift\scripted_predisaster\pd_armory_Equipment1_2.wav"
+}
+
+"BS_Armory_Equipment2"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_65dB"
+
+	"wave"				"bshift\scripted_predisaster\pd_armory_Equipment2.wav"
+}
+
+"BS_Armory_Equipment3"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_65dB"
+
+	"wave"				"bshift\scripted_predisaster\pd_armory_Equipment3.wav"
+}
+
+"BS_Incident.NewsPaper_Act"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_65dB"
+
+	"wave"				"bshift\scripted_incident\incident_NewsPaper_act.wav"
+}
+
+"BS_Forky.LowerDown"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_65dB"
+
+	"wave"				"bshift\scripted_predisaster\pd_forky_lowerdown.wav"
+}
+
+//==========================================================================
+//	INCIDENT WARNING ANNOUNCEMENTS
+//==========================================================================
+
+"BS_Announcer.Incident01"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\scripted_incident\incident_announce01.wav"
+}
+
+"BS_Announcer.Incident02"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\scripted_incident\incident_announce02.wav"
+}
+
+"BS_Announcer.Incident03"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\scripted_incident\incident_announce03.wav"
+}
+
+"BS_Announcer.Incident04"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\scripted_incident\incident_announce04.wav"
+}
+
+"BS_Announcer.Incident04_Dph"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.85"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\scripted_incident\incident_announce04_dph.wav"
+}
+
+"BS_Announcer.Incident04_Dph_Rev"
+{
+	"channel"			"CHAN_STREAM"
+	"volume"			"0.65"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"wave"				"bshift\scripted_incident\incident_announce04_dph_Rev.wav"
+}
+
+//==========================================================================
+//	VOICE OVER FOR INSECURITY
+//==========================================================================
+// Area 3 VO Starts Here!
+//==========================================================================
+// SCENE - Camerafeed Flashtrolling
+
+"INS.grd_camerafeed_intro01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_intro01.wav"
+}
+
+"INS.grd_camerafeed_fall01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_fall01.wav"
+}
+
+"INS.grd_camerafeed_fall02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_fall02.wav"
+}
+
+"INS.grd_camerafeed_fall03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_fall03.wav"
+}
+
+"INS.grd_camerafeed_fall04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_fall04.wav"
+}
+
+"INS.grd_camerafeed_fall05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_fall05.wav"
+}
+
+"INS.grd_camerafeed_fall06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_fall06.wav"
+}
+
+// Camera flash bits
+
+"INS.grd_camerafeed_annoyed01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_annoyed01.wav"
+}
+
+"INS.grd_camerafeed_annoyed02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_annoyed02.wav"
+}
+
+"INS.grd_camerafeed_annoyed03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_annoyed03.wav"
+}
+
+"INS.grd_camerafeed_annoyed04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_camerafeed_annoyed04.wav"
+}
+//==========================================================================
+// SCENE - Otis Scenes. Camera / Shooting Range
+
+"NPC_Otis.Camscene"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_90dB"
+
+	"wave"				"vo/insecurity/otis/otis01_nevertakemealive.wav"
+}
+
+"Ins.Otis.Range_Idle01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.990"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/otis/otis_range_idle01.wav"
+}
+
+"Ins.Otis.Range_Idle02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.990"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/otis/otis_range_idle02.wav"
+}
+
+"Ins.Otis.Range_Idle03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.990"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/otis/otis_range_idle03.wav"
+}
+
+"Ins.Otis.Range_Idle04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.990"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/otis/otis_range_idle04.wav"
+}
+
+"Ins.Otis.Range_Idle05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.990"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/otis/otis_range_idle05.wav"
+}
+
+"Ins.Otis.Range_Idle06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.990"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/otis/otis_range_idle06.wav"
+}
+
+"Ins.Otis.Range_Idle07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.990"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/otis/otis_range_idle07.wav"
+}
+
+"Ins.Otis.Range_Idle08"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.990"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/otis/otis_range_idle08.wav"
+}
+
+"Ins.Otis.Range_Idle08_alt"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.990"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/otis/otis_range_idle08_alt.wav"
+}
+
+//==========================================================================
+// SCENE - Security Guard - Tries to Fix the Frontdoor
+
+"INS.grd_frontdoor_passid01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid01.wav"
+}
+
+"INS.grd_frontdoor_passid02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid02.wav"
+}
+
+"INS.grd_frontdoor_passid03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid03.wav"
+}
+
+"INS.grd_frontdoor_passid04_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid04_01.wav"
+}
+
+"INS.grd_frontdoor_passid04_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid04_02.wav"
+}
+
+"INS.grd_frontdoor_passid05_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid05_01.wav"
+}
+
+"INS.grd_frontdoor_passid05_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid05_02.wav"
+}
+
+"INS.grd_frontdoor_passid01_speakerFX"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid01_speakerfxversion.wav"
+}
+
+"INS.grd_frontdoor_passid02_speakerFX"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid02_speakerfxversion.wav"
+}
+
+//SPEAKER FX VERSION
+"INS.grd_frontdoor_passid03_speakerFX"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_passid03_speakerfxversion.wav"
+}
+
+"INS.grd_frontdoor_nag01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_nag01.wav"
+}
+
+"INS.grd_frontdoor_nag02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_nag02.wav"
+}
+
+"INS.grd_frontdoor_nag03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_nag03.wav"
+}
+
+"INS.grd_frontdoor_nag04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_nag04.wav"
+}
+
+//SPEAKER FX VERSIONS
+"INS.grd_frontdoor_nag01_speakerFX"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_nag01_speakerfxversion.wav"
+}
+
+"INS.grd_frontdoor_nag02_speakerFX"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_nag02_speakerfxversion.wav"
+}
+
+"INS.grd_frontdoor_nag03_speakerFX"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_nag03_speakerfxversion.wav"
+}
+
+"INS.grd_frontdoor_nag04_speakerFX"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_frontdoor_nag04_speakerfxversion.wav"
+}
+
+//==========================================================================
+// SCENE - Security Guard - Area 2 Entrance
+
+"INS.grd_a3ent_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_a3ent_01.wav"
+}
+
+"INS.grd_a3ent_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_a3ent_02.wav"
+}
+
+"INS.grd_a3ent_03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_a3ent_03.wav"
+}
+
+"INS.grd_a3ent_04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_a3ent_04.wav"
+}
+
+"INS.grd_a3ent_vestandgun01_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_a3ent_vestandgun01_01.wav"
+}
+
+"INS.grd_a3ent_vestandgun01_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_a3ent_vestandgun01_02.wav"
+}
+
+//==========================================================================
+// SCENE - Security Guard - H-E-Airlock Mighty Keeper
+
+"INS.grd_he_airlock_noaccess01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_he_airlock_noaccess01.wav"
+}
+
+"INS.grd_he_airlock_haveagoodone01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_he_airlock_haveagoodone01.wav"
+}
+
+// ADDITIONAL NAGS
+
+"INS.grd_he_airlock_noaccess_nag01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_he_airlock_noaccess_nag01.wav"
+}
+
+"INS.grd_he_airlock_noaccess_nag02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_he_airlock_noaccess_nag02.wav"
+}
+
+"INS.grd_he_airlock_noaccess_nag03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_he_airlock_noaccess_nag03.wav"
+}
+
+"INS.grd_he_airlock_noaccess_nag04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_he_airlock_noaccess_nag04.wav"
+}
+
+"INS.grd_he_airlock_noaccess_nag05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_he_airlock_noaccess_nag05.wav"
+}
+
+"INS.grd_he_airlock_noaccess_nag06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_he_airlock_noaccess_nag06.wav"
+}
+
+//==========================================================================
+// SCENE - Security Guard - Lobbydesk Introduction and Objectives
+
+"INS.grd_lobby_longshift01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_longshift01.wav"
+}
+
+"INS.grd_lobby_longshift02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_longshift02.wav"
+}
+
+"INS.grd_lobby_longshift03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_longshift03.wav"
+}
+
+//PREGEAR NAGS
+
+"INS.grd_lobby_idle_gearpre01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_idle_gearpre01.wav"
+}
+
+"INS.grd_lobby_idle_gearpre02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_idle_gearpre02.wav"
+}
+
+"INS.grd_lobby_idle_gearpre03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_idle_gearpre03.wav"
+}
+
+"INS.grd_lobby_idle_gearpre04_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_idle_gearpre04_01.wav"
+}
+
+"INS.grd_lobby_idle_gearpre04_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_idle_gearpre04_02.wav"
+}
+
+"INS.grd_lobby_idle_gearpre05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_idle_gearpre05.wav"
+}
+
+"INS.grd_lobby_hint_sidearm01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_hint_sidearm01.wav"
+}
+
+// OBJECTIVE
+
+"INS.grd_lobby_nowwhat01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_nowwhat01.wav"
+}
+
+"INS.grd_lobby_nowwhat02_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_nowwhat02_01.wav"
+}
+
+"INS.grd_lobby_maintenance01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_nomaintenance01.wav"
+}
+
+"INS.grd_lobby_nowwhat02_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_nowwhat02_02.wav"
+}
+
+"INS.grd_lobby_heycalhoun01_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_heycalhoun01_01.wav"
+}
+
+"INS.grd_lobby_heycalhoun01_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_heycalhoun01_02.wav"
+}
+
+"INS.grd_lobby_leaving01_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_leaving01_01.wav"
+}
+
+"INS.grd_lobby_leaving01_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobby_leaving01_02.wav"
+}
+
+//==========================================================================
+// SCENE - Lobby - Security Booth
+"INS.grd_lobbybooth_giveustime01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobbybooth_giveustime01.wav"
+}
+
+"INS.grd_lobbybooth_giveustime02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobbybooth_giveustime02.wav"
+}
+
+"INS.grd_lobbybooth_giveustime03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobbybooth_giveustime03.wav"
+}
+
+"INS.grd_lobbybooth_giveustime04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_lobbybooth_giveustime04.wav"
+}
+
+//==========================================================================
+// SCENE - Security Guard - Armory Officer
+
+"INS.grd_range_howsitgoing01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_howsitgoing01.wav"
+}
+
+"INS.grd_range_hereyougo01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_hereyougo01.wav"
+}
+
+"INS.grd_range_schedule01_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_schedule01_01.wav"
+}
+
+"INS.grd_range_schedule01_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_schedule01_02.wav"
+}
+
+"INS.grd_range_nogear01_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_nogear01_01.wav"
+}
+
+"INS.grd_range_nogear01_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_nogear01_02.wav"
+}
+
+"INS.grd_range_nogear02_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_nogear02_01.wav"
+}
+
+"INS.grd_range_nogear02_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_nogear02_02.wav"
+}
+
+"INS.grd_range_nogear03_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_nogear03_01.wav"
+}
+
+"INS.grd_range_nogear03_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_nogear03_02.wav"
+}
+
+"INS.grd_range_nogear04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_range_nogear04.wav"
+}
+
+
+//==========================================================================
+// RANGE RANGER STATEMENTS
+
+"INS.grd_range_gearjockey01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_gearjockey01_01.wav"
+
+}
+
+"INS.grd_range_gearjockey01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_gearjockey01_02.wav"
+
+}
+
+"INS.grd_range_gearjockey02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_gearjockey02.wav"
+
+}
+
+"INS.grd_range_gearjockey03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_gearjockey03.wav"
+
+}
+
+"INS.grd_range_gearjockey04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_gearjockey04_01.wav"
+
+}
+
+"INS.grd_range_gearjockey04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_gearjockey04_02.wav"
+
+}
+
+//==========================================================================
+// RANGE SHOOTER STATEMENTS
+"INS.grd_range_donutresponse01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.9"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_donutresponse01.wav"
+}
+
+"INS.grd_range_mytarget01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.9"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_mytarget01.wav"
+}
+
+"INS.grd_range_mytarget02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.9"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_mytarget02.wav"
+}
+
+"INS.grd_range_mytarget03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.9"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_range_mytarget03.wav"
+}
+
+//==========================================================================
+// SCENE - Mr. Fixit
+
+"INS.grd_mrfixit_dammit01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_dammit01.wav"
+}
+
+"INS.grd_mrfixit_dammit02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_dammit02.wav"
+}
+
+"INS.grd_mrfixit_howsithanging01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_howsithanging01.wav"
+}
+
+"INS.grd_mrfixit_screwdriverplease01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_screwdriverplease01.wav"
+}
+
+"INS.grd_mrfixit_screwdriverplease02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_screwdriverplease02.wav"
+}
+
+"INS.grd_mrfixit_thanksbuddy01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_thanksbuddy01.wav"
+}
+
+"INS.grd_mrfixit_wastebinpre01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_wastebinpre01.wav"
+}
+	
+"INS.grd_mrfixit_calhounsickbastard01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_calhounsickbastard01.wav"
+}
+
+"INS.grd_mrfixit_wastebin_godsake01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_wastebin_godsake01.wav"
+}
+
+"INS.grd_mrfixit_wastebin_godsake02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_wastebin_godsake02.wav"
+}
+
+"INS.grd_mrfixit_resumework01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_resumework01.wav"
+}
+
+"INS.grd_mrfixit_resumework02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_resumework02.wav"
+}
+
+"INS.grd_mrfixit_resumework02a"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_resumework02a.wav"
+}
+
+"INS.grd_mrfixit_resumework03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_resumework03.wav"
+}
+
+"INS.grd_mrfixit_resumework04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_mrfixit_resumework04.wav"
+}
+
+//==========================================================================
+// SCIENTISTS
+//==========================================================================
+// SCENE - MAP B Particle Lab Exploding Console
+// Those lines are from the original game, but waren't applied to any game sound parameters...
+// ...until now!
+"INS.sc_plab_console_remaincalm"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec4_console1.wav"
+}
+
+"INS.sc_plab_console_nowwhat"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec4_console5.wav"
+}
+
+"INS.sc_plab_console_partoftheplan"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec4_console2.wav"
+}
+
+"INS.sc_plab_console_screwed"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec4_console3.wav"
+}
+
+"INS.sc_plab_console_badidea"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec4_console4.wav"
+}
+
+// SCENE - Scientist Conversations - Area 3 Lobby
+"INS.sc_sec1_reflective"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.820"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec1_reflective.wav"
+}
+
+"INS.sc_sec2_admin1"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.970"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec2_admin1.wav"
+}
+
+"INS.sc_sec2_admin2"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.970"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec2_admin2.wav"
+}
+
+"INS.sc_sec2_admin3"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.970"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec2_admin3.wav"
+}
+
+// SCENE - Scientist Laptop Annoyance - Area 3 Lobby
+"INS.sc_sec2_laptop1"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec2_laptop1.wav"
+}
+
+"INS.sc_sec2_laptop2"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec2_laptop2.wav"
+}
+
+"INS.sc_sec2_laptop3"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec2_laptop3.wav"
+}
+
+"INS.sc_sec2_laptop4"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec2_laptop4.wav"
+}
+
+"INS.sc_sec2_laptop5"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec2_laptop5.wav"
+}
+
+//==========================================================================
+//SCENE_ Waiting 4 Tram to Sector G
+"INS.tram_sci01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/ins_tram_sci01.wav"
+}
+
+"INS.tram_sci02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/ins_tram_sci02.wav"
+}
+
+//==========================================================================
+// Sector G VO Starts Here!
+//==========================================================================
+// SCENE - Scientist Dam Conversation - HVG-Control Station
+"INS.sc_secg_sci1_damit1"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_secg_sci1_damit1.wav"
+}
+
+"INS.sc_secg_sci1_damit2"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_secg_sci1_damit2.wav"
+}
+
+"INS.sc_secg_sci1_damit3"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_secg_sci1_damit3.wav"
+}
+
+"INS.sc_secg_sci2_damit1"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_secg_sci2_damit1.wav"
+}
+
+"INS.sc_secg_sci2_damit2"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_secg_sci2_damit2.wav"
+}
+
+// SCENE - Security Guard - Sector G Security Checkpoint
+
+"INS.grd_hpcheckpoint_intro01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro01.wav"
+}
+
+"INS.grd_hpcheckpoint_intro02_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro02_01.wav"
+}
+
+"INS.grd_hpcheckpoint_intro02_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro02_02.wav"
+}
+
+"INS.grd_hpcheckpoint_intro03_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro03_01.wav"
+}
+
+"INS.grd_hpcheckpoint_intro03_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro03_02.wav"
+}
+
+"INS.grd_hpcheckpoint_intro03_03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro03_03.wav"
+}
+
+"INS.grd_hpcheckpoint_intro04_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro04_01.wav"
+}
+
+"INS.grd_hpcheckpoint_intro04_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro04_02.wav"
+}
+
+"INS.grd_hpcheckpoint_intro04_03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro04_03.wav"
+}
+
+"INS.grd_hpcheckpoint_intro05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro05.wav"
+}
+
+"INS.grd_hpcheckpoint_intro06_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro06_01.wav"
+}
+
+"INS.grd_hpcheckpoint_intro06_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro06_02.wav"
+}
+
+"INS.grd_hpcheckpoint_intro06_03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_hpcheckpoint_intro06_03.wav"
+}
+
+//==========================================================================
+// SCENE - Security Guard + Patrice and some scientist - Sector G Broken Door
+
+//GUARD STARTS HERE!
+//PRE CURSING
+"INS.grd_door_broken_pre01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_door_broken_pre01.wav"
+}
+
+"INS.grd_door_broken_pre02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_door_broken_pre02.wav"
+}
+
+"INS.grd_door_broken_pre03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/insecurity/guards/grd_door_broken_pre03.wav"
+}
+
+//MAIN SCENE
+"INS.grd_door_broken01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_door_broken01.wav"
+}
+
+"INS.grd_door_broken02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_door_broken02.wav"
+}
+
+"INS.grd_door_gonnatakeawhile01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/guards/grd_door_gonnatakeawhile01.wav"
+}
+
+//SCIENTIST STARTS HERE!
+"INS.sc_sec3_doorstuck1"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.700"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec3_doorstuck1.wav"
+}
+
+"INS.sc_sec3_doorstuck2"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.700"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec3_doorstuck2.wav"
+}
+
+"INS.sc_sec3_doorstuck3"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.700"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec3_doorstuck3.wav"
+}
+
+"INS.sc_sec3_doorstuck4"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.700"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"			"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/scientists/sc_sec3_doorstuck4.wav"
+}
+
+//==========================================================================
+// SCENE - Patrice - Storage Facility Tour
+
+"INS.scifemale_pat_madeit01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_madeit01.wav"
+}
+
+"INS.scifemale_pat_madeit02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_madeit02.wav"
+}
+
+"INS.scifemale_pat_meetup01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_meetup01.wav"
+}
+
+"INS.scifemale_pat_colleague01_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_colleague01_01.wav"
+}
+
+"INS.scifemale_pat_colleague01_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_colleague01_02.wav"
+}
+
+"INS.scifemale_pat_colleague01_03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_colleague01_03.wav"
+}
+
+"INS.scifemale_pat_almostthere01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+//Using SNDLVL_80dB instead of SNDLVL_NORM, so it's still audible in front of this intensive industrial soundscape.
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_almostthere01.wav"
+}
+
+"INS.scifemale_pat_solvetheproblem01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+//Using SNDLVL_80dB instead of SNDLVL_NORM, so it's still audible in front of this intensive industrial soundscape.
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_solvetheproblem01.wav"
+}
+
+"INS.scifemale_pat_solvetheproblem02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+//Using SNDLVL_80dB instead of SNDLVL_NORM, so it's still audible in front of this intensive industrial soundscape.
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_solvetheproblem02.wav"
+}
+
+//==========================================================================
+// SCENE - Patrice - Broken Door
+
+"INS.scifemale_pat_door01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.850"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_door01.wav"
+}
+
+"INS.scifemale_pat_angry01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.850"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_angry01.wav"
+}
+
+"INS.scifemale_pat_angry02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.850"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_angry02.wav"
+}
+
+"INS.scifemale_pat_worried01_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.850"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_worried01_01.wav"
+}
+
+"INS.scifemale_pat_worried01_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.850"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_worried01_02.wav"
+}
+
+//==========================================================================
+// SCENE - Patrice - Elevator Fixing
+"INS.scifemale_pat_idle_button01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_idle_button01.wav"
+}
+
+"INS.scifemale_pat_idle_button02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_idle_button02.wav"
+}
+
+"INS.scifemale_pat_idle_button03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_idle_button03.wav"
+}
+
+"INS.scifemale_pat_idle_button04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_idle_button04.wav"
+}
+
+"INS.scifemale_pat_idle_button05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_idle_button05.wav"
+}
+
+"INS.scifemale_pat_idle_button06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_idle_button06.wav"
+}
+
+"INS.scifemale_pat_idle_button07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_idle_button07.wav"
+}
+
+"INS.scifemale_pat_doorfixed_goodjob01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_doorfixed_goodjob01.wav"
+}
+
+//==========================================================================
+// SCENE - Elevator Ride Stage 2
+"INS.scifemale_pat_stuckagain01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_stuckagain01.wav"
+}
+
+"INS.scifemale_pat_whysoangry01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_whysoangry01.wav"
+}
+
+"INS.scifemale_pat_isimportant01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_isimportant01.wav"
+}
+
+"INS.scifemale_pat_isimportant02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_isimportant02.wav"
+}
+
+"INS.scifemale_pat_gasp01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_gasp01.wav"
+}
+
+"INS.scifemale_pat_gasp02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_gasp02.wav"
+}
+
+"INS.scifemale_pat_maybeshortcircuit01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_maybeshortcircuit01.wav"
+}
+
+"INS.scifemale_pat_ohno_am01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_ohno_am01.wav"
+}
+
+//==========================================================================
+// SCENE - Elevator Ride Stage 3
+"INS.scifemale_pat_trevor01_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_trevor01_01.wav"
+}
+
+"INS.scifemale_pat_trevor01_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_trevor01_02.wav"
+}
+
+"INS.scifemale_pat_trevor02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_trevor02.wav"
+}
+
+"INS.scifemale_pat_trevor03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_trevor03.wav"
+}
+
+"INS.scifemale_pat_cpr_trevor01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_cpr_trevor01.wav"
+}
+
+"INS.scifemale_pat_cpr_trevor02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_cpr_trevor02.wav"
+}
+
+"INS.scifemale_pat_cpr_trevor03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_cpr_trevor03.wav"
+}
+
+"INS.scifemale_pat_cpr_trevor04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_cpr_trevor04.wav"
+}
+
+"INS.scifemale_pat_whathappening01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_whathappening01.wav"
+}
+
+"INS.scifemale_pat_whathappening02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_whathappening02.wav"
+}
+
+"INS.scifemale_pat_deathscream01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_deathscream01.wav"
+}
+
+//////////////////////////
+
+"INS.scifemale_pat_howareyousure01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_howareyousure01.wav"
+}
+
+"INS.scifemale_pat_hopeeverythingok01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_hopeeverythingok01.wav"
+}
+
+"INS.scifemale_pat_guessmalfunction01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_guessmalfunction01.wav"
+}
+
+"INS.scifemale_pat_nosit_dosomething01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_nosit_dosomething01.wav"
+}
+
+"INS.scifemale_pat_nostand_dosomething01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_nostand_dosomething01.wav"
+}
+
+"INS.scifemale_pat_whatshappeninghere01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.950"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/incident/scifemale_pat_whatshappeninghere01.wav"
+}
+
+//==========================================================================
+	TREVOR'S PART STARTS HERE!
+//==========================================================================
+//Classic lines from the original scenes
+"INS.male_sci_trev_worryed_1"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_worryed_1.wav"
+}
+
+"INS.male_sci_trev_worryed_2"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_worryed_2.wav"
+}
+
+"INS.male_sci_trev_worryed_3"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_worryed_3.wav"
+}
+
+"INS.male_sci_trev_worryed_4"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_worryed_4.wav"
+}
+
+"INS.male_sci_trev_worryed_5"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_worryed_5.wav"
+}
+
+"INS.male_sci_trev_youknow"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_youknow_cutoff.wav"
+}
+
+//==========================================================================
+//STAGE 3 COMEONDALTON!
+
+"INS.grd_comeondalton01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"1.0"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_comeondalton01.wav"
+}
+
+"INS.grd_dalton_shit01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"1.0"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/insecurity/guards/grd_dalton_shit01.wav"
+}
+
+//==========================================================================
+//Additional Conversation
+
+"INS.male_sci_Trev_ele_1_angryasf"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_Trev_ele_1_angryasf.wav"
+}
+
+"INS.male_sci_Trev_ele_2_whyimmad"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_Trev_ele_2_whyimmad.wav"
+}
+
+"INS.male_sci_Trev_ele_3_student"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_Trev_ele_3_student.wav"
+}
+
+"INS.male_sci_Trev_ele_4_canada"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_Trev_ele_4_canada.wav"
+}
+
+"INS.male_sci_trev_annoyed_1"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_annoyed_1.wav"
+}
+
+"INS.male_sci_trev_annoyed_2"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_annoyed_2.wav"
+}
+
+"INS.male_sci_trev_annoyed_3"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_annoyed_3.wav"
+}
+
+"INS.male_sci_trev_annoyed_4"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_annoyed_4.wav"
+}
+
+"INS.male_sci_trev_annoyed_5"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_annoyed_5.wav"
+}
+
+"INS.male_sci_trev_annoyed_6"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.750"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_NORM"
+
+	"wave"				"vo/insecurity/incident/male_sci_trev_annoyed_6.wav"
+}

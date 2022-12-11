@@ -1,0 +1,122 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.159903 1.743645
+      param "NPC_Security_Otis.mygut01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event flexanimation "flex"
+    {
+      time 0.024391 2.707317
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1762 0.8900
+          0.4667 0.2900
+          0.8524 0.1600
+          1.2333 0.2600
+          1.3643 0.4000
+          1.5018 0.6500
+          1.9714 0.4900
+          2.2429 0.4000
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.0894 0.1200
+          0.4600 0.7000
+          0.8914 0.6800
+          1.2600 0.4900
+        }
+      }
+    }
+    event gesture "bg_accentFwd"
+    {
+      time 0.020325 2.689431
+      param "bg_accentFwd"
+      event_ramp
+      {
+        0.2458 0.7622
+        0.8125 0.9441
+        1.6479 0.8951
+        2.2146 0.6503
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.059444
+        "extreme" 0.187477
+        "loop" 0.295671
+        "end" 0.707763
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.068061 2.889199
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.2125 0.9231
+        2.2375 0.9650
+      }
+    }
+    event expression "b_huh01"
+    {
+      time 0.024390 1.024390
+      param "humans\guard\expressions_guard"
+      param2 "b_huh01"
+      event_ramp
+      {
+        0.2125 0.9510
+        0.7875 0.7622
+      }
+    }
+    event expression "b_incombat_headcrabug01"
+    {
+      time 0.686992 1.971545
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat_headcrabug01"
+      event_ramp
+      {
+        0.3042 0.8042
+        0.9583 0.4895
+      }
+    }
+  }
+  channel "lookface"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "164"
+  "SceneRampTool" "100"
+  "ExpressionTool" "70"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

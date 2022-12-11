@@ -1,0 +1,144 @@
+// Choreo version 1
+actor "ins_sec_grd07"
+{
+  channel "Audio"
+  {
+    event speak "INS.grd_range_gearjockey02"
+    {
+      time 0.340000 2.040000
+      param "INS.grd_range_gearjockey02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Lookat"
+  {
+    event lookat "Look at "
+    {
+      time 0.186667 2.113333
+      param "!enemy"
+    }
+  }
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.213333 2.120000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.1160 0.7600
+          0.6240 0.8700
+          0.6980 0.5100
+          1.0100 0.9500
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.1760 0.8100
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 0.706667 2.146667
+      param ""
+      event_ramp
+      {
+        0.4100 0.9209
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.4013 0.5900
+          0.6811 1.0000
+        }
+        "move_updown" range 2.0 -10.0 
+        {
+          0.3919 0.2600
+          0.5324 0.6700
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2457 0.4300
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 1.066666 1.566666
+      param ""
+      event_ramp
+      {
+        0.3980 0.8801
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1950 0.4600
+        }
+        {
+        }
+        "inner_raiser" combo 
+        {
+          0.1525 0.6000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1675 0.5800
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_down"
+    {
+      time 0.200000 2.166667
+      param "bg_down"
+      event_ramp
+      {
+        0.3580 0.4668
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.086207
+        "extreme" 0.241379
+        "loop" 0.482759
+        "end" 0.672414
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.086207
+        "extreme" 0.241379
+        "loop" 0.482759
+        "end" 0.672414
+      }
+      sequenceduration 1.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "80"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

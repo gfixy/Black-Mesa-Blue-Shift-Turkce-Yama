@@ -1,0 +1,27 @@
+// Choreo version 1
+actor "ins_sec_grd06"
+{
+  channel "Audio"
+  {
+    event speak "INS.grd_camerafeed_annoyed02"
+    {
+      time 0.280000 3.036757
+      param "INS.grd_camerafeed_annoyed02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

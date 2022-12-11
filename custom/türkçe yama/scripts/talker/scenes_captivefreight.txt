@@ -1,0 +1,110 @@
+// PLACEHOLDER CRAP BELOW, REPLACE AS NEEDED
+
+criterion OTIS name "bs_ally_otis" required
+criterion ELLY name "bs_ally_elly" required
+criterion ROSENBERG name "bs_ally_rosenberg" required
+criterion WALTER name "bs_ally_walter" required
+
+criterion IsC3M1B map "bs_c3m1b" required weight 9
+criterion IsC3M2C map "bs_c3m2c" required
+
+criterion ellyNotRescued "elly_not_rescued" "1" required
+criterion ellyRescued "elly_rescued" "1" required
+criterion teleporterCardMachine "teleporter_cardmachine" "1" required
+criterion teleporterPlugpuzzle "teleporter_plugpuzzle" "1" required
+criterion teleporterHallway "teleporter_hallway" "1" required
+criterion teleporterWalterIdle "teleporter_walter_idle" "1" required
+
+response cf_elly_railyard_idle
+{
+	sequential
+	norepeat
+	scene "scenes/bs_freightyard/railyard_femsci_idle01.vcd"
+	scene "scenes/bs_freightyard/railyard_femsci_idle02.vcd"
+}
+rule cf_elly_railyard_idle
+{
+	criteria TLK_USE ELLY IsC3M1B ellyRescued
+	response cf_elly_railyard_idle
+}
+
+response cf_otis_railyard_idle
+{
+	sequential
+	norepeat
+	scene "scenes/bs_freightyard/railyard_otis_idle01.vcd"
+	scene "scenes/bs_freightyard/railyard_otis_idle02.vcd"
+}
+rule cf_otis_railyard_idle
+{
+	criteria TLK_USE OTIS IsC3M1B ellyRescued
+	response cf_otis_railyard_idle
+}
+
+response cf_otis_railyard_cranehint
+{
+	sequential
+	norepeat
+	scene "scenes/bs_freightyard/railyard_carpuzzle_otishint01.vcd" delay 4
+	scene "scenes/bs_freightyard/railyard_carpuzzle_otishint02.vcd" delay 4
+}
+rule cf_otis_railyard_cranehint_rules
+{
+	criteria TLK_IDLE OTIS IsC3M1B SeePlayer ellyNotRescued
+	response cf_otis_railyard_cranehint
+}
+
+response cf_teleporter_plugpuzzle_nag
+{
+	sequential
+	norepeat
+	scene "scenes\bs_prototype\bs_proto_teleporter_plugpuzzle_idle01.vcd" delay 1
+	scene "scenes\bs_prototype\bs_proto_teleporter_plugpuzzle_idle02.vcd" delay 2
+	scene "scenes\bs_prototype\bs_proto_teleporter_plugpuzzle_idle03.vcd" delay 2
+}
+rule cf_teleporter_plugpuzzle_nag_rules
+{
+	criteria TLK_VITALIDLE ROSENBERG IsC3M2C teleporterPlugpuzzle
+	response cf_teleporter_plugpuzzle_nag
+}
+
+response cf_teleporter_cardmachine_nag
+{
+	sequential
+	norepeat
+	scene "scenes\bs_prototype\bs_proto_cardmachine_idle01.vcd" delay 1
+	scene "scenes\bs_prototype\bs_proto_cardmachine_idle02.vcd" delay 2
+	scene "scenes\bs_prototype\bs_proto_cardmachine_idle03.vcd" delay 2
+}
+rule cf_teleporter_cardmachine_nag_rules
+{
+	criteria TLK_VITALIDLE ROSENBERG IsC3M2C teleporterCardMachine
+	response cf_teleporter_cardmachine_nag
+}
+
+response cf_teleporter_walter_idles
+{
+	sequential
+	norepeat
+	scene "scenes\bs_prototype\bs_proto_walter_introidle01.vcd"
+	scene "scenes\bs_prototype\bs_proto_walter_introidle02.vcd"
+	scene "scenes\bs_prototype\bs_proto_walter_introidle03.vcd"
+}
+rule cf_teleporter_walter_idles_rules
+{
+	criteria TLK_USE WALTER IsC3M2C teleporterWalterIdle
+	response cf_teleporter_walter_idles
+}
+
+response cf_teleporter_hallway_nags
+{
+	sequential
+	norepeat
+	scene "scenes\bs_prototype\bs_proto_hall_idle01.vcd"
+	scene "scenes\bs_prototype\bs_proto_hall_idle02.vcd"
+}
+rule cf_teleporter_hallway_nags_rules
+{
+	criteria TLK_VITALIDLE ROSENBERG IsC3M2C teleporterHallway IsPlayerClose SeenByPlayer
+	response cf_teleporter_hallway_nags
+}

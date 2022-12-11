@@ -1,0 +1,118 @@
+// Choreo version 1
+actor "ins_sec_sci01"
+{
+  channel "Audio"
+  {
+    event speak "INS.sc_sec2_laptop3"
+    {
+      time 0.420000 3.435805
+      param "INS.sc_sec2_laptop3"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.360000 3.893333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          1.2120 0.2800
+          1.4440 0.8300
+          1.9320 0.4700
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.2000 0.7500
+          0.3420 0.4300
+          0.7860 0.8500
+          1.2460 0.2300
+          2.3540 0.8900
+        }
+        {
+        }
+        "wrinkler" 
+        {
+          0.1660 0.7300
+        }
+        "upper_raiser" combo 
+        {
+          0.2120 0.7200
+          0.3900 0.4000
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "b_head_back"
+    {
+      time 0.453333 2.253333
+      param "b_head_back"
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      sequenceduration 1.800000
+    }
+    event gesture "hg_nod_right"
+    {
+      time 1.440001 2.740001
+      param "hg_nod_right"
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+  }
+  channel "LookAT"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.433333 3.760000
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

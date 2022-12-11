@@ -1,0 +1,3 @@
+### Kurulum
+
+"Bshift" klasörünün içindeki "bshift_misc_000" ve "bshift_misc_dir" bu dosyaların yedeğini aldıktan sonra silin ve atmış olduğumuz custom dosyasını bshift klasörünün içine atın oyunu açıp "settings>audio"'dan "captioning"'den "closed captions"'i şeçip "captioning language"'yide "turkish" seçmeniz lazım iyi oyunlar.

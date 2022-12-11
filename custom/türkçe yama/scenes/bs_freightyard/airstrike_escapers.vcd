@@ -1,0 +1,50 @@
+// Choreo version 1
+actor "parking_escaper1"
+{
+  channel "Audio"
+  {
+    event speak "NPC_hgrunt.cover04_var01"
+    {
+      time 0.393333 1.320748
+      param "NPC_hgrunt.cover04_var01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "st.hgrunt08.gargtrap01"
+    {
+      time 3.460001 4.760001
+      param "st.hgrunt08.gargtrap01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "parking_escaper2"
+{
+  channel "Audio"
+  {
+    event speak "NPC_hgrunt.cover09"
+    {
+      time 2.060000 2.936984
+      param "NPC_hgrunt.cover09"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

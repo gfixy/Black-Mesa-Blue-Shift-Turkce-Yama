@@ -1,0 +1,116 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.293334 3.527824
+      param "NPC_Security_Otis.holddownspot02"
+      fixedlength
+      tags
+      {
+        "me" 0.239394
+        "plenty" 0.536364
+        "my" 0.784849
+        "pockets" 0.853030
+      }
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "facial"
+  {
+    event expression "b_smile01a"
+    {
+      time 1.838235 4.303922
+      param "humans\guard\expressions_guard"
+      param2 "b_smile01a"
+      event_ramp
+      {
+        0.2963 0.9161
+        1.9963 0.6294
+      }
+    }
+    event expression "b_smile_subtle01"
+    {
+      time 0.122549 2.877451
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_subtle01"
+      event_ramp
+      {
+        0.5077 0.8392
+        2.2815 0.8881
+      }
+    }
+    event expression "b_huh01mild"
+    {
+      time 0.019608 2.740196
+      param "humans\guard\expressions_guard"
+      param2 "b_huh01mild"
+      event_ramp
+      {
+        0.1011 0.9231
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.083333 3.852941
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.7600 0.6300
+          0.9880 0.4100
+          1.7147 0.4300
+          1.9294 0.5600
+          2.7000 0.7800
+          2.9480 0.3200
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          1.5840 0.6000
+          2.0680 0.5200
+          2.5480 0.4700
+          2.9120 0.3000
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          2.2333 0.5200
+          2.7389 0.1700
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 4.470785
+      param "!player"
+      event_ramp
+      {
+        0.3389 0.8322
+        0.5803 1.0000
+        3.7590 1.0000
+        4.0949 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "36"
+  "GestureTool" "100"
+  "RampTool" "54"
+}
+fps 60
+snap off
+ignorePhonemes off

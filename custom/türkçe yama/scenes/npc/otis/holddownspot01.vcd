@@ -1,0 +1,123 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.293334 2.566622
+      param "NPC_Security_Otis.holddownspot01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_accentFwd"
+    {
+      time 1.411765 3.580392
+      param "bg_accentFwd"
+      event_ramp
+      {
+        0.2538 0.3217
+        0.7051 0.5105
+        1.5615 0.4615
+        1.9385 0.3007
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.155842
+        "extreme" 0.405189
+        "loop" 0.623367
+        "end" 0.720090
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_huh01mild"
+    {
+      time 0.039216 1.024510
+      param "humans\guard\expressions_guard"
+      param2 "b_huh01mild"
+      event_ramp
+      {
+        0.1897 0.9580
+      }
+    }
+    event expression "b_smile_subtle01"
+    {
+      time 0.411765 3.318627
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_subtle01"
+      event_ramp
+      {
+        0.2692 0.9231
+        2.5276 0.9091
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.078431 3.147058
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2111 0.4900
+          0.4514 0.1600
+          0.5542 0.1900
+          0.7639 0.3400
+          1.2417 0.4800
+          2.0333 0.4500
+          2.2583 0.2200
+          2.7083 0.2300
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2750 0.7900
+          0.7792 0.5100
+          1.8500 0.5700
+          2.0833 0.3300
+          2.3792 0.3200
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 3.323726
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        2.6119 1.0000
+        2.9478 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "48"
+  "GestureTool" "100"
+  "RampTool" "78"
+}
+fps 60
+snap off
+ignorePhonemes off

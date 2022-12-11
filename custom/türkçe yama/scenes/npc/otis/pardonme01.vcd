@@ -1,0 +1,88 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.293334 1.565103
+      param "NPC_Security_Otis.pardonme01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "facial"
+  {
+    event expression "b_sudden01"
+    {
+      time 0.132353 1.132353
+      param "humans\guard\expressions_guard"
+      param2 "b_sudden01"
+      event_ramp
+      {
+        0.2026 0.8118
+        0.6923 0.6176
+      }
+    }
+    event expression "b_buckup"
+    {
+      time 0.666667 2.446078
+      param "humans\guard\expressions_guard"
+      param2 "b_buckup"
+      event_ramp
+      {
+        0.1974 0.7059
+        1.3615 0.8706
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.083333 1.867647
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2700 0.7160
+          0.8940 0.7101
+          1.1020 0.3373
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.3200 0.8900
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 2.436471
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        1.7247 1.0000
+        2.0606 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "78"
+}
+fps 60
+snap off
+ignorePhonemes off

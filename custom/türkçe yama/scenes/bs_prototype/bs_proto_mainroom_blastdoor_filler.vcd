@@ -1,0 +1,99 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Gesture"
+  {
+    event gesture "kgesture03"
+    {
+      time 0.453333 4.013333
+      param "kgesture03"
+      event_ramp
+      {
+        0.6940 0.7941
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.252336
+        "accent" 0.525234
+        "loop" 0.695327
+        "end" 0.814953
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.123288
+        "accent" 0.315068
+        "loop" 0.424658
+        "end" 0.616438
+      }
+      sequenceduration 2.466667
+    }
+    event gesture "kgesture11"
+    {
+      time 1.393333 5.180000
+      param "kgesture11"
+      event_ramp
+      {
+        0.8540 0.9706
+        3.7787 0.9840
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.089323
+        "accent" 0.205442
+        "loop" 0.404059
+        "end" 0.549871
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.147059
+        "accent" 0.338235
+        "loop" 0.411765
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at mark_enterlab_ros_look_blastdoor03"
+    {
+      time 0.480000 5.333334
+      param "mark_enterlab_ros_look_blastdoor03"
+      event_ramp
+      {
+        0.7140 0.7701
+        4.5627 0.8102
+      }
+    }
+    event face "Face mark_enterlab_ros_look_blastdoor03"
+    {
+      time 0.486667 5.233333
+      param "mark_enterlab_ros_look_blastdoor03"
+      event_ramp
+      {
+        0.8380 0.9759
+        4.7227 0.9920
+      }
+    }
+  }
+  channel "MoveTo"
+  {
+    event moveto "Moveto mark_enterlab_ros_move_blastdoor03"
+    {
+      time 0.213333 2.380000
+      param "mark_enterlab_ros_move_blastdoor03"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

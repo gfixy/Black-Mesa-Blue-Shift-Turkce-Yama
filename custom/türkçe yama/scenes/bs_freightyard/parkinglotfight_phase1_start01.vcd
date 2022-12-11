@@ -1,0 +1,161 @@
+// Choreo version 1
+event stoppoint "!"
+{
+  time 11.133781 -1.000000
+  param "noaction"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.p1_letthemhaveit01"
+    {
+      time 0.428031 2.074584
+      param "grd.cpf.p1_letthemhaveit01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.p1_nomakesounds01"
+    {
+      time 6.865385 9.434002
+      param "grd.cpf.p1_nomakesounds01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+    event speak "otis.cpf.p1_ohjeez01"
+    {
+      time 1.977711 3.590296
+      param "otis.cpf.p1_ohjeez01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.p1_pow01"
+    {
+      time 4.252221 4.851359
+      param "otis.cpf.p1_pow01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.p1_pow02"
+    {
+      time 5.232822 5.813797
+      param "otis.cpf.p1_pow02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.p1_pow03"
+    {
+      time 6.083040 6.629843
+      param "otis.cpf.p1_pow03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.p1_pow04"
+    {
+      time 7.038596 7.685331
+      param "otis.cpf.p1_pow04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.p1_pow05"
+    {
+      time 7.860817 8.494808
+      param "otis.cpf.p1_pow05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.p1_nomakesounds01"
+    {
+      time 9.496161 10.874098
+      param "otis.cpf.p1_nomakesounds01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Face to"
+  {
+    event firetrigger "1 - Fire OTIS's GUN MANUALLY"
+    {
+      time 4.137990 -1.000000
+      param "1"
+    }
+    event firetrigger "1 - Fire OTIS's GUN MANUALLY"
+    {
+      time 5.947640 -1.000000
+      param "1"
+    }
+  }
+  channel "Move To"
+  {
+    event firetrigger "1 - Fire OTIS's GUN MANUALLY"
+    {
+      time 5.067815 -1.000000
+      param "1"
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "80"
+  "SceneRampTool" "100"
+  "ExpressionTool" "44"
+  "GestureTool" "100"
+  "RampTool" "6"
+}
+fps 60
+snap off
+ignorePhonemes off

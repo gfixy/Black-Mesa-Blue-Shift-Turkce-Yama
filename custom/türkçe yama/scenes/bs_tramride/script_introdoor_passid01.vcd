@@ -1,0 +1,33 @@
+// Choreo version 1
+actor "introdoor_kb"
+{
+  channel "Audio"
+  {
+    event speak "INS.grd_frontdoor_passid01_speakerFX"
+    {
+      time 0.186667 3.925941
+      param "INS.grd_frontdoor_passid01_speakerFX"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.grd_frontdoor_passid02_speakerFX"
+    {
+      time 4.293333 6.485555
+      param "INS.grd_frontdoor_passid02_speakerFX"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

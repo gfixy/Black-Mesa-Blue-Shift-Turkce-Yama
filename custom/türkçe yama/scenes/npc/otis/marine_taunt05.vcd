@@ -1,0 +1,159 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.220879 3.811537
+      param "NPC_Security_Otis.marine_taunt05"
+      fixedlength
+      tags
+      {
+        "barn" 0.795017
+        "big" 0.591166
+        "you" 0.074745
+        "barn" 0.361268
+      }
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_accentUp"
+    {
+      time 2.121952 4.665041
+      param "bg_accentUp"
+      event_ramp
+      {
+        0.4500 0.8392
+        2.4083 0.8182
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.162764
+        "extreme" 0.321600
+        "loop" 0.459200
+        "end" 0.582400
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event gesture "bg_down"
+    {
+      time 1.865854 4.543902
+      param "bg_down"
+      event_ramp
+      {
+        0.2625 0.4406
+        2.3083 0.3846
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.139818
+        "extreme" 0.262918
+        "loop" 0.354521
+        "end" 0.651976
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.086207
+        "extreme" 0.241379
+        "loop" 0.482759
+        "end" 0.672414
+      }
+      sequenceduration 1.966667
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_incombat02"
+    {
+      time 1.839192 4.728002
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat02"
+      event_ramp
+      {
+        0.2875 0.9091
+        2.3719 0.9091
+      }
+    }
+    event expression "b_angry01"
+    {
+      time 0.073171 2.540651
+      param "humans\guard\expressions_guard"
+      param2 "b_angry01"
+      event_ramp
+      {
+        0.1625 0.9510
+        2.1542 0.7413
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.162602 4.016261
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_rightleft" range 30.0 -30.0 
+        {
+          0.2167 0.4100
+          0.4889 0.5400
+          0.7611 0.4200
+          1.1667 0.5100
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.3300 0.3300
+          1.1382 0.2400
+          1.4469 0.7000
+          1.9966 0.5400
+          2.1731 0.2100
+          2.6688 0.3400
+          2.8453 0.8300
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.5295 0.2200
+          1.1833 0.8100
+          2.1462 0.9000
+          2.9269 0.3300
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !enemy"
+    {
+      time 0.024903 4.800890
+      param "!enemy"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        4.0842 1.0000
+        4.4201 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "164"
+  "SceneRampTool" "100"
+  "ExpressionTool" "24"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

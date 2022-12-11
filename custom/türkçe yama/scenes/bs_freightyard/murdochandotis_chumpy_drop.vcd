@@ -1,0 +1,62 @@
+// Choreo version 1
+actor "bs_ally_los"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Security.eventheodds04"
+    {
+      time 0.340000 1.388390
+      param "NPC_Security.eventheodds04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAT"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.286667 1.660000
+      param "!player"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "g_palm_up_l"
+    {
+      time 0.340000 2.306667
+      param "g_palm_up_l"
+      event_ramp
+      {
+        0.4080 0.6417
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.172414
+        "accent" 0.362069
+        "loop" 0.431034
+        "end" 0.775862
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.172414
+        "accent" 0.362069
+        "loop" 0.431034
+        "end" 0.775862
+      }
+      sequenceduration 1.966667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

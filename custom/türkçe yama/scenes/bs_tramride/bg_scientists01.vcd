@@ -1,0 +1,352 @@
+// Choreo version 1
+actor "Sci32_Generator"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Scimale.question_pre23"
+    {
+      time 0.406666 3.927233
+      param "NPC_Scimale.question_pre23"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scimale.question_pre05"
+    {
+      time 11.226665 14.347958
+      param "NPC_Scimale.question_pre05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scimale.question_pre07"
+    {
+      time 7.960000 10.931315
+      param "NPC_Scimale.question_pre07"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_accentUp"
+    {
+      time 12.526667 14.960000
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event gesture "hg_nod_right"
+    {
+      time 10.966666 12.266666
+      param "hg_nod_right"
+      event_ramp
+      {
+        0.2980 0.6122
+        0.8720 0.5842
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+    event gesture "b_head_forward"
+    {
+      time 9.199999 10.999999
+      param "b_head_forward"
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      sequenceduration 1.800000
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at Sci10_NetworkRoom"
+    {
+      time -0.473333 5.433333
+      param "Sci10_NetworkRoom"
+      event_ramp
+      {
+        0.5900 0.8673
+        1.8640 0.8673
+      }
+    }
+    event lookat "Look at Sci10_NetworkRoom"
+    {
+      time 7.920000 13.953334
+      param "Sci10_NetworkRoom"
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 11.226666 15.520000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1500 0.7500
+          0.6520 0.2100
+        }
+        {
+        }
+        "lid_droop" combo 
+        {
+          1.4200 0.2200
+          1.6620 0.6600
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1480 0.6800
+          0.7220 0.2500
+          1.4640 0.0600
+          1.7260 0.3900
+          2.0780 0.1300
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 8.006667 11.180001
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          1.4360 0.2900
+          1.7160 0.6300
+        }
+        {
+          1.3840 0.4600
+          1.6240 0.1800
+        }
+        "outer_raiser" combo 
+        {
+          1.4080 0.1700
+          1.5880 0.4600
+          2.1500 0.6200
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.1480 0.4500
+          0.3620 0.2800
+        }
+        {
+        }
+      }
+    }
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+actor "Sci10_NetworkRoom"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Scifemale.answer_pre10"
+    {
+      time 4.286668 5.586668
+      param "NPC_Scifemale.answer_pre10"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scifemale.answer_pre02"
+    {
+      time 14.666666 16.331745
+      param "NPC_Scifemale.answer_pre02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Gesture"
+  {
+    event lookat "Look at Sci32_Generator"
+    {
+      time 14.240000 16.506668
+      param "Sci32_Generator"
+      event_ramp
+      {
+        0.5300 0.7449
+        1.8640 0.7806
+      }
+    }
+    event lookat "Look at Sci32_Generator"
+    {
+      time 1.140000 7.966666
+      param "Sci32_Generator"
+      event_ramp
+      {
+        0.8800 0.9490
+        5.3640 0.8903
+      }
+    }
+    event gesture "G_righthandheavy"
+    {
+      time 14.260001 16.560001
+      param "G_righthandheavy"
+      event_ramp
+      {
+        0.2420 0.9337
+        1.1240 0.9056
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.220588
+        "accent" 0.411765
+        "loop" 0.514706
+        "end" 0.617647
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.220588
+        "accent" 0.411765
+        "loop" 0.514706
+        "end" 0.617647
+      }
+    }
+    event gesture "hg_headshake"
+    {
+      time 14.520000 16.153332
+      param "hg_headshake"
+      event_ramp
+      {
+        0.5120 0.6709
+        0.9860 0.9133
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "loop" 0.270833
+        "extreme" 0.416667
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "b_OverHere_Right"
+    {
+      time 4.206667 6.006667
+      param "b_OverHere_Right"
+      event_ramp
+      {
+        0.6960 0.6378
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.188679
+        "extreme" 0.792453
+        "loop" 0.811321
+        "end" 0.830189
+      }
+      sequenceduration 1.800000
+    }
+    event gesture "bg_accent_left"
+    {
+      time 5.693333 7.326667
+      param "bg_accent_left"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "extreme" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "extreme" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at Sci32_Generator"
+    {
+      time 4.286667 5.800000
+      param "Sci32_Generator"
+      event_ramp
+      {
+        0.5420 0.8367
+      }
+    }
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "92"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

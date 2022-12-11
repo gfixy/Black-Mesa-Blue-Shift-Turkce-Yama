@@ -1,0 +1,55 @@
+// Choreo version 1
+actor "GRD01_Otis"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Otis.Camscene"
+    {
+      time 0.326667 1.836984
+      param "NPC_Otis.Camscene"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.186666 2.220000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          1.3784 0.1300
+          1.6412 0.7700
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.2471 0.7500
+        }
+        {
+        }
+      }
+    }
+  }
+  faceposermodel "models\humans\guard_thick.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "102"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

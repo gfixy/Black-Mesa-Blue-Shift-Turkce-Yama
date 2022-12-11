@@ -1,0 +1,138 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "NPC_Security_Otis.leadon03"
+    {
+      time 0.306667 1.856667
+      param "NPC_Security_Otis.leadon03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_accentUp"
+    {
+      time 0.680000 2.873333
+      param "bg_accentUp"
+      event_ramp
+      {
+        0.3590 0.6084
+        1.9241 0.5944
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.176292
+        "extreme" 0.338990
+        "loop" 0.480243
+        "end" 0.674772
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "facial"
+  {
+    event flexanimation "flex"
+    {
+      time 0.060000 2.539999
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.1793 0.4700
+          0.3414 0.6600
+          0.5034 0.3100
+          0.6586 0.5900
+          0.8241 0.4400
+          1.0172 0.5700
+          1.3207 0.5700
+          1.5552 0.1800
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.5276 0.7500
+          1.3483 0.7100
+          1.6345 0.5300
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2786 0.8100
+          0.9310 0.2100
+          1.3655 0.6900
+          1.8211 0.8500
+          2.1828 0.5300
+        }
+      }
+    }
+    event expression "b_sudden01"
+    {
+      time 0.073333 1.893333
+      param "humans\guard\expressions_guard"
+      param2 "b_sudden01"
+      event_ramp
+      {
+        0.2103 0.9720
+      }
+    }
+    event expression "b_smile_evil00"
+    {
+      time 0.493333 2.853333
+      param "humans\guard\expressions_guard"
+      param2 "b_smile_evil00"
+      event_ramp
+      {
+        0.6641 0.5105
+        1.5462 0.6434
+      }
+    }
+    event expression "b_angry01"
+    {
+      time 1.013333 2.826667
+      param "humans\guard\expressions_guard"
+      param2 "b_angry01"
+      event_ramp
+      {
+        0.4000 0.7273
+        1.5103 0.5524
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.040000 2.886666
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        2.1548 1.0000
+        2.4907 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "58"
+  "GestureTool" "100"
+  "RampTool" "78"
+}
+fps 60
+snap off
+ignorePhonemes off

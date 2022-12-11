@@ -1,0 +1,31 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 3.420000 -1.000000
+  param "0.540000"
+  loopcount "-1"
+}
+actor "!target1"
+{
+  channel "ACT"
+  {
+    event gesture "grd_incident_checkpoint_waiting"
+    {
+      time 0.444445 3.486111
+      param "grd_incident_checkpoint_waiting"
+      sequenceduration 3.041667
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "72"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

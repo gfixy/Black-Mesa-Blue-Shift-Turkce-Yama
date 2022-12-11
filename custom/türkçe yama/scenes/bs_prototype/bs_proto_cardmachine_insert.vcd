@@ -1,0 +1,163 @@
+// Choreo version 1
+event stoppoint "Fire Completion"
+{
+  time 9.035385 -1.000000
+  param "noaction"
+}
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.protolab_cardslot_insert01"
+    {
+      time 0.531524 3.347533
+      param "ros.cpf.protolab_cardslot_insert01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.protolab_cardslot_one"
+    {
+      time 4.295684 4.801512
+      param "ros.cpf.protolab_cardslot_one"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.protolab_cardslot_two"
+    {
+      time 5.388277 5.880975
+      param "ros.cpf.protolab_cardslot_two"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.protolab_cardslot_three"
+    {
+      time 6.448464 6.907149
+      param "ros.cpf.protolab_cardslot_three"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.protolab_cardslot_accept01"
+    {
+      time 8.493719 9.428957
+      param "ros.cpf.protolab_cardslot_accept01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "Look at !player"
+    {
+      time 10.125001 12.208334
+      param "!player"
+      event_ramp
+      {
+        0.4840 0.9519
+        1.3460 0.9332
+      }
+    }
+    event lookat "Look at mark_tp_rosen_look_top"
+    {
+      time 11.031250 13.885417
+      param "mark_tp_rosen_look_top"
+      event_ramp
+      {
+        0.8140 0.9492
+        2.1160 0.9305
+      }
+    }
+  }
+  channel "Expression"
+  {
+    event flexanimation "ALLOT FOR TIME FOR MACHINE TO ACCEPT"
+    {
+      time 7.347886 8.597886
+      param ""
+    }
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "g_hands_on_hips"
+    {
+      time 9.447917 14.414583
+      param "g_hands_on_hips"
+      absolutetags playback_time
+      {
+        "apex" 0.192703
+        "loop" 0.202703
+        "accent" 0.405405
+        "end" 0.810811
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.202703
+        "loop" 0.202703
+        "accent" 0.405405
+        "end" 0.810811
+      }
+      sequenceduration 4.966667
+    }
+  }
+  channel "Face To"
+  {
+    event face "Face !player"
+    {
+      time 10.041666 12.312500
+      param "!player"
+    }
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_tp_rosen_move_cardslot2"
+    {
+      time 0.677084 2.406250
+      param "mark_tp_rosen_move_cardslot2"
+    }
+    event moveto "Moveto mark_tp_rosen_move_cardmachine3"
+    {
+      time 10.031251 11.916668
+      param "mark_tp_rosen_move_cardmachine3"
+    }
+  }
+  channel "OnTrigger"
+  {
+    event firetrigger "2 - INSERT KEYCARD"
+    {
+      time 7.000000 -1.000000
+      param "2"
+    }
+    event firetrigger "1 - SLOW DOWN PLAYBACKRATE OF VIEWMODEL"
+    {
+      time 1.593750 -1.000000
+      param "1"
+    }
+    event firetrigger "3 - SWAP VIEWMODEL BODYGROUP"
+    {
+      time 8.572917 -1.000000
+      param "3"
+    }
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "64"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

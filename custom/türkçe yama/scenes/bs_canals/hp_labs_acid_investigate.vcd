@@ -1,0 +1,90 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 5.766667 -1.000000
+  param "1.000000"
+  loopcount "-1"
+}
+actor "acid_death_sci"
+{
+  channel "Audio"
+  {
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at mark_acid_pool"
+    {
+      time 0.253333 6.440000
+      param "mark_acid_pool"
+    }
+    event face "Face acid_death_sci"
+    {
+      time 0.100000 6.073334
+      param "acid_death_sci"
+      event_ramp
+      {
+        0.3340 0.5803
+        2.9340 0.7772
+      }
+    }
+  }
+  channel "Facial"
+  {
+    event gesture "g_hands_on_hips"
+    {
+      time 0.426666 7.453333
+      param "g_hands_on_hips"
+      absolutetags playback_time
+      {
+        "apex" 0.026565
+        "loop" 0.143277
+        "accent" 0.286553
+        "end" 0.820853
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.202703
+        "loop" 0.202703
+        "accent" 0.405405
+        "end" 0.810811
+      }
+      sequenceduration 4.966667
+    }
+    event gesture "bg_accentFwd"
+    {
+      time 2.333333 4.766666
+      param "bg_accentFwd"
+      event_ramp
+      {
+        0.4020 0.3653
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "108"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

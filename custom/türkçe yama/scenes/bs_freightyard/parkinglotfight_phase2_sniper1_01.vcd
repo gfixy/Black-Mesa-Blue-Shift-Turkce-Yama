@@ -1,0 +1,108 @@
+// Choreo version 1
+event stoppoint "!"
+{
+  time 5.665373 -1.000000
+  param "noaction"
+}
+event section "MOVE TO COVER, THEN CONTINUE?"
+{
+  time 2.919445 -1.000000
+  param "automate Resume 0.000000"
+}
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.p2_1stsniper01"
+    {
+      time 0.293506 1.206635
+      param "grd.cpf.p2_1stsniper01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.p2_1stsniper01"
+    {
+      time 3.180762 4.381170
+      param "grd.cpf.p2_1stsniper02_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.p2_1stsniper02_02"
+    {
+      time 4.826594 5.605301
+      param "grd.cpf.p2_1stsniper02_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Trigger Cues"
+  {
+    event firetrigger "1-Wait 4 Actors 2 Seek Cover"
+    {
+      time 1.541667 -1.000000
+      param "1"
+    }
+  }
+  channel "Trigger Cues"
+  {
+  }
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "64"
+  "SceneRampTool" "100"
+  "ExpressionTool" "44"
+  "GestureTool" "100"
+  "RampTool" "6"
+}
+fps 60
+snap off
+ignorePhonemes off

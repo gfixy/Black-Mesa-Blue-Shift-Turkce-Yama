@@ -1,0 +1,42 @@
+// Choreo version 1
+actor "ins_inci_grd02"
+{
+  channel "Audio"
+  {
+    event speak "INS.grd_comeondalton01"
+    {
+      time 0.226667 1.386962
+      param "INS.grd_comeondalton01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+actor "ins_inci_grd01"
+{
+  channel "Audio"
+  {
+    event speak "INS.grd_dalton_shit01"
+    {
+      time 1.760000 2.760000
+      param "INS.grd_dalton_shit01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

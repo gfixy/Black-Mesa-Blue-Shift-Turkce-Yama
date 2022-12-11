@@ -1,0 +1,24 @@
+// Choreo version 1
+actor "intro_fight_actor2"
+{
+  channel "Audio"
+  {
+    event speak "hg.cpf.ambush_weaponsfree02"
+    {
+      time 0.253333 3.298503
+      param "hg.cpf.ambush_weaponsfree02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

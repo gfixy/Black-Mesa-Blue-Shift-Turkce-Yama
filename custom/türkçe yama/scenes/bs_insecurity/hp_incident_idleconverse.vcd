@@ -1,0 +1,84 @@
+// Choreo version 1
+actor "incident_elev_malesci"
+{
+  channel "Audio"
+  {
+    event speak "INS.male_sci_Trev_ele_3_student"
+    {
+      time 0.375000 6.994819
+      param "INS.male_sci_Trev_ele_3_student"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.male_sci_Trev_ele_4_canada"
+    {
+      time 13.145834 20.592319
+      param "INS.male_sci_Trev_ele_4_canada"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Trigger"
+  {
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+actor "incident_elev_femsci"
+{
+  channel "Audio"
+  {
+    event speak "INS.scifemale_pat_isimportant01"
+    {
+      time 8.145833 10.484223
+      param "INS.scifemale_pat_isimportant01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "INS.scifemale_pat_isimportant02"
+    {
+      time 10.833334 12.818096
+      param "INS.scifemale_pat_isimportant02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Lookat"
+  {
+  }
+  channel "Posture"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "32"
+  "RampTool" "100"
+  "ExpressionTool" "104"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

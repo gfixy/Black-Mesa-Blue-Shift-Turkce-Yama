@@ -1,0 +1,137 @@
+// Choreo version 1
+actor "incident_elev_femsci"
+{
+  channel "Audio"
+  {
+    event speak "INS.scifemale_pat_idle_button01"
+    {
+      time 0.833333 4.061723
+      param "INS.scifemale_pat_idle_button01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.619048 4.928572
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          0.2260 0.9100
+        }
+        {
+          0.7460 0.0500
+          1.9540 0.7200
+        }
+        "lowerer" combo 
+        {
+          0.7440 0.8333
+          1.0860 0.1900
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.2640 0.8100
+          0.6060 0.3200
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "P_shiftright"
+    {
+      time 1.023810 2.823810
+      param "P_shiftright"
+      absolutetags playback_time
+      {
+        "apex" 0.301887
+        "loop" 0.415094
+        "end" 0.716981
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.301887
+        "loop" 0.415094
+        "end" 0.716981
+      }
+      sequenceduration 1.800000
+    }
+    event gesture "bg_accent_left"
+    {
+      time 1.761905 3.395238
+      param "bg_accent_left"
+      absolutetags playback_time
+      {
+        "apex" 0.208333
+        "extreme" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.208333
+        "extreme" 0.416667
+        "loop" 0.520833
+        "end" 0.625000
+      }
+      sequenceduration 1.633333
+    }
+    event gesture "hg_nod_no"
+    {
+      time 2.404762 4.738095
+      param "hg_nod_no"
+      event_ramp
+      {
+        0.5700 0.9541
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      sequenceduration 2.333333
+    }
+  }
+  channel "Lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.404762 4.738095
+      param "!player"
+    }
+  }
+  channel "Posture"
+  {
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

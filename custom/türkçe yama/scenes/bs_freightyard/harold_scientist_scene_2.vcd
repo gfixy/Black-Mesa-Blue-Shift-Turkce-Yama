@@ -1,0 +1,307 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 15.687501 -1.000000
+  param "14.000000"
+  loopcount "-1"
+}
+event stoppoint "c"
+{
+  time 14.388888 -1.000000
+  param "noaction"
+}
+actor "bs_ally_harold"
+{
+  channel "Voice"
+  {
+    event speak "harold.cpf.deathrattle"
+    {
+      time 10.783333 13.348480
+      param "harold.cpf.deathrattle"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "harold.cpf.findrosenberg01_01"
+    {
+      time 0.759260 5.471709
+      param "harold.cpf.findrosenberg01_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "harold.cpf.findrosenberg01_02"
+    {
+      time 6.111111 10.184830
+      param "harold.cpf.findrosenberg01_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at mark_harold_fakeplayer"
+    {
+      time 0.437500 10.479164
+      param "mark_harold_fakeplayer"
+      event_ramp leftedge curve_default_to_curve_default 1.000
+      {
+        8.5011 1.0000
+        8.8811 0.8412
+        9.4500 0.1647
+        9.9567 0.0000
+      }
+    }
+    event lookat "Look at !self"
+    {
+      time 13.407408 16.462963
+      param "!self"
+      event_ramp
+      {
+        0.6778 0.9706
+        2.5222 0.9786
+      }
+    }
+  }
+  channel "Face to"
+  {
+    event face "Face mark_harold_fakeplayer"
+    {
+      time 1.020833 13.041666
+      param "mark_harold_fakeplayer"
+      event_ramp
+      {
+        2.0563 0.8824
+      }
+    }
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.604167 10.729168
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          3.0391 0.3300
+          3.5565 0.6200
+          5.2304 0.3800
+          6.0696 0.6900
+        }
+        {
+          4.3435 0.5200
+          5.2391 0.5100
+          5.8217 0.0600
+        }
+        "blink" 
+        {
+          0.6304 0.6000
+          2.5174 0.2200
+          2.8478 0.0700
+        }
+        "outer_raiser" combo 
+        {
+          2.9304 0.2400
+          3.6130 0.1100
+          4.1957 0.2000
+          6.3391 0.7600
+          6.6174 0.3000
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.8454 0.6700
+          2.6541 0.1600
+          6.0130 0.5500
+          6.5696 0.1400
+        }
+        {
+          4.4957 0.5800
+          5.1130 0.2800
+          5.7261 0.4600
+        }
+        "corner_depressor" combo 
+        {
+          0.9916 0.4600
+          3.2249 0.1900
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 6.166666 9.416667
+      param ""
+      event_ramp
+      {
+        1.0750 0.8690
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_closer" combo 
+        {
+          0.6522 0.7000
+          0.8391 0.4000
+          1.5696 0.8300
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.4217 0.6100
+          0.9739 0.4900
+          1.7652 0.9300
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          0.4130 0.8300
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 8.333334 14.187502
+      param ""
+      event_ramp
+      {
+        2.6750 0.9572
+        5.6896 0.9385
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.5087 0.5200
+        }
+        {
+        }
+        "jaw_drop" 
+        {
+          1.2538 0.5400
+          5.1846 0.4500
+        }
+        "mouth_drop" combo 
+        {
+          0.5462 0.2600
+          1.9692 0.5800
+          5.1154 0.3600
+        }
+        {
+        }
+        "eyes_updown" range 30.0 -30.0 
+        {
+          0.4333 0.8900
+        }
+        "lid_tightener" combo 
+        {
+          0.6400 1.0000
+        }
+        {
+        }
+        "lid_closer" combo 
+        {
+          2.9605 0.3500
+          5.3467 0.3600
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 13.104167 16.520832
+      param ""
+      event_ramp
+      {
+        0.5271 0.8412
+        1.3556 1.0000
+        3.4167 1.0000
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "jaw_drop" rightedge curve_default_to_curve_default 0.200 
+        {
+          0.3842 0.1700
+          0.9000 0.1900
+          1.7478 0.1900
+          3.1067 0.1800
+        }
+        "mouth_drop" combo 
+        {
+          0.6042 1.0000
+          3.2333 1.0000
+        }
+        {
+        }
+        "eyes_updown" disabled range 30.0 -30.0 
+        {
+          0.6042 1.0000
+          3.2467 1.0000
+        }
+        "lid_tightener" combo 
+        {
+          0.3733 1.0000
+          3.0200 1.0000
+        }
+        {
+        }
+        "lid_droop" combo 
+        {
+          0.3667 1.0000
+          3.0933 1.0000
+        }
+        {
+        }
+        "lid_closer" combo 
+        {
+          0.2533 1.0000
+          3.2400 0.9600
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+    event firetrigger "1 -- Pause Scene"
+    {
+      time 14.537038 -1.000000
+      param "1"
+    }
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "36"
+  "SceneRampTool" "100"
+  "ExpressionTool" "26"
+  "GestureTool" "100"
+  "RampTool" "18"
+}
+fps 60
+snap off
+ignorePhonemes off

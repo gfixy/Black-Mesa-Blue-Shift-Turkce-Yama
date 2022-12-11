@@ -1,0 +1,602 @@
+//Prototype Lab Soundscapes
+
+//We'Re using a dedicated Soundscape file for this location for easier control of the whole soundscape throughout multiple chapters!
+//Besides using the Soundscape on at least 3 different chapters, there's gonna by some dynamic behavior between them.
+//We're starting with some deep spooky underground ambient and move to light industrial soundscapes!
+
+//STAGES:
+//STAGE 1 -- SPOOKY AND DEEP
+//STAGE 2 -- MORE OFFENSIVE INDUSTRIAL AMBIENT
+//STAGE 3 -- VERY OFFENSIVE SOUNDSCAPE WITH HEAVY INDUSTRIAL AMBIENT
+//STAGE 4 -- SAME AS 3 BUT MAYBE WITH SOME FANCY WARP / GRIND FX BASED ON THE TELEPORTER SOUND DESIGN
+
+//DEVNOTE: Using DSP 1 (Generic) for all soundscapes!
+//We don't wanna risk that subsampling screws up our inline side FX. Let's keep this safe!
+
+//RANDOM UTILITY SOUNDS
+
+"proto_util_randomcreaks"	
+{	
+	"playrandom"
+	{
+		"volume"	"1"
+		"pitch"		"80,120"
+		"time"		"20,40"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_110dB"
+		"rndwave"
+		{
+			"wave"	"bshift\bs_soundscape\soundscape_proto_metal_creak1.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_metal_creak2.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_metal_creak3.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_metal_creak4.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_metal_creak5.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_metal_creak6.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_metal_creak7.wav"
+		}
+	}
+}
+
+"proto_util_randomrumbles"	
+{	
+	"playrandom"
+	{
+		"volume"	"1"
+		"pitch"		"90,110"
+		"time"		"25,55"
+		"position"	"random"
+		"soundlevel"	"SNDLVL_110dB"
+		"rndwave"
+		{
+			"wave"	"bshift\bs_soundscape\soundscape_proto_rumble1.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_rumble2.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_rumble3.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_rumble4.wav"
+			"wave"	"bshift\bs_soundscape\soundscape_proto_rumble5.wav"
+		}
+	}
+}
+
+//==========================================================================
+//STAGE 1 BEGINS HERE!
+//CAPTIVE FREIGHT: POTOTYPE LAB
+//==========================================================================
+"proto_stage1_accesshall"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_disaster_rumble1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"120"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.2"
+		"name"		"proto_util_randomrumbles"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"1"
+		"soundlevel"		"SNDLVL_80dB"
+		"pitch"			"80"
+		"wave"			"^bshift\bs_emitters\bs_hydroplant_largefan_loop.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"120"
+		"wave"			"ambient\levels\citadel\field_loop1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow2.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"95"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow2a.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"110"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow2b.wav"
+		"position"	"4"
+	}
+}
+
+"proto_stage1_junction"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_disaster_rumble1.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"120"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.4"
+		"name"		"proto_util_randomrumbles"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.3"
+		"name"		"proto_util_randomcreaks"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		".75"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow2.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"95"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow2a.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"110"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent2.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow1.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum3.wav"
+		"position"	"6"
+	}
+}
+
+"proto_stage1_cafeteria"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lowrumble.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.2"
+		"pitch"		"90"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_med13.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.4"
+		"name"		"proto_util_randomrumbles"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.4"
+		"name"		"proto_util_randomcreaks"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		".75"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.5"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"90"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1a.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\vmachine\vending_hum.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_objects\white_noise.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"120"
+		"wave"			"bms_objects\hum\hum2.wav"
+		"position"	"4"
+	}
+}
+
+"proto_stage1_auxroom"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lowrumble.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.4"
+		"pitch"		"120"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_large8.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.4"
+		"name"		"proto_util_randomrumbles"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.2"
+		"name"		"proto_util_randomcreaks"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		".7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"80"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc6.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"80"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc6a.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc20.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow1.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.75"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrical1.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrichum1a.wav"
+		"position"	"5"
+	}
+}
+
+"proto_stage1_mainroom_access"
+{
+	"dsp"	"1"
+	"playlooping"
+	{
+		"volume"	"0.5"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"bms_ambience\room_ambience\r_ambience_lowrumble.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"100"
+		"soundlevel"	"SNDLVL_110dB"
+		"wave"		"xen\ambience\xen_amb70a.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.7"
+		"name"		"proto_util_randomrumbles"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.3"
+		"name"		"proto_util_randomcreaks"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		".7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"105"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_vent1a.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.6"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipeflow2.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_pipe2.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.35"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_comp1.wav"
+		"position"	"4"
+	}
+}
+
+"proto_stage1_mainroom"
+{
+	"dsp"	"0"
+	"playlooping"
+	{
+		"volume"	"0.6"
+		"pitch"		"110"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"xen\ambience\xen_amb66.wav"
+	}
+
+	"playlooping"
+	{
+		"volume"	"0.7"
+		"pitch"		"90"
+		"soundlevel"	"SNDLVL_120dB"
+		"wave"		"xen\ambience\xen_amb69b.wav"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.6"
+		"name"		"proto_util_randomrumbles"
+	}
+
+	"playsoundscape"
+	{
+		"volume"	"0.3"
+		"name"		"proto_util_randomcreaks"
+	}
+
+//Positional audio for this Soundscape
+	"playlooping"
+	{
+		"volume"		"1"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"130"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_waterbubble4.wav"
+		"position"	"0"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"60"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water12.wav"
+		"position"	"1"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"65"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water12a.wav"
+		"position"	"2"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.4"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"70"
+		"wave"			"bms_ambience\room_ambience\r_ambience_water12b.wav"
+		"position"	"3"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_60dB"
+		"pitch"			"100"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_energy2.wav"
+		"position"	"4"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.7"
+		"soundlevel"		"SNDLVL_70dB"
+		"pitch"			"130"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_electrical2slow.wav"
+		"position"	"5"
+	}
+
+	"playlooping"
+	{
+		"volume"		"1"
+		"soundlevel"		"SNDLVL_75dB"
+		"pitch"			"110"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc20.wav"
+		"position"	"6"
+	}
+
+	"playlooping"
+	{
+		"volume"		"0.95"
+		"soundlevel"		"SNDLVL_65dB"
+		"pitch"			"120"
+		"wave"			"bms_ambience\machine_ambience\m_ambience_lc7.wav"
+		"position"	"7"
+	}
+}
+
+//==========================================================================
+//STAGE 2 BEGINS HERE!
+//FOCAL POINT: POTOTYPE LAB
+//THIS SHOULD BE A STREIGHT COPY FROM STAGE 1 WITH ALTERED WAVE PARAMS!
+//==========================================================================
+
+//TODO: Add Soundscape here!
+
+//==========================================================================
+//STAGE 3 BEGINS HERE!
+//A LEAP OF FAITH: POTOTYPE LAB (RETURNAL)
+//THIS SHOULD BE A STREIGHT COPY FROM STAGE 1 WITH ALTERED WAVE PARAMS!
+//==========================================================================
+
+//TODO: Add Soundscape here!
+
+//==========================================================================
+//STAGE 4 BEGINS HERE!
+//A LEAP OF FAITH: POTOTYPE LAB (ESCAPE)
+//THIS SHOULD BE A STREIGHT COPY FROM STAGE 1 WITH ALTERED WAVE PARAMS!
+//==========================================================================
+
+//TODO: Add Soundscape here!

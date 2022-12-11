@@ -1,0 +1,35 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Audio"
+  {
+    event speak "ros.cpt.container_areyoustillthere07"
+    {
+      time 0.186666 0.960612
+      param "ros.cpt.container_areyoustillthere07"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpt.container_areyoustillthere08"
+    {
+      time 1.853333 2.829002
+      param "ros.cpt.container_areyoustillthere08"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

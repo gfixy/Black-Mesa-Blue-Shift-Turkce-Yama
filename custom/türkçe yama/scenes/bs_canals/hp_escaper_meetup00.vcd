@@ -1,0 +1,33 @@
+// Choreo version 1
+actor "dc_hp_grd01"
+{
+  channel "Audio"
+  {
+  }
+  channel "LookAt"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Posture"
+  {
+  }
+  channel "MoveTo"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Trigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,110 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.293334 2.033334
+      param "NPC_Security_Otis.illstayhere01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "hg_nod_yes"
+    {
+      time 0.147059 1.878432
+      param "hg_nod_yes"
+      event_ramp leftedge curve_default_to_curve_default 1.000
+      {
+        0.9256 0.7972
+        1.2795 0.0490
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.078143
+        "extreme" 0.214892
+        "loop" 0.546999
+        "end" 0.719446
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "bg_right"
+    {
+      time 0.284313 3.170588
+      param "bg_right"
+      event_ramp
+      {
+        0.6033 0.5315
+        1.1433 0.7273
+        2.0649 0.9371
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.219168
+        "extreme" 0.373494
+        "loop" 0.517799
+        "end" 0.706244
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_smile00"
+    {
+      time 0.088235 3.083333
+      param "humans\guard\expressions_guard"
+      param2 "b_smile00"
+      event_ramp
+      {
+        0.3567 0.6084
+        2.3002 0.9091
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.020000 2.926666
+      param "!player"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        2.2149 1.0000
+        2.5508 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "136"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "60"
+}
+fps 60
+snap off
+ignorePhonemes off

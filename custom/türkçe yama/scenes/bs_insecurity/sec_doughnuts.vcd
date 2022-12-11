@@ -1,0 +1,164 @@
+// Choreo version 1
+actor "Sci02_lab04"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Scimale.question_pre21"
+    {
+      time 0.300000 2.233515
+      param "NPC_Scimale.question_pre21"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scimale.answer_pre57"
+    {
+      time 5.366667 6.438685
+      param "NPC_Scimale.answer_pre57"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAT"
+  {
+    event face "Face GRD03_NetworkRoom"
+    {
+      time 0.240000 4.953333
+      param "GRD03_NetworkRoom"
+    }
+    event lookat "Look at Otis"
+    {
+      time 3.453334 4.986667
+      param "GRD01_Otis"
+      event_ramp
+      {
+        0.7380 0.8342
+        1.3760 0.8316
+      }
+    }
+    event lookat "Look at GRD03_NetworkRoom"
+    {
+      time 1.266667 2.659999
+      param "GRD03_NetworkRoom"
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "g_hands_on_hips"
+    {
+      time 0.466667 5.433333
+      param "g_hands_on_hips"
+      absolutetags playback_time
+      {
+        "apex" 0.192703
+        "loop" 0.202703
+        "accent" 0.405405
+        "end" 0.810811
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.202703
+        "loop" 0.202703
+        "accent" 0.405405
+        "end" 0.810811
+      }
+      sequenceduration 4.966667
+    }
+    event moveto "Moveto mark_sci02_away"
+    {
+      time 4.773332 6.839999
+      param "mark_sci02_away"
+      param2 "Walk"
+    }
+  }
+}
+
+actor "GRD03_NetworkRoom"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Security.answer09"
+    {
+      time 2.533334 3.329320
+      param "NPC_Security.answer09"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at Sci02_lab04"
+    {
+      time 0.860000 3.500000
+      param "Sci02_lab04"
+    }
+    event lookat "Look at Otis"
+    {
+      time 3.093333 5.380000
+      param "GRD01_Otis"
+      event_ramp
+      {
+        0.8620 0.9847
+        2.0920 0.8929
+      }
+    }
+  }
+  channel "MoveTo"
+  {
+    event gesture "bg_up_r"
+    {
+      time 2.393333 3.993333
+      param "bg_up_r"
+      absolutetags playback_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+      sequenceduration 1.600000
+    }
+  }
+}
+
+actor "GRD01_Otis"
+{
+  channel "MoveTO"
+  {
+    event moveto "Moveto mark_otis_away"
+    {
+      time 3.228333 4.308333
+      param "mark_otis_away"
+      param2 "Run"
+    }
+    event speak "NPC_Otis.Camscene"
+    {
+      time 3.683332 5.193650
+      param "NPC_Otis.Camscene"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "80"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

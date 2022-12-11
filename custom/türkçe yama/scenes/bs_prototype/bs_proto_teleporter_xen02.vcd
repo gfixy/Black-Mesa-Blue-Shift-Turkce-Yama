@@ -1,0 +1,310 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.tele_xen_startup01"
+    {
+      time 0.500000 5.750000
+      param "ros.cpf.tele_xen_startup01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.tele_xen_startup02"
+    {
+      time 5.988888 9.148048
+      param "ros.cpf.tele_xen_startup02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.tele_xen_startup03"
+    {
+      time 9.861112 12.861112
+      param "ros.cpf.tele_xen_startup03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "Look at !player"
+    {
+      time 1.533333 9.900001
+      param "!player"
+      event_ramp
+      {
+        0.6980 0.9059
+        7.2633 0.8765
+      }
+    }
+    event lookat "Look at bs_ally_simmons"
+    {
+      time 8.700002 14.666668
+      param "bs_ally_simmons"
+      event_ramp
+      {
+        0.6000 0.8353
+        1.4700 0.9471
+        4.9900 0.7588
+      }
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 1.066666 5.533333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          1.9460 0.5900
+          2.3980 0.1700
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.6420 0.7900
+          0.8740 0.4400
+          2.4180 0.2900
+          3.0240 0.8100
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 10.066668 14.833334
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.4700 0.6000
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1880 0.5900
+          0.6560 0.5900
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 4.600000 9.366667
+      param ""
+      event_ramp
+      {
+        1.1500 0.7487
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          2.4087 0.3300
+          2.5847 0.8300
+          3.1487 0.6400
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          1.8967 0.7000
+          2.1927 0.4000
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_left"
+    {
+      time 1.133334 6.066668
+      param "bg_left"
+      event_ramp
+      {
+        0.7360 0.4332
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.068607
+        "extreme" 0.130353
+        "loop" 0.212682
+        "end" 0.722973
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+    event gesture "hg_puncuate_down"
+    {
+      time 6.066667 8.333335
+      param "hg_puncuate_down"
+      absolutetags playback_time
+      {
+        "apex" 0.240196
+        "extreme" 0.470588
+        "loop" 0.889706
+        "end" 0.904412
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.333333
+        "extreme" 0.541667
+        "loop" 0.562500
+        "end" 0.562500
+      }
+      sequenceduration 1.633333
+    }
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  faceposermodel "models\humans\scientist_rosenberg.mdl"
+}
+
+actor "bs_ally_simmons"
+{
+  channel "Voice"
+  {
+    event speak "sim.cpf.tele_xen_start01"
+    {
+      time 13.388889 15.293696
+      param "sim.cpf.tele_xen_start01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "sim.cpf.tele_xen_start02"
+    {
+      time 16.480553 19.200371
+      param "sim.cpf.tele_xen_start02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "hg_nod_yes"
+    {
+      time 13.283334 15.583334
+      param "hg_nod_yes"
+      event_ramp
+      {
+        0.3100 0.8471
+        1.1000 0.9059
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+    }
+    event gesture "bg_accentUp"
+    {
+      time 13.749998 16.283335
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.192434
+        "extreme" 0.365862
+        "loop" 0.605994
+        "end" 0.703947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+    event firetrigger "Firetrigger 1"
+    {
+      time 15.900002 -1.000000
+      param "1"
+    }
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "Look at"
+  {
+    event lookat "Look at bs_ally_rosenberg"
+    {
+      time 12.333334 17.033333
+      param "bs_ally_rosenberg"
+      event_ramp
+      {
+        0.4100 0.8765
+        0.9500 0.9588
+        4.0967 0.8765
+      }
+    }
+  }
+  faceposermodel "models\humans\scientist.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "40"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "20"
+}
+fps 60
+snap off
+ignorePhonemes off

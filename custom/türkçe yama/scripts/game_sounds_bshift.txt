@@ -1,0 +1,629 @@
+//Black Mesa: Blue Shift Generic Game Event Sounds
+//We're using this file to define sound parameters for any generic game sounds that aren't related to specific chapters / scenes or NPCs in the game!
+
+// Rusty Door
+"BS.RustyDoor_Open"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6,0.8"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_65dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift/bs_emitters/bs_rusty_door_open1.wav"
+		"wave"	"bshift/bs_emitters/bs_rusty_door_open2.wav"
+		"wave"	"bshift/bs_emitters/bs_rusty_door_open3.wav"
+		"wave"	"bshift/bs_emitters/bs_rusty_door_open4.wav"
+		"wave"	"bshift/bs_emitters/bs_rusty_door_open5.wav"
+	}
+}
+
+"BS.RustyDoor_Opened"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6,0.8"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_65dB"
+	"wave"	"bshift/bs_emitters/bs_rusty_door_opened.wav"
+}
+
+"BS.RustyDoor_Close"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6,0.8"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_65dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift/bs_emitters/bs_rusty_door_close1.wav"
+		"wave"	"bshift/bs_emitters/bs_rusty_door_close2.wav"
+		"wave"	"bshift/bs_emitters/bs_rusty_door_close3.wav"
+		"wave"	"bshift/bs_emitters/bs_rusty_door_close4.wav"
+		"wave"	"bshift/bs_emitters/bs_rusty_door_close5.wav"
+	}
+}
+
+"BS.RustyDoor_Closed"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6,0.8"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_65dB"
+	"wave"	"bshift/bs_emitters/bs_rusty_door_closed.wav"
+}
+
+// Metal Door
+"BS.MetalDoor_Open"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6,0.8"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_65dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift/bs_emitters/bs_Metal_door_open1.wav"
+		"wave"	"bshift/bs_emitters/bs_Metal_door_open2.wav"
+		"wave"	"bshift/bs_emitters/bs_Metal_door_open3.wav"
+		"wave"	"bshift/bs_emitters/bs_Metal_door_open4.wav"
+		"wave"	"bshift/bs_emitters/bs_Metal_door_open5.wav"
+	}
+}
+
+"BS.MetalDoor_Opened"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6,0.8"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_65dB"
+	"wave"	"bshift/bs_emitters/bs_Metal_door_opened.wav"
+}
+
+"BS.MetalDoor_Close"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6,0.8"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_65dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift/bs_emitters/bs_Metal_door_close1.wav"
+		"wave"	"bshift/bs_emitters/bs_Metal_door_close2.wav"
+		"wave"	"bshift/bs_emitters/bs_Metal_door_close3.wav"
+		"wave"	"bshift/bs_emitters/bs_Metal_door_close4.wav"
+		"wave"	"bshift/bs_emitters/bs_Metal_door_close5.wav"
+	}
+}
+
+"BS.MetalDoor_Closed"
+{
+	"channel"	"CHAN_VOICE"
+	"volume"	"0.6,0.8"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_65dB"
+	"wave"	"bshift/bs_emitters/bs_Metal_door_closed.wav"
+}
+
+"BS.MetalDoor_Handle"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_65dB"
+	"wave"	"bshift/bs_emitters/bs_Metal_door_handle.wav"
+}
+
+"BS.MetalDoor_Handle_Locked"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_65dB"
+	"wave"	"bshift/bs_emitters/bs_Metal_door_handle_Locked.wav"
+}
+
+"BS.MetalDoor_Pushbar"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_65dB"
+	"wave"	"bshift/bs_emitters/bs_Metal_door_pushbar.wav"
+}
+
+"BS.MetalDoor_Pushbar_Locked"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_65dB"
+	"wave"	"bshift/bs_emitters/bs_Metal_door_pushbar_locked.wav"
+}
+
+// Flickering Lights
+"BS.Light_Flicker"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.5,0.85"
+	"pitch"		"95,105"
+	"soundlevel"  "SNDLVL_60dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift/bs_emitters/bs_light_flicker1.wav"
+		"wave"	"bshift/bs_emitters/bs_light_flicker2.wav"
+		"wave"	"bshift/bs_emitters/bs_light_flicker3.wav"
+		"wave"	"bshift/bs_emitters/bs_light_flicker4.wav"
+		"wave"	"bshift/bs_emitters/bs_light_flicker5.wav"
+		"wave"	"bshift/bs_emitters/bs_light_flicker6.wav"
+		"wave"	"bshift/bs_emitters/bs_light_flicker7.wav"
+		"wave"	"bshift/bs_emitters/bs_light_flicker8.wav"
+		"wave"	"bshift/bs_emitters/bs_light_flicker9.wav"
+	}
+}
+
+"BS.MedLight_Flicker"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.75,0.85"
+	"pitch"		"90,115"
+	"soundlevel"  "SNDLVL_65dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift/bs_emitters/bs_medlight_flicker1.wav"
+		"wave"	"bshift/bs_emitters/bs_medlight_flicker2.wav"
+		"wave"	"bshift/bs_emitters/bs_medlight_flicker3.wav"
+		"wave"	"bshift/bs_emitters/bs_medlight_flicker4.wav"
+		"wave"	"bshift/bs_emitters/bs_medlight_flicker5.wav"
+	}
+}
+
+"BS.HardLight_Flicker"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"0.5,0.85"
+	"pitch"		"95,105"
+	"soundlevel"  "SNDLVL_60dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift/bs_emitters/bs_hardlight_flicker1.wav"
+		"wave"	"bshift/bs_emitters/bs_hardlight_flicker2.wav"
+		"wave"	"bshift/bs_emitters/bs_hardlight_flicker3.wav"
+		"wave"	"bshift/bs_emitters/bs_hardlight_flicker4.wav"
+		"wave"	"bshift/bs_emitters/bs_hardlight_flicker5.wav"
+		"wave"	"bshift/bs_emitters/bs_hardlight_flicker6.wav"
+		"wave"	"bshift/bs_emitters/bs_hardlight_flicker7.wav"
+	}
+}
+
+// Generator Blast
+"BS.Generator_Blast"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_85dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift/bs_emitters/bs_generator_blast1.wav"
+		"wave"	"bshift/bs_emitters/bs_generator_blast2.wav"
+		"wave"	"bshift/bs_emitters/bs_generator_blast3.wav"
+		"wave"	"bshift/bs_emitters/bs_generator_blast4.wav"
+	}
+}
+
+// Freightyard Traincar SoundFX
+// Freightyard Traincar Explosion (Da Ting Gos Booooom!)
+"BS.Traincar_Explode"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_140dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift\scripted_traincars\traincar_explode1.wav"
+		"wave"	"bshift\scripted_traincars\traincar_explode2.wav"
+		"wave"	"bshift\scripted_traincars\traincar_explode3.wav"
+		"wave"	"bshift\scripted_traincars\traincar_explode4.wav"
+		"wave"	"bshift\scripted_traincars\traincar_explode5.wav"
+	}
+}
+
+// Freightyard Traincar Debris
+"BS.Traincar_Debris"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_110dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift\scripted_traincars\traincar_debris1.wav"
+		"wave"	"bshift\scripted_traincars\traincar_debris2.wav"
+		"wave"	"bshift\scripted_traincars\traincar_debris3.wav"
+		"wave"	"bshift\scripted_traincars\traincar_debris4.wav"
+		"wave"	"bshift\scripted_traincars\traincar_debris5.wav"
+	}
+}
+
+// Freightyard Traincar Wronk
+"BS.Traincar_Wronk"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".75"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"	"bshift\scripted_traincars\traincar_wronk1.wav"
+		"wave"	"bshift\scripted_traincars\traincar_wronk2.wav"
+		"wave"	"bshift\scripted_traincars\traincar_wronk3.wav"
+		"wave"	"bshift\scripted_traincars\traincar_wronk4.wav"
+		"wave"	"bshift\scripted_traincars\traincar_wronk5.wav"
+	}
+}
+
+// Freightyard Traincar Ignite (Da Ting Gos Burrrnnn!)
+"BS.Traincar_Ignite"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"90,110"
+	"soundlevel"  "SNDLVL_80dB"
+	"wave"	"bshift\scripted_traincars\traincar_fueltank_ignite.wav"	
+}
+
+// Prototype Lab Flipperstairs)
+"BS.Flipperstair_Tostair"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_70dB"
+	"wave"	"bshift\bs_emitters\bs_flipperstair_tostair.wav"	
+}
+
+"BS.Flipperstair_Toramp"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_70dB"
+	"wave"	"bshift\bs_emitters\bs_flipperstair_toramp.wav"	
+}
+
+// Prototype Lab Old Retinal Scanner
+"BS.OldRetinal_Denied"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_60dB"
+	"wave"		"bshift\bs_emitters\bs_oldretinal_denied.wav"	
+}
+
+"BS.OldRetinal_Denied_vox"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"		"bshift\bs_emitters\bs_oldretinal_denied_vox.wav"	
+}
+
+"BS.OldRetinal_Granted"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_60dB"
+	"wave"		"bshift\bs_emitters\bs_oldretinal_granted.wav"	
+}
+
+"BS.OldRetinal_Granted_vox"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  	"SNDLVL_70dB"
+	"wave"		"bshift\bs_emitters\bs_oldretinal_granted_vox.wav"	
+}
+
+
+// Prototype Lab Teleporter Main (The mighty machine!)
+// Machine Sounds
+"BS.Prototype_BlastwindowOpen"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_midgame\prototype_blastwindow_open.wav"	
+}
+
+"BS.Prototype_BlastwindowRaise"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_midgame\prototype_blastwindow_raise.wav"	
+}
+
+"BS.Prototype_EmitterOpen"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_emitter_open.wav"	
+}
+
+"BS.Prototype_EmitterClose"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_emitter_close.wav"	
+}
+
+"BS.Prototype_EmitterAlign"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_emitter_align.wav"	
+}
+
+"BS.Prototype_EmitterRattle1"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".5"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_70dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_emitter_rattle1_lp.wav"	
+}
+
+"BS.Prototype_EmitterRattle2"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".5"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_70dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_emitter_rattle2_lp.wav"	
+}
+
+"BS.Prototype_EmitterRattle3"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".5"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_70dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_emitter_rattle3_lp.wav"	
+}
+
+"BS.Prototype_EmitterRattle4"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".5"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_70dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_emitter_rattle4_lp.wav"	
+}
+
+"BS.Prototype_DampinglocksOpen"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".8"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_70dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_dampinglocks_open.wav"	
+}
+
+"BS.Prototype_DampinglocksClose"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".8"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_70dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_dampinglocks_close.wav"	
+}
+
+"BS.Prototype_Connector_Phase1"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".75"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_connector_phase1.wav"	
+}
+
+"BS.Prototype_Connector_Phase2"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".75"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_connector_phase2.wav"	
+}
+
+"BS.Prototype_Connector_Phase3"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".75"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_connector_phase3.wav"	
+}
+
+"BS.Prototype_Connector_Phase4"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".75"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_connector_phase4.wav"	
+}
+
+"BS.Prototype_Buzzer"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_mach_buzzer.wav"	
+}
+
+"BS.Prototype_ControlBuzzer"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_80dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_field_buzzer.wav"	
+}
+
+"BS.Prototype_AlarmLoop"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_90dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_init_alarm.wav"	
+}
+
+// Random SideFX
+"BS.Prototype_MainConsoleBeeps"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".75"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_70dB"
+	"rndwave"
+	{
+		"wave"	"buttons\button14.wav"
+		"wave"	"buttons\button15.wav"
+		"wave"	"buttons\button16.wav"
+		"wave"	"buttons\button17.wav"
+		"wave"	"buttons\button18.wav"
+		"wave"	"bms_objects\clickbeep\beep8.wav"
+	}	
+}
+
+
+// Teleporter Sounds
+
+"BS.Prototype_Chargingsequence"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_120dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_chargeingsequence.wav"	
+}
+
+"BS.Prototype_FieldOpen"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_80dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_field_open.wav"	
+}
+
+"BS.Prototype_FieldIdle"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_85dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_field_idle.wav"	
+}
+
+"BS.Prototype_FieldResonance"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	".6"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_85dB"
+	"wave"	"bshift\scripted_teleporter\teleporter_field_resonance.wav"	
+}
+
+// Random SideFX
+"BS.Prototype_SFX_Warp"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_120dB"
+	"rndwave"
+	{
+		"wave"	"bshift\scripted_teleporter\teleporter_warp1.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_warp2.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_warp3.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_warp4.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_warp5.wav"
+	}	
+}
+
+"BS.Prototype_SFX_Pulse"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse1.wav"	
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse2.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse3.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse4.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse5.wav"
+	}
+}
+
+// Random SideFX (Far)
+"BS.Prototype_SFX_Warp_Far"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_120dB"
+	"rndwave"
+	{
+		"wave"	"bshift\scripted_teleporter\teleporter_warp1_far.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_warp2_far.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_warp3_far.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_warp4_far.wav"
+		"wave"	"bshift\scripted_teleporter\teleporter_warp5_far.wav"
+	}	
+}
+
+"BS.Prototype_SFX_Pulse_Far"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"pitch"		"100"
+	"soundlevel"  "SNDLVL_90dB"
+	"rndwave"
+	{
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse1_far.wav"	
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse2_far.wav"	
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse3_far.wav"	
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse4_far.wav"	
+		"wave"	"bshift\scripted_teleporter\teleporter_pulse5_far.wav"	
+	}
+
+}

@@ -1,0 +1,27 @@
+criterion IsAnnouncement "concept" "announcement" required
+
+//========================================================
+//DC
+//========================================================
+response "announce_dc"
+{
+	//sequential
+	// norepeat
+	speak "BS_Announcer.Disaster01"
+	speak "BS_Announcer.Disaster02"
+	speak "BS_Announcer.Disaster03"
+	speak "BS_Announcer.Disaster04"
+	speak "BS_Announcer.Disaster05"
+	speak "BS_Announcer.Disaster06"
+	speak "BS_Announcer.Disaster07"
+	speak "BS_Announcer.Disaster08"
+	speak "BS_Announcer.Disaster09"
+	speak "BS_Announcer.Disaster10"
+	speak "BS_Announcer.Disaster11"
+}
+
+rule "announce_dc"
+{
+	criteria IsAnnouncement
+	response announce_dc
+}

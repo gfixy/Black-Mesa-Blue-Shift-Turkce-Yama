@@ -1,0 +1,1837 @@
+//
+//
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+//
+// VOL_NORM		1.0f
+//
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+//
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+//
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	= 3.9
+//	SNDLVL_55dB		= 55,	= 3.0
+//	SNDLVL_IDLE		= 60,	= 2.0
+//	SNDLVL_TALKING		= 60,	= 2.0
+//	SNDLVL_60dB		= 60,	= 2.0
+//	SNDLVL_65dB		= 65,	= 1.5
+//	SNDLVL_STATIC		= 66,	= 1.25
+//	SNDLVL_70dB		= 70,	= 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	= 0.8
+//	SNDLVL_80dB		= 80,	= 0.7
+//	SNDLVL_85dB		= 85,	= 0.6
+//	SNDLVL_90dB		= 90,	= 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	= 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140, = 0.27
+//	SNDLVL_140dB	= 140,	= 0.2
+//	SNDLVL_150dB	= 150,	= 0.2
+//
+
+//============================================================
+// Behind you!
+//============================================================
+
+"NPC_Security_Otis.behindyou01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_behindyou01.wav"
+}
+
+"NPC_Security_Otis.behindyou02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_behindyou02.wav"
+}
+
+"NPC_Security_Otis.behindyou03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_behindyou03.wav"
+}
+
+"NPC_Security_Otis.behindyou04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_behindyou04.wav"
+}
+
+//============================================================
+// Excuse Me
+//============================================================
+
+"NPC_Security_Otis.excuseme01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"			"vo/npc/otis/otis_excuseme01_var01.wav"
+		"wave"			"vo/npc/otis/otis_excuseme01_var02.wav"
+	}
+}
+
+"NPC_Security_Otis.excuseme02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"			"vo/npc/otis/otis_excuseme02_var01.wav"
+		"wave"			"vo/npc/otis/otis_excuseme02_var02.wav"
+	}
+}
+
+"NPC_Security_Otis.excuseme03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"			"vo/npc/otis/otis_excuseme03_var01.wav"
+		"wave"			"vo/npc/otis/otis_excuseme03_var02.wav"
+	}
+}
+
+//============================================================
+// Let's get going soon!
+//============================================================
+
+"NPC_Security_Otis.getgoingsoon01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_getgoingsoon01.wav"
+}
+
+"NPC_Security_Otis.getgoingsoon02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_getgoingsoon02.wav"
+}
+
+"NPC_Security_Otis.getgoingsoon03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_getgoingsoon03.wav"
+}
+
+"NPC_Security_Otis.getgoingsoon04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_getgoingsoon04.wav"
+}
+
+"NPC_Security_Otis.getgoingsoon05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_getgoingsoon05.wav"
+}
+
+"NPC_Security_Otis.getgoingsoon06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_getgoingsoon06.wav"
+}
+
+"NPC_Security_Otis.getgoingsoon07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_getgoingsoon07.wav"
+}
+
+"NPC_Security_Otis.getgoingsoon08"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_getgoingsoon08.wav"
+}
+
+//============================================================
+// I'll hold down this spot!
+//============================================================
+
+"NPC_Security_Otis.holddownspot01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_holddownspot01.wav"
+}
+
+"NPC_Security_Otis.holddownspot02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_holddownspot02.wav"
+}
+
+"NPC_Security_Otis.holddownspot03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_holddownspot03.wav"
+}
+
+"NPC_Security_Otis.holddownspot04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"			"vo/npc/otis/otis_holddownspot04.wav"
+		"wave"			"vo/npc/otis/otis_holddownspot04_var01.wav"
+	}
+}
+
+"NPC_Security_Otis.holddownspot05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"			"vo/npc/otis/otis_holddownspot05.wav"
+		"wave"			"vo/npc/otis/otis_holddownspot05_var01.wav"
+		"wave"			"vo/npc/otis/otis_holddownspot05_var02.wav"		
+	}
+}
+
+//============================================================
+// Ok. I'll stay here!
+//============================================================
+
+"NPC_Security_Otis.illstayhere01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_illstayhere01.wav"
+}
+
+"NPC_Security_Otis.illstayhere02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_illstayhere02.wav"
+}
+
+"NPC_Security_Otis.illstayhere03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_illstayhere03.wav"
+}
+
+//============================================================
+// Imstickinghere
+//============================================================
+
+"NPC_Security_Otis.imstickinghere01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imstickinghere01.wav"
+}
+
+"NPC_Security_Otis.imstickinghere02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imstickinghere02.wav"
+}
+
+"NPC_Security_Otis.imstickinghere03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imstickinghere03.wav"
+}
+
+"NPC_Security_Otis.imstickinghere04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imstickinghere04.wav"
+}
+
+//============================================================
+// Lead on!
+//============================================================
+
+"NPC_Security_Otis.leadon01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadon01.wav"
+}
+
+"NPC_Security_Otis.leadon02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadon02.wav"
+}
+
+"NPC_Security_Otis.leadon03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadon03.wav"
+}
+
+//============================================================
+// Lead the way!
+//============================================================
+
+"NPC_Security_Otis.leadtheway01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadtheway01.wav"
+}
+
+"NPC_Security_Otis.leadtheway02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadtheway02.wav"
+}
+
+"NPC_Security_Otis.leadtheway03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadtheway03.wav"
+}
+
+"NPC_Security_Otis.leadtheway04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadtheway04.wav"
+}
+
+"NPC_Security_Otis.leadtheway05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadtheway05.wav"
+}
+
+"NPC_Security_Otis.leadtheway06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadtheway06.wav"
+}
+
+"NPC_Security_Otis.leadtheway07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadtheway07.wav"
+}
+
+"NPC_Security_Otis.leadtheway08"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_leadtheway08.wav"
+}
+
+//============================================================
+// Marine_Dead
+//============================================================
+
+// DEV NOTE: Barneys variant of marine_dead starts with 03, 
+// so there is no 01 or 02.
+
+"NPC_Security_Otis.marine_dead03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_dead03.wav"
+}
+
+"NPC_Security_Otis.marine_dead04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_dead04.wav"
+}
+
+"NPC_Security_Otis.marine_dead05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_dead05.wav"
+}
+
+"NPC_Security_Otis.marine_dead06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_dead06.wav"
+}
+
+"NPC_Security_Otis.marine_dead07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_dead07.wav"
+}
+
+"NPC_Security_Otis.marine_dead08"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_dead08.wav"
+}
+
+"NPC_Security_Otis.marine_dead09"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_dead09.wav"
+}
+
+"NPC_Security_Otis.marine_dead10"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_dead10.wav"
+}
+
+//============================================================
+// Marine_Taunt
+//============================================================
+
+"NPC_Security_Otis.marine_taunt01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt01.wav"
+}
+
+"NPC_Security_Otis.marine_taunt02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt02.wav"
+}
+
+"NPC_Security_Otis.marine_taunt03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt03.wav"
+}
+
+"NPC_Security_Otis.marine_taunt04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt04.wav"
+}
+
+"NPC_Security_Otis.marine_taunt05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt05.wav"
+}
+
+"NPC_Security_Otis.marine_taunt06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt06.wav"
+}
+
+"NPC_Security_Otis.marine_taunt07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt07.wav"
+}
+
+"NPC_Security_Otis.marine_taunt08"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt08.wav"
+}
+
+"NPC_Security_Otis.marine_taunt09"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt09.wav"
+}
+
+"NPC_Security_Otis.marine_taunt10"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt10.wav"
+}
+
+"NPC_Security_Otis.marine_taunt11"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_marine_taunt11.wav"
+}
+
+//============================================================
+// My Arm!
+//============================================================
+
+"NPC_Security_Otis.myarm01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_myarm01.wav"
+}
+
+"NPC_Security_Otis.myarm02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_myarm02.wav"
+}
+
+"NPC_Security_Otis.myarm03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_myarm03.wav"
+}
+
+//============================================================
+// My gut!
+//============================================================
+
+"NPC_Security_Otis.mygut01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_mygut01.wav"
+}
+
+"NPC_Security_Otis.mygut02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_mygut02.wav"
+}
+
+"NPC_Security_Otis.mygut03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_mygut03.wav"
+}
+
+//============================================================
+// My leg!
+//============================================================
+
+"NPC_Security_Otis.myleg01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_myleg01.wav"
+}
+
+"NPC_Security_Otis.myleg02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_myleg02.wav"
+}
+
+"NPC_Security_Otis.myleg03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_myleg03.wav"
+}
+
+//============================================================
+// Hit in the gut!
+//============================================================
+
+"NPC_Security_Otis.hitingut01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_hitingut01.wav"
+}
+
+"NPC_Security_Otis.hitingut02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_hitingut02.wav"
+}
+
+"NPC_Security_Otis.hitingut03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_hitingut03.wav"
+}
+
+"NPC_Security_Otis.hitingut04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_hitingut04.wav"
+}
+
+//============================================================
+// Im Hurt!
+//============================================================
+
+"NPC_Security_Otis.imhurt01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt01.wav"
+}
+
+"NPC_Security_Otis.imhurt02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt02.wav"
+}
+
+"NPC_Security_Otis.imhurt03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt03.wav"
+}
+
+"NPC_Security_Otis.imhurt04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt04.wav"
+}
+
+"NPC_Security_Otis.imhurt05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt05.wav"
+}
+
+"NPC_Security_Otis.imhurt06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt06.wav"
+}
+
+"NPC_Security_Otis.imhurt07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt07.wav"
+}
+
+"NPC_Security_Otis.imhurt08"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt08.wav"
+}
+
+"NPC_Security_Otis.imhurt09"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt09.wav"
+}
+
+"NPC_Security_Otis.imhurt10"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_imhurt10.wav"
+}
+
+//============================================================
+// Not the man I thought
+//============================================================
+
+"NPC_Security_Otis.notthemanithought01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_notthemanithought01.wav"
+}
+
+"NPC_Security_Otis.notthemanithought02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_notthemanithought02.wav"
+}
+
+"NPC_Security_Otis.notthemanithought03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_notthemanithought03.wav"
+}
+
+"NPC_Security_Otis.notthemanithought04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_notthemanithought04.wav"
+}
+
+//============================================================
+// onyourside
+//============================================================
+
+"NPC_Security_Otis.onyourside01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_onyourside01.wav"
+}
+
+"NPC_Security_Otis.onyourside02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_onyourside02.wav"
+}
+
+"NPC_Security_Otis.onyourside03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_onyourside03.wav"
+}
+
+"NPC_Security_Otis.onyourside04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_onyourside04.wav"
+}
+
+"NPC_Security_Otis.onyourside05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_onyourside05.wav"
+}
+
+"NPC_Security_Otis.onyourside06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_onyourside06.wav"
+}
+
+//============================================================
+// outofyourway
+//============================================================
+
+"NPC_Security_Otis.outofyourway01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_outofyourway01.wav"
+}
+
+"NPC_Security_Otis.outofyourway02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_outofyourway02.wav"
+}
+
+"NPC_Security_Otis.outofyourway03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"			"vo/npc/otis/otis_outofyourway03.wav"
+		"wave"			"vo/npc/otis/otis_outofyourway03_var01.wav"
+	}
+}
+
+//============================================================
+// ow
+//============================================================
+
+"NPC_Security.ow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_ow01.wav"
+}
+
+"NPC_Security_Otis.ow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_ow02.wav"
+}
+
+"NPC_Security_Otis.ow03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_ow03.wav"
+}
+
+"NPC_Security_Otis.ow04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_ow04.wav"
+}
+
+"NPC_Security_Otis.ow05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_ow05.wav"
+}
+
+"NPC_Security_Otis.ow06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_ow06.wav"
+}
+
+"NPC_Security_Otis.ow07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_ow07.wav"
+}
+
+//============================================================
+// pain
+//============================================================
+
+"NPC_Security_Otis.pain01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain01.wav"
+}
+
+"NPC_Security_Otis.pain02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain02.wav"
+}
+
+"NPC_Security_Otis.pain03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain03.wav"
+}
+
+"NPC_Security_Otis.pain04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain04.wav"
+}
+
+"NPC_Security_Otis.pain05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain05.wav"
+}
+
+"NPC_Security_Otis.pain06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain06.wav"
+}
+
+"NPC_Security_Otis.pain07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain07.wav"
+}
+
+"NPC_Security_Otis.pain08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain08.wav"
+}
+
+"NPC_Security_Otis.pain09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain09.wav"
+}
+
+"NPC_Security_Otis.pain10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain10.wav"
+}
+
+"NPC_Security_Otis.pain11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain11.wav"
+}
+
+"NPC_Security_Otis.pain12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain12.wav"
+}
+
+"NPC_Security_Otis.pain13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain13.wav"
+}
+
+"NPC_Security_Otis.pain14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain14.wav"
+}
+
+"NPC_Security_Otis.pain15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain15.wav"
+}
+
+"NPC_Security_Otis.pain16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/otis/otis_pain16.wav"
+}
+
+//============================================================
+// Pardon Me
+//============================================================
+
+"NPC_Security_Otis.pardonme01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_pardonme01.wav"
+}
+
+"NPC_Security_Otis.pardonme02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_pardonme02.wav"
+}
+
+"NPC_Security_Otis.pardonme03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_pardonme03.wav"
+}
+
+//============================================================
+// Ready when you are!
+//============================================================
+
+"NPC_Security_Otis.readywhenyouare01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_readywhenyouare01.wav"
+}
+
+"NPC_Security_Otis.readywhenyouare02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_readywhenyouare02.wav"
+}
+
+"NPC_Security_Otis.readywhenyouare03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_readywhenyouare03.wav"
+}
+
+"NPC_Security_Otis.readywhenyouare04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_readywhenyouare04.wav"
+}
+
+//============================================================
+// Watchwhat
+//============================================================
+
+"NPC_Security_Otis.watchwhat01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_watchwhat01.wav"
+}
+
+"NPC_Security_Otis.watchwhat02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_watchwhat02.wav"
+}
+
+"NPC_Security_Otis.watchwhat03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_watchwhat03.wav"
+}
+
+"NPC_Security_Otis.watchwhat04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_watchwhat04.wav"
+}
+
+//============================================================
+// statement
+//============================================================
+
+"NPC_Security_Otis.statement01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement01.wav"
+}
+
+"NPC_Security_Otis.statement02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement02.wav"
+}
+
+"NPC_Security_Otis.statement03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement03.wav"
+}
+
+"NPC_Security_Otis.statement04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement04.wav"
+}
+
+"NPC_Security_Otis.statement05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement05.wav"
+}
+
+"NPC_Security_Otis.statement06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement06.wav"
+}
+
+"NPC_Security_Otis.statement07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement07.wav"
+}
+
+"NPC_Security_Otis.statement08"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement08.wav"
+}
+
+"NPC_Security_Otis.statement09"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement09.wav"
+}
+
+"NPC_Security_Otis.statement10"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement10.wav"
+}
+
+"NPC_Security_Otis.statement11"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement11.wav"
+}
+
+"NPC_Security_Otis.statement12"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement12.wav"
+}
+
+"NPC_Security_Otis.statement13"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement13.wav"
+}
+
+"NPC_Security_Otis.statement14"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_statement14.wav"
+}
+
+//============================================================
+// wetrustedyou
+//============================================================
+
+"NPC_Security_Otis.wetrustedyou01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou01.wav"
+}
+
+"NPC_Security_Otis.wetrustedyou02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou02.wav"
+}
+
+"NPC_Security_Otis.wetrustedyou03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou03.wav"
+}
+
+"NPC_Security_Otis.wetrustedyou04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou04.wav"
+}
+
+"NPC_Security_Otis.wetrustedyou05"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou05.wav"
+}
+
+"NPC_Security_Otis.wetrustedyou06"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou06.wav"
+}
+
+"NPC_Security_Otis.wetrustedyou07"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou07.wav"
+}
+
+"NPC_Security_Otis.wetrustedyou08"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou08.wav"
+}
+
+"NPC_Security_Otis.wetrustedyou09"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou09.wav"
+}
+
+"NPC_Security_Otis.wetrustedyou10"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.95"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/npc/otis/otis_wetrustedyou10.wav"
+}

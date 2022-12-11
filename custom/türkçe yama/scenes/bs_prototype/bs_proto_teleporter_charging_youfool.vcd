@@ -1,0 +1,39 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Audio"
+  {
+    event speak "ros.cpf.telexen_charge_youfool"
+    {
+      time 0.240000 1.335510
+      param "ros.cpf.telexen_charge_youfool"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.153333 1.539999
+      param "!player"
+    }
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\scientist_rosenberg.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,506 @@
+// Choreo version 1
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.depot_okaypal01"
+    {
+      time 2.579000 4.289272
+      param "grd.cpf.depot_okaypal01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_ahhshit01"
+    {
+      time 4.790000 7.097120
+      param "grd.cpf.depot_ahhshit01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_toldyouso01"
+    {
+      time 9.330000 13.109637
+      param "grd.cpf.depot_toldyouso01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_toldyouso02"
+    {
+      time 13.295000 14.818968
+      param "grd.cpf.depot_toldyouso02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_toldyouso03"
+    {
+      time 16.827999 19.274847
+      param "grd.cpf.depot_toldyouso03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_whatwho01"
+    {
+      time 25.377001 26.312330
+      param "grd.cpf.depot_whatwho01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_whatwho02"
+    {
+      time 31.947001 32.341309
+      param "grd.cpf.depot_whatwho02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_whatsospecial01"
+    {
+      time 46.157001 48.083759
+      param "grd.cpf.depot_whatsospecial01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_whatsospecial02"
+    {
+      time 56.912998 59.379528
+      param "grd.cpf.depot_whatsospecial02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_whatsospecial03"
+    {
+      time 60.792999 63.850616
+      param "grd.cpf.depot_whatsospecial03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_helpfindhim01"
+    {
+      time 64.151573 67.910934
+      param "grd.cpf.depot_helpfindhim01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_helpfindhim02"
+    {
+      time 68.165588 73.115723
+      param "grd.cpf.depot_helpfindhim02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_anothersci01"
+    {
+      time 83.101593 84.383339
+      param "grd.cpf.depot_anothersci01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_anothersci02"
+    {
+      time 85.888885 87.470497
+      param "grd.cpf.depot_anothersci02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_anothersci03"
+    {
+      time 88.214287 90.734764
+      param "grd.cpf.depot_anothersci03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_shutupronny01"
+    {
+      time 92.476189 94.271744
+      param "grd.cpf.depot_shutupronny01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at bs_ally_ronny"
+    {
+      time 0.000000 4.741571
+      param "bs_ally_ronny"
+    }
+  }
+  channel "Face to"
+  {
+    event moveto "Moveto mark_ronny_walkout02"
+    {
+      time 92.142273 95.475609
+      param "mark_ronny_walkout02"
+    }
+    event face "Face bs_ally_ronny"
+    {
+      time 0.000000 54.041573
+      param "bs_ally_ronny"
+    }
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+    event speak "grd.cpf.depot_thatscalhoun01"
+    {
+      time 20.706903 23.212006
+      param "grd.cpf.depot_thatscalhoun01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+}
+
+actor "bs_ally_ronny"
+{
+  channel "Voice"
+  {
+    event speak "ronny.cpf.depot_ahshit01_01"
+    {
+      time 4.549000 6.063603
+      param "ronny.cpf.depot_ahshit01_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_ahshit01_02"
+    {
+      time 8.218000 9.485529
+      param "ronny.cpf.depot_ahshit01_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_heleftme01"
+    {
+      time 14.708000 16.720291
+      param "ronny.cpf.depot_heleftme01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_messner01"
+    {
+      time 26.690001 31.400976
+      param "ronny.cpf.depot_messner01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_messner02"
+    {
+      time 33.152000 36.571842
+      param "ronny.cpf.depot_messner02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_messner03"
+    {
+      time 37.028000 42.368839
+      param "ronny.cpf.depot_messner03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_messner04"
+    {
+      time 42.924000 45.520325
+      param "ronny.cpf.depot_messner04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_messner05"
+    {
+      time 48.740002 52.646645
+      param "ronny.cpf.depot_messner05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_messner06"
+    {
+      time 52.700001 54.366371
+      param "ronny.cpf.depot_messner06"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_messner07"
+    {
+      time 55.018002 56.985733
+      param "ronny.cpf.depot_messner07"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_messner08"
+    {
+      time 63.364281 64.409813
+      param "ronny.cpf.depot_messner08"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_fairenough01"
+    {
+      time 73.309517 74.258270
+      param "ronny.cpf.depot_fairenough01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_anothersci01"
+    {
+      time 75.049995 76.621399
+      param "ronny.cpf.depot_anothersci01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_anothersci02_01"
+    {
+      time 76.966667 78.886215
+      param "ronny.cpf.depot_anothersci02_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_anothersci02_02"
+    {
+      time 79.322235 83.007881
+      param "ronny.cpf.depot_anothersci02_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_anothersci03"
+    {
+      time 84.570641 85.515266
+      param "ronny.cpf.depot_anothersci03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_anothersci04"
+    {
+      time 91.050743 92.740425
+      param "ronny.cpf.depot_anothersci04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_gatedown01"
+    {
+      time 94.924248 96.263252
+      param "ronny.cpf.depot_gatedown01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_gatedown02"
+    {
+      time 96.971214 99.334595
+      param "ronny.cpf.depot_gatedown02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_whoisthis02"
+    {
+      time 22.309816 24.922470
+      param "ronny.cpf.depot_whoisthis02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ronny.cpf.depot_whoisthis01"
+    {
+      time 19.946144 20.543400
+      param "ronny.cpf.depot_whoisthis01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_ronny_walkout01"
+    {
+      time 15.937500 19.562500
+      param "mark_ronny_walkout01"
+      param2 "Walk"
+    }
+    event moveto "Moveto mark_ronny_walkout02"
+    {
+      time 87.364502 90.697838
+      param "mark_ronny_walkout02"
+    }
+    event moveto "Moveto mark_los_walkto"
+    {
+      time 91.033340 93.583344
+      param "mark_los_walkto"
+      param2 "Walk"
+      distancetotarget 120.00
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.depot_ohhboy01"
+    {
+      time 6.959000 8.218161
+      param "otis.cpf.depot_ohhboy01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at bs_ally_ronny"
+    {
+      time 3.898714 8.279667
+      param "bs_ally_ronny"
+    }
+  }
+  channel "Face to"
+  {
+    event face "Face bs_ally_ronny"
+    {
+      time 3.922523 7.422523
+      param "bs_ally_ronny"
+    }
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_otis_walkaway"
+    {
+      time 7.105951 12.064824
+      param "mark_otis_walkaway"
+      param2 "Walk"
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+    event expression "b_freaked_mouthopen"
+    {
+      time 6.661340 8.721947
+      param "humans\guard\expressions_guard"
+      param2 "b_freaked_mouthopen"
+      event_ramp
+      {
+        0.6000 0.7129
+        1.3500 0.7177
+      }
+    }
+  }
+  channel "Flex"
+  {
+    event gesture "g_palm_out_r"
+    {
+      time 6.827286 9.593952
+      param "g_palm_out_r"
+      absolutetags playback_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "loop" 0.390244
+        "end" 0.780488
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "loop" 0.390244
+        "end" 0.780488
+      }
+      sequenceduration 2.766667
+    }
+    event gesture "g_palm_out_l"
+    {
+      time 6.779667 9.546333
+      param "g_palm_out_l"
+      absolutetags playback_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "loop" 0.390244
+        "end" 0.780488
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.121951
+        "accent" 0.231707
+        "loop" 0.390244
+        "end" 0.780488
+      }
+      sequenceduration 2.766667
+    }
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "56"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "28"
+}
+fps 60
+snap off
+ignorePhonemes off

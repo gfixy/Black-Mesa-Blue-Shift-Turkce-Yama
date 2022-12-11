@@ -1,0 +1,114 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.protolab_cardslot_nag01"
+    {
+      time 0.500000 3.935238
+      param "ros.cpf.protolab_cardslot_nag01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.153846 5.205129
+      param "!player"
+      event_ramp
+      {
+        0.5840 0.8412
+        1.0950 1.0000
+        4.2003 1.0000
+        4.7353 0.8529
+      }
+    }
+  }
+  channel "Expression"
+  {
+    event expression "sci_angry01"
+    {
+      time 0.282051 4.935898
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_angry01"
+      event_ramp
+      {
+        0.8150 0.7647
+        3.8700 0.8824
+      }
+    }
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "kgesture04"
+    {
+      time 0.576924 5.028206
+      param "kgesture04"
+      absolutetags playback_time
+      {
+        "apex" 0.228358
+        "accent" 0.386191
+        "loop" 0.567723
+        "end" 0.708945
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.109890
+        "accent" 0.417582
+        "loop" 0.527473
+        "end" 0.692308
+      }
+      sequenceduration 3.066667
+    }
+    event gesture "bg_accentfwd"
+    {
+      time 0.269231 5.317948
+      param "bg_accentfwd"
+      absolutetags playback_time
+      {
+        "apex" 0.066940
+        "extreme" 0.216285
+        "loop" 0.356234
+        "end" 0.730280
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "52"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "40"
+}
+fps 60
+snap off
+ignorePhonemes off

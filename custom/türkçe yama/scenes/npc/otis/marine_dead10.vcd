@@ -1,0 +1,105 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.273725 1.892365
+      param "NPC_Security_Otis.marine_dead10"
+      fixedlength
+      tags
+      {
+        "ding" 0.658291
+        "that" 0.103015
+        "guy" 0.253769
+      }
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+  }
+  channel "facial"
+  {
+    event expression "b_incombat02"
+    {
+      time 0.607485 2.882473
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat02"
+      event_ramp
+      {
+        0.2875 0.9091
+        1.7580 0.9091
+      }
+    }
+    event expression "b_incombat01"
+    {
+      time 0.040650 2.581301
+      param "humans\guard\expressions_guard"
+      param2 "b_incombat01"
+      event_ramp
+      {
+        0.2917 0.9021
+        1.9725 0.5874
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.060976 2.500000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.2540 0.3700
+          0.5859 0.6000
+          1.1797 0.6300
+          1.2920 0.3000
+          1.6429 0.4000
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          0.3262 0.6400
+          0.6262 0.3600
+          1.0762 0.2000
+          1.3190 0.5300
+        }
+        "head_forwardback" range 0.2 -0.2 
+        {
+          0.2553 0.7549
+          0.9526 0.8529
+          1.2316 0.3922
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !enemy"
+    {
+      time 0.024903 2.967557
+      param "!enemy"
+      event_ramp
+      {
+        0.2648 0.8322
+        0.4692 1.0000
+        2.2509 1.0000
+        2.5868 0.8042
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "164"
+  "SceneRampTool" "100"
+  "ExpressionTool" "76"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

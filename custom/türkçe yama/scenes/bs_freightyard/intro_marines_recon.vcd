@@ -1,0 +1,121 @@
+// Choreo version 1
+actor "tunnels_scout_hg3"
+{
+  channel "Gesture"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.326666 4.873333
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "jaw_drop" 
+        {
+          0.3219 0.5200
+          0.7437 0.2800
+        }
+        "head_updown" range 15.0 -15.0 
+        {
+          0.5324 0.7600
+          0.8088 0.5500
+          1.5559 0.1300
+          2.2941 0.3400
+        }
+        "head_tilt" range 15.0 -15.0 
+        {
+          1.9912 0.6200
+          2.1794 0.8100
+          2.4971 0.4700
+        }
+        "body_rightleft" range 30.0 -30.0 
+        {
+          0.4324 0.6600
+          2.0706 0.2200
+        }
+        "chest_rightleft" range 30.0 -30.0 
+        {
+          0.2719 0.8300
+          2.2625 0.6900
+          2.4906 0.3600
+          2.7625 0.5300
+        }
+      }
+    }
+    event lookat "Look at tunnels_scout_hg3"
+    {
+      time 0.200001 4.673334
+      param "tunnels_scout_hg3"
+    }
+  }
+  channel "VO"
+  {
+    event speak "NPC_hgrunt.check06"
+    {
+      time 0.386667 1.040771
+      param "NPC_hgrunt.check06"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_hgrunt.answer11_var02"
+    {
+      time 4.106666 4.592856
+      param "NPC_hgrunt.answer11_var02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_hgrunt.idle13"
+    {
+      time 5.986667 7.613515
+      param "NPC_hgrunt.idle13"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\humans\masked_marine.mdl"
+}
+
+actor "tunnels_scout_hg2"
+{
+  channel "Vo"
+  {
+    event speak "NPC_hgrunt.clear15"
+    {
+      time 1.860000 2.451473
+      param "NPC_hgrunt.clear15"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_hgrunt.clear13"
+    {
+      time 2.706666 3.680090
+      param "NPC_hgrunt.clear13"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_hgrunt.answer06_var02"
+    {
+      time 7.973334 9.124354
+      param "NPC_hgrunt.answer06_var02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "68"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

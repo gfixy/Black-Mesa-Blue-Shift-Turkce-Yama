@@ -1,0 +1,43 @@
+// Choreo version 1
+actor "ins_hp_grd02"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Security.watchout01"
+    {
+      time 0.160000 0.747438
+      param "NPC_Security.watchout01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Lookat"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.073333 0.900000
+      param "!player"
+      event_ramp
+      {
+        0.2800 0.5587
+        0.6680 0.7168
+      }
+    }
+  }
+  channel "Facial"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

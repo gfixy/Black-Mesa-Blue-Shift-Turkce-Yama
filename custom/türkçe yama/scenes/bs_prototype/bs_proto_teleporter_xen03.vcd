@@ -1,0 +1,328 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.tele_xen_startup04"
+    {
+      time 0.476156 1.693594
+      param "ros.cpf.tele_xen_startup04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.tele_xen_startup05"
+    {
+      time 2.258408 4.447932
+      param "ros.cpf.tele_xen_startup05"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.tele_xen_startup06"
+    {
+      time 5.155764 8.302930
+      param "ros.cpf.tele_xen_startup06"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.tele_xen_gonow01"
+    {
+      time 11.190477 14.490478
+      param "ros.cpf.tele_xen_gonow01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "Look at mark_tp_rosen_look_top2"
+    {
+      time 1.785714 5.285714
+      param "mark_tp_rosen_look_top2"
+      event_ramp
+      {
+        0.4433 0.7706
+        0.9540 0.9118
+        2.8367 0.8176
+      }
+    }
+    event lookat "Look at mark_tp_rosen_look_top2"
+    {
+      time 11.309523 12.928571
+      param "mark_tp_rosen_look_top2"
+      event_ramp
+      {
+        0.3120 0.8449
+      }
+    }
+    event lookat "Look at !player"
+    {
+      time 11.619049 14.595241
+      param "!player"
+      event_ramp
+      {
+        0.5640 0.9251
+        2.0160 0.8717
+      }
+    }
+    event lookat "Look at bs_ally_simmons"
+    {
+      time 4.738095 8.523809
+      param "bs_ally_simmons"
+      event_ramp
+      {
+        0.4833 0.5294
+        1.0267 0.7000
+        3.0033 0.5059
+      }
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.166666 1.571428
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.9620 0.4500
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.3020 0.3700
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 2.047619 4.952381
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.2574 0.6200
+          0.6843 0.4800
+          1.1131 0.1600
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.5401 0.4500
+          1.0612 0.2300
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 5.119048 9.166666
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.2154 0.6500
+          0.7904 0.6100
+          1.3519 0.3200
+          2.4442 0.0400
+          3.1731 0.5400
+        }
+        {
+        }
+        "cheek_raiser" combo 
+        {
+          2.8442 0.1400
+          3.1192 0.3900
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 11.333333 14.714285
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.0327 0.6000
+          0.5942 0.3000
+        }
+        {
+        }
+        "inner_raiser" combo 
+        {
+          0.2192 0.7500
+          0.9346 0.0900
+          1.9643 0.0700
+          2.3023 0.4100
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.0596 0.6100
+          0.2635 0.6300
+          1.3212 0.3500
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          2.1623 0.2900
+          2.5203 0.3500
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "bg_right"
+    {
+      time 12.595239 14.795238
+      param "bg_right"
+      absolutetags playback_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+    event gesture "hg_nod_right"
+    {
+      time 12.547619 13.847619
+      param "hg_nod_right"
+      event_ramp
+      {
+        0.6380 0.4786
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+    event gesture "bg_accentUp"
+    {
+      time 3.547620 9.004761
+      param "bg_accentUp"
+      absolutetags playback_time
+      {
+        "apex" 0.055737
+        "extreme" 0.136247
+        "loop" 0.489083
+        "end" 0.842795
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.125000
+        "extreme" 0.305556
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+    event firetrigger "1 - PAUSE UNTIL CHARING IS DONE"
+    {
+      time 1.857143 -1.000000
+      param "1"
+    }
+    event firetrigger "2 - OPEN FIELD AND WAIT"
+    {
+      time 9.309525 -1.000000
+      param "2"
+    }
+  }
+  channel "Interrupt"
+  {
+    event interrupt "Interrupt"
+    {
+      time 1.688148 1.933246
+      param ""
+    }
+  }
+  faceposermodel "models\humans\scientist_rosenberg.mdl"
+}
+
+actor "bs_ally_simmons"
+{
+  channel "Voice"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "68"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "60"
+}
+fps 60
+snap off
+ignorePhonemes off

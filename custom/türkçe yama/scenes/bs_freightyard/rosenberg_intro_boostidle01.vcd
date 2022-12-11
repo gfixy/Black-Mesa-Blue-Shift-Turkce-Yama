@@ -1,0 +1,148 @@
+// Choreo version 1
+event stoppoint "Fire Complete"
+{
+  time 79.975319 -1.000000
+  param "noaction"
+}
+event stoppoint "!"
+{
+  time 5.940475 -1.000000
+  param "noaction"
+}
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.intro_boostidle01_02"
+    {
+      time 2.555555 5.864285
+      param "ros.cpf.intro_boostidle01_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.intro_boostidle01_01"
+    {
+      time 0.472222 2.178911
+      param "ros.cpf.intro_boostidle01_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.818182 4.590909
+      param "!player"
+      event_ramp
+      {
+        0.8917 0.6925
+        3.1583 0.7353
+      }
+    }
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "hg_nod_left"
+    {
+      time 2.257574 3.921210
+      param "hg_nod_left"
+      event_ramp
+      {
+        0.5750 0.6497
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.403653
+        "extreme" 0.588726
+        "loop" 0.660981
+        "end" 0.670981
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+      sequenceduration 1.300000
+    }
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 2.272727 6.181818
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          0.7929 0.7000
+          2.0357 0.8100
+          2.2643 0.2300
+        }
+        {
+          1.2786 0.0800
+        }
+        "lowerer" combo 
+        {
+          1.7929 0.3200
+          2.8429 0.9000
+          3.4786 0.8100
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 0.545455 1.954546
+      param ""
+      event_ramp
+      {
+        0.4917 0.9358
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lowerer" combo 
+        {
+          0.2500 0.5300
+          0.9929 0.3300
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\scientist_rosenberg.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "SceneRampTool" "100"
+  "ExpressionTool" "28"
+  "GestureTool" "100"
+  "RampTool" "24"
+}
+fps 60
+snap off
+ignorePhonemes off

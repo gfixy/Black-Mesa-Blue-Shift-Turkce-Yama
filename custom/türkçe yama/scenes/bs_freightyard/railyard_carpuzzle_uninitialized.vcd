@@ -1,0 +1,310 @@
+// Choreo version 1
+actor "bs_ally_elly"
+{
+  channel "Voice"
+  {
+    event speak "scifem.cpf.traincar_whatsthat01"
+    {
+      time 0.278009 5.210254
+      param "scifem.cpf.traincar_whatsthat01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+    event interrupt "interrupt for scifound2"
+    {
+      time 8.224602 8.432340
+      param ""
+    }
+    event interrupt "interrupt for scifound2"
+    {
+      time 11.667049 11.844827
+      param ""
+    }
+    event interrupt "interrupt for scifound2"
+    {
+      time 13.269389 14.718637
+      param ""
+    }
+    event interrupt "interrupt for scifound2"
+    {
+      time 5.335344 5.871693
+      param ""
+    }
+    event firetrigger "1 -- unlock door?"
+    {
+      time 8.283335 -1.000000
+      param "1"
+    }
+    event interrupt "interrupt for scifound2"
+    {
+      time 10.456083 10.700859
+      param ""
+    }
+  }
+  faceposermodel "models\humans\scientist_female.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+    event speak "otis.cpf.traincar_helpishere03"
+    {
+      time 8.494660 11.601032
+      param "otis.cpf.traincar_helpishere03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.traincar_helpishere04"
+    {
+      time 11.930556 13.089422
+      param "otis.cpf.traincar_helpishere04"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "otis.cpf.traincar_helpishere01"
+    {
+      time 5.972222 7.695510
+      param "otis.cpf.traincar_helpishere01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+    event lookat "Look at bs_ally_elly"
+    {
+      time 3.406250 14.644346
+      param "bs_ally_elly"
+      event_ramp
+      {
+        0.5444 0.8353
+        1.0826 1.0000
+        10.7603 0.9471
+      }
+    }
+  }
+  channel "Face to"
+  {
+    event face "Face bs_ally_elly"
+    {
+      time 7.166667 14.730769
+      param "bs_ally_elly"
+      event_ramp rightedge curve_default_to_curve_default 1.000
+      {
+        0.6824 0.8824
+        1.1667 1.0000
+      }
+    }
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_otis_meetellie_move"
+    {
+      time 5.142858 9.500000
+      param "mark_otis_meetellie_move"
+      param2 "Walk"
+      distancetotarget 9.00
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "Gesture02"
+    {
+      time 9.916667 12.438095
+      param "Gesture02"
+      event_ramp
+      {
+        0.6889 0.9588
+        1.8667 0.9353
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.187787
+        "accent" 0.298578
+        "loop" 0.412322
+        "end" 0.663341
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.287879
+        "loop" 0.454545
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "g_lhandease"
+    {
+      time 11.404762 14.752382
+      param "g_lhandease"
+      event_ramp leftedge curve_default_to_curve_default 0.500 rightedge curve_default_to_curve_default 0.500
+      {
+        0.5000 0.8176
+        2.8095 0.8059
+      }
+      active 0
+      absolutetags playback_time
+      {
+        "apex" 0.266484
+        "accent" 0.419964
+        "loop" 0.549389
+        "end" 0.715405
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.191176
+        "accent" 0.338235
+        "loop" 0.602941
+        "end" 0.617647
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "G_medurgent_mid"
+    {
+      time 8.345238 11.569049
+      param "G_medurgent_mid"
+      absolutetags playback_time
+      {
+        "apex" 0.202952
+        "accent" 0.321033
+        "loop" 0.505535
+        "end" 0.642066
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.150000
+        "accent" 0.250000
+        "loop" 0.400000
+        "end" 0.533333
+      }
+      sequenceduration 2.033333
+    }
+    event gesture "bg_up_l"
+    {
+      time 9.639232 13.230951
+      param "bg_up_l"
+      absolutetags playback_time
+      {
+        "apex" 0.153508
+        "extreme" 0.286602
+        "loop" 0.392944
+        "end" 0.758561
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+      sequenceduration 1.600000
+    }
+    event gesture "hg_nod_yes"
+    {
+      time 11.833333 14.376924
+      param "hg_nod_yes"
+      event_ramp
+      {
+        0.6588 0.7824
+        1.1588 0.7118
+        1.4118 0.2000
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.148957
+        "extreme" 0.242039
+        "loop" 0.468098
+        "end" 0.787239
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.058824
+        "extreme" 0.161765
+        "loop" 0.411765
+        "end" 0.764706
+      }
+      sequenceduration 2.300000
+    }
+  }
+  channel "Expression"
+  {
+    event expression "b_sudden01"
+    {
+      time 3.923077 9.243591
+      param "humans\guard\expressions_guard"
+      param2 "b_sudden01"
+      event_ramp
+      {
+        0.8059 0.8824
+        4.6588 0.5824
+      }
+    }
+    event expression "b_huh01a"
+    {
+      time 8.512821 14.435898
+      param "humans\guard\expressions_guard"
+      param2 "b_huh01a"
+      event_ramp
+      {
+        0.7412 0.8882
+        5.2980 0.6118
+      }
+    }
+    event expression "b_smile01a"
+    {
+      time 11.294872 14.666667
+      param "humans\guard\expressions_guard"
+      param2 "b_smile01a"
+      event_ramp
+      {
+        0.8706 0.9471
+        2.8824 0.6647
+      }
+    }
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard_thick.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "72"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "38"
+}
+fps 60
+snap off
+ignorePhonemes off

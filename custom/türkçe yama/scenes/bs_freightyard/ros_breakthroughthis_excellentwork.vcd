@@ -1,0 +1,278 @@
+// Choreo version 1
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look at"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look at"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.passage_crowbar_goodjob01"
+    {
+      time 1.016667 2.632744
+      param "ros.cpf.passage_crowbar_goodjob01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.passage_thiswayeveryone01"
+    {
+      time 3.766666 4.610135
+      param "ros.cpf.passage_thiswayeveryone01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.233334 3.550000
+      param "!player"
+      event_ramp
+      {
+        0.8267 0.8765
+        2.9167 0.8294
+      }
+    }
+    event lookat "Look at bs_ally_los"
+    {
+      time 2.683333 5.450000
+      param "bs_ally_los"
+      event_ramp
+      {
+        0.7333 0.9412
+        2.2800 0.8706
+      }
+    }
+  }
+  channel "Expression"
+  {
+    event expression "sci_smile00"
+    {
+      time 0.200000 5.316667
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_smile00"
+      event_ramp
+      {
+        0.4220 0.9706
+        4.4533 0.8353
+      }
+    }
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "kgesture11"
+    {
+      time 3.033333 5.866666
+      param "kgesture11"
+      event_ramp
+      {
+        0.2087 0.6765
+        0.4467 0.8941
+        1.0167 0.9941
+        2.1996 0.6631
+        2.4658 0.1599
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.119377
+        "accent" 0.274567
+        "loop" 0.334256
+        "end" 0.610860
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.147059
+        "accent" 0.338235
+        "loop" 0.411765
+        "end" 0.588235
+      }
+      sequenceduration 2.300000
+    }
+    event gesture "kgesture03"
+    {
+      time 0.324359 3.880769
+      param "kgesture03"
+      event_ramp
+      {
+        0.6625 0.9294
+        3.2391 0.8471
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.233312
+        "accent" 0.366327
+        "loop" 0.442337
+        "end" 0.667870
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.123288
+        "accent" 0.315068
+        "loop" 0.424658
+        "end" 0.616438
+      }
+      sequenceduration 2.466667
+    }
+  }
+  channel "Face To"
+  {
+    event face "Face !player"
+    {
+      time 1.112820 2.950000
+      param "!player"
+      event_ramp
+      {
+        0.9947 0.7588
+      }
+    }
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  faceposermodel "models\humans\scientist_rosenberg.mdl"
+}
+
+actor "bs_ally_ronny"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look at"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+actor "bs_ally_elly"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look at"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "52"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

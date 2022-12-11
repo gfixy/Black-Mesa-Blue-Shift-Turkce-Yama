@@ -1,0 +1,112 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.229008 3.228736
+      param "NPC_Security_Otis.statement06"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_right"
+    {
+      time 1.475610 4.700000
+      param "bg_right"
+      event_ramp
+      {
+        0.9375 0.6000
+        1.3708 0.8118
+        2.4000 0.7235
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.217852
+        "extreme" 0.351828
+        "loop" 0.585120
+        "end" 0.669390
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_wincing01"
+    {
+      time 0.105691 2.686992
+      param "humans\guard\expressions_guard"
+      param2 "b_wincing01"
+      event_ramp
+      {
+        0.3375 0.6176
+        1.9667 0.9176
+      }
+    }
+    event expression "b_buckup"
+    {
+      time 1.898374 4.304878
+      param "humans\guard\expressions_guard"
+      param2 "b_buckup"
+      event_ramp
+      {
+        0.5833 0.9294
+        1.9500 0.8471
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.105691 3.983740
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.4712 0.3100
+          0.8573 0.6000
+          2.1037 0.6600
+          2.5222 0.3500
+          3.1667 0.3100
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.535541 4.633103
+      param "!player"
+      event_ramp
+      {
+        0.6375 0.8249
+        1.1542 1.0000
+        2.9178 1.0000
+        3.3885 0.8668
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "164"
+  "SceneRampTool" "100"
+  "ExpressionTool" "54"
+  "GestureTool" "100"
+  "RampTool" "48"
+}
+fps 60
+snap off
+ignorePhonemes off

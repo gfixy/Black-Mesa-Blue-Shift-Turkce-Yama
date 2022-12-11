@@ -1,0 +1,183 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.balcony_mygod01"
+    {
+      time 0.266667 1.366667
+      param "ros.cpf.balcony_mygod01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.balcony_mygod02"
+    {
+      time 1.766666 2.666666
+      param "ros.cpf.balcony_mygod02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.balcony_mygod03"
+    {
+      time 3.026667 4.469207
+      param "ros.cpf.balcony_mygod03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.balcony_moresoldiers01"
+    {
+      time 4.846667 7.268595
+      param "ros.cpf.balcony_moresoldiers01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.balcony_moresoldiers_nag01"
+    {
+      time 8.553333 12.653334
+      param "ros.cpf.balcony_moresoldiers_nag01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at !player"
+    {
+      time 1.453333 4.760000
+      param "!player"
+      event_ramp
+      {
+        0.3520 0.9679
+        2.7553 0.9118
+      }
+    }
+  }
+  channel "MoveTo"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "kgesture03p"
+    {
+      time 0.193334 2.660000
+      param "kgesture03p"
+      event_ramp
+      {
+        1.4160 0.5936
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.123288
+        "accent" 0.315068
+        "loop" 0.424658
+        "end" 0.616438
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.123288
+        "accent" 0.315068
+        "loop" 0.424658
+        "end" 0.616438
+      }
+    }
+    event gesture "kgesture02"
+    {
+      time 1.980000 4.446667
+      param "kgesture02"
+      event_ramp
+      {
+        1.0560 0.7353
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.123288
+        "accent" 0.246575
+        "loop" 0.452055
+        "end" 0.616438
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.123288
+        "accent" 0.246575
+        "loop" 0.452055
+        "end" 0.616438
+      }
+      sequenceduration 2.466667
+    }
+    event gesture "hg_nod_no"
+    {
+      time 2.680000 5.013333
+      param "hg_nod_no"
+      absolutetags playback_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.072464
+        "extreme" 0.159420
+        "loop" 0.420290
+        "end" 0.913043
+      }
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 1.880000 4.046667
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "inner_raiser" combo 
+        {
+          1.4640 0.6700
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          1.1280 0.2000
+          1.5960 0.8200
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.3660 0.5500
+          1.1720 0.0600
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Triggers"
+  {
+    event firetrigger "1-PAUSE TO WAIT FOR SOLDIERS"
+    {
+      time 4.573333 -1.000000
+      param "1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

@@ -1,0 +1,125 @@
+// Choreo version 1
+actor "!target1"
+{
+  channel "voice"
+  {
+    event speak "voice"
+    {
+      time 0.229008 5.126967
+      param "NPC_Security_Otis.statement13"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "gesture"
+  {
+    event gesture "bg_right"
+    {
+      time 0.172043 4.124731
+      param "bg_right"
+      event_ramp
+      {
+        0.6923 0.7824
+        2.9154 0.9235
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.153846
+        "extreme" 0.292308
+        "loop" 0.476923
+        "end" 0.723077
+      }
+      sequenceduration 2.200000
+    }
+  }
+  channel "facial"
+  {
+    event expression "b_buckup"
+    {
+      time 0.090090 2.301802
+      param "humans\guard\expressions_guard"
+      param2 "b_buckup"
+      event_ramp
+      {
+        0.5308 0.8706
+        1.7308 0.5765
+      }
+    }
+    event expression "b_frown00"
+    {
+      time 0.761261 3.634990
+      param "humans\guard\expressions_guard"
+      param2 "b_frown00"
+      event_ramp
+      {
+        0.5769 0.6176
+        2.3154 0.8824
+      }
+    }
+    event expression "b_smile00"
+    {
+      time 2.835513 6.907004
+      param "humans\guard\expressions_guard"
+      param2 "b_smile00"
+      event_ramp
+      {
+        1.3154 0.6706
+        3.2538 0.6647
+      }
+    }
+    event flexanimation "flex"
+    {
+      time 0.129033 6.150538
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "head_updown" range 15.0 -15.0 
+        {
+          0.3245 0.6500
+          0.7735 0.3400
+          1.0714 0.5100
+          3.0944 0.6700
+          3.7910 0.6200
+          4.1962 0.4300
+          4.9308 0.4300
+          5.3538 0.4600
+        }
+      }
+    }
+  }
+  channel "lookface"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.039606 6.960284
+      param "!player"
+      event_ramp
+      {
+        0.3625 0.8176
+        0.7667 1.0000
+        5.5500 1.0000
+        6.3032 0.8727
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "124"
+  "SceneRampTool" "100"
+  "ExpressionTool" "26"
+  "GestureTool" "100"
+  "RampTool" "26"
+}
+fps 60
+snap off
+ignorePhonemes off

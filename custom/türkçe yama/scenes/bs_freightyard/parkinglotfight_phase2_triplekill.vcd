@@ -1,0 +1,27 @@
+// Choreo version 1
+actor "bs_ally_los"
+{
+  channel "Audio"
+  {
+    event speak "grd.cpf.p2_triplekill"
+    {
+      time 0.353334 1.853334
+      param "grd.cpf.p2_triplekill"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

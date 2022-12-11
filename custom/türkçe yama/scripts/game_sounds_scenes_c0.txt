@@ -1,0 +1,407 @@
+//
+//
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+// NOTE:  AUTOMATICALLY GENERATED FILE, ANY HAND EDITED COMMENTS WILL BE LOST!!!
+//
+// VOL_NORM		1.0f
+//
+//-----------------------------------------------------------------------------
+// common attenuation values
+//-----------------------------------------------------------------------------
+//
+// DON'T USE THESE - USE SNDLVL_ INSTEAD!!!
+//	ATTN_NONE		0.0f	
+//	ATTN_NORM		0.8f
+//	ATTN_IDLE		2.0f
+//	ATTN_STATIC		1.25f 
+//	ATTN_RICOCHET	1.5f
+//	ATTN_GUNFIRE	0.27f
+//
+//	SNDLVL_NONE		= 0,
+//	SNDLVL_25dB		= 25,
+//	SNDLVL_30dB		= 30,
+//	SNDLVL_35dB		= 35,
+//	SNDLVL_40dB		= 40,
+//	SNDLVL_45dB		= 45,
+//	SNDLVL_50dB		= 50,	= 3.9
+//	SNDLVL_55dB		= 55,	= 3.0
+//	SNDLVL_IDLE		= 60,	= 2.0
+//	SNDLVL_TALKING		= 60,	= 2.0
+//	SNDLVL_60dB		= 60,	= 2.0
+//	SNDLVL_65dB		= 65,	= 1.5
+//	SNDLVL_STATIC		= 66,	= 1.25
+//	SNDLVL_70dB		= 70,	= 1.0
+//	SNDLVL_NORM		= 75,
+//	SNDLVL_75dB		= 75,	= 0.8
+//	SNDLVL_80dB		= 80,	= 0.7
+//	SNDLVL_85dB		= 85,	= 0.6
+//	SNDLVL_90dB		= 90,	= 0.5
+//	SNDLVL_95dB		= 95,
+//	SNDLVL_100dB	= 100,	= 0.4
+//	SNDLVL_105dB	= 105,
+//	SNDLVL_120dB	= 120,
+//	SNDLVL_130dB	= 130,
+//	SNDLVL_GUNFIRE	= 140, = 0.27
+//	SNDLVL_140dB	= 140,	= 0.2
+//	SNDLVL_150dB	= 150,	= 0.2
+//
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//														CHAPTER 1 - LIVING QUARTERS OUTBOUND
+//
+//																		STARTS HERE!
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// TRAMRIDE BRIDGE SNDFX (THESE ARE USED FOR ANIMATION SND EVENTS, SO WE DON'T HAVE TO WORK WITH AMBIENT_GENERIC!)
+"Trambridge.Open"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_tramride/bs_trambridge_open.wav"
+}
+
+"Trambridge.Close"
+{
+	"channel"	"CHAN_STATIC"
+	"volume"	"1"
+	"soundlevel"  "SNDLVL_75dB"
+	"wave"	"bshift/scripted_tramride/bs_trambridge_close.wav"
+}
+
+// TRAMRIDE VOICEOVER
+"Intro.Tramride.Tram01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_01_goodmorning.wav"
+
+}
+
+"Intro.Tramride.Tram02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_02_timeis.wav"
+
+}
+
+"Intro.Tramride.Tram03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_03_inbound.wav"
+
+}
+
+"Intro.Tramride.Tram04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_04_keeplimbs.wav"
+
+}
+
+"Intro.Tramride.Tram05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_05_securityarea.wav"
+
+}
+
+"Intro.Tramride.Tram05b"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_05b_wishtotransfer.wav"
+
+}
+
+"Intro.Tramride.Tram06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_06_transfering.wav"
+
+}
+
+"Intro.Tramride.Tram07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.70"
+	"pitch"			"PITCH_NORM"
+	"soundlevel"		"SNDLVL_TALKING"
+	"wave"			"vo\inbound_tram\ba_tram_07_exit.wav"
+
+}
+
+// SCENE - SECURITY GUARD MISSES THE TRAM :((((
+"NPC_Security.Inbound.latefortram01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_latefortram01.wav"
+}
+
+"NPC_Security.Inbound.latefortram02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_latefortram02.wav"
+}
+
+"NPC_Security.Inbound.latefortram03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_latefortram03.wav"
+}
+
+"NPC_Security.Inbound.latefortram04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_latefortram04.wav"
+}
+
+//==========================================================================
+// SCENE - Security Guard - First Tram Security Checkpoint
+
+// caption: "NPC_Security.Inbound.checkpoint01_01"		"<clr:215,255,255> [Amused] There he is. I was wondering what was keepin' ya!"
+// caption: "NPC_Security.Inbound.checkpoint01_02"		"<clr:215,255,255> Oh, by the way... 'Rounding up the boys for some poker tonight, so, if you're in bring the chips."
+// caption: "NPC_Security.Inbound.checkpoint01_03"		"<clr:215,255,255> I'll let you know what time!"
+
+"NPC_Security.Inbound.checkpoint01_01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_checkpoint01_01.wav"
+}
+
+"NPC_Security.Inbound.checkpoint01_02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_checkpoint01_02.wav"
+}
+
+"NPC_Security.Inbound.checkpoint01_03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_checkpoint01_03.wav"
+}
+
+//==========================================================================
+// SCENE - Security Guard(s) - Final Tram Security Checkpoint
+
+// caption: "LQO.grd_ohjustperfect01"					"<clr:215,255,255>[Annoyed] Oh, just perfect."
+// caption: "LQO.grd_heyedcomehere01"					"<clr:215,255,255>Hey Ed, come here!"
+
+// caption: "LQO.grd_ed_whatisgoingon01"				"<clr:215,255,255>[Confused]What, what's going on?"
+
+// caption: "LQO.grd_gateisstuck01"						"<clr:215,255,255>The gate's stuck, now the tram can't move."
+
+// caption: "LQO.grd_ed_supposedtoarrive01"				"<clr:215,255,255>Ok, well it's </i>supposed</i> to arrive in Area 3."
+// caption: "LQO.grd_ed_supposedtoarrive02"				"<clr:215,255,255>Just send it thru Level 3 Dormitories, and set the security station as it's destination."
+
+// caption: "LQO.grd_sorryaboutthat01"					"<clr:215,255,255>Got it."
+// caption: "LQO.grd_sorryaboutthat01"					"<clr:215,255,255>Sorry about that!"
+// caption: "LQO.grd_sorryaboutthat01"					"<clr:215,255,255>Today's<i>clearly<i>not our day."
+
+"LQO.grd_ohjustperfect01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_ohjustperfect01.wav"
+}
+
+"LQO.grd_heyedcomehere01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_heyedcomehere01.wav"
+}
+
+"LQO.grd_ed_whatisgoingon01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_ed_whatisgoingon01.wav"
+}
+
+"LQO.grd_gateisstuck01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_gateisstuck01.wav"
+}
+
+"LQO.grd_ed_supposedtoarrive01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_ed_supposedtoarrive01.wav"
+}
+
+"LQO.grd_ed_supposedtoarrive02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_ed_supposedtoarrive02.wav"
+}
+
+"LQO.grd_sorryaboutthat01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_sorryaboutthat01.wav"
+}
+
+"LQO.grd_sorryaboutthat02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_sorryaboutthat02.wav"
+}
+
+"LQO.grd_sorryaboutthat03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/guard/grd_sorryaboutthat03.wav"
+}
+
+
+
+// Big Boy Otis - Heeeyyyy Calhoouuun!
+
+"NPC_Otis.Inbound01"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/otis/otis01_heycalhoun.wav"
+}
+
+"NPC_Otis.Inbound02"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/otis/otis02_longday.wav"
+}
+
+"NPC_Otis.Inbound03"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/otis/otis03_seeya.wav"
+}
+
+"NPC_Otis.Inbound04"
+{
+	"channel"			"CHAN_VOICE"
+	"volume"			"0.920"
+	"pitch"				"PITCH_NORM"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"wave"				"vo/tramride/otis/otis04_helliknow.wav"
+}
+

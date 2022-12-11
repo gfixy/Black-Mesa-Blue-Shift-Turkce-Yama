@@ -1,0 +1,92 @@
+// Choreo version 1
+actor "transitiontrain_hg1"
+{
+  channel "Voice"
+  {
+    event speak "marine.cpf.container_turretsdown01"
+    {
+      time 0.633293 3.375765
+      param "marine.cpf.container_turretsdown01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+actor "transitiontrain_hg3"
+{
+  channel "Voice"
+  {
+    event speak "marine.cpf.container_notime01"
+    {
+      time 3.559218 6.479354
+      param "marine.cpf.container_notime01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "marine.cpf.container_notime02"
+    {
+      time 7.008901 9.857064
+      param "marine.cpf.container_notime02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "20"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

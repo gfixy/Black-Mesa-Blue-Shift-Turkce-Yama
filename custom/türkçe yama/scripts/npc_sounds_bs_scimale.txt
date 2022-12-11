@@ -1,0 +1,823 @@
+//Blue Shift Scientists Replacements
+
+//Begin: Predisaster Voiceover
+///////////////////////////////////////////////////////////////////////////
+//=========================================================================
+//Collection: Greetings voicelines
+//Group: Aaaahhhh Hello Calhoun.
+"NPC_BS_Scimale_ahcalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_ahcalhoun01.wav"
+}
+
+"NPC_BS_Scimale_ahcalhoun02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_ahcalhoun02.wav"
+}
+
+"NPC_BS_Scimale_ahcalhoun03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_ahcalhoun03.wav"
+}
+
+"NPC_BS_Scimale_ahcalhoun04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_ahcalhoun04.wav"
+}
+
+//Group: Just Hello Calhoun.
+"NPC_BS_Scimale_hellocalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_hellocalhoun01.wav"
+}
+
+"NPC_BS_Scimale_hellocalhoun02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_hellocalhoun02.wav"
+}
+
+"NPC_BS_Scimale_hellocalhoun03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_hellocalhoun03.wav"
+}
+
+"NPC_BS_Scimale_hellocalhoun04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_hellocalhoun04.wav"
+}
+
+"NPC_BS_Scimale_hi01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_hi01.wav"
+}
+
+"NPC_BS_Scimale_hi02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_hi02.wav"
+}
+
+//=========================================================================
+//Collection: Annoyance Voicelines
+"NPC_BS_Scimale_annoyance01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre01.wav"
+}
+
+"NPC_BS_Scimale_annoyance02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre02.wav"
+}
+
+"NPC_BS_Scimale_annoyance03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre03.wav"
+}
+
+"NPC_BS_Scimale_annoyance04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre04.wav"
+}
+
+"NPC_BS_Scimale_annoyance05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre05.wav"
+}
+
+"NPC_BS_Scimale_annoyance06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre06.wav"
+}
+
+"NPC_BS_Scimale_annoyance07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre07.wav"
+}
+
+"NPC_BS_Scimale_annoyance08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre08.wav"
+}
+
+"NPC_BS_Scimale_annoyance09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre09.wav"
+}
+
+"NPC_BS_Scimale_annoyance10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre10.wav"
+}
+
+"NPC_BS_Scimale_annoyance11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre11.wav"
+}
+
+"NPC_BS_Scimale_annoyance12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre12.wav"
+}
+
+"NPC_BS_Scimale_annoyance13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre13.wav"
+}
+
+"NPC_BS_Scimale_annoyance14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre14.wav"
+}
+
+"NPC_BS_Scimale_annoyance15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre15.wav"
+}
+
+"NPC_BS_Scimale_annoyance16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_annoyance_pre16.wav"
+}
+
+//=========================================================================
+//Collection: Busy Voicelines (They're VERY busy right now!)
+"NPC_BS_Scimale_busy01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy01.wav"
+}
+
+"NPC_BS_Scimale_busy02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy02.wav"
+}
+
+"NPC_BS_Scimale_busy03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy03.wav"
+}
+
+"NPC_BS_Scimale_busy04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy04.wav"
+}
+
+"NPC_BS_Scimale_busy05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy05.wav"
+}
+
+"NPC_BS_Scimale_busy06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy06.wav"
+}
+
+"NPC_BS_Scimale_busy07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy07.wav"
+}
+
+"NPC_BS_Scimale_busy08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy08.wav"
+}
+
+"NPC_BS_Scimale_busy09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy09.wav"
+}
+
+"NPC_BS_Scimale_busy10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy10.wav"
+}
+
+"NPC_BS_Scimale_busy11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy11.wav"
+}
+
+"NPC_BS_Scimale_busy12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy12.wav"
+}
+
+"NPC_BS_Scimale_busy13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy13.wav"
+}
+
+"NPC_BS_Scimale_busy14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy14.wav"
+}
+
+"NPC_BS_Scimale_busy15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy15.wav"
+}
+
+"NPC_BS_Scimale_busy16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy16.wav"
+}
+
+"NPC_BS_Scimale_busy17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy17.wav"
+}
+
+"NPC_BS_Scimale_busy18"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy18.wav"
+}
+
+"NPC_BS_Scimale_busy19"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy19.wav"
+}
+
+"NPC_BS_Scimale_busy20"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_busy20.wav"
+}
+
+///////////////////////////////////////////////////////////////////////////
+//End: Predisaster Voiceover
+
+//=========================================================================
+//Collection: Command Interaction
+"NPC_BS_Scimale_calhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_calhoun01.wav"
+}
+
+"NPC_BS_Scimale_calhoun02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_calhoun02.wav"
+}
+
+"NPC_BS_Scimale_calhoun03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/npc_scimale_calhoun03.wav"
+}
+
+//=========================================================================
+//Collection: Reload Statements (There's only one new statement. Soooo sad :()
+"NPC_BS_Scimale.dontforgettoreload04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.dontforgettoreload04.wav"
+}
+
+//=========================================================================
+//Collection: Caldead Statements (Sarcasm self test complete)
+"NPC_BS_Scimale.gordead_ans09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.gordead_ans09.wav"
+}
+
+"NPC_BS_Scimale.gordead_ans14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.gordead_ans14.wav"
+}
+
+//=========================================================================
+//Collection: Stayhere Command Interactions
+"NPC_BS_Scimale.illstayhere03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.illstayhere03.wav"
+}
+
+"NPC_BS_Scimale.illstayhere05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.illstayhere05.wav"
+}
+
+//=========================================================================
+//Collection: Lead Command Interactions
+"NPC_BS_Scimale.leadon02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.leadon02.wav"
+}
+
+"NPC_BS_Scimale.leadon03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.leadon03.wav"
+}
+
+"NPC_BS_Scimale.leadon05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.leadon05.wav"
+}
+
+"NPC_BS_Scimale.leadon06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.leadon06.wav"
+}
+
+"NPC_BS_Scimale.leadtheway01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.leadtheway01.wav"
+}
+
+"NPC_BS_Scimale.leadtheway04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.leadtheway04.wav"
+}
+
+//=========================================================================
+//Collection: Lookout Enemy Contact Response
+"NPC_BS_Scimale.lookoutfm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.lookoutfm01.wav"
+}
+
+"NPC_BS_Scimale.lookoutfm01_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.lookoutfm01_var01.wav"
+}
+
+"NPC_BS_Scimale.lookoutfm02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.lookoutfm02.wav"
+}
+
+//=========================================================================
+//Collection: Friendly Fire Response
+"NPC_BS_Scimale.notthemanithought03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.notthemanithought03.wav"
+}
+
+"NPC_BS_Scimale.notthemanithought04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.notthemanithought04.wav"
+}
+
+"NPC_BS_Scimale.notthemanithought06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.notthemanithought06.wav"
+}
+//=========================================================================
+//Collection: Pardonme Response
+"NPC_BS_Scimale.pardonme03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.pardonme03.wav"
+}
+
+"NPC_BS_Scimale.pardonme05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.pardonme05.wav"
+}
+
+"NPC_BS_Scimale.pardonme06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.pardonme06.wav"
+}
+
+//=========================================================================
+//Collection: Squad Command Statements
+"NPC_BS_Scimale.squad_affirm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.squad_affirm01.wav"
+}
+
+"NPC_BS_Scimale.yougotit02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.yougotit02.wav"
+}
+
+"NPC_BS_Scimale.yougotit03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_NORM"
+
+	"wave"	"vo/npc/bs_scientist_male01/NPC_Scimale.yougotit03.wav"
+}

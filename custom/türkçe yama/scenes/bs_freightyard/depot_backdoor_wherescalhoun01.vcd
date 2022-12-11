@@ -1,0 +1,68 @@
+// Choreo version 1
+actor "fake_murdoch"
+{
+  channel "Voice"
+  {
+    event speak "grd.cpf.depot_wherescalhoun01"
+    {
+      time 0.512821 1.592458
+      param "grd.cpf.depot_wherescalhoun01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_wherescalhoun02"
+    {
+      time 2.243590 4.952162
+      param "grd.cpf.depot_wherescalhoun02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "grd.cpf.depot_wherescalhoun03"
+    {
+      time 5.628205 7.541244
+      param "grd.cpf.depot_wherescalhoun03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "36"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "58"
+  "RampTool" "50"
+}
+fps 60
+snap off
+ignorePhonemes off

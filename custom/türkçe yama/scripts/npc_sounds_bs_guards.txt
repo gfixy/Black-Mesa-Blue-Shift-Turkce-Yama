@@ -1,0 +1,1139 @@
+//Blue Shift Guards Replacements
+
+//Begin: Predisaster Voiceover
+///////////////////////////////////////////////////////////////////////////
+//=========================================================================
+//Collection: Greetings voicelines
+//Group: Heeeyyy Calhoun.
+"NPC_BS_Security.ahgordon01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_ahgordon01.wav"
+//	"wave"			"vo/npc/barneys/ahgordon01.wav"				(Original BM)
+}
+
+"NPC_BS_Security.ahgordon02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_ahgordon02.wav"
+//	"wave"			"vo/npc/barneys/ahgordon02.wav"				(Original BM)
+}
+
+"NPC_BS_Security.ahgordon03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_ahgordon03.wav"
+//	"wave"			"vo/npc/barneys/ahgordon03.wav"				(Original BM)
+}
+
+"NPC_BS_Security.ahgordon04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_ahgordon04.wav"
+//	"wave"			"vo/npc/barneys/ahgordon04.wav"				(Original BM)
+}
+
+"NPC_BS_Security.ahgordon04alt"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_ahgordon04alt.wav"
+//	"wave"			"vo/npc/barneys/ahgordon04alt.wav"				(Original BM)
+}
+
+//Group: Stop throwing stuff at me dude!
+"NPC_BS_Security.annoyance05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_annoyance05.wav"
+//	"wave"			"vo/npc/barneys/annoyance05.wav"				(Original BM)
+}
+
+"NPC_BS_Security.annoyance11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_annoyance11.wav"
+//	"wave"			"vo/npc/barneys/annoyance11.wav"				(Original BM)
+}
+
+"NPC_BS_Security.annoyance12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_annoyance12.wav"
+//	"wave"			"vo/npc/barneys/annoyance12.wav"				(Original BM)
+}
+
+"NPC_BS_Security.annoyance16"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_annoyance16.wav"
+//	"wave"			"vo/npc/barneys/annoyance16.wav"				(Original BM)
+}
+
+"NPC_BS_Security.annoyance17"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_annoyance17.wav"
+//	"wave"			"vo/npc/barneys/annoyance17.wav"				(Original BM)
+}
+
+"NPC_BS_Security.annoyance20"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_annoyance20.wav"
+//	"wave"			"vo/npc/barneys/annoyance20.wav"				(Original BM)
+}
+
+"NPC_BS_Security.annoyance21"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_annoyance21.wav"
+//	"wave"			"vo/npc/barneys/annoyance21.wav"				(Original BM)
+}
+
+//Group: Sorry Calhoun, I'm on duty.
+"NPC_BS_Security.busy01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy01.wav"				
+//	"wave"			"vo/npc/barneys/busy01.wav"				(example using the original black mesa line)
+}
+
+"NPC_BS_Security.busy02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy02.wav"
+}
+
+"NPC_BS_Security.busy03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy03.wav"
+}
+
+"NPC_BS_Security.busy04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy04.wav"
+}
+
+"NPC_BS_Security.busy05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy05.wav"
+}
+
+"NPC_BS_Security.busy06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy06.wav"
+}
+
+"NPC_BS_Security.busy07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy07.wav"
+}
+
+"NPC_BS_Security.busy08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy08.wav"
+}
+
+"NPC_BS_Security.busy09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy09.wav"
+}
+
+"NPC_BS_Security.busy10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy10.wav"
+}
+
+//"Shouldn't you be headding to Sector G?"
+//Since this is referenced to an ingame objective, we're not using it for Idle-Busy, but we keep it for additional Idle-Scripted responses.
+"NPC_BS_Security.busy11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy11.wav"
+}
+
+"NPC_BS_Security.busy13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy13.wav"
+}
+
+"NPC_BS_Security.busy14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy14.wav"
+}
+
+"NPC_BS_Security.busy15"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_busy15.wav"
+}
+
+//Group: Heeey not Freeman! (Part I)
+"NPC_BS_Security.docfreeman01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_docfreeman01.wav"
+}
+
+"NPC_BS_Security.docfreeman02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_docfreeman02.wav"
+}
+
+//Group: Heeey not Freeman! (Part II)
+"NPC_BS_Security.freeman01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_freeman01.wav"
+//	"wave"			"vo/npc/barneys/freeman01.wav"
+}
+
+"NPC_BS_Security.freeman02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_freeman02.wav"
+//	"wave"			"vo/npc/barneys/freeman02.wav"
+}
+
+"NPC_BS_Security.freeman03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_freeman03.wav"
+//	"wave"			"vo/npc/barneys/freeman03.wav"
+}
+
+"NPC_BS_Security.freeman04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_freeman04.wav"
+//	"wave"			"vo/npc/barneys/freeman04.wav"
+}
+
+"NPC_BS_Security.freeman05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_freeman05.wav"
+//	"wave"			"vo/npc/barneys/freeman05.wav"
+}
+
+"NPC_BS_Security.freeman06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_freeman06.wav"
+//	"wave"			"vo/npc/barneys/freeman06.wav"
+}
+
+
+
+//Begin: POST Disaster Voiceover
+///////////////////////////////////////////////////////////////////////////
+//=========================================================================
+
+
+//Group: Greetings(POST)  
+
+"NPC_BS_Security.abouttime01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.920"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_abouttime01.wav"
+}
+
+"NPC_BS_Security.abouttime02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.920"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_abouttime02.wav"
+}
+
+"NPC_BS_Security.abouttime03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_abouttime03.wav"
+}
+
+"NPC_BS_Security.abouttime04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.975"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_abouttime04.wav"
+}
+
+"NPC_BS_Security.abouttime05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.975"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_abouttime05.wav"
+}
+
+"NPC_BS_Security.abouttime06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.925"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_abouttime06.wav"
+}
+
+"NPC_BS_Security.abouttime07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_abouttime07.wav"
+}
+
+"NPC_BS_Security.abouttime08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_abouttime08.wav"
+}
+
+"NPC_BS_Security.abouttime09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.975"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_abouttime09.wav"
+}
+
+//Group: Don't Forget to Reload!
+
+"NPC_BS_Security.dontforgetreload01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_dontforgetreload01.wav"
+}
+
+"NPC_BS_Security.dontforgetreload02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_dontforgetreload02.wav"
+}
+
+"NPC_BS_Security.dontforgetreload03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_dontforgetreload03.wav"
+}
+
+//Group: We gotta go dude!
+"NPC_BS_Security.getgoingsoon01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon01.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon01.wav"
+}
+
+"NPC_BS_Security.getgoingsoon02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon02.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon02.wav"
+}
+
+"NPC_BS_Security.getgoingsoon03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon03.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon03.wav"
+}
+
+"NPC_BS_Security.getgoingsoon04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon04.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon04.wav"
+}
+
+"NPC_BS_Security.getgoingsoon05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon05.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon05.wav"
+}
+
+"NPC_BS_Security.getgoingsoon06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon06.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon06.wav"
+}
+
+"NPC_BS_Security.getgoingsoon07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon07.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon07.wav"
+}
+
+"NPC_BS_Security.getgoingsoon08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon08.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon08.wav"
+}
+
+"NPC_BS_Security.getgoingsoon09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon09.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon09.wav"
+}
+
+"NPC_BS_Security.getgoingsoon10"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon10.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon10.wav"
+}
+
+"NPC_BS_Security.getgoingsoon11"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon11.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon11.wav"
+}
+
+"NPC_BS_Security.getgoingsoon12"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon12.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon12.wav"
+}
+
+"NPC_BS_Security.getgoingsoon13"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon13.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon13.wav"
+}
+
+"NPC_BS_Security.getgoingsoon14"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_getgoingsoon14.wav"
+//	"wave"			"vo/npc/barneys/getgoingsoon14.wav"
+}
+
+"NPC_BS_Security.headcrab01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_headcrab01.wav"
+//	"wave"			"vo/npc/barneys/headcrab01.wav"
+}
+
+"NPC_BS_Security.headcrab08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+	"wave"			"vo/npc/bs_guards/grd_bs_headcrab08.wav"
+//	"wave"			"vo/npc/barneys/headcrab08.wav"
+}
+
+//Group: Lead the way, Calhoun
+//NOTE: Only 07 and 08 referred to the player by name.
+
+"NPC_BS_Security.leadtheway07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.925"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_leadtheway07.wav"
+}
+
+"NPC_BS_Security.leadtheway08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.925"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_leadtheway08.wav"
+}
+
+//Group: Lead the way, Calhoun
+//NOTE: Replacing lines that referred to player as "freeman in Black Mesa.
+
+"NPC_BS_Security.lookoutfm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.990"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_lookoutfm01.wav"
+}
+
+"NPC_BS_Security.lookoutfm02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.990"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_lookoutfm02.wav"
+}
+
+"NPC_BS_Security.lookoutfm03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.980"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_lookoutfm03.wav"
+}
+
+//Group: Nice shot, "Calhoun"
+//NOTE: Only 04 and 07 originally referred to the player by name.
+
+"NPC_BS_Security.niceshot04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_niceshot04.wav"
+}
+
+"NPC_BS_Security.niceshot07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_niceshot07.wav"
+}
+
+//Group: Not the man we thought.
+
+"NPC_BS_Security.notthemanithought01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_notthemanithought01.wav"
+}
+
+//Group: I'm in your way (whoops)
+
+"NPC_BS_Security.outofyourway01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_outofyourway01.wav"
+}
+
+"NPC_BS_Security.outofyourway02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_outofyourway02.wav"
+}
+
+"NPC_BS_Security.outofyourway03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_outofyourway03.wav"
+}
+
+//Group: I'm in your way (whoops)
+
+"NPC_BS_Security.pardonme01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_pardonme01.wav"
+}
+
+"NPC_BS_Security.pardonme02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_pardonme02.wav"
+}
+
+//Group: I'm ready if you are
+
+"NPC_BS_Security.readywhenyouare01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_readywhenyouare01.wav"
+}
+
+"NPC_BS_Security.readywhenyouare02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_readywhenyouare02.wav"
+}
+
+"NPC_BS_Security.readywhenyouare03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_readywhenyouare03.wav"
+}
+
+"NPC_BS_Security.readywhenyouare04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_readywhenyouare04.wav"
+}
+
+//Group: Time to Reload!
+
+"NPC_BS_Security.reloadfm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_reloadfm01.wav"
+}
+
+"NPC_BS_Security.reloadfm02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_reloadfm02.wav"
+}
+
+"NPC_BS_Security.reloadfm03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.975"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_reloadfm03.wav"
+}
+
+"NPC_BS_Security.reloadfm04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_reloadfm04.wav"
+}
+
+"NPC_BS_Security.reloadfm05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.960"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_reloadfm05.wav"
+}
+
+"NPC_BS_Security.reloadfm06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.990"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_reloadfm06.wav"
+}
+
+//Group: I'm in your way (whoops)
+
+"NPC_BS_Security.sorrydoc01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_sorrydoc01.wav"
+}
+
+"NPC_BS_Security.sorrydoc02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.990"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_sorrydoc02.wav"
+}
+
+"NPC_BS_Security.sorrydoc03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.990"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_sorrydoc03.wav"
+}
+
+//Group: I'm in your way (whoops)
+
+"NPC_BS_Security.sorryfm01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_sorryfm01.wav"
+}
+
+"NPC_BS_Security.sorryfm02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.990"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_sorryfm02.wav"
+}
+
+//Group: You better reload, guy.
+
+"NPC_BS_Security.youbetterreload01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_youbetterreload01.wav"
+}
+
+"NPC_BS_Security.youbetterreload02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_youbetterreload02.wav"
+}
+
+"NPC_BS_Security.youbetterreload03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_youbetterreload03.wav"
+}	
+
+"NPC_BS_Security.marine_taunt01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_marine_taunt01.wav"
+}
+
+"NPC_BS_Security.marine_taunt02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_marine_taunt02.wav"
+}
+
+"NPC_BS_Security.marine_taunt03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_TALKING"
+
+	"wave"			"vo/npc/bs_guards/grd_bs_marine_taunt03.wav"
+}

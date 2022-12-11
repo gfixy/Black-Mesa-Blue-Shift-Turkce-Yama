@@ -1,0 +1,136 @@
+// Choreo version 1
+actor "insec_sec_femsci01"
+{
+  channel "Audio"
+  {
+    event speak "NPC_Scifemale.stopitfm02"
+    {
+      time 0.886667 2.052064
+      param "NPC_Scifemale.stopitfm02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "NPC_Scifemale.startle02_var03"
+    {
+      time 0.073333 0.525328
+      param "NPC_Scifemale.startle02_var03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "LookAt"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.791453 3.265470
+      param "!player"
+      event_ramp
+      {
+        0.4196 0.9137
+        1.9765 0.9283
+      }
+    }
+  }
+  channel "Flex"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time -0.005470 0.847863
+      param ""
+      event_ramp
+      {
+        0.3720 0.8878
+      }
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "lid_raiser" combo 
+        {
+          0.1120 0.8400
+        }
+        {
+        }
+        "inner_raiser" combo 
+        {
+          0.1480 0.7200
+        }
+        {
+        }
+        "outer_raiser" combo 
+        {
+          0.1200 0.7400
+        }
+        {
+        }
+        "jaw_drop" 
+        {
+          0.0867 0.7900
+        }
+        "mouth_drop" combo 
+        {
+          0.1133 0.6900
+        }
+        {
+        }
+      }
+    }
+    event flexanimation "Facial Animation"
+    {
+      time 1.153333 5.120000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          1.2931 0.8700
+          2.4206 0.8900
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.1951 0.7500
+          0.5618 0.1400
+        }
+        {
+        }
+        "puckerer" combo 
+        {
+          0.7402 0.1400
+          1.2696 0.3100
+          1.6069 0.5400
+        }
+        {
+        }
+        "jaw_drop" 
+        {
+          0.2084 0.2400
+          0.4594 0.1200
+        }
+        "mouth_drop" combo 
+        {
+          0.3530 0.1300
+          0.7190 0.1700
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gestures"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "156"
+  "RampTool" "56"
+  "ExpressionTool" "60"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

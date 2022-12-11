@@ -1,0 +1,89 @@
+// Choreo version 1
+actor "bs_ally_los"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+    event face "Face bs_ally_otis"
+    {
+      time 0.363636 7.439394
+      param "bs_ally_otis"
+    }
+    event lookat "Look at bs_ally_otis"
+    {
+      time 1.045455 7.121213
+      param "bs_ally_otis"
+    }
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_depot_murdoch_totracks"
+    {
+      time 0.757576 2.681818
+      param "mark_depot_murdoch_totracks"
+      param2 "Walk"
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  channel "Interupt"
+  {
+  }
+  channel "Trigger Cues"
+  {
+  }
+  faceposermodel "models\humans\guard.mdl"
+}
+
+actor "bs_ally_otis"
+{
+  channel "Voice"
+  {
+  }
+  channel "Look At"
+  {
+  }
+  channel "Face to"
+  {
+  }
+  channel "Move To"
+  {
+    event moveto "Moveto mark_depot_otis_offtracks"
+    {
+      time 1.818181 4.181818
+      param "mark_depot_otis_offtracks"
+      param2 "Run"
+    }
+  }
+  channel "Gesture"
+  {
+  }
+  channel "Expression"
+  {
+  }
+  channel "Flex"
+  {
+  }
+  faceposermodel "models\humans\guard_thick.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "SceneRampTool" "100"
+  "ExpressionTool" "18"
+  "GestureTool" "100"
+  "RampTool" "32"
+}
+fps 60
+snap off
+ignorePhonemes off

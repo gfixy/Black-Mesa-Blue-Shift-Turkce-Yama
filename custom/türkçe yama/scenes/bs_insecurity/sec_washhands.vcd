@@ -1,0 +1,188 @@
+// Choreo version 1
+event section "p1"
+{
+  time 0.546667 -1.000000
+  param "noaction"
+}
+event section "p1"
+{
+  time 9.347721 -1.000000
+  param "noaction"
+}
+actor "ins_sec_grd11"
+{
+  channel "LookAt"
+  {
+    event face "Face mark_ins_sec_grd11_sink"
+    {
+      time 0.273333 5.506667
+      param "mark_ins_sec_grd11_sink"
+    }
+    event lookat "Look at mark_ins_sec_grd11_sink"
+    {
+      time 0.380000 5.947368
+      param "mark_ins_sec_grd11_sink"
+    }
+    event lookat "Look at mark_ins_sec_grd11_turnside"
+    {
+      time 6.674387 7.701054
+      param "mark_ins_sec_grd11_turnside"
+      event_ramp
+      {
+        0.4820 0.7755
+        0.8860 0.8622
+      }
+      yaw "35"
+    }
+    event face "Face mark_ins_sec_grd11_dryer"
+    {
+      time 9.427719 17.075439
+      param "mark_ins_sec_grd11_dryer"
+    }
+    event lookat "Look at mark_ins_sec_grd11_dryer"
+    {
+      time 9.941053 12.434387
+      param "mark_ins_sec_grd11_dryer"
+    }
+  }
+  channel "MoveTo"
+  {
+    event moveto "Moveto mark_ins_sec_grd11_tosink"
+    {
+      time 0.093333 0.746666
+      param "mark_ins_sec_grd11_tosink"
+      param2 "Walk"
+      resumecondition
+    }
+    event gesture "g_wash_hands"
+    {
+      time 0.720000 6.248071
+      param "g_wash_hands"
+      event_ramp
+      {
+        1.2982 1.0000
+        4.9090 0.9980
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.175998
+        "loop" 0.182570
+        "accent" 0.574603
+        "end" 0.898413
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.277778
+        "loop" 0.277778
+        "accent" 0.555556
+        "end" 0.824074
+      }
+      sequenceduration 3.633333
+    }
+    event firetrigger "Firetrigger 1"
+    {
+      time 0.700000 -1.000000
+      param "1"
+    }
+    event gesture "g_wash_hands_shake"
+    {
+      time 4.927368 8.227367
+      param "g_wash_hands_shake"
+      event_ramp
+      {
+        0.9000 0.5049
+        1.0982 0.8527
+        1.5125 0.6974
+        2.2321 0.8959
+      }
+      absolutetags playback_time
+      {
+        "in" 0.204082
+        "out" 0.714286
+      }
+      absolutetags shifted_time
+      {
+        "in" 0.204082
+        "out" 0.714286
+      }
+      sequenceduration 3.300000
+    }
+    event moveto "Moveto mark_ins_sec_grd11_todryer"
+    {
+      time 7.774386 10.561052
+      param "mark_ins_sec_grd11_todryer"
+      param2 "Walk"
+      resumecondition
+    }
+    event gesture "g_wash_hands"
+    {
+      time 10.992279 17.081758
+      param "g_wash_hands"
+      event_ramp
+      {
+        1.3285 0.9745
+        4.2241 0.9621
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.159772
+        "loop" 0.165738
+        "accent" 0.475512
+        "end" 0.763679
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.277778
+        "loop" 0.277778
+        "accent" 0.555556
+        "end" 0.824074
+      }
+      sequenceduration 3.633333
+    }
+    event gesture "GestureButton_right"
+    {
+      time 9.692982 11.826315
+      param "GestureButton_right"
+      event_ramp
+      {
+        0.7107 0.9941
+        1.6464 0.0275
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.222222
+        "accent" 0.904762
+        "loop" 0.920635
+        "end" 0.936508
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.222222
+        "accent" 0.904762
+        "loop" 0.920635
+        "end" 0.936508
+      }
+      sequenceduration 2.133333
+    }
+  }
+  channel "Audio"
+  {
+    event firetrigger "Firetrigger 2"
+    {
+      time 10.061052 -1.000000
+      param "2"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "76"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "16"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

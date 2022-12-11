@@ -1,0 +1,89 @@
+// Choreo version 1
+actor "ins_sec_sci01"
+{
+  channel "Audio"
+  {
+    event speak "INS.sc_sec2_laptop4"
+    {
+      time 0.520000 2.926712
+      param "INS.sc_sec2_laptop4"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Facial"
+  {
+    event flexanimation "Facial Animation"
+    {
+      time 0.326667 3.700000
+      param ""
+      flexanimations samples_use_time defaultcurvetype=curve_catmullrom_normalize_x_to_curve_catmullrom_normalize_x
+      {
+        "outer_raiser" combo 
+        {
+          1.3340 0.0100
+          1.4620 0.7100
+          1.9080 0.7500
+        }
+        {
+        }
+        "lowerer" combo 
+        {
+          0.2900 0.7700
+          1.2680 0.8100
+          1.4780 0.2300
+        }
+        {
+        }
+      }
+    }
+  }
+  channel "Gesture"
+  {
+    event gesture "hg_nod_left"
+    {
+      time 0.553334 1.853334
+      param "hg_nod_left"
+      absolutetags playback_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.568947
+        "end" 0.578947
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.236842
+        "extreme" 0.473684
+        "loop" 0.578947
+        "end" 0.578947
+      }
+    }
+  }
+  channel "LookAT"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.140000 2.586667
+      param "!player"
+      event_ramp
+      {
+        0.5320 0.7934
+        1.5400 0.8750
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
+ignorePhonemes off

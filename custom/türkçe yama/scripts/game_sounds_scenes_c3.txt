@@ -1,0 +1,8223 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+//														CHAPTER 4 - CAPTIVE FREIGHT
+//
+//																STARTS HERE!
+//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//=============================================================================================================================
+//	GENERIC SCENE EVENT SNDFX
+//=============================================================================================================================
+
+"BS_Midgame_Surface_GunfightLight"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			".65"
+	"pitch"				"95,110"
+
+	"soundlevel"		"SNDLVL_GUNFIRE"
+
+	"rndwave"
+	{
+		"wave"				"bshift\bs_soundscape\soundscape_surface_gunfight_light1.wav"
+		"wave"				"bshift\bs_soundscape\soundscape_surface_gunfight_light2.wav"
+		"wave"				"bshift\bs_soundscape\soundscape_surface_gunfight_light3.wav"
+	}
+}
+
+"BS_Midgame_Surface_GunfightHeavy"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			".65"
+	"pitch"				"95,110"
+
+	"soundlevel"		"SNDLVL_GUNFIRE"
+
+	"rndwave"
+	{
+		"wave"				"bshift\bs_soundscape\soundscape_surface_gunfight_heavy1.wav"
+		"wave"				"bshift\bs_soundscape\soundscape_surface_gunfight_heavy2.wav"
+		"wave"				"bshift\bs_soundscape\soundscape_surface_gunfight_heavy3.wav"
+	}
+}
+
+"BS_Midgame_Yard_TrainBump"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"90,110"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump1.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump2.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump3.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump4.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump5.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump6.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump7.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump8.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump9.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump10.wav"
+	}
+}
+
+"BS_Midgame_Yard_TrainBumpInterior"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"90,110"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"rndwave"
+	{
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump1_interior.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump2_interior.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump3_interior.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump4_interior.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump5_interior.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump6_interior.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump7_interior.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump8_interior.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump9_interior.wav"
+		"wave"				"bshift\scripted_midgame\freightyard_train_bump10_interior.wav"
+	}
+}
+
+"BS_Midgame_Proto_ElevatorRandomCreak"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"0.3,0.7"
+	"pitch"				"80,120"
+
+	"soundlevel"		"SNDLVL_75dB"
+
+	"rndwave"
+	{
+		"wave"				"bshift\scripted_midgame\prototype_elevator_rnd_creak01.wav"
+		"wave"				"bshift\scripted_midgame\prototype_elevator_rnd_creak02.wav"
+		"wave"				"bshift\scripted_midgame\prototype_elevator_rnd_creak03.wav"
+		"wave"				"bshift\scripted_midgame\prototype_elevator_rnd_creak04.wav"
+		"wave"				"bshift\scripted_midgame\prototype_elevator_rnd_creak05.wav"
+		"wave"				"bshift\scripted_midgame\prototype_elevator_rnd_creak06.wav"
+		"wave"				"bshift\scripted_midgame\prototype_elevator_rnd_creak07.wav"
+		"wave"				"bshift\scripted_midgame\prototype_elevator_rnd_creak08.wav"
+	}
+}
+
+"BS_Midgame_Combat_ShootingFX"
+//NOTE: These files were placed into a separate scripted_combat folder for flexibility reasons,
+//however we're writing the params into this script since the first use is in this chapter!
+
+//ADDITIONAL NOTE: There are 3 samples to be used
+// -Dual Channel
+// -Single Channel Left
+// -Single Channel Right
+// The panned ones are only used for distant FX in game to illustrate some surround atmosphere without having the proper audio hardware on board.
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"1"
+	"pitch"				"85,110"
+
+	"soundlevel"		"SNDLVL_70dB"
+
+	"rndwave"
+	{
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact1.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact1_l.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact1_r.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact2.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact2_l.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact2_r.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact3.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact3_l.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact3_r.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact4.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact4_l.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact4_r.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact5.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact5_l.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact5_r.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact6.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact6_l.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact6_r.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact7.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact7_l.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact7_r.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact8.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact8_l.wav"
+		"wave"				"bshift\scripted_combat\bs_combat_hardimpact8_r.wav"
+	}
+}
+
+
+"BS_Midgame_Prisoner_BangSmall"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"90,110"
+
+	"soundlevel"		"SNDLVL_80dB"
+	"wave"			"bshift\scripted_predisaster\pd_intro_doorknock.wav"
+}
+
+"BS_Midgame_Prisoner_BangHard"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"90,110"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"				"physics\metal\metal_barrel_impact_soft1.wav"
+		"wave"				"physics\metal\metal_barrel_impact_soft2.wav"
+		"wave"				"physics\metal\metal_barrel_impact_soft3.wav"
+		"wave"				"physics\metal\metal_barrel_impact_soft4.wav"
+	}
+}
+
+//BS CAPTIVE FREIGHT PRISONER CALLS
+//We're using oneshot / rndwave via ambient_generic for this instead of LCS since we don't even have an actor at that time in the game!
+//Aaaand also for various other reasons.
+//DA rosenbergIR
+
+"BS_Midgame_PrisonerCall_Rosenberg"
+{
+	"channel"			"CHAN_STATIC"
+	"volume"			"VOL_NORM"
+	"pitch"				"95,105"
+
+	"soundlevel"		"SNDLVL_80dB"
+
+	"rndwave"
+	{
+		"wave"				"vo\captivefreight\rosenberg\ros_container_help_rnd01.wav"
+		"wave"				"vo\captivefreight\rosenberg\ros_container_help_rnd02.wav"
+		"wave"				"vo\captivefreight\rosenberg\ros_container_help_rnd03.wav"
+		"wave"				"vo\captivefreight\rosenberg\ros_container_help_rnd04.wav"
+	}
+}
+
+//=============================================================================================================================
+//	VOICE OVER FOR CAPTIVE FREIGHT - STARTS HERE!
+//=============================================================================================================================
+//	Scene: Harold the Scientist	
+//=============================================================================================================================
+
+"harold.cpf.wounded01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_wounded01_01.wav"
+}
+
+"harold.cpf.wounded01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_wounded01_02.wav"
+}
+
+"harold.cpf.wounded02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_wounded02_01.wav"
+}
+
+"harold.cpf.wounded02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_wounded02_02.wav"
+}
+
+"harold.cpf.wounded02_03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_wounded02_03.wav"
+}
+
+"harold.cpf.wounded02_04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_wounded02_04.wav"
+}
+
+"harold.cpf.wounded02_05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_wounded02_05.wav"
+}
+
+"harold.cpf.acolleague01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_acolleague01_01.wav"
+}
+
+"harold.cpf.acolleague01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_acolleague01_02.wav"
+}
+
+"harold.cpf.acolleague02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_acolleague02_01.wav"
+}
+
+"harold.cpf.keycard01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_keycard01_01.wav"
+}
+
+"harold.cpf.keycard_idle01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_keycard_idle01.wav"
+}
+
+"harold.cpf.findrosenberg01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\harold\harold_findrosenburg01_01.wav"
+}
+
+"harold.cpf.findrosenberg01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\harold\harold_findrosenburg01_02.wav"
+}
+
+"harold.cpf.deathrattle"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/harold/harold_deathrattle.wav"
+}
+
+//=============================================================================================================================
+// Scene: Murdoch and Otis Intro Precursor [Section behind door, before it's kicked in]
+//=============================================================================================================================
+
+// SFX sounds for Murdock kicking a door from the other side
+
+"sfx.cpf.murdoch_introdoorkick01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo/captivefreight/murdoch_introdoorkick01.wav"
+}
+
+"sfx.cpf.murdoch_introdoorkick02"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo/captivefreight/murdoch_introdoorkick02.wav"
+}
+
+// BIG BANGY DOOR KICK
+
+"sfx.cpf.murdoch_introdoorkick03"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo/captivefreight/murdoch_introdoorkick03.wav"
+}
+
+// GRD Lines [aka "Murdoch]
+
+"grd.cpf.intropre_donut01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intropre_donut01_muffled.wav"
+}
+
+"grd.cpf.intropre_donut02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intropre_donut02_muffled.wav"
+}
+
+"grd.cpf.intro_finally01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_finally01.wav"
+}
+
+"grd.cpf.intro_movewithpurpose01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_movewithpurpose01.wav"
+}
+
+"grd.cpf.intro_notomention01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_notomention01_01.wav"
+}
+
+"grd.cpf.intro_notomention01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_notomention01_02.wav"
+}
+
+"grd.cpf.intro_notomention01_03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_notomention01_03.wav"
+}
+
+"grd.cpf.intro_exitplan01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_exitplan01_01.wav"
+}
+
+"grd.cpf.intro_exitplan01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_exitplan01_02.wav"
+}
+
+"grd.cpf.intro_exitplan02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_exitplan02.wav"
+}
+
+"grd.cpf.intro_exitplan03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_exitplan03.wav"
+}
+
+"grd.cpf.intro_exitplan04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_intro_exitplan04.wav"
+}
+
+// OTIS Lines
+
+"otis.cpf.intropre_thatdonut01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_intropre_thatdonut01_muffled.wav"
+}
+
+"otis.cpf.intropre_thatdonut02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.650"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_intropre_thatdonut02.wav"
+}
+
+"otis.cpf.intro_thatscalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_intro_thatscalhoun01.wav"
+}
+
+"otis.cpf.intro_thatscalhoun02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_intro_thatscalhoun02.wav"
+}
+
+"otis.cpf.intro_wouldntbelieve01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_intro_wouldntbelieve01_01.wav"
+}
+
+"otis.cpf.intro_wouldntbelieve01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_intro_wouldntbelieve01_02.wav"
+}
+
+"otis.cpf.intro_poorfella01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_intro_poorfella01.wav"
+}
+
+"otis.cpf.intro_exitplan01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_intro_exitplan01.wav"
+}
+
+"otis.cpf.intro_exitplan02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_intro_exitplan02.wav"
+}
+
+//=============================================================================================================================
+// Scenes: Secret Passage to Protolabs Found (Pre rosenbergir)
+//=============================================================================================================================
+
+// Murdoch Lines
+
+"grd.cpf.secretfound01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_secretfound01_01.wav"
+}
+
+"grd.cpf.secretfound01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_secretfound01_02.wav"
+}
+
+"grd.cpf.secretfound02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_secretfound02.wav"
+}
+
+// Otis Lines
+
+"otis.cpf.secretfound01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_secretfound01_01.wav"
+}
+
+//=============================================================================================================================
+// Scenes: Secret Passage to Protolabs Found (Pre rosenbergir) - Murdoch and Otis Follow after Calhoun
+//=============================================================================================================================
+
+// Murdoch Lines
+
+"grd.cpf.secretfound_follow01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_secretfound_follow01_01.wav"
+}
+
+"grd.cpf.secretfound_follow01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_secretfound_follow01_02.wav"
+}
+
+"grd.cpf.secretfound_follow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_secretfound_follow02.wav"
+}
+
+// Otis Lines
+
+"otis.cpf.secretfound_follow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_secretfound_follow01.wav"
+}
+
+//=============================================================================================================================
+// Scenes: Secret Passage to Protolabs Found (Pre rosenbergir) - Turns out to be a dead end, for now...
+//=============================================================================================================================
+
+"grd.cpf.secretfound_deadend01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_secretfound_deadend01.wav"
+}
+
+"grd.cpf.secretfound_deadend02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_secretfound_deadend02.wav"
+}
+
+"grd.cpf.secretfound_goback01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_secretfound_goback01.wav"
+}
+
+// Otis Lines
+
+"otis.cpf.secretfound_deadend01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_secretfound_deadend01.wav"
+}
+
+"otis.cpf.secretfound_deadend02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_secretfound_deadend02.wav"
+}
+
+"otis.cpf.secretfound_deadend03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_secretfound_deadend03.wav"
+}
+
+"otis.cpf.secretfound_deadend04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_secretfound_deadend04.wav"
+}
+
+//=============================================================================================================================
+// Scenes: Freight Offices Stairway - Locked/Blocked Doors Scenario
+//=============================================================================================================================
+
+// lines for if player tries the two blocked doorways.
+
+"grd.cpf.stairway.lockeddoor01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_stairway_lockeddoor01_01.wav"
+}
+
+"grd.cpf.stairway.lockeddoor01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_stairway_lockeddoor01_02.wav"
+}
+
+"grd.cpf.stairway.lockeddoor02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_stairway_lockeddoor02.wav"
+}
+
+//=============================================================================================================================
+// Scene: Murdoch and Otis - Building interior - Turret encounter
+//=============================================================================================================================
+
+// Scene line, when first encountering the turrets.
+
+"grd.cpf.turrets_encounter01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_turrets_encounter01.wav"
+}
+
+"grd.cpf.turrets_encounter02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_turrets_encounter02.wav"
+}
+
+"grd.cpf.turrets_encounter03_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_turrets_encounter03_01.wav"
+}
+
+"grd.cpf.turrets_encounter03_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_turrets_encounter03_02.wav"
+}
+
+"otis.cpf.turrets_encounter01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_turrets_encounter01.wav"
+}
+
+"otis.cpf.turrets_encounter02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_turrets_encounter02.wav"
+}
+
+"otis.cpf.turrets_encounter03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_turrets_encounter03.wav"
+}
+
+// Player engages combat with the turrets.
+
+"grd.cpf.turrets_engage01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_turrets_engage01.wav"
+}
+
+// Grd lines, Post - Turrets Death
+
+"grd.cpf.turrets_dead01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_turrets_dead01.wav"
+}
+
+"grd.cpf.turrets_dead02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_turrets_dead02.wav"
+}
+
+//=============================================================================================================================
+// Scene: Murdoch and Otis Random Conversation 1
+//=============================================================================================================================
+
+//MURDOCH LINES
+
+"grd.cpf.thoughtyoumovedout01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_thoughtyoumovedout01.wav"
+}
+
+"grd.cpf.thoughtyoumovedout02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_thoughtyoumovedout02.wav"
+}
+
+"grd.cpf.thoughtyoumovedout03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_thoughtyoumovedout03.wav"
+}
+
+"grd.cpf.thoughtyoumovedout04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_thoughtyoumovedout04.wav"
+}
+
+"grd.cpf.thoughtyoumovedout05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_thoughtyoumovedout05.wav"
+}
+
+//OTIS LINES
+
+"otis.cpf.momwillworry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_momwillworry01.wav"
+}
+
+"otis.cpf.momwillworry02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_momwillworry02.wav"
+}
+
+"otis.cpf.momwillworry03_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_momwillworry03_01.wav"
+}
+
+"otis.cpf.momwillworry03_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_momwillworry03_02.wav"
+}
+
+"otis.cpf.momwillworry04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_momwillworry04.wav"
+}
+
+"otis.cpf.momwillworry05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_momwillworry05.wav"
+}
+
+"otis.cpf.momwillworry06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_momwillworry06.wav"
+}
+
+//=============================================================================================================================
+// Scene: Murdoch and Otis Random Conversation 2
+//=============================================================================================================================
+
+
+//MURDOCH LINES
+
+"grd.cpf.crabturkey.arewhatueat01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_arewhatueat01.wav"
+}
+
+"grd.cpf.crabturkey.arewhatueat02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_arewhatueat02.wav"
+}
+
+"grd.cpf.crabturkey.arewhatueat03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_arewhatueat03.wav"
+}
+
+"grd.cpf.crabturkey.arewhatueat04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_arewhatueat04.wav"
+}
+
+//OTIS LINES
+
+"otis.cpf.crabturkey.iwonder01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_iwonder01.wav"
+}
+
+"otis.cpf.crabturkey.nobite01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_nobite01_01.wav"
+}
+
+"otis.cpf.crabturkey.nobite01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_nobite01_02.wav"
+}
+
+"otis.cpf.crabturkey.nobite02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_nobite02.wav"
+}
+
+"otis.cpf.crabturkey.nobite03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_nobite03.wav"
+}
+
+//=============================================================================================================================
+// Scene: Freight Depot - Parking Lot Fight - Phase 1 (PRE)
+//=============================================================================================================================
+
+// OTIS LINES
+
+"otis.cpf.p1pre_company01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1pre_company01.wav"
+}
+
+"otis.cpf.p1pre_badcompany01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1pre_badcompany01.wav"
+}
+
+// GRD LINES
+
+"grd.cpf.p1pre_grabcover01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1pre_grabcover01.wav"
+}
+
+"grd.cpf.p1pre_yourcallcal01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_85dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1pre_yourcallcal01.wav"
+}
+
+//=============================================================================================================================
+// Scene: Freight Depot - Parking Lot Fight - Phase 1 (PRE)
+//=============================================================================================================================
+
+// OTIS LINES
+
+"otis.cpf.p1_ohjeez01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1_ohjeez01.wav"
+}
+
+"otis.cpf.p1_pow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1_pow01.wav"
+}
+
+"otis.cpf.p1_pow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1_pow02.wav"
+}
+
+"otis.cpf.p1_pow03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1_pow03.wav"
+}
+
+"otis.cpf.p1_pow04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1_pow04.wav"
+}
+
+"otis.cpf.p1_pow05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1_pow05.wav"
+}
+
+"otis.cpf.p1_nomakesounds01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1_nomakesounds01.wav"
+}
+
+"otis.cpf.p1_notadrill01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1_notadrill01.wav"
+}
+
+"otis.cpf.p1_notadrill02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1_notadrill02.wav"
+}
+
+// GRD LINES
+
+"grd.cpf.p1_letthemhaveit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1_letthemhaveit01.wav"
+}
+
+"grd.cpf.p1_nomakesounds01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1_nomakesounds01.wav"
+}
+
+"grd.cpf.p1_firstclue01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1_firstclue01.wav"
+}
+
+"grd.cpf.p1_everbethatlucky01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1_everbethatlucky01.wav"
+}
+
+"grd.cpf.p1_everbethatlucky02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1_everbethatlucky02.wav"
+}
+
+//=============================================================================================================================
+// Scene: Freight Depot - Parking Lot Fight - Phase 1 (POST) Cool down moment for player, Murdoch and Otis.
+//=============================================================================================================================
+
+//	Grd lines
+
+"grd.cpf.p1post_jesus01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1post_jesus01.wav"
+}
+
+"grd.cpf.p1post_notlikely01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1post_notlikely01.wav"
+}
+
+"grd.cpf.p1post_notlikely02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1post_notlikely02.wav"
+}
+
+"grd.cpf.p1post_tow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1post_tow01.wav"
+}
+
+"grd.cpf.p1post_tow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1post_tow02.wav"
+}
+
+"grd.cpf.p1post_tow03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p1post_tow03.wav"
+}
+
+//	Otis lines
+
+"otis.cpf.p1post_wasthatit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1post_wasthatit01.wav"
+}
+
+"otis.cpf.p1post_leadon01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1post_leadon01.wav"
+}
+
+"otis.cpf.p1post_whachagot01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1post_whachagot01.wav"
+}
+
+"otis.cpf.p1post_whachagot02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p1post_whachagot02.wav"
+}
+
+//=============================================================================================================================
+// Scene: Freight Depot - Parking Lot Fight - Phase 2 - ALSO WITH SNIPERS !!!
+//=============================================================================================================================
+
+// OTIS LINES
+
+"otis.cpf.p2_whatthe01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p2_whatthe01.wav"
+}
+
+"otis.cpf.p2_whatthe02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p2_whatthe02.wav"
+}
+
+// GRD LINES
+
+"grd.cpf.p2_roundtwoarrived01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_roundtwoarrived01.wav"
+}
+
+"grd.cpf.p2_triplekill"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.850"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/c2a5e/grd02_hivehand_goodgod01.wav"
+}
+
+"grd.cpf.p2_1stsniper01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_1stsniper01.wav"
+}
+
+"grd.cpf.p2_1stsniper02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_1stsniper02_01.wav"
+}
+
+"grd.cpf.p2_1stsniper02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_1stsniper02_02.wav"
+}
+
+"grd.cpf.p2_1stsniper03_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_1stsniper03_01.wav"
+}
+
+"grd.cpf.p2_1stsniper03_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_1stsniper03_02.wav"
+}
+
+"grd.cpf.p2_1stsniper03_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_1stsniper03_02.wav"
+}
+
+"grd.cpf.p2_1stsniperhit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_1stsniperhit01.wav"
+}
+
+"grd.cpf.p2_1stsniperhit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_1stsniperhit01.wav"
+}
+
+"grd.cpf.p2_tow_keepusing01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_tow_keepusing01.wav"
+}
+
+"grd.cpf.p2_tow_keepusing02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p2_tow_keepusing02.wav"
+}
+
+"grd.cpf.p2_2ndsniper01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p2_2ndsniper01.wav"
+}
+
+"grd.cpf.p2_2ndsniper_hint01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p2_2ndsniper_hint01.wav"
+}
+
+"grd.cpf.p2_2ndsniper01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p2_2ndsniper01.wav"
+}
+
+"grd.cpf.p2_2ndsniper02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p2_2ndsniper02.wav"
+}
+
+"grd.cpf.p2_2ndsniperdead01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p2_2ndsniperdead01_01.wav"
+}
+
+"grd.cpf.p2_2ndsniperdead01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p2_2ndsniperdead01_02.wav"
+}
+
+"grd.cpf.p2_2ndsniperdead02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p2_2ndsniperdead02.wav"
+}
+
+"grd.cpf.p2_2ndsniperhit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p2_2ndsniperhit01.wav"
+}
+
+"grd.cpf.p2_2ndsniperhit02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p2_2ndsniperhit02.wav"
+}
+
+// Otis Lines
+
+"otis.cpf.p2_2ndsniper01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_p2_2ndsniper01.wav"
+}
+
+"otis.cpf.p2_2ndsniper02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_p2_2ndsniper02.wav"
+}
+
+"otis.cpf.p2_2ndsniperdead01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_p2_2ndsniperdead01.wav"
+}
+
+//=============================================================================================================================
+// Scene: Freight Depot - Parking Lot Fight - Phase 3 - REPELLING MARINES AND OSPREYS, BECAUSE WHY NOT?
+//=============================================================================================================================
+
+"otis.cpf.p3_ahcrap01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_p3_ahcrap01.wav"
+}
+
+"grd.cpf.p3_yougottabekidding01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_95dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_p3_yougottabekidding01.wav"
+}
+
+//=============================================================================================================================
+// Scene: Freight Depot - Parking Lot Fight - Phase 3 [POST] ///
+//=============================================================================================================================
+
+// Murdoch lines
+
+"grd.cpf.p3post_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_01.wav"
+}
+
+"grd.cpf.p3post_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_02.wav"
+}
+
+"grd.cpf.p3post_03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_03.wav"
+}
+
+"grd.cpf.p3post_04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_04.wav"
+}
+
+"grd.cpf.p3post_05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_05.wav"
+}
+
+"grd.cpf.p3post_06_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_06_01.wav"
+}
+
+"grd.cpf.p3post_06_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_06_02.wav"
+}
+
+"grd.cpf.p3post_meetbackinside01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_meetbackinside01.wav"
+}
+
+"grd.cpf.p3post_meetbackinside02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_meetbackinside02.wav"
+}
+
+"grd.cpf.p3post_meetbackinside03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_meetbackinside03.wav"
+}
+
+"grd.cpf.p3post_meetbackinside04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_p3post_meetbackinside04.wav"
+}
+	
+
+// OTIS lines
+
+
+//NOTE: this line is mastered slightly louder, so we bring it down a little in the script volume.
+"otis.cpf.p3post_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.500"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_p3post_01.wav"
+}
+
+"otis.cpf.p3post_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_p3post_02.wav"
+}
+
+"otis.cpf.p3post_heights01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_p3post_heights01.wav"
+}
+
+"otis.cpf.p3post_heights02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_p3post_heights02.wav"
+}
+
+//=============================================================================================================================
+// Scene: Freight Depot - Building Interior - Post Phase 3 Parking Lot - player, Murdoch and Otis back inside
+//=============================================================================================================================
+
+"grd.cpf.offices_stairwayunblocked01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_offices_stairwayunblocked01.wav"
+}
+
+"grd.cpf.offices_stairwayunblocked02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_offices_stairwayunblocked02.wav"
+}
+
+"grd.cpf.offices_stairwayunblocked03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_offices_stairwayunblocked03.wav"
+}
+
+//
+
+"grd.cpf.building_doorcode01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_building_doorcode01.wav"
+}
+
+"grd.cpf.building_doorcode02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_building_doorcode02_01.wav"
+}
+
+"grd.cpf.building_doorcode02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_building_doorcode02_02.wav"
+}
+
+"grd.cpf.building_doorcode03a"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_building_doorcode03a.wav"
+}
+
+"grd.cpf.building_doorcode03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_building_doorcode03.wav"
+}
+
+"grd.cpf.building_doorcode04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cpf_building_doorcode04.wav"
+}
+
+"otis.cpf.building_doorcode01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_cpf_building_doorcode01.wav"
+}
+
+//=============================================================================================================================
+// Scene: Depot Intro - /// 
+//=============================================================================================================================	
+
+//NOTE: ohgreat01 and ohgreat02 are mixed slightly louder, so adjust accordingly in the script.
+//
+"grd.cpf.depot_ohgreat01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_ohgreat01.wav"
+}
+
+"grd.cpf.depot_ohgreat02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_ohgreat02.wav"
+}
+
+"otis.cpf.depot_ninjas01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.400"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depot_ninjas01.wav"
+}
+
+//=============================================================================================================================
+// Scene: Depot Intro - Stealth Option /// 
+//=============================================================================================================================	
+
+"grd.cpf.depot_stealth01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_stealth01.wav"
+}
+
+"grd.cpf.depot_stealth02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.820"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_stealth02.wav"
+}
+
+"grd.cpf.depot_notloudenough01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_notloudenough01.wav"
+}
+
+// this line is mastered louder, so volume is lowered accordingly in the script.
+"otis.cpf.depot_stealth01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.400"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depot_stealth01.wav"
+}
+	
+//=============================================================================================================================
+// Scene: Depot Fight 1 - START /// 
+//=============================================================================================================================	
+
+"grd.cpf.depot_4thofjuly01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_4thofjuly01.wav"
+}
+
+"grd.cpf.depot_4thofjuly02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_4thofjuly02.wav"
+}
+
+"otis.cpf.depot_4thofjuly01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depot_4thofjuly01.wav"
+}
+
+//=============================================================================================================================
+// Scene: Depot Fight 1 - Post Scene ///  Here's RONNY!!!
+//=============================================================================================================================	
+
+//	Ronny lines, Inside a container yelling for Help.
+
+"ronny.cpf.depot_helpme01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_helpme01_01.wav"
+}
+
+"ronny.cpf.depot_helpme01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_helpme01_02.wav"
+}
+
+"ronny.cpf.depot_helpme02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_helpme02.wav"
+}
+
+"ronny.cpf.depot_helpme03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_helpme03.wav"
+}
+
+"ronny.cpf.depot_helpme04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_helpme04.wav"
+}
+
+"ronny.cpf.depot_ohthankjesus01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_ohthankjesus01.wav"
+}
+
+"ronny.cpf.depot_soupcan01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_soupcan01.wav"
+}
+
+//	Murdoch lines
+
+"grd.cpf.depot_holdonbuddy01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_holdonbuddy01.wav"
+}
+
+"grd.cpf.depot_holdonbuddy02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_holdonbuddy02.wav"
+}
+
+"grd.cpf.depot_loadingarea01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_loadingarea01.wav"
+}
+
+"grd.cpf.depot_loadingarea02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_loadingarea02.wav"
+}
+
+"grd.cpf.depot_loadingarea03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_loadingarea03.wav"
+}
+
+"grd.cpf.depot_getthetrain01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_getthetrain01.wav"
+}
+
+// Otis lines
+
+"otis.cpf.depot_someoneinthere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depot_someoneinthere01.wav"
+}
+
+"otis.cpf.depot_someoneinthere02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depot_someoneinthere02.wav"
+}
+
+"otis.cpf.depot_canofspinach01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depot_canofspinach01.wav"
+}
+
+"otis.cpf.depot_onthetracks01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depot_onthetracks01.wav"
+}
+
+"otis.cpf.depot_onthetracks02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depot_onthetracks02.wav"
+}
+
+// DEV NOTES: THESE next 3 are processed to sound like they're behind a closed door.
+
+"grd.cpf.depot_wherescalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.995"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_wherescalhoun01.wav"
+}
+
+"grd.cpf.depot_wherescalhoun02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.995"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_wherescalhoun02.wav"
+}
+
+"grd.cpf.depot_wherescalhoun03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.995"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_wherescalhoun03.wav"
+}
+
+
+// OTIS, YOU'RE ON THE TRACKS!!!
+
+"grd.cpf.depot_otis01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_otis01.wav"
+}
+
+"grd.cpf.depot_otis02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_otis02.wav"
+}
+
+"grd.cpf.depot_onthetrack01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_onthetrack01.wav"
+}
+
+//=============================================================================================================================
+// Scene - Cargolock Hints
+//=============================================================================================================================				
+"grd.cpf.depot_lockdevice01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\guards\grd_depot_lockdevice01.wav"
+}
+
+"grd.cpf.depot_lockdevice02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\guards\grd_depot_lockdevice02.wav"
+}
+
+"grd.cpf.depot_lockdevice_hint01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\guards\grd_depot_lockdevice_hint01.wav"
+}
+
+//=============================================================================================================================
+// Scene - Meet Ronny Haywood
+//=============================================================================================================================				
+		
+//	Murdoch Lines
+
+"grd.cpf.depot_okaypal01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_okaypal01.wav"
+}
+
+"grd.cpf.depot_ahhshit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_ahhshit01.wav"
+}
+
+"grd.cpf.depot_toldyouso01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_toldyouso01.wav"
+}
+
+"grd.cpf.depot_toldyouso02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_toldyouso02.wav"
+}	
+
+"grd.cpf.depot_toldyouso03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_toldyouso03.wav"
+}		
+
+"grd.cpf.depot_thatscalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_thatscalhoun01.wav"
+}
+
+"grd.cpf.depot_whatwho01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_whatwho01.wav"
+}
+
+"grd.cpf.depot_whatwho02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_whatwho02.wav"
+}
+
+"grd.cpf.depot_whatsospecial01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_whatsospecial01.wav"
+}
+
+"grd.cpf.depot_whatsospecial02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_whatsospecial02.wav"
+}
+
+"grd.cpf.depot_whatsospecial03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_whatsospecial03.wav"
+}
+
+"grd.cpf.depot_helpfindhim01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_helpfindhim01.wav"
+}
+
+"grd.cpf.depot_helpfindhim02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_helpfindhim02.wav"
+}
+
+"grd.cpf.depot_anothersci01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_anothersci01.wav"
+}
+
+"grd.cpf.depot_anothersci02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_anothersci02.wav"
+}
+
+"grd.cpf.depot_anothersci03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_anothersci03.wav"
+}
+
+"grd.cpf.depot_shutupronny01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_shutupronny01.wav"
+}
+
+"grd.cpf.depot_gatenorush01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_gatenorush01.wav"
+}
+
+"grd.cpf.depot_gatenorush02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_gatenorush02.wav"
+}
+
+"grd.cpf.depot_gatenorush03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depot_gatenorush03.wav"
+}
+
+//	Otis Lines
+	
+"otis.cpf.depot_ohhboy01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depot_ohhboy01.wav"
+}
+
+//	Ronny Lines
+
+"ronny.cpf.depot_ahshit01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_ahshit01_01.wav"
+}
+
+"ronny.cpf.depot_ahshit01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_ahshit01_02.wav"
+}
+
+"ronny.cpf.depot_heleftme01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_heleftme01.wav"
+}
+
+"ronny.cpf.depot_whoisthis01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_whoisthis01.wav"
+}
+
+"ronny.cpf.depot_whoisthis02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_depot_whoisthis02.wav"
+}
+
+"ronny.cpf.depot_messner01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_messner01.wav"
+
+}
+
+"ronny.cpf.depot_messner02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_messner02.wav"
+
+}
+
+"ronny.cpf.depot_messner03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_messner03.wav"
+
+}
+
+"ronny.cpf.depot_messner04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_messner04.wav"
+
+}
+
+"ronny.cpf.depot_messner05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_messner05.wav"
+
+}
+
+"ronny.cpf.depot_messner06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_messner06.wav"
+
+}
+
+"ronny.cpf.depot_messner07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_messner07.wav"
+
+}
+
+"ronny.cpf.depot_messner08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_messner08.wav"
+
+}						
+
+"ronny.cpf.depot_fairenough01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_fairenough01.wav"
+
+}
+
+"ronny.cpf.depot_anothersci01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_anothersci01.wav"
+
+}
+
+"ronny.cpf.depot_anothersci02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_anothersci02_01.wav"
+
+}
+
+"ronny.cpf.depot_anothersci02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_anothersci02_02.wav"
+
+}
+
+"ronny.cpf.depot_anothersci03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_anothersci03.wav"
+
+}
+
+"ronny.cpf.depot_anothersci04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_anothersci04.wav"
+
+}
+
+"ronny.cpf.depot_gatedown01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_gatedown01.wav"
+
+}
+
+"ronny.cpf.depot_gatedown02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_gatedown02.wav"
+
+}
+
+"ronny.cpf.depot_gatedown03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_gatedown03.wav"
+
+}
+
+"ronny.cpf.depot_gatedown04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_gatedown04.wav"
+
+}
+
+"ronny.cpf.depot_gatedown05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_gatedown05.wav"
+
+}
+
+"ronny.cpf.depot_walkedintothatone01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depot_walkedintothatone01.wav"
+
+}
+
+//=============================================================================================================================
+// Scene - Depot Fight # 2
+//=============================================================================================================================	
+
+"grd.cpf.depotfight2_rongrabcover01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depotfight2_rongrabcover01.wav"
+}
+
+"grd.cpf.depotfight2_backmeup01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depotfight2_backmeup01.wav"
+}
+
+//	Otis Lines
+	
+"otis.cpf.depotfight2_igotcha01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depotfight2_igotcha01.wav"
+}
+
+//=============================================================================================================================
+// Scene - Depot Fight #2 - Post Fight
+//=============================================================================================================================	
+
+"grd.cpf.depotfight2_post01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depotfight2_post01.wav"
+}
+
+"grd.cpf.depotfight2_post02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_depotfight2_post02.wav"
+}
+
+"otis.cpf.depotfight2_post01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_depotfight2_post01.wav"
+}
+
+"ronny.cpf.depotfight2_post01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depotfight2_post01.wav"
+
+}
+
+"ronny.cpf.depotfight2_post02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depotfight2_post02.wav"
+
+}
+
+"ronny.cpf.depotfight2_post03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depotfight2_post03.wav"
+
+}
+
+"ronny.cpf.depotfight2_post04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"		"vo/captivefreight/ronny/ronny_depotfight2_post04.wav"
+
+}
+
+//=============================================================================================================================
+// Scene - Depot - Railyard Backdoor Access
+//=============================================================================================================================	
+
+"grd.cpf.backdoor_whynot01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_backdoor_whynot01.wav"
+}
+
+"grd.cpf.backdoor_whynot02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_backdoor_whynot02.wav"
+}
+
+"grd.cpf.backdoor_whynot03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_backdoor_whynot03.wav"
+}
+
+"grd.cpf.backdoor_yousure01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_backdoor_yousure01.wav"
+}
+
+"grd.cpf.backdoor_pissoffronny01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_backdoor_pissoffronny01.wav"
+}
+
+"grd.cpf.backdoor_okgofindher01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_backdoor_okgofindher01.wav"
+}
+
+"grd.cpf.backdoor_outofmymind01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_backdoor_outofmymind01.wav"
+}
+
+"grd.cpf.backdoor_outofmymind02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_backdoor_outofmymind02.wav"
+}
+
+"otis.cpf.backdoor_illgo01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_backdoor_illgo01.wav"
+}
+
+"otis.cpf.backdoor_illgo02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_backdoor_illgo02.wav"
+}
+
+"otis.cpf.backdoor_yougotit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_backdoor_yougotit01.wav"
+}
+
+"ronny.cpf.backdoor_notgoing01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_backdoor_notgoing01.wav"
+
+}
+
+"ronny.cpf.backdoor_notgoing02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_backdoor_notgoing02.wav"
+
+}
+
+"ronny.cpf.backdoor_nicetoknow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_backdoor_nicetoknow01.wav"
+
+}
+
+"ronny.cpf.backdoor_nicetoknow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_backdoor_nicetoknow02.wav"
+
+}
+
+"ronny.cpf.backdoor_justnowfigured01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_backdoor_justnowfigured01.wav"
+
+}
+
+//=============================================================================================================================
+// Scene - Railyard - Finding the Female Scientist
+//=============================================================================================================================	
+
+//	Start of combat in the railyard. Otis reacts.
+
+"otis.cpf.railyard_combat_start01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_combat_start01.wav"
+}
+
+//	Combat had concluded Otis reacts.
+
+"otis.cpf.railyard_prettyclose01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_prettyclose01.wav"
+}
+
+"otis.cpf.railyard_doyouhearthat01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_doyouhearthat01.wav"
+}
+
+//	Female Scientist lines, for inside the shipping container. These lines are Post Processed to sound muffled.
+
+"scifem.cpf.railyard_help01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_help01.wav"
+}
+
+"scifem.cpf.railyard_help02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_help02.wav"
+}
+
+"scifem.cpf.railyard_help03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_help03.wav"
+}
+
+"scifem.cpf.railyard_help04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_help04.wav"
+}
+
+"scifem.cpf.railyard_ohthankgoodness01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_ohthankgoodness01.wav"
+}
+
+"scifem.cpf.railyard_ohthankgoodness02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_ohthankgoodness02.wav"
+}
+
+"scifem.cpf.traincar_whatsthat01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_traincar_whatsthat01.wav"
+}
+
+//	Otis assures the scientist inside the container that help has arrived.
+
+"otis.cpf.traincar_helpishere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_helpishere01.wav"
+}
+
+"otis.cpf.traincar_helpishere02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_helpishere02.wav"
+}
+
+"otis.cpf.traincar_helpishere03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_helpishere03.wav"
+}
+
+"otis.cpf.traincar_helpishere04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_helpishere04.wav"
+}
+
+"otis.cpf.traincar_getthisopen01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_getthisopen01.wav"
+}
+	
+//	Idles for Otis to suggest the control panel for the crane.
+
+"otis.cpf.traincar_idle01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_idle01.wav"
+}
+
+"otis.cpf.traincar_idle02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_idle02_01.wav"
+}
+
+"otis.cpf.traincar_idle02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_idle02_02.wav"
+}
+
+"otis.cpf.traincar_cleared01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_cleared01.wav"
+}
+	
+//	Main scene with female scientist	
+
+"otis.cpf.traincar_knowthedoctor01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_knowthedoctor01_01.wav"
+}
+
+"otis.cpf.traincar_knowthedoctor01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_knowthedoctor01_02.wav"
+}
+
+"otis.cpf.traincar_knowthedoctor01_03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_knowthedoctor01_03.wav"
+}
+
+"otis.cpf.traincar_knowthedoctor02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_knowthedoctor02.wav"
+}
+
+"otis.cpf.traincar_getyasafe01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_getyasafe01.wav"
+}
+
+"otis.cpf.traincar_getyasafe02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_getyasafe02.wav"
+}
+
+"otis.cpf.traincar_getyasafe03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_getyasafe03.wav"
+}
+
+"otis.cpf.traincar_staysafecalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_staysafecalhoun01.wav"
+}
+
+"otis.cpf.traincar_thiswaymiss01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_thiswaymiss01.wav"
+}
+
+"otis.cpf.traincar_thiswaymiss02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_traincar_thiswaymiss02.wav"
+}
+
+"scifem.cpf.traincar_thankyou01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_traincar_thankyou01.wav"
+}
+
+"scifem.cpf.traincar_somewhere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_traincar_somewhere01.wav"
+}
+
+"scifem.cpf.traincar_somewhere02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_traincar_somewhere02.wav"
+}
+
+"scifem.cpf.traincar_military01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_traincar_military01.wav"
+}
+
+"scifem.cpf.traincar_military02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_traincar_military02.wav"
+}
+
+"scifem.cpf.traincar_oksure01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_traincar_oksure01.wav"
+}
+
+"scifem.cpf.traincar_umok02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_traincar_umok02.wav"
+}
+
+//	Lines for Otis and Female Scientist when they wait at the door where Ronny and Murdoch are supposed to be.
+
+"otis.cpf.railyard_doorknocking01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_doorknocking01_01.wav"
+}
+
+"otis.cpf.railyard_doorknocking01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_doorknocking01_02.wav"
+}
+
+"otis.cpf.railyard_doorknocking02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_doorknocking02.wav"
+}
+
+"otis.cpf.railyard_doorknocking03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_doorknocking03.wav"
+}
+
+"otis.cpf.railyard_doorknocking04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_doorknocking04.wav"
+}
+
+"otis.cpf.railyard_didntkilleachother01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_didntkilleachother01.wav"
+}
+
+"otis.cpf.railyard_didntkilleachother02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_didntkilleachother02.wav"
+}
+
+"otis.cpf.railyard_didntkilleachother03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_didntkilleachother03.wav"
+}
+
+"otis.cpf.railyard_doorwaiting_idle01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_doorwaiting_idle01_01.wav"
+}
+
+"otis.cpf.railyard_doorwaiting_idle01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_doorwaiting_idle01_02.wav"
+}
+
+"otis.cpf.railyard_doorwaiting_idle02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_railyard_doorwaiting_idle02.wav"
+}
+
+"scifem.cpf.railyard_oilandwater01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_oilandwater01.wav"
+}
+
+"scifem.cpf.railyard_door_idle01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_door_idle01.wav"
+}
+
+"scifem.cpf.railyard_door_idle02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_door_idle02.wav"
+}
+
+"scifem.cpf.railyard_door_idle03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_door_idle03.wav"
+}
+
+"scifem.cpf.railyard_door_idle04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_door_idle04_01.wav"
+}
+
+"scifem.cpf.railyard_door_idle04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_door_idle04_02.wav"
+}
+
+"scifem.cpf.railyard_door_idle04_03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_railyard_door_idle04_03.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Finding the RRG - going on a short trainride
+//=============================================================================================================================
+
+"marine.cpf.container_hungry01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_hungry01.wav"
+}
+
+"marine.cpf.container_hungry02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_hungry02.wav"
+}
+
+"marine.cpf.container_arewegood01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_arewegood01.wav"
+}
+
+"marine.cpf.container_goodtogo01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_goodtogo01.wav"
+}
+
+"marine.cpf.container_letsgetitdone01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_letsgetitdone01.wav"
+}
+
+//	If turrets are destroyed, these lines play after "marine.cpf.container_arewegood01"
+
+"marine.cpf.container_turretsdown01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_turretsdown01.wav"
+}
+
+"marine.cpf.container_notime01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_notime01.wav"
+}
+
+"marine.cpf.container_notime02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_notime02.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Marine Conversation During RPG Container Ride Scene
+//=============================================================================================================================
+
+//	Marine lines For RPG Container Ride Scene
+//
+
+"marine.cpf.trainride_storyros01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo/captivefreight/marines/marine_trainride_storyros01.wav"
+}
+
+"marine.cpf.trainride_notrelevant01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo/captivefreight/marines/marine_trainride_notrelevant01.wav"
+}
+
+"marine.cpf.trainride_notrelevant02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo/captivefreight/marines/marine_trainride_notrelevant02.wav"
+}
+
+"marine.cpf.trainride_storyros02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo/captivefreight/marines/marine_trainride_storyros02.wav"
+}
+
+"marine.cpf.trainride_storyros03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo/captivefreight/marines/marine_trainride_storyros03.wav"
+}
+
+"marine.cpf.trainride_awhile01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo/captivefreight/marines/marine_trainride_awhile01.wav"
+}
+
+
+//=============================================================================================================================
+//	ROSENBERG (PRISONER)
+//=============================================================================================================================
+
+"ros_container_concerned01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_concerned01.wav"
+}
+
+"ros_container_concerned02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_concerned02.wav"
+}
+
+"ros_container_concerned03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_concerned03.wav"
+}
+
+"ros_container_concerned04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_concerned04_01.wav"
+}
+
+"ros_container_concerned04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_concerned04_02.wav"
+}
+
+"ros_container_concerned05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.9"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_concerned05.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Hearing Dr rosenberg 
+//=============================================================================================================================
+
+//Soundscript not created yet		"sfx.bs.containerknocking"	
+//Caption for this will be"			"<sfx><norepeat:4><clr:255,200,140>[Knocking on Container]"
+
+
+"ros.cpf.container_help01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_help01.wav"
+}
+
+"ros.cpf.container_help01_var01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_help01_var01.wav"
+}
+
+"ros.cpf.container_help02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_help02.wav"
+}
+
+"ros.cpf.container_help01_var02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_help01_var02.wav"
+}
+
+
+//=============================================================================================================================
+//	Scene: Moving Dr Rosenberg
+//=============================================================================================================================
+
+"ros.cpf.container_concerned01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_concerned01.wav"
+}
+
+"ros.cpf.container_concerned02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_concerned02.wav"
+}
+
+"ros.cpf.container_concerned03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_concerned03.wav"
+}
+
+"ros.cpf.container_concerned04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_ccontainer_concerned04_01.wav"
+}
+
+"ros.cpf.container_concerned04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_ccontainer_concerned04_02.wav"
+}
+
+
+//=============================================================================================================================
+//	INTRO AMBUSH VO STARTS HERE!
+//=============================================================================================================================
+
+// Scene: Calhoun runs into an ambush by HECU forces
+
+"cf_hg_ambush01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_01.wav"
+}
+
+"cf_hg_ambush02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_02.wav"
+}
+
+"cf_hg_ambush03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_03.wav"
+}
+
+"cf_hg_ambush04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_04.wav"
+}
+
+"cf_hg_ambush_failed"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_failed.wav"
+}
+
+"cf_hg_ambush_proceed01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_proceed01.wav"
+}
+
+"cf_hg_ambush_proceed02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_proceed02.wav"
+}
+
+"cf_hg_ambush_proceed03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		".8"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_proceed03.wav"
+}
+
+"cf_hg_ambush_proceed04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_proceed04.wav"
+}
+
+"cf_hg_ambush_proceed05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_ambush_proceed05.wav"
+}
+
+"hg.cpf.ambush_weaponsfree01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/hgrunt_ambush_weapfree01.wav"
+}
+
+"hg.cpf.ambush_weaponsfree02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/hgrunt_ambush_weapfree02.wav"
+}
+
+"hg.cpf.ambush_weaponsfree03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/hgrunt_ambush_weapfree03.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Meeting Dr Rosenberg
+//=============================================================================================================================
+
+"ros.cpf.intro_canyouhearme01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_canyouhearme01.wav"
+}
+
+"ros.cpf.intro_canyouhearme02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_canyouhearme02.wav"
+}
+
+"ros.cpf.intro_helpyouup01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_helpyouup01.wav"
+}
+
+"ros.cpf.intro_helpyouup02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_helpyouup02.wav"
+}
+
+"ros.cpf.intro_helpyouup03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_helpyouup03.wav"
+}
+
+"ros.cpf.intro_tookliberty01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_tookliberty01.wav"
+}
+
+"ros.cpf.intro_tookliberty02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_tookliberty02_01.wav"
+}
+
+"ros.cpf.intro_tookliberty02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_tookliberty02_02.wav"
+}
+
+"ros.cpf.intro_worsthappened01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_worsthappened01.wav"
+}
+
+"ros.cpf.intro_worsthappened02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_worsthappened02.wav"
+}
+
+"ros.cpf.intro_yesimrosenberg01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_yesimrosenberg01.wav"
+}
+
+"ros.cpf.intro_yesimrosenberg02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_yesimrosenberg02.wav"
+}
+
+"ros.cpf.intro_theplan01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_theplan01.wav"
+}
+
+"ros.cpf.intro_theplan02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_theplan02.wav"
+}
+
+"ros.cpf.intro_theplan03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_theplan03.wav"
+}
+
+"ros.cpf.intro_theplan04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_theplan04.wav"
+}
+
+"ros.cpf.intro_theplan05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_theplan05.wav"
+}
+
+"ros.cpf.intro_theplan06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_theplan06.wav"
+}
+
+"ros.cpf.intro_theplan07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_theplan07.wav"
+}
+
+"ros.cpf.intro_theplan08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_theplan08.wav"
+}
+
+"ros.cpf.intro_ventproposal01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_ventproposal01.wav"
+}
+
+"ros.cpf.intro_ventproposal02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_ventproposal02.wav"
+}
+
+"ros.cpf.intro_ventproposal03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_ventproposal03.wav"
+}
+
+"ros.cpf.intro_letstrythis01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_letstrythis01.wav"
+}
+
+"ros.cpf.intro_letstrythis02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_letstrythis02.wav"
+}
+
+"ros.cpf.intro_letstrythis03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_letstrythis03.wav"
+}
+
+"ros.cpf.intro_letstrythis04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_letstrythis04.wav"
+}
+
+"ros.cpf.intro_boostidle01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_boostidle01_01.wav"
+}
+
+"ros.cpf.intro_boostidle01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_intro_boostidle01_02.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Freeing Dr Rosenberg
+//=============================================================================================================================
+
+"ros.cpf.container_freed01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_freed01.wav"
+}
+
+"ros.cpf.container_freed02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_freed02.wav"
+}
+
+"ros.cpf.mortars_godinheaven01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_mortars_godinheaven01.wav"
+}
+
+"grd.cpf.balcony_heycalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_balcony_heycalhoun01.wav"
+}
+
+"grd.cpf.balcony_heycalhoun02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_balcony_heycalhoun02.wav"
+}
+
+"grd.cpf.balcony_heycalhoun03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_balcony_heycalhoun03.wav"
+}
+
+"grd.cpf.balcony_heycalhoun04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_balcony_heycalhoun04.wav"
+}
+
+"grd.cpf.balcony_heycalhoun05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_balcony_heycalhoun05.wav"
+}
+
+"grd.cpf.balcony_heycalhoun06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_balcony_heycalhoun06.wav"
+}
+
+"grd.cpf.balcony_heycalhoun07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_balcony_heycalhoun07.wav"
+}
+
+"grd.cpf.balcony_heycalhoun08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_balcony_heycalhoun08.wav"
+}
+
+"grd.cpf.balcony_heycalhoun09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_balcony_heycalhoun09.wav"
+}
+
+//=====================================================================================
+//	Rosenberg Scene - Balcony - More Soldiers and Mortar Reaction - SOUNDSCRIPTS
+//=====================================================================================
+
+"ros.cpf.balcony_mygod01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_balcony_mygod01.wav"
+	
+}
+
+"ros.cpf.balcony_mygod02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_balcony_mygod02.wav"
+	
+}
+
+"ros.cpf.balcony_mygod03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_balcony_mygod03.wav"
+	
+}
+
+"ros.cpf.balcony_moresoldiers01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_balcony_moresoldiers01.wav"
+	
+}
+
+"ros.cpf.balcony_moresoldiers_nag01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_balcony_moresoldiers_nag01.wav"	
+}
+
+//=============================================================================================================================
+//	Scene: Enroute to the Protolabs - part 1 - The gang reunited
+//=============================================================================================================================
+
+"otis.cpf.reunion_thereheis01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_reunion_thereheis01.wav"
+}
+
+"otis.cpf.reunion_thereheis02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_reunion_thereheis02.wav"
+}
+
+"grd.cpf.reunion_pleasetellme01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_reunion_pleasetellme01.wav"
+}
+
+"grd.cpf.reunion_pleasetellme02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_reunion_pleasetellme02.wav"
+}
+
+"grd.cpf.reunion_wordhasit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_reunion_wordhasit01.wav"
+}
+
+"grd.cpf.reunion_wordhasit02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_reunion_wordhasit02.wav"
+}
+
+"grd.cpf.reunion_onehellevaday01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_reunion_onehellevaday01.wav"
+}
+
+"grd.cpf.reunion_calmdownron01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_reunion_calmdownron01.wav"
+}
+
+"ros.cpf.reunion_iamhim01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_reunion_iamhim01.wav"
+}
+
+"ros.cpf.reunion_iamhim02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_reunion_iamhim02.wav"
+}
+
+"ros.cpf.reunion_iamhim03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_reunion_iamhim03.wav"
+}
+
+"scifem.cpf.reunion_amen01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_reunion_amen01.wav"
+}
+
+"ronny.cpf.reunion_getmeouttahere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_reunion_getmeouttahere01.wav"
+}
+
+
+
+//=============================================================================================================================
+//	Scene: Enroute to the Protolabs - part 2 - The gang's enroute to the labs
+//=============================================================================================================================
+
+"otis.cpf.enroute_wherewegoing01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_enroute_wherewegoing01.wav"
+}
+
+"otis.cpf.enroute_wherewegoing02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_enroute_wherewegoing02.wav"
+}
+
+"otis.cpf.enroute_neverheardabout01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_enroute_neverheardabout01.wav"
+}
+
+"otis.cpf.enroute_neverheardabout02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_enroute_neverheardabout02.wav"
+}
+
+"grd.cpf.enroute_takeyourword01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_enroute_takeyourword01.wav"
+}
+
+"grd.cpf.enroute_takeyourword02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_enroute_takeyourword02.wav"
+}
+
+"ros.cpf.enroute_toprotolabs01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_enroute_toprotolabs01_01.wav"
+}
+
+"ros.cpf.enroute_toprotolabs01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_enroute_toprotolabs01_01.wav"
+}
+
+"ros.cpf.enroute_toprotolabs01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_enroute_toprotolabs01_02.wav"
+}
+
+"ros.cpf.enroute_toprotolabs02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_enroute_toprotolabs02_01.wav"
+}
+
+"ros.cpf.enroute_toprotolabs02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_enroute_toprotolabs02_02.wav"
+}
+
+"ros.cpf.enroute_toprotolabs03_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_enroute_toprotolabs03_01.wav"
+}
+
+"ros.cpf.enroute_toprotolabs03_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_enroute_toprotolabs03_02.wav"
+}
+
+"ros.cpf.enroute_toprotolabs04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_enroute_toprotolabs04.wav"
+}
+
+"scifem.cpf.enroute_paygrades01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_enroute_paygrades01.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Enroute to the Protolabs - Breaking into the Secret Passageway
+//=============================================================================================================================	
+//	rosenberg will inteject with appropiate response if the secret passageway has/has not been previously uncovered by the player.
+//	Verson 1: Passage not discovered.
+
+"ros.cpf.passage_hereitis01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_passage_hereitis01.wav"
+}
+
+"grd.cpf.passage_yougotcrowbar01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_passage_yougotcrowbar01.wav"
+}
+
+//	Characters react to player breaking the wall.
+
+"grd.cpf.passage_manwhobreaksshit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_passage_manwhobreaksshit01.wav"
+}
+
+"scifem.cpf.passage_ohwow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_passage_ohwow01.wav"
+}
+
+"scifem.cpf.passage_ohwow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_passage_ohwow02.wav"
+}
+
+"scifem.cpf.passage_ohwow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_passage_ohwow01.wav"
+}
+
+"ros.cpf.passage_crowbar_goodjob01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_passage_crowbar_goodjob01.wav"
+}
+
+"ros.cpf.passage_thiswayeveryone01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_passage_thiswayeveryone01.wav"
+}
+
+//	Gameplay idea: Player is a numpty who uses their guns or explosives to break the wall.
+
+"grd.cpf.passage_isaidcrowbar01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_passage_isaidcrowbar01.wav"
+}
+
+
+//	Verson 2: Passage is already open, due to player discovering it earlier.
+
+
+"grd.cpf.passage_thoughtdeadend01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_passage_thoughtdeadend01.wav"
+}
+
+"grd.cpf.passage_thoughtdeadend02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_passage_thoughtdeadend02.wav"
+}
+
+"ros.cpf.passage_alreadyopen01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_passage_alreadyopen01.wav"
+}
+
+"ros.cpf.passage_alreadyopen02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_passage_alreadyopen02.wav"
+}
+
+"scifem.cpf.passage_alreadyopen01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_passage_alreadyopen01.wav"
+}
+
+"scifem.cpf.passage_alreadyopen02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_passage_alreadyopen02.wav"
+}
+
+"scifem.cpf.passage_ohthanklord01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_passage_ohthanklord01.wav"
+}
+
+
+//=============================================================================================================================
+//	Scene: Enroute to the Protolabs - Passageway Story time
+//=============================================================================================================================	
+
+"ronny.cpf.passageway_thisdump01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_passageway_thisdump01.wav"
+}
+
+"ros.cpf.passageway_decommissioned01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_passageway_decommissioned01.wav"
+}
+
+"ros.cpf.passageway_decommissioned02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_passageway_decommissioned02.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Protolab Elevator Access 
+//=============================================================================================================================	
+//
+
+"grd.cpf.elecodepad_nervous01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_elecodepad_nervous01.wav"
+}
+
+"grd.cpf.elecodepad_wellshit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_elecodepad_wellshit01.wav"
+}
+
+"grd.cpf.elecodepad_wellshit02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_elecodepad_wellshit02.wav"
+}
+
+"grd.cpf.elecodepad_prettyslick01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_elecodepad_prettyslick01.wav"
+}
+
+"grd.cpf.elecodepad_lambda01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_elecodepad_lambda01.wav"
+}
+
+"otis.cpf.elecodepad_istopsecret01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_elecodepad_istopsecret01.wav"
+}
+
+"otis.cpf.elecodepad_nolambda01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_elecodepad_nolambda01.wav"
+}
+
+// ros.cpf.elecodepad_doorpad01				not recorded yet, may change writing 
+
+"ros.cpf.elecodepad_doorpad01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_elecodepad01_thisisit01.wav"
+}
+
+"ros.cpf.elecodepad_doorpad02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_elecodepad01_thisisit02.wav"
+}
+
+"ros.cpf.elecodepad_giveitamoment01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_elecodepad_giveitamoment01.wav"
+}
+
+"ros.cpf.elecodepad_cuttheirlosses01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_elecodepad_cuttheirlosses01.wav"
+}
+
+"ros.cpf.elecodepad_thereweare01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_elecodepad_thereweare01.wav"
+}
+
+"ros.cpf.elecodepad_lambda01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_elecodepad_lambda01.wav"
+}
+
+"ros.cpf.elecodepad_lambda02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_elecodepad_lambda02.wav"
+}
+
+"ros.cpf.elecodepad_lambda03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_elecodepad_lambda03.wav"
+}
+
+"ronny.cpf.elecodepad_agreed01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_elecodepad_agreed01.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Elevator Decend - All Aboard?
+//=============================================================================================================================	
+//
+
+"grd.cpf.labele_allset01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_labele_allset01.wav"
+}
+
+"ros.cpf.labele_everyoneonboard01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_labele_everyoneonboard01.wav"
+}
+
+"ros.cpf.labele_throwswitchcalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_labele_throwswitchcalhoun01.wav"
+}
+
+"scifem.cpf.labele_allset01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_labele_allset01.wav"
+}
+
+
+
+//=============================================================================================================================
+//	Scene: Elevator Decend - Part 1 - The Lift Decends
+//=============================================================================================================================	
+// Scene plays near the end of a map transition. Part 2 picks up in the next map
+
+// guard lines
+
+"grd.cpf.labele_debrisreact01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_labele_debrisreact01.wav"
+}
+
+"grd.cpf.labele_positivethinking01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_labele_positivethinking01.wav"
+}
+
+"grd.cpf.labele_positivethinking02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_labele_positivethinking02.wav"
+}		
+
+// rosenberg lines
+
+"ros.cpf.labele_andoffwego01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_labele_andoffwego01.wav"
+}
+
+"ros.cpf.labele_debrisreact01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_labele_debrisreact01.wav"
+}
+
+"ros.cpf.labele_debrisreact02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_labele_debrisreact02.wav"
+}
+
+// scifem lines
+
+"scifem.cpf.labele_debrisreact01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_labele_debrisreact01.wav"
+}
+
+"scifem.cpf.labele_debrisreact02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.600"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_labele_debrisreact02.wav"
+}
+
+// ronny lines	
+
+"ronny.cpf.labele_ifcutsouthere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_labele_ifcutsouthere01.wav"
+}
+	
+
+//=============================================================================================================================
+//	Scene: Elevator Decend - Part2
+//=============================================================================================================================	
+// Plays after map transition into protolabs area.  Ronny can't wait to get off the elevator... apparantly.
+
+
+"grd.cpf.labele_gotahotdate01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_labele_gotahotdate01.wav"
+}
+
+"grd.cpf.labele_dontbeawuss01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_labele_dontbeawuss01.wav"
+}
+
+"grd.cpf.labele_ladypresent01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_labele_ladypresent01.wav"
+}
+
+"grd.cpf.labele_ladypresent02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_labele_ladypresent02.wav"
+}
+
+"ronny.cpf.labele_cantthisgofaster01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_labele_cantthisgofaster01.wav"
+}
+
+"ronny.cpf.labele_anothercontainer01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_labele_anothercontainer01.wav"
+}
+
+"ronny.cpf.labele_anothercontainer02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_labele_anothercontainer02.wav"
+}
+
+"ronny.cpf.labele_thinkimawuss01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_labele_thinkimawuss01.wav"
+}
+
+"scifem.cpf.labele_yeahigotit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.500"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_labele_yeahigotit01.wav"
+}
+
+
+//=============================================================================================================================
+//	Scene: Elevator Decend - Exit 
+//=============================================================================================================================	
+
+"ros.cpf.labele_exiting01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_labele_exiting01_01.wav"
+}
+
+"ros.cpf.labele_exiting01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_labele_exiting01_02.wav"
+}
+
+"ronny.cpf.labele_exiting01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_labele_exiting01.wav"
+}
+
+"ronny.cpf.labele_exiting02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_labele_exiting02.wav"
+}
+
+"ronny.cpf.labele_exiting01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_labele_exiting01.wav"
+}
+
+"scifem.cpf.labele_exiting01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_labele_exiting01.wav"
+}
+
+"scifem.cpf.labele_exiting02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.95"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_labele_exiting02.wav"
+}
+
+//=============================================================================================================================
+// Scene: Rosenberg fingerprint ID scene
+//=============================================================================================================================
+
+"grd.cpf.protolab_crossyourfingers01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_protolab_crossyourfingers01.wav"
+}
+
+"ros.cpf.protolab_fingerprint01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_fingerprint01_01.wav"
+}
+
+"ros.cpf.protolab_fingerprint01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_fingerprint01_02.wav"
+}
+
+"ros.cpf.protolab_fingerprint_accept01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_fingerprint_accept01.wav"
+}
+
+"ros.cpf.protolab_fingerprint_accept02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_fingerprint_accept02.wav"
+}
+	
+
+//=============================================================================================================================
+// Scene: Rosenberg let's the cat of of the bag.
+//=============================================================================================================================
+
+// Lines for "Cat of of the Bag" Scene Between rosenberg and the group. He tells "how" they're getting out.
+
+"grd.cpf.protolab_knowhow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_protolab_knowhow01.wav"
+}
+	
+"grd.cpf.protolab_knowhow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_protolab_knowhow02.wav"
+}
+
+"grd.cpf.protolab_annoyed01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_protolab_annoyed01.wav"
+}
+
+"grd.cpf.protolab_annoyed02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.980"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_protolab_annoyed02.wav"
+}
+
+// This one is quiet on purpose.
+
+"ronny.cpf.protolab_ohhhnno01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_protolab_ohhhnno01.wav"
+}
+
+"ronny.cpf.protolab_goingbackup01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_protolab_goingbackup01.wav"
+}
+
+"ronny.cpf.protolab_goingbackup02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_protolab_goingbackup02.wav"
+}
+
+"ronny.cpf.protolab_alrightdammit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_protolab_alrightdammit01.wav"
+}
+
+"ronny.cpf.protolab_biteme01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.980"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/ronny/ronny_protolab_biteme01.wav"
+}
+
+"ros.cpf.protolab_howgettingout01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_howgettingout01.wav"
+}
+
+"ros.cpf.protolab_howgettingout02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_howgettingout02.wav"
+}
+
+"ros.cpf.protolab_howgettingout03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_howgettingout03.wav"
+}
+
+"ros.cpf.protolab_howgettingout04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_howgettingout04.wav"
+}
+
+"ros.cpf.protolab_howgettingout05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_howgettingout05.wav"
+}
+
+"ros.cpf.protolab_howgettingout06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_howgettingout06.wav"
+}
+
+"ros.cpf.protolab_worktobedone01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_worktobedone01.wav"
+}
+
+"ros.cpf.protolab_worktobedone02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_worktobedone02_01.wav"
+}
+
+"ros.cpf.protolab_worktobedone02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_worktobedone02_02.wav"
+}
+
+"ros.cpf.protolab_cafeteria01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cafeteria01.wav"
+}
+
+"ros.cpf.protolab_requirecalhoun01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_requirecalhoun01.wav"
+}
+
+"ros.cpf.protolab_firststopishere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_firststopishere01.wav"
+}
+
+"ros.cpf.protolab_requirecalhoun_idle01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_requirecalhoun_idle01.wav"
+}
+
+"ros.cpf.protolab_requirecalhoun_idle02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_requirecalhoun_idle02.wav"
+}
+
+"scifem.cpf.protolab_waitreally01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_protolab_waitreally01.wav"
+}
+
+"scifem.cpf.protolab_knowhow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_protolab_knowhow01.wav"
+}
+
+"scifem.cpf.protolab_knowhow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_protolab_knowhow02.wav"
+}
+
+"scifem.cpf.protolab_knowhow03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_protolab_knowhow03.wav"
+}
+
+"scifem.cpf.protolab_knowhow04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_protolab_knowhow04.wav"
+}
+
+"grd.cpf.protolab_cafe_seeyalater01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_protolab_cafe_seeyalater01.wav"
+}
+
+"grd.cpf.protolab_cafe_seeyalater02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_protolab_cafe_seeyalater02.wav"
+}
+
+"otis.cpf.protolab_cafe_nofood01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_protolab_cafe_nofood01_01.wav"
+}
+
+"otis.cpf.protolab_cafe_nofood01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/otis/otis_protolab_cafe_nofood01_02.wav"
+}
+
+"scifem.cpf.protolab_cafe_candybars01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_protolab_cafe_candybars01.wav"
+}
+
+
+//=============================================================================================================================
+//	Scene: Calhoun and Rosenberg Meet "Walter" 
+//=============================================================================================================================	
+
+"ros.cpf.protolab_waltermadeit01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_waltermadeit01.wav"
+}
+
+"ros.cpf.protolab_waltermadeit02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_waltermadeit02.wav"
+}
+
+"ros.cpf.protolab_issimmonshere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_issimmonshere01.wav"
+}
+
+"ros.cpf.protolab_issimmonshere02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_issimmonshere02.wav"
+}
+
+"ros.cpf.protolab_ifyouwouldfollowme01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_ifyouwouldfollowme01.wav"
+}
+
+//DEV NOTE NOV_26_2022: vo recordings for Walter are temporary with kevin's voice until Mike Hillard can provide proper takes.
+
+"walter.cpf.protolab_thankgod01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/walter_protolab_thankgod01.wav"
+}
+
+"walter.cpf.protolab_thankgod02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/walter_protolab_thankgod02.wav"
+}
+
+"walter.cpf.protolab_simmonshere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/walter_protolab_simmonshere01.wav"
+}
+
+"walter.cpf.proto.idle_ros01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/walter_idle_ros01.wav"
+}
+
+"walter.cpf.proto.idle_ros02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/walter_idle_ros02.wav"
+}
+
+"walter.cpf.proto.idle_ros03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/walter_idle_ros03.wav"
+}
+
+
+//===========================================================================================================================================//
+//	SCENE -- Cafeteria Side Conversation
+//===========================================================================================================================================//
+
+//	Plays when player and Rosenberg come back thru after meeting with Walter.
+
+"grd.cpf.cafe_whatsname01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.920"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cafe_whatsname01.wav"
+}
+
+"grd.cpf.cafe_whatsname02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.920"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cafe_whatsname02.wav"
+}
+
+"grd.cpf.cafe_whatsname03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.920"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cafe_whatsname03.wav"
+}
+
+"grd.cpf.cafe_whatsname04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cafe_whatsname04.wav"
+}
+
+"grd.cpf.cafe_whatsname05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/guards/grd_cafe_whatsname05.wav"
+}
+
+
+"scifem.cpf.cafe_whatsname01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_cafe_whatsname01.wav"
+}
+
+"scifem.cpf.cafe_whatsname02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_cafe_whatsname02.wav"
+}
+
+"scifem.cpf.cafe_whatsname03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_cafe_whatsname03.wav"
+}
+
+"scifem.cpf.cafe_wellyeah01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.700"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_cafe_wellyeah01.wav"
+}
+
+"scifem.cpf.cafe_wellyeah02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.750"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/scifem_cafe_wellyeah02.wav"
+}
+
+
+//===========================================================================================================================================//
+//	SCENE -- ROSENBERG KEYCARD SEQUENCE 
+//===========================================================================================================================================//
+//	Rosenberg explains the importance behind Harold's keycard.	
+
+"ros.cpf.protolab_cardslot01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot01.wav"
+}
+
+"ros.cpf.protolab_cardslot02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot02.wav"
+}
+
+"ros.cpf.protolab_cardslot03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot03.wav"
+}
+
+"ros.cpf.protolab_cardslot04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot04_01.wav"
+}
+
+"ros.cpf.protolab_cardslot04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot04_02.wav"
+}
+
+"ros.cpf.protolab_cardslot05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot05.wav"
+}
+
+"ros.cpf.protolab_cardslot06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot06.wav"
+}
+
+"ros.cpf.protolab_cardslot07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot07.wav"
+}
+
+
+//-----------------------------------------//
+// 	Idle Nags lines for Slot Machine.
+
+"ros.cpf.protolab_cardslot_nag01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_nag01.wav"
+}
+
+
+"ros.cpf.protolab_cardslot_nag02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_nag02.wav"
+}
+
+
+"ros.cpf.protolab_cardslot_nag03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_nag03.wav"
+}
+
+"ros.cpf.protolab_cardslot_nag04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_nag04_01.wav"
+}
+
+"ros.cpf.protolab_cardslot_nag04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_nag04_02.wav"
+}
+
+
+//	Sequence for the card drop.
+
+"ros.cpf.protolab_cardslot_insert01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_insert01.wav"
+}
+
+"ros.cpf.protolab_cardslot_one"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_one.wav"
+}
+
+"ros.cpf.protolab_cardslot_two"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_two.wav"
+}
+
+"ros.cpf.protolab_cardslot_three"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_three.wav"
+}
+
+"ros.cpf.protolab_cardslot_accept01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_cardslot_accept01.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Calhoun and Rosenberg - Entering the Teleporter Room
+//=============================================================================================================================	
+
+"ros.cpf.protolab_backstory01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory01.wav"
+}
+
+"ros.cpf.protolab_backstory02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory02.wav"
+}
+
+"ros.cpf.protolab_backstory03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory03.wav"
+}
+
+"ros.cpf.protolab_backstory04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory04_01.wav"
+}
+
+"ros.cpf.protolab_backstory04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory04_02.wav"
+}
+
+"ros.cpf.protolab_backstory05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory05.wav"
+}
+
+"ros.cpf.protolab_backstory06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory06.wav"
+}
+
+"ros.cpf.protolab_backstory07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory07.wav"
+}
+
+"ros.cpf.protolab_backstory08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory08.wav"
+}
+
+"ros.cpf.protolab_backstory09"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory09.wav"
+}
+
+"ros.cpf.protolab_backstory10_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory10_01.wav"
+}
+
+"ros.cpf.protolab_backstory10_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_backstory10_02.wav"
+}
+
+"ros.cpf.protolab_watchfulguards01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.800"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_watchfulguards01.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Calhoun and Rosenberg - Teleporter Room Power Plug Puzzle [scientist "Simmons" makes his debut appearance]
+//=============================================================================================================================	
+
+"sim.cpf.protolab_plugpuzzle01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/sim_protolab_plugpuzzle01.wav"
+}
+
+"sim.cpf.protolab_plugpuzzle02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/sim_protolab_plugpuzzle02.wav"
+}
+
+"sim.cpf.protolab_plugpuzzle03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/sim_protolab_plugpuzzle03.wav"
+}
+
+
+//	Rosenburg Lines for Teleporter Sequence [On Intercom]
+//
+
+"ros.cpf.protolab_plugpuzzle01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugpuzzle01.wav"
+}
+
+"ros.cpf.protolab_ahsimmons01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_ahsimmons01.wav"
+}
+
+"ros.cpf.protolab_plugpuzzle02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugpuzzle02.wav"
+}
+
+"ros.cpf.protolab_plugpuzzle03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugpuzzle03.wav"
+}
+
+"ros.cpf.protolab_plugpuzzle04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugpuzzle04.wav"
+}
+
+"ros.cpf.protolab_plugpuzzle05_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugpuzzle05_01.wav"
+}
+
+"ros.cpf.protolab_plugpuzzle05_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugpuzzle05_02.wav"
+}
+
+"ros.cpf.protolab_plugusin01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugusin01.wav"
+}
+
+
+
+//			 	Rosenberg's idle lines for puzzle, if player is slow to solve it.
+//DEV NOTE:		"ros.cpf.protolab_plugusin02" has been moved to this section to act as the first idle line, per Cyv0's suggestion. 
+
+"ros.cpf.protolab_plugusin02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugusin02.wav"
+}
+
+
+"ros.cpf.protolab_plugpuzzle_idle02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugpuzzle_idle02.wav"
+}
+
+"ros.cpf.protolab_plugpuzzle_idle03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_plugpuzzle_idle03.wav"
+}
+
+// 	Line for after plug puzzle is solved
+
+"ros.cpf.protolab_pluggedin01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_protolab_pluggedin01.wav"
+}
+
+//=============================================================================================================================
+//	Scene: Calhoun and Rosenberg - Teleporter Room Main Sequence
+//=============================================================================================================================	
+// Things are about to get real, Calhoun.
+
+//	Simmons Lines [On Intercom]
+//
+
+"sim.cpf.protolab_failedsequence01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/sim_protolab_failedsequence01.wav"
+}
+
+"sim.cpf.protolab_failedsequence02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/sim_protolab_failedsequence02.wav"
+}
+
+"sim.cpf.tele_xen_start01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/sim_tele_xen_start01.wav"
+}
+
+"sim.cpf.tele_xen_start02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/sim_tele_xen_start02.wav"
+}
+
+
+"sim.cpf.tele_xen_start02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/scientists/sim_tele_xen_start02.wav"
+}
+
+// Rosenberg Vo
+
+"ros.cpf.telexen_getyouclose01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_getyouclose01_01.wav"
+}
+
+"ros.cpf.telexen_getyouclose01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_getyouclose01_02.wav"
+}
+
+"ros.cpf.telexen_getyouclose02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_getyouclose02.wav"
+}
+
+"ros.cpf.telexen_getyouclose03_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_getyouclose03_01.wav"
+}
+
+"ros.cpf.telexen_getyouclose03_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_getyouclose03_02.wav"
+}
+
+
+// 	Lines for the Teleporter Startup Sequence - rosenberg
+
+"ros.cpf.tele_xen_startup01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_startup01.wav"
+}
+
+"ros.cpf.tele_xen_startup02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_startup02.wav"
+}
+
+"ros.cpf.tele_xen_startup03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_startup03.wav"
+	
+}
+
+"ros.cpf.tele_xen_startup04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_startup04.wav"
+}
+
+"ros.cpf.tele_xen_startup05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_startup05.wav"
+}
+
+"ros.cpf.tele_xen_startup06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_startup06.wav"
+}
+
+"ros.cpf.tele_xen_gonow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_gonow01.wav"
+}
+
+"ros.cpf.tele_xen_gonow02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_gonow02.wav"
+}
+
+// 	rosenberg Lines for the Teleporter Startup Sequence Failure/ Player Dies	
+	
+"ros.cpf.tele_xen_tooslow01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_tooslow01.wav"
+}
+
+
+"ros.cpf.tele_xen_failedseq01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_failedseq01.wav"
+}
+
+"ros.cpf.tele_xen_failedseq02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_tele_xen_failedseq02.wav"
+}
+
+//=====================================================================================
+//	Rosenberg Scene - Platform Charging Nags - Before and During - SOUNDSCRIPTS
+//=====================================================================================
+
+/////////////////////////////
+// Before Charging Sequence
+/////////////////////////////
+
+"ros.cpf.telexen_plat_nag01_01"	
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_plat_nag01_01.wav"
+	
+}
+
+"ros.cpf.telexen_plat_nag01_02"	
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_plat_nag01_02.wav"
+	
+}
+
+"ros.cpf.telexen_plat_nag02_01"	
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_plat_nag02_01.wav"
+	
+}
+
+"ros.cpf.telexen_plat_nag02_02"	
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_plat_nag02_02.wav"
+	
+}
+
+"ros.cpf.telexen_plat_nag03_01"	
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_plat_nag03_01.wav"
+	
+}
+
+"ros.cpf.telexen_plat_nag03_02"	
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_plat_nag03_02.wav"
+	
+}
+
+///////////////////////////////
+// During Charging Sequence
+//////////////////////////////
+
+"ros.cpf.telexen_charge_nag01_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_charge_nag01_01.wav"
+	
+}
+
+"ros.cpf.telexen_charge_nag01_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_charge_nag01_02.wav"
+	
+}
+
+"ros.cpf.telexen_charge_nag02_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_charge_nag02_01.wav"
+	
+}
+
+"ros.cpf.telexen_charge_nag02_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_charge_nag02_02.wav"
+	
+}
+
+"ros.cpf.telexen_charge_nag03_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_charge_nag03_01.wav"
+	
+}
+
+"ros.cpf.telexen_charge_nag03_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_charge_nag03_02.wav"
+	
+}
+
+///////////////////////////////
+// Calhoun dies from cringe
+//////////////////////////////
+
+"ros.cpf.telexen_charge_youfool"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_telexen_charge_youfool.wav"
+	
+}
+
+//=====================================================================================
+//	Rosenberg Scene - Container - Post Tank Fight
+//=====================================================================================
+
+"ros.cpt.container_areyoustillthere01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_areyoustillthere01.wav"
+	
+}
+
+"ros.cpt.container_areyoustillthere02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_areyoustillthere02.wav"
+	
+}
+
+"ros.cpt.container_areyoustillthere03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_areyoustillthere03.wav"
+	
+}
+
+"ros.cpt.container_areyoustillthere04"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_areyoustillthere04.wav"
+	
+}
+
+"ros.cpt.container_areyoustillthere05"{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_areyoustillthere05.wav"
+	
+}
+
+"ros.cpt.container_areyoustillthere06"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_areyoustillthere06.wav"
+	
+}
+
+"ros.cpt.container_areyoustillthere07"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_areyoustillthere07.wav"
+	
+}
+
+"ros.cpt.container_areyoustillthere08"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/rosenberg/ros_container_areyoustillthere08.wav"
+	
+}
+
+
+//=============================================================================================================================
+//	MIDGAME rosenberg CAPTURE STARTS HERE!
+//=============================================================================================================================
+
+// Scene: Calhoun got captured by the marines
+
+"cf_hg_capture"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.900"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_90dB"
+
+	"wave"			"vo\captivefreight\marines\hgrunt_captured.wav"
+}
+
+"marine.cpf.ambush_gothim01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_ambush_gothim01.wav"
+}
+
+"marine.cpf.ambush_gethimin01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_ambush_gethimin01.wav"
+}
+
+"marine.cpf.ambush_gethimin02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_ambush_gethimin02.wav"
+}
+
+"marine.cpf.ambush_gethimin03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_ambush_gethimin03.wav"
+}
+
+"sfx.cpf.ambush_backgroundfadeout01"
+{
+	"channel"		"CHAN_STATIC"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_100dB"
+
+	"wave"			"vo/captivefreight/marines/sfx_ambush_backgroundfadeout01.wav"
+}
+
+//=====================================================================================
+//    Container Escape Scene - Marines in Railyard
+//=====================================================================================
+
+"marine.cpf.container_escaped01"	
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_escaped01.wav"
+	
+}
+
+"marine.cpf.container_escaped02"	
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"1.0"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/marine_container_escaped02.wav"
+
+}
+
+//=============================================================================================================================
+//	BACKGROUND MARINE VO
+//=============================================================================================================================
+
+// Scene: Some Chinook pilot is taunting
+
+"cf_hg_chinook_taunt"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.970"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_120dB"
+
+	"wave"			"vo/captivefreight/marines/hgrunt_chinook_taunt01.wav"
+}
+
+//bs_radio_thunderclap3
+
+"radio.cpf.marines_tc3_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_marines_tc3_01.wav"
+}
+"radio.cpf.marines_y6j_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_marines_y6j_01.wav"
+}
+
+"radio.cpf.marines_tc3_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_marines_tc3_02.wav"
+}
+
+"radio.cpf.marines_y6j_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_marines_y6j_02.wav"
+}
+
+"radio.cpf.marines_tc3_03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_marines_tc3_03.wav"
+}
+
+
+//bs_radio_yankee2bravo
+
+"radio.cpf.yankee3charlie_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee3charlie_01.wav"
+}
+
+"radio.cpf.yankee3charlie_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee3charlie_02.wav"
+}
+
+"radio.cpf.yankee3charlie_03"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee3charlie_03.wav"
+}
+
+"radio.cpf.yankee3charlie_04_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee3charlie_04_01.wav"
+}
+
+"radio.cpf.yankee3charlie_04_02"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee3charlie_04_02.wav"
+}
+
+"radio.cpf.yankee3charlie_05"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee3charlie_05.wav"
+}
+
+"radio.cpf.yankee3charlie_stingeunit"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee3charlie_stingeunit.wav"
+}
+
+"radio.cpf.yankee2bravo_01"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee2bravo_01.wav"
+}
+
+"radio.cpf.yankee2bravo_sealed"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee2bravo_sealed.wav"
+}
+
+"radio.cpf.yankee2bravo_extracted"
+{
+	"channel"		"CHAN_VOICE"
+	"volume"		"0.950"
+	"pitch"			"PITCH_NORM"
+
+	"soundlevel"	"SNDLVL_80dB"
+
+	"wave"			"vo/captivefreight/marines/radio_yankee2bravo_extracted.wav"
+}
+
+
+
+
+

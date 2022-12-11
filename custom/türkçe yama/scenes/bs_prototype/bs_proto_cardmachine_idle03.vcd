@@ -1,0 +1,206 @@
+// Choreo version 1
+actor "bs_ally_rosenberg"
+{
+  channel "Voice"
+  {
+    event speak "ros.cpf.protolab_cardslot_nag03"
+    {
+      time 0.487180 3.608654
+      param "ros.cpf.protolab_cardslot_nag03"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.protolab_cardslot_nag04_01"
+    {
+      time 4.779166 7.153860
+      param "ros.cpf.protolab_cardslot_nag04_01"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+    event speak "ros.cpf.protolab_cardslot_nag04_02"
+    {
+      time 7.657367 8.940111
+      param "ros.cpf.protolab_cardslot_nag04_02"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  channel "Look at"
+  {
+    event lookat "Look at !player"
+    {
+      time 0.151515 4.878788
+      param "!player"
+      event_ramp
+      {
+        0.5700 0.7824
+        1.1750 0.9588
+        4.0182 0.8588
+      }
+    }
+    event lookat "Look at !self"
+    {
+      time 4.196970 9.515151
+      param "!self"
+      event_ramp
+      {
+        0.9200 0.9412
+        4.6835 0.9118
+      }
+    }
+  }
+  channel "Expression"
+  {
+    event expression "sci_angry01"
+    {
+      time 0.151515 11.939394
+      param "humans\scientist\expressions_scientist"
+      param2 "sci_angry01"
+      event_ramp
+      {
+        0.7600 0.9588
+        9.2000 0.9529
+      }
+    }
+  }
+  channel "Flex Animation"
+  {
+  }
+  channel "Gesture"
+  {
+    event gesture "g_crossarms"
+    {
+      time 0.787878 5.724242
+      param "g_crossarms"
+      event_ramp
+      {
+        0.3600 0.1235
+        1.0050 0.9000
+        1.4000 0.9941
+        4.1188 0.9588
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.098802
+        "accent" 0.197853
+        "loop" 0.201837
+        "end" 0.717791
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.086207
+        "accent" 0.344828
+        "loop" 0.344828
+        "end" 0.689655
+      }
+      sequenceduration 1.966667
+    }
+    event gesture "bg_accentfwd"
+    {
+      time 0.196970 3.403030
+      param "bg_accentfwd"
+      absolutetags playback_time
+      {
+        "apex" 0.119591
+        "extreme" 0.288253
+        "loop" 0.509434
+        "end" 0.669586
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.138889
+        "extreme" 0.361111
+        "loop" 0.555556
+        "end" 0.694444
+      }
+      sequenceduration 2.433333
+    }
+    event gesture "hg_turnR"
+    {
+      time 4.772727 10.860606
+      param "hg_turnR"
+      absolutetags playback_time
+      {
+        "apex" 0.083183
+        "extreme" 0.166367
+        "loop" 0.277278
+        "end" 0.790524
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.192308
+        "extreme" 0.384615
+        "loop" 0.641026
+        "end" 0.769231
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "kgesture08"
+    {
+      time 7.227275 10.830305
+      param "kgesture08"
+      absolutetags playback_time
+      {
+        "apex" 0.194093
+        "accent" 0.312236
+        "loop" 0.456395
+        "end" 0.615687
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.115385
+        "accent" 0.256410
+        "loop" 0.423077
+        "end" 0.641026
+      }
+      sequenceduration 2.633333
+    }
+    event gesture "bg_up_r"
+    {
+      time 5.863636 8.327272
+      param "bg_up_r"
+      absolutetags playback_time
+      {
+        "apex" 0.160640
+        "extreme" 0.302744
+        "loop" 0.430112
+        "end" 0.568292
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.085106
+        "extreme" 0.276596
+        "loop" 0.425532
+        "end" 0.638298
+      }
+      sequenceduration 1.600000
+    }
+  }
+  channel "Face To"
+  {
+  }
+  channel "Move To"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+  channel "OnTrigger"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "44"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "12"
+}
+fps 60
+snap off
+ignorePhonemes off
