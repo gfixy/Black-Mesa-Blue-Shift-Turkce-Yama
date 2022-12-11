@@ -1,7 +1,7 @@
 # Black Mesa Blue Shift Türkçe Yama
 ![Banner](https://media.discordapp.net/attachments/616121689104973834/1051610671965540362/Turkce-Yama-Kapak-1.png//)
 
---> [İndir](https://dosya.co/fc0vzho8wuka/custom.7z.html)
+--> [TR Yama İndir](https://dosya.co/fc0vzho8wuka/custom.7z.html)
 ## Açıklama
 
  Black Mesa Blue Shift Türkçe Yama
