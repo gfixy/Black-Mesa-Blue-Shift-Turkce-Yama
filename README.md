@@ -18,8 +18,14 @@
 
 ### Kurulum
 
-"Bshift" klasörünün içindeki "bshift_misc_000" ve "bshift_misc_dir" bu dosyaların yedeğini aldıktan sonra silin ve atmış olduğumuz custom dosyasını bshift klasörünün içine atın oyunu açıp turkish seçenegini seçin yama olmuştur.
+"Bshift" klasörünün içindeki "bshift_misc_000" ve "bshift_misc_dir" bu dosyaların yedeğini aldıktan sonra silin ve atmış olduğumuz custom dosyasını bshift klasörünün içine atın oyunu açıp "settings>audio"'dan "captioning"'den "closed captions"'i şeçip "captioning language"'yide "turkish" seçmeniz lazım iyi oyunlar.
 
 Oyunun son versiyonu denenmiştir. 
 
-Not: Oyun normal olarak açılmıyorsa "bshift_oldUI.bat" açmayı deneyin.
+### Olası Hatalar
+
+*Oyun normal olarak açılmıyorsa "bshift_oldUI.bat" açmayı deneyin.
+*Eğer ayarlar "audio" sekmesinde turkish yoksa black mesanız son sürüm değildir ve Türçe dil desteklemiyordur aşağıdaki linkten zip dosyasını indirip içindekileri "bms" klasörüne atın ve kopyala değiştir değin.
+*Yama crackli sürümde'de çalışır duruma gelmiştir.
+
+--> [İndir BMS](https://dosya.co/tle2jnhdo9en/bms.7z.html)
