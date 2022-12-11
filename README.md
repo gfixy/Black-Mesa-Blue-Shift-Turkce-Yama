@@ -6,7 +6,9 @@
 
  Black Mesa Blue Shift Türkçe Yama
  
- Blue Shift Mod şuan Chapter 4'e kadar yapılmıştır yeni Chapterlar geldikçe yama güncellenmeye devam edicektir. 
+ Blue Shift Mod şuan Chapter 4'e kadar yapılmıştır yeni Chapterlar geldikçe yama güncellenmeye devam edicektir . 
+
+ Oyunun menüsü ingilizcedir.
 
 ## Emeği Geçenler
 
