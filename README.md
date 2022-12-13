@@ -30,7 +30,7 @@ Oyunun son versiyonu denenmiştir.
 
 *Oyun normal olarak açılmıyorsa "bshift_oldUI.bat" açmayı deneyin.
 
-*Eğer ayarlar "audio" sekmesinde turkish yoksa black mesanız son sürüm değildir ve Türçe dil desteklemiyordur aşağıdaki linkten zip dosyasını indirip içindekileri "bms" klasörüne atın ve kopyala değiştir değin.
+*Eğer ayarlar "audio" sekmesinde turkish yoksa black mesanız son sürüm değildir ve Türçe dil desteklemiyordur aşağıdaki linkten zip dosyasını indirip içindekileri "bms" klasörüne atın ve kopyala değiştir değin buda çalışmaz ise oyuna update yapın.
 
 *Yama crackli sürümde'de çalışır duruma gelmiştir.
 
